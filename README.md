@@ -26,7 +26,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 
 Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html)
 
-[LaTeX tutorial](https://github.com/wanminliu/wanminliu.github.io/blob/master/introLaTeX.pdf)
+[LaTeX tutorial](https://wanminliu.github.io/introLaTeX/introLaTeX.html) [PDF](https://github.com/wanminliu/wanminliu.github.io/blob/master/introLaTeX.pdf)
 
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
 - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
