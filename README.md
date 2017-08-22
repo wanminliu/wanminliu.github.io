@@ -1,15 +1,14 @@
-## Wanmin Liu 柳萬民
+>IBS Center for Geometry and Physics <br> Math Sci Bldg Rm 108, POSTECH, 77 Cheongam-ro <br> Pohang 37673, North Gyeongsang, Republic of Korea <br> **Email** wanminliu (at) gmail dot com **Telephone** +82-(0)54-279-9180
+
+### About Me
 
 <img src="https://avatars0.githubusercontent.com/u/5844031" width="200" height="200" />
 
 I am a research fellow at [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) since Dec 2015. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the Hong Kong University of Science and Technology (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
 
-### Contact
-
->IBS Center for Geometry and Physics <br> Math Sci Bldg Rm 108, POSTECH, 77 Cheongam-ro <br> Pohang 37673, North Gyeongsang, Republic of Korea <br> **Email** wanminliu (at) gmail dot com **Telephone** +82-(0)54-279-9180
-
 ### [Curriculum Vitae (20160116)](https://drive.google.com/file/d/0B5IxFWNS4fS0TlI4d2hQTGs1d0k/view?usp=sharing)
 
+### Research
 My research area is Algebraic Geometry. My research interests include Bridgeland stability conditions, moduli space, derived category, birational geometry, counting invariants and wall-crossing.
 
 ### Papers and Preprints
