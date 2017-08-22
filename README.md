@@ -1,1 +1,37 @@
-# wanminliu.github.io
+## Wanmin Liu 柳萬民
+
+<img src="https://avatars0.githubusercontent.com/u/5844031" width="200" height="200" />
+
+I am a research fellow at [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) since Dec 2015. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the Hong Kong University of Science and Technology (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
+
+### Contact
+
+>IBS Center for Geometry and Physics <br> Math Sci Bldg Rm 108, POSTECH, 77 Cheongam-ro <br> Pohang 37673, North Gyeongsang, Republic of Korea <br> **Email** wanminliu (at) gmail dot com **Telephone** +82-(0)54-279-9180
+
+### [Curriculum Vitae (20160116)](https://drive.google.com/file/d/0B5IxFWNS4fS0TlI4d2hQTGs1d0k/view?usp=sharing)
+
+My research area is Algebraic Geometry. My research interests include Bridgeland stability conditions, moduli space, derived category, birational geometry, counting invariants and wall-crossing.
+
+### Papers and Preprints
+
+- Wanmin Liu, Song Yang, Xun Yu, On exceptional collections of line bundles of maximal length on the blow-ups of P^3, [CGP17025](http://cgp.ibs.re.kr/files/preprints/CGP17025_WL_On%20exceptional%20collections%20of%20line%20bundles%20of%20maximal%20length%20on%20the%20blow-ups%20of%20P3.pdf), 2017 July. 
+- Wanmin Liu, Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces, [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397), [CGP16027](http://cgp.ibs.re.kr/files/preprints/CGP16027_WL_Bayer-Macr%C3%AC%20decomposition%20on%20Bridgeland%20moduli%20spaces%20over%20surfaces.pdf).
+- Wanmin Liu, Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces, PhD thesis, (see the [link](https://drive.google.com/file/d/0B5IxFWNS4fS0RTBXa09oUEkwQkE/view) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
+ 
+### Reading Notes
+
+- [Notes on Maps in the Homotopy Category of dg-Categories](http://cgp.ibs.re.kr/~lejay/20170704_dg-seminar-wm.html), [CGP Derived seminar](http://cgp.ibs.re.kr/~lejay/derived-seminar.html) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
+
+### Useful Links
+[arXiv.AG](http://arxiv.org/list/math.AG/recent); [MathSciNet](http://www.ams.org/mathscinet/); [IBS Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar)
+
+Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html)
+
+[LaTeX tutorial](https://drive.google.com/file/d/0B5IxFWNS4fS0cG9XMU80dDBRQUk/view?usp=sharing)
+
+[pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
+- Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
+
+(Last modified: Aug 21, 2017)
+
+
