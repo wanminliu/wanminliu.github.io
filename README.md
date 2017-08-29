@@ -6,7 +6,7 @@
 
 I am a research fellow at [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) since Dec 2015. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the Hong Kong University of Science and Technology (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
 
-### [Curriculum Vitae (20170824)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_Pub.html) [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_Pub.pdf)
+### [Curriculum Vitae (20170829)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_Pub.html) [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_Pub.pdf)
 
 ### Research
 My research area is Algebraic Geometry. My research interests include Bridgeland stability conditions, moduli space, derived category, birational geometry, counting invariants and wall-crossing.
@@ -31,6 +31,6 @@ Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.e
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
 - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
-(Last modified: Aug 24, 2017)
+(Last modified: Aug 29, 2017)
 
 
