@@ -13,6 +13,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 
 ### Papers and Preprints
 
+- Wanmin Liu, Jason Lo, Fourier-Mukai transforms of stable torsion-free sheaves on Weierstrass elliptic surfaces, preprint, 2017 Dec.
 - Wanmin Liu, Song Yang, Xun Yu, On exceptional collections of line bundles of maximal length on the blow-ups of P^3, [CGP17025], 2017 July. 
 - Wanmin Liu, Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces, [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397), [CGP16027](http://cgp.ibs.re.kr/files/preprints/CGP16027_WL_Bayer-Macr%C3%AC%20decomposition%20on%20Bridgeland%20moduli%20spaces%20over%20surfaces.pdf).
 - Wanmin Liu, Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces, PhD thesis, (see the [link](https://wanminliu.github.io/thesis/thesis_WM.html) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
@@ -31,6 +32,6 @@ Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.e
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
 - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
-(Last modified: Aug 29, 2017)
+(Last modified: Dec 12, 2017)
 
 
