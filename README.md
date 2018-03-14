@@ -13,7 +13,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 
 ### Papers and Preprints
 
-- Wanmin Liu, Song Yang, Xun Yu, Full exceptional collection of line bundles on some projective bundles, 2018 March.
+- Wanmin Liu, Song Yang, Xun Yu, Full exceptional collection of line bundles on some projective bundles, in preparation, 2018 March.
 - Wanmin Liu, Jason Lo, Fourier-Mukai transforms of stable torsion-free sheaves on Weierstrass elliptic surfaces, preprint, 2018 Feb.
 - Wanmin Liu, Song Yang, Xun Yu, On exceptional collections of line bundles of maximal length on the blow-ups of P^3, [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July. 
 - Wanmin Liu, Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces, to appear in *Kyoto Journal of Mathematics*, [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397), [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
