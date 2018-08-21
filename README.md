@@ -16,12 +16,12 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 - Wanmin Liu, Song Yang, Xun Yu, _Full exceptional collection of line bundles on some projective bundles_, in preparation, 2018 March.
 - Wanmin Liu, Song Yang, Xun Yu, _Classification of full exceptional collections of line bundles on three blow-ups of P^3_, submitted, 2018 March. (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.) 
 - Wanmin Liu, Jason Lo, _Fourier-Mukai transforms of stable torsion-free sheaves on Weierstrass elliptic surfaces_, preprint, 2018 Feb.
-- Wanmin Liu, _Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces_, to appear in *Kyoto Journal of Mathematics*, [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397), [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
+- Wanmin Liu, _Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), 595 -- 621, [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397), [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
 - Wanmin Liu, _Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces_, PhD thesis, (see the [link](https://wanminliu.github.io/thesis/thesis_WM.html) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
  
 ### Reading Notes
 
-- [Notes on Maps in the Homotopy Category of dg-Categories](http://cgp.ibs.re.kr/~lejay/20170704_dg-seminar-wm.html), [CGP Derived seminar](http://cgp.ibs.re.kr/~lejay/derived-seminar.html) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
+- [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
 
 ### Useful Links
 [arXiv.AG](http://arxiv.org/list/math.AG/recent); [MathSciNet](http://www.ams.org/mathscinet/); [IBS Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar)
@@ -33,6 +33,6 @@ Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.e
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
 - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
-(Last modified: Mar 28, 2018)
+(Last modified: Aug 21, 2018)
 
 
