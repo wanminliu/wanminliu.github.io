@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<!-- Created by pdf2htmlEX (https://github.com/coolwanglu/pdf2htmlex) -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta name="generator" content="pdf2htmlEX"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<link rel="stylesheet" href="base.min.css"/>
+<link rel="stylesheet" href="fancy.min.css"/>
+<link rel="stylesheet" href="20170704_dg-seminar-wm.css"/>
+<script>
+/*
+ Copyright 2012 Mozilla Foundation 
+ Copyright 2013 Lu Wang <coolwanglu@gmail.com>
+ Apachine License Version 2.0 
+*/
+(function(){function b(a,b,e,f){var c=(a.className||"").split(/\s+/g);""===c[0]&&c.shift();var d=c.indexOf(b);0>d&&e&&c.push(b);0<=d&&f&&c.splice(d,1);a.className=c.join(" ");return 0<=d}if(!("classList"in document.createElement("div"))){var e={add:function(a){b(this.element,a,!0,!1)},contains:function(a){return b(this.element,a,!1,!1)},remove:function(a){b(this.element,a,!1,!0)},toggle:function(a){b(this.element,a,!0,!0)}};Object.defineProperty(HTMLElement.prototype,"classList",{get:function(){if(this._classList)return this._classList;
+var a=Object.create(e,{element:{value:this,writable:!1,enumerable:!0}});Object.defineProperty(this,"_classList",{value:a,writable:!1,enumerable:!1});return a},enumerable:!0})}})();
+</script>
+<script>
+/* vim: set shiftwidth=2 tabstop=2 autoindent cindent expandtab filetype=javascript : */
+/** 
+ * @license pdf2htmlEX.js: Core UI functions for pdf2htmlEX 
+ * Copyright 2012,2013 Lu Wang <coolwanglu@gmail.com> and other contributors 
+ * https://github.com/coolwanglu/pdf2htmlEX/blob/master/share/LICENSE 
+ */
+
+/*
+ * Attention:
+ * This files is to be optimized by closure-compiler, 
+ * so pay attention to the forms of property names:
+ *
+ * string/bracket form is safe, won't be optimized:
+ * var obj={ 'a':'b' }; obj['a'] = 'b';
+ * name/dot form will be optimized, the name is likely to be modified:
+ * var obj={ a:'b' }; obj.a = 'b';
+ *
+ * Either form can be used for internal objects, 
+ * but must be consistent for each one respectively.
+ *
+ * string/bracket form must be used for external objects
+ * e.g. DEFAULT_CONFIG, object stored in page-data
+ * property names are part of the `protocol` in these cases.
+ *
+ */
+
+'use strict';
+
+var pdf2htmlEX = window['pdf2htmlEX'] = window['pdf2htmlEX'] || {};
+
+/** 
+ * @const 
+ * @struct
+ */
+var CSS_CLASS_NAMES = {
+  page_frame       : 'pf',
+  page_content_box : 'pc',
+  page_data        : 'pi',
+  background_image : 'bi',
+  link             : 'l',
+  input_radio      : 'ir',
+  __dummy__        : 'no comma'
+};
+
+/** 
+ * configurations of Viewer
+ * @const 
+ * @dict
+ */
+var DEFAULT_CONFIG = {
+  // id of the element to put the pages in
+  'container_id' : 'page-container',
+  // id of the element for sidebar (to open and close)
+  'sidebar_id' : 'sidebar',
+  // id of the element for outline
+  'outline_id' : 'outline',
+  // class for the loading indicator
+  'loading_indicator_cls' : 'loading-indicator',
+  // How many page shall we preload that are below the last visible page
+  'preload_pages' : 3,
+  // how many ms should we wait before actually rendering the pages and after a scroll event
+  'render_timeout' : 100,
+  // zoom ratio step for each zoom in/out event
+  'scale_step' : 0.9,
+  // register global key handler, allowing navigation by keyboard
+  'key_handler' : true,
+  // register hashchange handler, navigate to the location specified by the hash
+  'hashchange_handler' : true,
+  // register view history handler, allowing going back to the previous location
+  'view_history_handler' : true,
+
+  '__dummy__'        : 'no comma'
+};
+
+/** @const */
+var EPS = 1e-6;
+
+/************************************/
+/* utility function */
+/**
+ * @param{Array.<number>} ctm
+ */
+function invert(ctm) {
+  var det = ctm[0] * ctm[3] - ctm[1] * ctm[2];
+  return [ ctm[3] / det
+          ,-ctm[1] / det
+          ,-ctm[2] / det
+          ,ctm[0] / det
+          ,(ctm[2] * ctm[5] - ctm[3] * ctm[4]) / det
+          ,(ctm[1] * ctm[4] - ctm[0] * ctm[5]) / det
+        ];
+};
+/**
+ * @param{Array.<number>} ctm
+ * @param{Array.<number>} pos
+ */
+function transform(ctm, pos) {
+  return [ctm[0] * pos[0] + ctm[2] * pos[1] + ctm[4]
+         ,ctm[1] * pos[0] + ctm[3] * pos[1] + ctm[5]];
+};
+
+/**
+ * @param{Element} ele
+ */
+function get_page_number(ele) {
+  return parseInt(ele.getAttribute('data-page-no'), 16);
+};
+
+/**
+ * @param{NodeList} eles
+ */
+function disable_dragstart(eles) {
+  for (var i = 0, l = eles.length; i < l; ++i) {
+    eles[i].addEventListener('dragstart', function() {
+      return false;
+    }, false);
+  }
+};
+
+/**
+ * @param{...Object} var_args
+ */
+function clone_and_extend_objs(var_args) {
+  var result_obj = {};
+  for (var i = 0, l = arguments.length; i < l; ++i) {
+    var cur_obj = arguments[i];
+    for (var k in cur_obj) {
+      if (cur_obj.hasOwnProperty(k)) {
+        result_obj[k] = cur_obj[k];
+      }
+    }
+  }
+  return result_obj;
+};
+
+/** 
+ * @constructor 
+ * @param{Element} page The element for the page
+ */
+function Page(page) {
+  if (!page) return;
+
+  this.loaded = false;
+  this.shown = false;
+  this.page = page; // page frame element
+
+  this.num = get_page_number(page);
+
+  // page size
+  // Need to make rescale work when page_content_box is not loaded, yet
+  this.original_height = page.clientHeight;     
+  this.original_width = page.clientWidth;
+
+  // content box
+  var content_box = page.getElementsByClassName(CSS_CLASS_NAMES.page_content_box)[0];
+
+  // if page is loaded
+  if (content_box) {
+    this.content_box = content_box;
+    /*
+     * scale ratios
+     *
+     * original_scale : the first one
+     * cur_scale : currently using
+     */
+    this.original_scale = this.cur_scale = this.original_height / content_box.clientHeight;
+    this.page_data = JSON.parse(page.getElementsByClassName(CSS_CLASS_NAMES.page_data)[0].getAttribute('data-data'));
+
+    this.ctm = this.page_data['ctm'];
+    this.ictm = invert(this.ctm);
+
+    this.loaded = true;
+  }
+};
+Page.prototype = {
+  /* hide & show are for contents, the page frame is still there */
+  hide : function(){
+    if (this.loaded && this.shown) {
+      this.content_box.classList.remove('opened');
+      this.shown = false;
+    }
+  },
+  show : function(){
+    if (this.loaded && !this.shown) {
+      this.content_box.classList.add('opened');
+      this.shown = true;
+    }
+  },
+  /**
+   * @param{number} ratio
+   */
+  rescale : function(ratio) {
+    if (ratio === 0) {
+      // reset scale
+      this.cur_scale = this.original_scale;
+    } else {
+      this.cur_scale = ratio;
+    }
+
+    // scale the content box
+    if (this.loaded) {
+      var cbs = this.content_box.style;
+      cbs.msTransform = cbs.webkitTransform = cbs.transform = 'scale('+this.cur_scale.toFixed(3)+')';
+    }
+
+    // stretch the page frame to hold the place
+    {
+      var ps = this.page.style;
+      ps.height = (this.original_height * this.cur_scale) + 'px';
+      ps.width = (this.original_width * this.cur_scale) + 'px';
+    }
+  },
+  /*
+   * return the coordinate of the top-left corner of container
+   * in our coordinate system
+   * assuming that p.parentNode === p.offsetParent
+   */
+  view_position : function () {
+    var p = this.page;
+    var c = p.parentNode;
+    return [c.scrollLeft - p.offsetLeft - p.clientLeft
+           ,c.scrollTop - p.offsetTop - p.clientTop];
+  },
+  height : function () {
+    return this.page.clientHeight;
+  },
+  width : function () {
+    return this.page.clientWidth;
+  }
+};
+
+/** 
+ * @constructor
+ * @param{Object=} config
+ */
+function Viewer(config) {
+  this.config = clone_and_extend_objs(DEFAULT_CONFIG, (arguments.length > 0 ? config : {}));
+  this.pages_loading = [];
+  this.init_before_loading_content();
+
+  var self = this;
+  document.addEventListener('DOMContentLoaded', function(){
+    self.init_after_loading_content();
+  }, false);
+};
+
+Viewer.prototype = {
+  scale : 1,
+  /* 
+   * index of the active page (the one with largest visible area)
+   * which estimates the page currently being viewed
+   */
+  cur_page_idx : 0,
+
+  /*
+   * index of the first visible page
+   * used when determining current view
+   */
+  first_page_idx : 0,
+
+  init_before_loading_content : function() {
+    /* hide all pages before loading, will reveal only visible ones later */
+    this.pre_hide_pages();
+  },
+
+  initialize_radio_button : function() {
+    var elements = document.getElementsByClassName(CSS_CLASS_NAMES.input_radio);
+    
+    for(var i = 0; i < elements.length; i++) {
+      var r = elements[i];
+
+      r.addEventListener('click', function() {
+        this.classList.toggle("checked");
+      });
+    }
+  },
+
+  init_after_loading_content : function() {
+    this.sidebar = document.getElementById(this.config['sidebar_id']);
+    this.outline = document.getElementById(this.config['outline_id']);
+    this.container = document.getElementById(this.config['container_id']);
+    this.loading_indicator = document.getElementsByClassName(this.config['loading_indicator_cls'])[0];
+
+    
+    {
+      // Open the outline if nonempty
+      var empty = true;
+      var nodes = this.outline.childNodes;
+      for (var i = 0, l = nodes.length; i < l; ++i) {
+        var cur_node = nodes[i];
+        if (cur_node.nodeName.toLowerCase() === 'ul') {
+          empty = false;
+          break;
+        }
+      }
+      if (!empty)
+        this.sidebar.classList.add('opened');
+    }
+
+    this.find_pages();
+    // do nothing if there's nothing
+    if(this.pages.length == 0) return;
+
+    // disable dragging of background images
+    disable_dragstart(document.getElementsByClassName(CSS_CLASS_NAMES.background_image));
+
+    if (this.config['key_handler'])
+      this.register_key_handler();
+
+    var self = this;
+
+    if (this.config['hashchange_handler']) {
+      window.addEventListener('hashchange', function(e) {
+        self.navigate_to_dest(document.location.hash.substring(1));
+      }, false);
+    }
+
+    if (this.config['view_history_handler']) {
+      window.addEventListener('popstate', function(e) {
+        if(e.state) self.navigate_to_dest(e.state);
+      }, false);
+    }
+
+    // register schedule rendering
+    // renew old schedules since scroll() may be called frequently
+    this.container.addEventListener('scroll', function() {
+      self.update_page_idx();
+      self.schedule_render(true);
+    }, false);
+
+    // handle links
+    [this.container, this.outline].forEach(function(ele) {
+      ele.addEventListener('click', self.link_handler.bind(self), false);
+    });
+
+    this.initialize_radio_button();
+    this.render();
+  },
+
+  /*
+   * set up this.pages and this.page_map
+   * pages is an array holding all the Page objects
+   * page-Map maps an original page number (in PDF) to the corresponding index in page
+   */
+  find_pages : function() {
+    var new_pages = [];
+    var new_page_map = {};
+    var nodes = this.container.childNodes;
+    for (var i = 0, l = nodes.length; i < l; ++i) {
+      var cur_node = nodes[i];
+      if ((cur_node.nodeType === Node.ELEMENT_NODE)
+          && cur_node.classList.contains(CSS_CLASS_NAMES.page_frame)) {
+        var p = new Page(cur_node);
+        new_pages.push(p);
+        new_page_map[p.num] = new_pages.length - 1;
+      }
+    }
+    this.pages = new_pages;
+    this.page_map = new_page_map;
+  },
+
+  /**
+   * @param{number} idx
+   * @param{number=} pages_to_preload
+   * @param{function(Page)=} callback
+   *
+   * TODO: remove callback -> promise ?
+   */
+  load_page : function(idx, pages_to_preload, callback) {
+    var pages = this.pages;
+    if (idx >= pages.length)
+      return;  // Page does not exist
+
+    var cur_page = pages[idx];
+    if (cur_page.loaded)
+      return;  // Page is loaded
+
+    if (this.pages_loading[idx])
+      return;  // Page is already loading
+
+    var cur_page_ele = cur_page.page;
+    var url = cur_page_ele.getAttribute('data-page-url');
+    if (url) {
+      this.pages_loading[idx] = true;       // set semaphore
+
+      // add a copy of the loading indicator if not already present
+      var new_loading_indicator = cur_page_ele.getElementsByClassName(this.config['loading_indicator_cls'])[0];
+      if (typeof new_loading_indicator === 'undefined'){
+        new_loading_indicator = this.loading_indicator.cloneNode(true);
+        new_loading_indicator.classList.add('active');
+        cur_page_ele.appendChild(new_loading_indicator);
+      }
+
+      // load data
+      {
+        var self = this;
+        var _idx = idx;
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.onload = function(){
+          if (xhr.status === 200 || xhr.status === 0) {
+            // find the page element in the data
+            var div = document.createElement('div');
+            div.innerHTML = xhr.responseText;
+
+            var new_page = null;
+            var nodes = div.childNodes;
+            for (var i = 0, l = nodes.length; i < l; ++i) {
+              var cur_node = nodes[i];
+              if ((cur_node.nodeType === Node.ELEMENT_NODE)
+                  && cur_node.classList.contains(CSS_CLASS_NAMES.page_frame)) {
+                new_page = cur_node;
+                break;
+              }
+            }
+
+            // replace the old page with loaded data
+            // the loading indicator on this page should also be destroyed
+            var p = self.pages[_idx];
+            self.container.replaceChild(new_page, p.page);
+            p = new Page(new_page);
+            self.pages[_idx] = p;
+
+            p.hide();
+            p.rescale(self.scale);
+
+            // disable background image dragging
+            disable_dragstart(new_page.getElementsByClassName(CSS_CLASS_NAMES.background_image));
+
+            self.schedule_render(false);
+
+            if (callback){ callback(p); }
+          }
+
+          // Reset loading token
+          delete self.pages_loading[_idx];
+        };
+        xhr.send(null);
+      }
+    }
+    // Concurrent prefetch of the next pages
+    if (pages_to_preload === undefined)
+      pages_to_preload = this.config['preload_pages'];
+
+    if (--pages_to_preload > 0) {
+      var self = this;
+      setTimeout(function() {
+        self.load_page(idx+1, pages_to_preload);
+      },0);
+    }
+  },
+
+  /*
+   * Hide all pages that have no 'opened' class
+   * The 'opened' class will be added to visible pages by JavaScript
+   * We cannot add this in the default CSS because JavaScript may be disabled
+   */
+  pre_hide_pages : function() {
+    /* pages might have not been loaded yet, so add a CSS rule */
+    var s = '@media screen{.'+CSS_CLASS_NAMES.page_content_box+'{display:none;}}';
+    var n = document.createElement('style');
+    if (n.styleSheet) {
+      n.styleSheet.cssText = s;
+    } else {
+      n.appendChild(document.createTextNode(s));
+    }
+    document.head.appendChild(n);
+  },
+
+  /*
+   * show visible pages and hide invisible pages
+   */
+  render : function () {
+    var container = this.container;
+    /* 
+     * show the pages that are 'nearly' visible -- it's right above or below the container
+     *
+     * all the y values are in the all-page element's coordinate system
+     */
+    var container_min_y = container.scrollTop;
+    var container_height = container.clientHeight;
+    var container_max_y = container_min_y + container_height;
+    var visible_min_y = container_min_y - container_height;
+    var visible_max_y = container_max_y + container_height;
+
+    var cur_page_fully_visible = false;
+    var cur_page_idx = this.cur_page_idx;
+    var max_visible_page_idx = cur_page_idx;
+    var max_visible_ratio = 0.0;
+
+    var pl = this.pages;
+    for (var i = 0, l = pl.length; i < l; ++i) {
+      var cur_page = pl[i];
+      var cur_page_ele = cur_page.page;
+      var page_min_y = cur_page_ele.offsetTop + cur_page_ele.clientTop;
+      var page_height = cur_page_ele.clientHeight;
+      var page_max_y = page_min_y + page_height;
+      if ((page_min_y <= visible_max_y) && (page_max_y >= visible_min_y))
+      {
+        // cur_page is 'nearly' visible, show it or load it
+        if (cur_page.loaded) {
+          cur_page.show();
+        } else {
+          this.load_page(i);
+        }
+      } else {
+        cur_page.hide();
+      }
+    }
+  },
+  /*
+   * update cur_page_idx and first_page_idx
+   * normally called upon scrolling
+   */
+  update_page_idx: function () {
+    var pages = this.pages;
+    var pages_len = pages.length;
+    // there is no chance that cur_page_idx or first_page_idx is modified
+    if (pages_len < 2) return;
+   
+    var container = this.container;
+    var container_min_y = container.scrollTop;
+    var container_max_y = container_min_y + container.clientHeight;
+
+    // binary search for the first page
+    // whose bottom border is below the top border of the container
+    var first_idx = -1;
+    var last_idx = pages_len;
+    var rest_len = last_idx - first_idx;
+    // TODO: use current first_page_idx as a hint?
+    while(rest_len > 1) {
+      var idx = first_idx + Math.floor(rest_len / 2);
+      var cur_page_ele = pages[idx].page;
+      if (cur_page_ele.offsetTop + cur_page_ele.clientTop + cur_page_ele.clientHeight >= container_min_y) {
+        last_idx = idx;
+      } else {
+        first_idx = idx;
+      }
+      rest_len = last_idx - first_idx;
+    }
+    
+    /*
+     * with malformed settings it is possible that no page is visible, e.g.
+     * - the container is to thin, which lies in the margin between two pages
+     * - all pages are completely above or below the container
+     * but we just assume that they won't happen.
+     */
+    this.first_page_idx = last_idx;
+
+    // find the page with largest visible area
+    var cur_page_idx = this.cur_page_idx;
+    var max_visible_page_idx = cur_page_idx;
+    var max_visible_ratio = 0.0;
+
+    for(var i = last_idx; i < pages_len; ++i) {
+      var cur_page_ele = pages[i].page;
+      var page_min_y = cur_page_ele.offsetTop + cur_page_ele.clientTop;
+      var page_height = cur_page_ele.clientHeight;
+      var page_max_y = page_min_y + page_height;
+      if (page_min_y > container_max_y) break;
+
+      // check the visible fraction of the page
+      var page_visible_ratio = ( Math.min(container_max_y, page_max_y) 
+                                 - Math.max(container_min_y, page_min_y)
+                               ) / page_height;
+
+      // stay with the current page if it is still fully visible
+      if ((i === cur_page_idx) && (Math.abs(page_visible_ratio - 1.0) <= EPS)) {
+        max_visible_page_idx = cur_page_idx;
+        break;
+      }
+
+      if (page_visible_ratio > max_visible_ratio) {
+        max_visible_ratio = page_visible_ratio;
+        max_visible_page_idx = i;
+      }
+    }
+
+    this.cur_page_idx = max_visible_page_idx;
+  },
+
+  /**
+   * @param{boolean} renew renew the existing schedule instead of using the old one
+   */
+  schedule_render : function(renew) {
+    if (this.render_timer !== undefined) {
+      if (!renew) return;
+      clearTimeout(this.render_timer);
+    }
+
+    var self = this;
+    this.render_timer = setTimeout(function () {
+      /*
+       * render() may trigger load_page(), which may in turn trigger another render()
+       * so delete render_timer first
+       */
+      delete self.render_timer;
+      self.render();
+    }, this.config['render_timeout']);
+  },
+
+  /*
+   * Handling key events, zooming, scrolling etc.
+   */
+  register_key_handler: function () {
+    /* 
+     * When user try to zoom in/out using ctrl + +/- or mouse wheel
+     * handle this and prevent the default behaviours
+     *
+     * Code credit to PDF.js
+     */
+    var self = this;
+
+    // Firefox specific event, so that we can prevent browser from zooming
+    window.addEventListener('DOMMouseScroll', function(e) {
+      if (e.ctrlKey) {
+        e.preventDefault();
+        var container = self.container;
+        var rect = container.getBoundingClientRect();
+        var fixed_point = [e.clientX - rect['left'] - container.clientLeft
+                          ,e.clientY - rect['top'] - container.clientTop];
+        self.rescale(Math.pow(self.config['scale_step'], e.detail), true, fixed_point);
+      }
+    }, false);
+
+    window.addEventListener('keydown', function(e) {
+      var handled = false;
+      /*
+      var cmd = (e.ctrlKey ? 1 : 0)
+                | (e.altKey ? 2 : 0)
+                | (e.shiftKey ? 4 : 0)
+                | (e.metaKey ? 8 : 0)
+                ;
+                */
+      var with_ctrl = e.ctrlKey || e.metaKey;
+      var with_alt = e.altKey;
+      switch (e.keyCode) {
+        case 61: // FF/Mac '='
+        case 107: // FF '+' and '='
+        case 187: // Chrome '+'
+          if (with_ctrl){
+            self.rescale(1.0 / self.config['scale_step'], true);
+            handled = true;
+          }
+          break;
+        case 173: // FF/Mac '-'
+        case 109: // FF '-'
+        case 189: // Chrome '-'
+          if (with_ctrl){
+            self.rescale(self.config['scale_step'], true);
+            handled = true;
+          }
+          break;
+        case 48: // '0'
+          if (with_ctrl){
+            self.rescale(0, false);
+            handled = true;
+          }
+          break;
+        case 33: // Page UP:
+          if (with_alt) { // alt-pageup    -> scroll one page up
+            self.scroll_to(self.cur_page_idx - 1);
+          } else { // pageup        -> scroll one screen up
+            self.container.scrollTop -= self.container.clientHeight;
+          }
+          handled = true;
+          break;
+        case 34: // Page DOWN
+          if (with_alt) { // alt-pagedown  -> scroll one page down
+            self.scroll_to(self.cur_page_idx + 1);
+          } else { // pagedown      -> scroll one screen down
+            self.container.scrollTop += self.container.clientHeight;
+          }
+          handled = true;
+          break;
+        case 35: // End
+          self.container.scrollTop = self.container.scrollHeight;
+          handled = true;
+          break;
+        case 36: // Home
+          self.container.scrollTop = 0;
+          handled = true;
+          break;
+      }
+      if (handled) {
+        e.preventDefault();
+        return;
+      }
+    }, false);
+  },
+
+  /**
+   * @param{number} ratio
+   * @param{boolean} is_relative
+   * @param{Array.<number>=} fixed_point preserve the position (relative to the top-left corner of the viewer) after rescaling
+   */
+  rescale : function (ratio, is_relative, fixed_point) {
+    var old_scale = this.scale;
+    var new_scale = old_scale;
+    // set new scale
+    if (ratio === 0) {
+      new_scale = 1;
+      is_relative = false;
+    } else if (is_relative)
+      new_scale *= ratio;
+    else
+      new_scale = ratio;
+
+    this.scale = new_scale;
+
+    if (!fixed_point)
+      fixed_point = [0,0];
+
+    // translate fixed_point to the coordinate system of all pages
+    var container = this.container;
+    fixed_point[0] += container.scrollLeft;
+    fixed_point[1] += container.scrollTop;
+
+    // find the visible page that contains the fixed point
+    // if the fixed point lies between two pages (including their borders), it's contained in the first one
+    var pl = this.pages;
+    var pl_len = pl.length;
+    for (var i = this.first_page_idx; i < pl_len; ++i) {
+      var p = pl[i].page;
+      if (p.offsetTop + p.clientTop >= fixed_point[1])
+        break;
+    }
+    var fixed_point_page_idx = i - 1;
+
+    // determine the new scroll position
+    // each-value consists of two parts, one inside the page, which is affected by rescaling,
+    // the other is outside, (e.g. borders and margins), which is not affected
+
+    // if the fixed_point is above the first page, use the first page as the reference
+    if (fixed_point_page_idx < 0) 
+      fixed_point_page_idx = 0;
+
+    var fp_p = pl[fixed_point_page_idx].page;
+    var fp_p_width = fp_p.clientWidth;
+    var fp_p_height = fp_p.clientHeight;
+
+    var fp_x_ref = fp_p.offsetLeft + fp_p.clientLeft;
+    var fp_x_inside = fixed_point[0] - fp_x_ref;
+    if (fp_x_inside < 0)
+      fp_x_inside = 0;
+    else if (fp_x_inside > fp_p_width)
+      fp_x_inside = fp_p_width;
+
+    var fp_y_ref = fp_p.offsetTop + fp_p.clientTop;
+    var fp_y_inside = fixed_point[1] - fp_y_ref;
+    if (fp_y_inside < 0)
+      fp_y_inside = 0;
+    else if (fp_y_inside > fp_p_height)
+      fp_y_inside = fp_p_height;
+
+    // Rescale pages
+    for (var i = 0; i < pl_len; ++i) 
+        pl[i].rescale(new_scale);  
+
+    // Correct container scroll to keep view aligned while zooming
+    container.scrollLeft += fp_x_inside / old_scale * new_scale + fp_p.offsetLeft + fp_p.clientLeft - fp_x_inside - fp_x_ref;
+    container.scrollTop += fp_y_inside / old_scale * new_scale + fp_p.offsetTop + fp_p.clientTop - fp_y_inside - fp_y_ref;
+
+    // some pages' visibility may be toggled, wait for next render()
+    // renew old schedules since rescale() may be called frequently
+    this.schedule_render(true);
+  },
+
+  fit_width : function () {
+    var page_idx = this.cur_page_idx;
+    this.rescale(this.container.clientWidth / this.pages[page_idx].width(), true);
+    this.scroll_to(page_idx);
+  },
+
+  fit_height : function () {
+    var page_idx = this.cur_page_idx;
+    this.rescale(this.container.clientHeight / this.pages[page_idx].height(), true);
+    this.scroll_to(page_idx);
+  },
+  /**
+   * @param{Node} ele
+   */
+  get_containing_page : function(ele) {
+    /* get the page obj containing obj */
+    while(ele) {
+      if ((ele.nodeType === Node.ELEMENT_NODE)
+          && ele.classList.contains(CSS_CLASS_NAMES.page_frame)) {
+        /*
+         * Get original page number and map it to index of pages
+         * TODO: store the index on the dom element
+         */
+        var pn = get_page_number(/** @type{Element} */(ele));
+        var pm = this.page_map;
+        return (pn in pm) ? this.pages[pm[pn]] : null;
+      }
+      ele = ele.parentNode;
+    }
+    return null;
+  },
+
+  /**
+   * @param{Event} e
+   */
+  link_handler : function (e) {
+    var target = /** @type{Node} */(e.target);
+    var detail_str = /** @type{string} */ (target.getAttribute('data-dest-detail'));
+    if (!detail_str) return;
+
+    if (this.config['view_history_handler']) {
+      try {
+        var cur_hash = this.get_current_view_hash();
+        window.history.replaceState(cur_hash, '', '#' + cur_hash);
+        window.history.pushState(detail_str, '', '#' + detail_str);
+      } catch(ex) { }
+    }
+    this.navigate_to_dest(detail_str, this.get_containing_page(target));
+    e.preventDefault();
+  },
+
+  /**
+   * @param{string} detail_str may come from user provided hashtag, need sanitizing
+   * @param{Page=} src_page page containing the source event (e.g. link)
+   */
+  navigate_to_dest : function(detail_str, src_page) {
+    try {
+      var detail = JSON.parse(detail_str);
+    } catch(e) {
+      return;
+    }
+
+    if(!(detail instanceof Array)) return;
+
+    var target_page_no = detail[0];
+    var page_map = this.page_map;
+    if (!(target_page_no in page_map)) return;
+    var target_page_idx = page_map[target_page_no];
+    var target_page = this.pages[target_page_idx];
+
+    for (var i = 2, l = detail.length; i < l; ++i) {
+      var d = detail[i];
+      if(!((d === null) || (typeof d === 'number')))
+        return;
+    }
+
+    while(detail.length < 6)
+      detail.push(null);
+
+    // cur_page might be undefined, e.g. from Outline
+    var cur_page = src_page || this.pages[this.cur_page_idx];
+
+    var cur_pos = cur_page.view_position();
+    cur_pos = transform(cur_page.ictm, [cur_pos[0], cur_page.height()-cur_pos[1]]);
+
+    var zoom = this.scale;
+    var pos = [0,0];
+    var upside_down = true;
+    var ok = false;
+
+    // position specified in `detail` are in the raw coordinate system of the page (unscaled)
+    var scale = this.scale;
+    // TODO: fitb*
+    // TODO: BBox
+    switch(detail[1]) {
+      case 'XYZ':
+        pos = [ (detail[2] === null) ? cur_pos[0] : detail[2] * scale
+              , (detail[3] === null) ? cur_pos[1] : detail[3] * scale ];
+        zoom = detail[4];
+        if ((zoom === null) || (zoom === 0))
+          zoom = this.scale;
+        ok = true;
+        break;
+      case 'Fit':
+      case 'FitB':
+        pos = [0,0];
+        ok = true;
+        break;
+      case 'FitH':
+      case 'FitBH':
+        pos = [0, (detail[2] === null) ? cur_pos[1] : detail[2] * scale];
+        ok = true;
+        break;
+      case 'FitV':
+      case 'FitBV':
+        pos = [(detail[2] === null) ? cur_pos[0] : detail[2] * scale, 0];
+        ok = true;
+        break;
+      case 'FitR':
+        /* locate the top-left corner of the rectangle */
+        // TODO
+        pos = [detail[2] * scale, detail[5] * scale];
+        upside_down = false;
+        ok = true;
+        break;
+      default:
+        break;
+    }
+
+    if (!ok) return;
+
+    this.rescale(zoom, false);
+
+    var self = this;
+    /**
+     * page should have type Page
+     * @param{Page} page 
+     */
+    var transform_and_scroll = function(page) {
+      pos = transform(page.ctm, pos);
+      if (upside_down) {
+        pos[1] = page.height() - pos[1];
+      }
+      self.scroll_to(target_page_idx, pos);
+    };
+
+    if (target_page.loaded) {
+      transform_and_scroll(target_page);
+    } else {
+      // TODO: scroll_to may finish before load_page
+
+      // Scroll to the exact position once loaded.
+      this.load_page(target_page_idx, undefined, transform_and_scroll);
+
+      // In the meantime page gets loaded, scroll approximately position for maximum responsiveness.
+      this.scroll_to(target_page_idx);
+    }
+  }, 
+
+  /**
+   * @param{number} page_idx
+   * @param{Array.<number>=} pos [x,y] where (0,0) is the top-left corner
+   */
+  scroll_to : function(page_idx, pos) {
+    var pl = this.pages;
+    if ((page_idx < 0) || (page_idx >= pl.length)) return;
+    var target_page = pl[page_idx];
+    var cur_target_pos = target_page.view_position();
+
+    if (pos === undefined)
+      pos = [0,0];
+
+    var container = this.container;
+    container.scrollLeft += pos[0] - cur_target_pos[0];
+    container.scrollTop += pos[1] - cur_target_pos[1];
+  },
+
+  /**
+   * generate the hash for the current view
+   */
+  get_current_view_hash : function() {
+    var detail = [];
+    var cur_page = this.pages[this.cur_page_idx];
+
+    detail.push(cur_page.num);
+    detail.push('XYZ');
+
+    var cur_pos = cur_page.view_position();
+    cur_pos = transform(cur_page.ictm, [cur_pos[0], cur_page.height()-cur_pos[1]]);
+    detail.push(cur_pos[0] / this.scale);
+    detail.push(cur_pos[1] / this.scale);
+    
+    detail.push(this.scale);
+
+    return JSON.stringify(detail);
+  }
+};
+
+// export pdf2htmlEX.Viewer
+pdf2htmlEX['Viewer'] = Viewer;
+</script>
+<script>
+try{
+pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
+}catch(e){}
+</script>
+<title></title>
+</head>
+<body>
+<div id="sidebar">
+<div id="outline">
+</div>
+</div>
+<div id="page-container">
+<div id="pf1" class="pf w0 h0" data-page-no="1"><div class="pc pc1 w0 h0"><img class="bi x0 y0 w1 h1" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhYAAAABCAIAAAANaXCOAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAIElEQVQ4y2NkGBzg////DKNgFIyCUTAKiAOMjIyDwRkAK+kDApfn2EAAAAAASUVORK5CYII="/><div class="t m0 x1 h2 y1 ff1 fs0 fc0 sc0 ls0 ws0">CGP<span class="_ _0"> </span>DERIVED<span class="_ _0"> </span>SEMINAR</div><div class="t m0 x2 h3 y2 ff2 fs1 fc0 sc0 ls0 ws0">W<span class="_ _1"></span>ANMIN<span class="_ _2"> </span>LIU</div><div class="t m0 x3 h4 y3 ff3 fs0 fc0 sc0 ls0 ws0">1.<span class="_ _0"> </span><span class="ff4">Jul<span class="_ _3"></span>y<span class="_ _4"> </span>4:<span class="_ _0"> </span>W<span class="_ _5"></span>anmin<span class="_ _4"> </span>Liu<span class="_ _4"> </span>(Maps<span class="_ _4"> </span>in<span class="_ _4"> </span>the<span class="_ _4"> </span>Homotopy<span class="_ _4"> </span>Ca<span class="_ _3"></span>tegor<span class="_ _1"></span>y<span class="_ _4"> </span>of</span></div><div class="t m0 x4 h4 y4 ff4 fs0 fc0 sc0 ls0 ws0">dg-Ca<span class="_ _3"></span>tegories,<span class="_ _4"> </span>p<span class="_ _3"></span>ar<span class="_ _1"></span>t<span class="_ _4"> </span>I<span class="_ _6"></span>I)</div><div class="t m0 x5 h4 y5 ff3 fs0 fc0 sc0 ls0 ws0">Outline:</div><div class="t m0 x6 h5 y6 ff5 fs0 fc0 sc0 ls0 ws0">●<span class="_ _0"> </span><span class="ff3">recall<span class="_ _7"> </span>the<span class="_ _7"> </span><span class="ff1">Prop<span class="_ _6"></span>osition<span class="_ _7"> </span>4.1.2<span class="_ _7"> </span></span>which<span class="_ _7"> </span>links<span class="_ _7"> </span>the<span class="_ _8"> </span>dg-side<span class="_ _8"> </span>(morphisms)<span class="_ _7"> </span>to<span class="_ _7"> </span>mo<span class="_ _6"></span>del-</span></div><div class="t m0 x7 h4 y7 ff3 fs0 fc0 sc0 ls0 ws0">side (ob<span class="_ _6"></span>jects) (introduced by <span class="ff6">T<span class="_ _5"></span>ae-Su<span class="_ _4"> </span><span class="ff3">and prov<span class="_ _3"></span>ed by <span class="ff6">Gabriel<span class="_ _4"> </span></span>on June 27).</span></span></div><div class="t m0 x6 h5 y8 ff5 fs0 fc0 sc0 ls0 ws0">●<span class="_ _0"> </span><span class="ff3">an<span class="_ _9"> </span>exercise<span class="_ _9"> </span>b<span class="_ _a"></span>y<span class="_ _9"> </span>using<span class="_ _9"> </span>the<span class="_ _9"> </span>Proposition.</span></div><div class="t m0 x6 h5 y9 ff5 fs0 fc0 sc0 ls0 ws0">●<span class="_ _0"> </span><span class="ff3">a<span class="_ _9"> </span>corollary<span class="_ _9"> </span>of<span class="_ _9"> </span>the<span class="_ _9"> </span>Proposition.</span></div><div class="t m0 x5 h5 ya ff3 fs0 fc0 sc0 ls0 ws0">Recall<span class="_ _9"> </span>that<span class="_ _9"> </span>for<span class="_ _9"> </span>an<span class="_ _a"></span>y<span class="_ _9"> </span>dg-category<span class="_ _9"> </span><span class="ff7">T<span class="_ _b"> </span></span>,<span class="_ _9"> </span>w<span class="_ _a"></span>e<span class="_ _9"> </span>also<span class="_ _9"> </span>denote<span class="_ _9"> </span>a<span class="_ _9"> </span><span class="ff7">T<span class="_ _9"> </span><span class="ff5">−<span class="_ _8"> </span></span>M<span class="_ _c"></span>od<span class="_ _9"> </span></span>b<span class="_ _a"></span>y<span class="_ _9"> </span><span class="ff8">(<span class="ff7">C<span class="_ _6"></span></span>(<span class="ff7">k<span class="_ _6"></span></span>))</span></div><div class="t m0 x8 h6 yb ff9 fs2 fc0 sc0 ls0 ws0">T</div><div class="t m0 x9 h4 ya ff3 fs0 fc0 sc0 ls0 ws0">.</div><div class="t m0 x0 h5 yc ff1 fs0 fc0 sc0 ls0 ws0">Prop<span class="_ _6"></span>osition<span class="_ _4"> </span>1.1.<span class="_ _0"> </span><span class="ff3">[T<span class="_ _1"></span>o11,<span class="_ _9"> </span>Prop<span class="_ _9"> </span>4.1.2]<span class="_ _4"> </span><span class="ffa">L<span class="_ _3"></span>et<span class="_ _4"> </span><span class="ff7">T<span class="_ _0"> </span></span>b<span class="_ _3"></span>e<span class="_ _4"> </span>any<span class="_ _4"> </span>dg-c<span class="_ _3"></span>ate<span class="_ _3"></span>gory<span class="_ _4"> </span>and<span class="_ _4"> </span><span class="ff7">M<span class="_ _d"> </span></span>b<span class="_ _3"></span>e<span class="_ _4"> </span>a<span class="_ _4"> </span><span class="ff7">C<span class="_ _6"></span><span class="ff8">(</span>k<span class="_ _6"></span><span class="ff8">)</span></span>-</span></span></div><div class="t m0 x0 h7 yd ffa fs0 fc0 sc0 ls0 ws0">mo<span class="_ _3"></span>del<span class="_ _4"> </span>c<span class="_ _3"></span>ate<span class="_ _3"></span>gory<span class="_ _4"> </span>satisfying<span class="_ _9"> </span>te<span class="_ _a"></span>chnic<span class="_ _3"></span>al<span class="_ _4"> </span>c<span class="_ _3"></span>onditions:</div><div class="t m0 xa h4 ye ff3 fs0 fc0 sc0 ls0 ws0">(1)<span class="_ _0"> </span><span class="ffa">M<span class="_ _9"> </span>is<span class="_ _9"> </span>c<span class="_ _3"></span>oﬁbr<span class="_ _a"></span>antly<span class="_ _9"> </span>gener<span class="_ _3"></span>ate<span class="_ _3"></span>d,<span class="_ _9"> </span>and<span class="_ _9"> </span>the<span class="_ _9"> </span>domain<span class="_ _9"> </span>and<span class="_ _9"> </span>c<span class="_ _a"></span>o<span class="_ _3"></span>domain<span class="_ _9"> </span>of<span class="_ _9"> </span>the<span class="_ _9"> </span>gener<span class="_ _3"></span>ating</span></div><div class="t m0 x7 h7 yf ffa fs0 fc0 sc0 ls0 ws0">c<span class="_ _3"></span>oﬁbr<span class="_ _a"></span>ations<span class="_ _9"> </span>ar<span class="_ _a"></span>e<span class="_ _9"> </span>c<span class="_ _a"></span>oﬁbr<span class="_ _3"></span>ant<span class="_ _4"> </span>obje<span class="_ _3"></span>cts<span class="_ _9"> </span>in<span class="_ _4"> </span><span class="ff7">M<span class="_ _c"></span></span>.</div><div class="t m0 xa h5 y10 ff3 fs0 fc0 sc0 ls0 ws0">(2)<span class="_ _0"> </span><span class="ffa">F<span class="_ _1"></span>or<span class="_ _4"> </span>any<span class="_ _4"> </span>c<span class="_ _3"></span>oﬁbr<span class="_ _a"></span>ant<span class="_ _9"> </span>obje<span class="_ _a"></span>ct<span class="_ _4"> </span><span class="ff7">X<span class="_ _d"> </span></span>in<span class="_ _9"> </span><span class="ff7">M<span class="_ _c"> </span></span>,<span class="_ _4"> </span>and<span class="_ _4"> </span>any<span class="_ _4"> </span>quasi-isomorphism<span class="_ _9"> </span><span class="ff7">E<span class="_ _9"> </span><span class="ffb">Ð<span class="_ _5"></span>→<span class="_ _7"> </span><span class="ff7">E</span></span></span></span></div><div class="t m0 xb h8 y11 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xc h7 y10 ffa fs0 fc0 sc0 ls0 ws0">in</div><div class="t m0 x7 h5 y12 ff7 fs0 fc0 sc0 ls0 ws0">C<span class="_ _6"></span><span class="ff8">(</span>k<span class="_ _6"></span><span class="ff8">)<span class="ffa">,<span class="_ _9"> </span>the<span class="_ _4"> </span>induc<span class="_ _3"></span>e<span class="_ _a"></span>d<span class="_ _9"> </span>morphism<span class="_ _4"> </span><span class="ff7">E<span class="_ _7"> </span><span class="ff5">⊗<span class="_ _8"> </span></span>X<span class="_ _9"> </span><span class="ffb">Ð<span class="_ _5"></span>→<span class="_ _7"> </span><span class="ff7">E</span></span></span></span></span></div><div class="t m0 xd h8 y13 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xe h5 y12 ff5 fs0 fc0 sc0 ls0 ws0">⊗<span class="_ _8"> </span><span class="ff7">X<span class="_ _d"> </span><span class="ffa">is<span class="_ _9"> </span>an<span class="_ _9"> </span>e<span class="_ _a"></span>quivalenc<span class="_ _3"></span>e.</span></span></div><div class="t m0 xa h4 y14 ff3 fs0 fc0 sc0 ls0 ws0">(3)<span class="_ _0"> </span><span class="ffa">Inﬁnite<span class="_ _9"> </span>sums<span class="_ _4"> </span>pr<span class="_ _3"></span>eserve<span class="_ _4"> </span>we<span class="_ _3"></span>ak<span class="_ _4"> </span>e<span class="_ _3"></span>quivalenc<span class="_ _3"></span>es<span class="_ _4"> </span>in<span class="_ _9"> </span><span class="ff7">M<span class="_ _b"> </span></span>.</span></div><div class="t m0 x0 h7 y15 ffa fs0 fc0 sc0 ls0 ws0">Then<span class="_ _9"> </span>ther<span class="_ _a"></span>e<span class="_ _9"> </span>exists<span class="_ _4"> </span>a<span class="_ _4"> </span>natur<span class="_ _3"></span>al<span class="_ _9"> </span>bije<span class="_ _a"></span>ction<span class="_ _9"> </span>of<span class="_ _4"> </span>sets</div><div class="t m0 xf h5 y16 ff8 fs0 fc0 sc0 ls0 ws0">[<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>I<span class="_ _6"></span>nt</span>(<span class="ff7">M<span class="_ _b"> </span></span>)]<span class="_ _7"> </span><span class="ffd">≃<span class="_ _2"> </span><span class="ff7">I<span class="_ _6"></span>so</span></span>(<span class="ff7">H<span class="_ _c"></span>o</span>(<span class="ff7">M</span></div><div class="t m0 x10 h6 y17 ff9 fs2 fc0 sc0 ls0 ws0">T</div><div class="t m0 x11 h5 y16 ff8 fs0 fc0 sc0 ls0 ws0">))</div><div class="t m0 x0 h5 y18 ffa fs0 fc0 sc0 ls0 ws0">b<span class="_ _3"></span>etwe<span class="_ _a"></span>en<span class="_ _e"> </span>the<span class="_ _e"> </span>set<span class="_ _e"> </span>of<span class="_ _e"> </span>morphisms<span class="_ _d"> </span>fr<span class="_ _3"></span>om<span class="_ _e"> </span><span class="ff7">T<span class="_ _f"> </span></span>to<span class="_ _e"> </span><span class="ff7">I<span class="_ _c"></span>nt<span class="ff8">(</span>M<span class="_ _c"></span><span class="ff8">) </span></span>in<span class="_ _e"> </span><span class="ff7">H<span class="_ _c"></span>o<span class="ff8">(</span>dg<span class="_ _2"> </span><span class="ff5">−<span class="_ _7"> </span></span>cat<span class="ff8">)<span class="_ _e"> </span></span></span>and<span class="_ _d"> </span>the<span class="_ _e"> </span>set<span class="_ _e"> </span>of</div><div class="t m0 x0 h5 y19 ffa fs0 fc0 sc0 ls0 ws0">isomorphism<span class="_ _9"> </span>classes<span class="_ _4"> </span>of<span class="_ _9"> </span>obje<span class="_ _a"></span>cts<span class="_ _4"> </span>in<span class="_ _9"> </span><span class="ff7">H<span class="_ _c"></span>o<span class="ff8">(</span>M</span></div><div class="t m0 x12 h6 y1a ff9 fs2 fc0 sc0 ls0 ws0">T</div><div class="t m0 x13 h5 y19 ff8 fs0 fc0 sc0 ls0 ws0">)<span class="ffa">.</span></div><div class="t m0 x0 h4 y1b ff1 fs0 fc0 sc0 ls0 ws0">Exercise<span class="_ _2"> </span>1.1.<span class="_ _e"> </span><span class="ff3">[T<span class="_ _3"></span>o11, Exercise<span class="_ _10"> </span>4.1.6 or<span class="_ _7"> </span>Exercise 21<span class="_ _10"> </span>in the<span class="_ _7"> </span>preprint<span class="_ _7"> </span>version]<span class="_ _10"> </span>Let <span class="ff7">R<span class="_ _7"> </span></span>b<span class="_ _6"></span>e</span></div><div class="t m0 x0 h4 y1c ff3 fs0 fc0 sc0 ls0 ws0">an<span class="_ _9"> </span>associative<span class="_ _9"> </span>and<span class="_ _9"> </span>unital<span class="_ _2"> </span><span class="ff7">k<span class="_ _6"></span></span>-algebra,<span class="_ _9"> </span>whic<span class="_ _a"></span>h<span class="_ _9"> </span>is<span class="_ _9"> </span>also<span class="_ _11"> </span>considered<span class="_ _11"> </span>as<span class="_ _9"> </span>dg-category<span class="_ _9"> </span>with<span class="_ _11"> </span>a</div><div class="t m0 x0 h4 y1d ff3 fs0 fc0 sc0 ls0 ws0">unique ob<span class="_ _6"></span>ject<span class="_ _2"> </span>and<span class="_ _11"> </span><span class="ff7">R<span class="_ _2"> </span></span>as<span class="_ _11"> </span>endomorphisms of<span class="_ _11"> </span>this ob<span class="_ _6"></span>ject.<span class="_ _e"> </span>Show that there<span class="_ _11"> </span>is a<span class="_ _11"> </span>natural</div><div class="t m0 x0 h5 y1e ff3 fs0 fc0 sc0 ls0 ws0">bijection<span class="_ _11"> </span>b<span class="_ _12"></span>et<span class="_ _a"></span>w<span class="_ _a"></span>een<span class="_ _11"> </span><span class="ff8">[<span class="ff7">R,<span class="_ _13"> </span>I<span class="_ _6"></span>nt</span>(<span class="ff7">C<span class="_ _c"></span></span>(<span class="ff7">k<span class="_ _12"></span></span>))]<span class="_ _2"> </span></span>and<span class="_ _11"> </span>the<span class="_ _11"> </span>set<span class="_ _11"> </span>of<span class="_ _11"> </span>isomorphism<span class="_ _11"> </span>classes<span class="_ _11"> </span>of<span class="_ _11"> </span>the<span class="_ _11"> </span>derived</div><div class="t m0 x0 h5 y1f ff3 fs0 fc0 sc0 ls0 ws0">category<span class="_ _11"> </span><span class="ff7">D<span class="_ _6"></span><span class="ff8">(</span>R<span class="ff8">)</span></span>.</div><div class="t m0 x0 h4 y20 ffa fs0 fc0 sc0 ls0 ws0">Pr<span class="_ _3"></span>o<span class="_ _a"></span>of.<span class="_ _0"> </span><span class="ff3">Let<span class="_ _9"> </span>us<span class="_ _4"> </span>recall<span class="_ _11"> </span>some<span class="_ _4"> </span>notions.<span class="_ _0"> </span>W<span class="_ _1"></span>e<span class="_ _9"> </span>denote<span class="_ _4"> </span>the<span class="_ _9"> </span>asso<span class="_ _12"></span>ciated<span class="_ _4"> </span>dg-category<span class="_ _9"> </span>of<span class="_ _9"> </span>the<span class="_ _4"> </span><span class="ff7">R</span></span></div><div class="t m0 x0 h4 y21 ff3 fs0 fc0 sc0 ls0 ws0">b<span class="_ _a"></span>y<span class="_ _e"> </span><span class="ff7">B<span class="_ _12"></span>R<span class="_ _e"> </span></span>(notations<span class="_ _e"> </span>after<span class="_ _4"> </span>[T<span class="_ _3"></span>o11,<span class="_ _e"> </span>Deﬁnition<span class="_ _e"> </span>3.2.3]<span class="_ _e"> </span>or<span class="_ _4"> </span>the<span class="_ _e"> </span>preprin<span class="_ _a"></span>t<span class="_ _e"> </span>v<span class="_ _3"></span>ersion<span class="_ _e"> </span>page<span class="_ _e"> </span>31).</div><div class="t m0 x0 h5 y22 ff3 fs0 fc0 sc0 ls0 ws0">More<span class="_ _9"> </span>precisely<span class="_ _3"></span>,<span class="_ _4"> </span><span class="ff7">Obj<span class="_ _6"></span><span class="ff8">(</span>B<span class="_ _6"></span>R<span class="ff8">)<span class="_ _4"> </span></span></span>is<span class="_ _9"> </span>the<span class="_ _4"> </span>unique<span class="_ _9"> </span>ob<span class="_ _6"></span>ject,<span class="_ _4"> </span>denoted<span class="_ _9"> </span>by<span class="_ _9"> </span><span class="ff5">∗</span>.<span class="_ _0"> </span>T<span class="_ _3"></span>o<span class="_ _9"> </span>make<span class="_ _9"> </span>it<span class="_ _4"> </span>as<span class="_ _9"> </span>a<span class="_ _4"> </span>dg-</div><div class="t m0 x0 h5 y23 ff3 fs0 fc0 sc0 ls0 ws0">category<span class="_ _1"></span>,<span class="_ _e"> </span>for<span class="_ _4"> </span>an<span class="_ _a"></span>y<span class="_ _4"> </span>“tw<span class="_ _3"></span>o”<span class="_ _e"> </span>ob<span class="_ _12"></span>ject(s)<span class="_ _4"> </span><span class="ff5">∗</span>,<span class="_ _e"> </span>and<span class="_ _4"> </span><span class="ff5">∗</span>,<span class="_ _4"> </span>we<span class="_ _4"> </span>need<span class="_ _4"> </span>to<span class="_ _e"> </span>deﬁne<span class="_ _4"> </span>a<span class="_ _4"> </span>c<span class="_ _a"></span>hain<span class="_ _4"> </span>complex<span class="_ _4"> </span>of</div><div class="t m0 x0 h4 y24 ff7 fs0 fc0 sc0 ls0 ws0">k<span class="_ _12"></span><span class="ff3">-mo<span class="_ _12"></span>dule.<span class="_ _e"> </span>The<span class="_ _9"> </span>natural<span class="_ _9"> </span>choice<span class="_ _11"> </span>is</span></div><div class="t m0 x14 h5 y25 ff7 fs0 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R<span class="_ _12"></span><span class="ff8">(<span class="ff5">∗</span></span>,<span class="_ _b"> </span><span class="ff5">∗<span class="ff8">)<span class="_ _10"> </span></span>∶<span class="ffd">=<span class="_ _10"> </span></span></span>R<span class="_ _10"> </span><span class="ffd">∈<span class="_ _10"> </span></span>C<span class="_ _c"></span><span class="ff8">(</span>k<span class="ff8">)</span>,<span class="_ _14"> </span>i.e.<span class="ff5">⋯<span class="_ _7"> </span><span class="ffb">→<span class="_ _10"> </span><span class="ff3">0 </span>→<span class="_ _7"> </span></span></span>R<span class="_ _10"> </span><span class="ffb">→<span class="_ _10"> </span><span class="ff3">0 </span>→<span class="_ _7"> </span><span class="ff5">⋯<span class="_ _10"> </span><span class="ffd">∈<span class="_ _10"> </span></span></span></span>C<span class="_ _6"></span><span class="ff8">(</span>k<span class="_ _6"></span><span class="ff8">)</span>,</div><div class="t m0 x0 h4 y26 ff3 fs0 fc0 sc0 ls0 ws0">where<span class="_ _11"> </span><span class="ff7">R<span class="_ _4"> </span></span>is<span class="_ _11"> </span>in<span class="_ _9"> </span>the<span class="_ _9"> </span>0-th<span class="_ _9"> </span>degree.</div><div class="t m0 x5 h5 y27 ff3 fs0 fc0 sc0 ls0 ws0">So<span class="_ _7"> </span><span class="ff8">[<span class="ff7">R<span class="_ _12"></span>,<span class="_ _b"> </span>I<span class="_ _c"></span>nt</span>(<span class="ff7">C<span class="_ _6"></span></span>(<span class="ff7">k<span class="_ _12"></span></span>))]<span class="_ _10"> </span></span>really means<span class="_ _7"> </span><span class="ff8">[<span class="ff7">B<span class="_ _6"></span>R,<span class="_ _13"> </span>I<span class="_ _c"></span>nt</span>(<span class="ff7">C<span class="_ _6"></span></span>(<span class="ff7">k<span class="_ _12"></span></span>))]<span class="_ _10"> </span></span>as<span class="_ _10"> </span>in<span class="_ _10"> </span>the<span class="_ _10"> </span>category<span class="_ _7"> </span><span class="ff7">H<span class="_ _c"></span>o<span class="ff8">(</span>dg<span class="_ _c"></span><span class="ff5">−<span class="_ _12"></span></span>cat<span class="ff8">)</span></span>,</div><div class="t m0 x0 h5 y28 ff3 fs0 fc0 sc0 ls0 ws0">where<span class="_ _d"> </span>the<span class="_ _0"> </span>dg-category<span class="_ _d"> </span>structure<span class="_ _0"> </span>on<span class="_ _d"> </span><span class="ff7">I<span class="_ _c"></span>nt<span class="ff8">(</span>C<span class="_ _6"></span><span class="ff8">(</span>k<span class="_ _12"></span><span class="ff8">))<span class="_ _0"> </span></span></span>is<span class="_ _d"> </span>induced<span class="_ _0"> </span>from<span class="_ _d"> </span>the<span class="_ _0"> </span>dg-category</div><div class="t m0 x0 h5 y29 ff7 fs0 fc0 sc0 ls0 ws0">C<span class="_ _6"></span><span class="ff8">(</span>k<span class="_ _12"></span><span class="ff8">)<span class="ff3">.<span class="_ _15"> </span>More<span class="_ _e"> </span>precisely<span class="_ _5"></span>,<span class="_ _e"> </span>it<span class="_ _e"> </span>is<span class="_ _4"> </span>the<span class="_ _e"> </span>full<span class="_ _e"> </span>sub-dg-category<span class="_ _4"> </span>of<span class="_ _e"> </span><span class="ff7">C<span class="_ _6"></span><span class="ff8">(</span>k<span class="_ _12"></span><span class="ff8">) </span></span>consisting<span class="_ _4"> </span>of<span class="_ _e"> </span>ﬁbran<span class="_ _a"></span>t</span></span></div><div class="t m0 x0 h5 y2a ff3 fs0 fc0 sc0 ls0 ws0">and<span class="_ _7"> </span>coﬁbrant<span class="_ _7"> </span>ob<span class="_ _6"></span>jects in<span class="_ _7"> </span><span class="ff7">C<span class="_ _6"></span><span class="ff8">(</span>k<span class="_ _12"></span><span class="ff8">)</span></span>, where<span class="_ _10"> </span>you<span class="_ _8"> </span>need to<span class="_ _7"> </span>recall<span class="_ _10"> </span>the<span class="_ _7"> </span>standard model category</div><div class="t m0 x0 h5 y2b ff3 fs0 fc0 sc0 ls0 ws0">structure<span class="_ _11"> </span>on<span class="_ _9"> </span><span class="ff7">C<span class="_ _c"></span><span class="ff8">(</span>k<span class="ff8">)</span></span>.</div><div class="t m0 x15 h9 y2c ffe fs2 fc0 sc0 ls0 ws0">1</div></div><div class="pi" data-data='{"ctm":[1.700000,0.000000,0.000000,1.700000,0.000000,0.000000]}'></div></div>
+<div id="pf2" class="pf w0 h0" data-page-no="2"><div class="pc pc2 w0 h0"><img class="bi x16 y2d w2 ha" alt="" src="data:image/png;base64,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"/><div class="t m0 x0 h9 y2e ffe fs2 fc0 sc0 ls0 ws0">2<span class="_ _16"> </span>W<span class="_ _1"></span>ANMIN<span class="_ _2"> </span>LIU</div><div class="t m0 x5 h4 y2f ff3 fs0 fc0 sc0 ls0 ws0">T<span class="_ _1"></span>o<span class="_ _4"> </span>use<span class="_ _4"> </span>the<span class="_ _9"> </span>Prop<span class="_ _12"></span>osition<span class="_ _4"> </span>1.1<span class="_ _4"> </span>(Prop<span class="_ _4"> </span>1<span class="_ _4"> </span>of<span class="_ _9"> </span>page<span class="_ _4"> </span>38<span class="_ _4"> </span>in<span class="_ _4"> </span>preprin<span class="_ _3"></span>t),<span class="_ _4"> </span>we<span class="_ _9"> </span>need<span class="_ _4"> </span>to<span class="_ _4"> </span><span class="ffa">assume</span></div><div class="t m0 x0 h4 y30 ff3 fs0 fc0 sc0 ls0 ws0">that<span class="_ _11"> </span><span class="ff7">R<span class="_ _4"> </span></span>is<span class="_ _11"> </span>ﬂat<span class="_ _9"> </span>ov<span class="_ _3"></span>er<span class="_ _9"> </span><span class="ff7">k<span class="_ _4"> </span></span>(see<span class="_ _9"> </span>also<span class="_ _9"> </span>Exercise<span class="_ _9"> </span>4.1.1).</div><div class="t m0 x5 h4 y31 ff3 fs0 fc0 sc0 ls0 ws0">No<span class="_ _a"></span>w<span class="_ _9"> </span>the<span class="_ _11"> </span>Prop<span class="_ _12"></span>osition<span class="_ _9"> </span>gives<span class="_ _11"> </span>us</div><div class="t m0 x17 h5 y32 ff8 fs0 fc0 sc0 ls0 ws0">[<span class="ff7">B<span class="_ _12"></span>R<span class="_ _12"></span>,<span class="_ _b"> </span>I<span class="_ _c"></span>nt</span>(<span class="ff7">C<span class="_ _6"></span></span>(<span class="ff7">k<span class="_ _12"></span></span>)]<span class="_ _10"> </span><span class="ffd">≃<span class="_ _10"> </span><span class="ff7">I<span class="_ _c"></span>so</span></span>(<span class="ff7">H<span class="_ _6"></span>o</span>(<span class="ff7">C<span class="_ _c"></span></span>(<span class="ff7">k</span>)</div><div class="t m0 x18 h6 y33 ff9 fs2 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R</div><div class="t m0 x19 h5 y32 ff8 fs0 fc0 sc0 ls0 ws0">))<span class="ff7">.</span></div><div class="t m0 x0 h5 y34 ff3 fs0 fc0 sc0 ls0 ws0">By<span class="_ _11"> </span>the<span class="_ _9"> </span>Deﬁnition<span class="_ _9"> </span>3.2.3,<span class="_ _9"> </span><span class="ff7">D<span class="_ _12"></span><span class="ff8">(</span>B<span class="_ _6"></span>R<span class="ff8">)<span class="_ _10"> </span><span class="ff5">∶<span class="ffd">=<span class="_ _10"> </span></span></span></span>H<span class="_ _c"></span>o<span class="ff8">(</span>B<span class="_ _12"></span>R<span class="_ _7"> </span><span class="ff5">−<span class="_ _8"> </span></span>M<span class="_ _c"></span>od<span class="ff8">)<span class="_ _10"> </span><span class="ffd">=<span class="_ _10"> </span></span></span>H<span class="_ _c"></span>o<span class="ff8">(</span>C<span class="_ _6"></span><span class="ff8">(</span>k<span class="_ _12"></span><span class="ff8">)</span></span></div><div class="t m0 x1a h6 y35 ff9 fs2 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R</div><div class="t m0 x1b h5 y34 ff8 fs0 fc0 sc0 ls0 ws0">)<span class="ff3">.</span></div><div class="t m0 x5 h4 y36 ff3 fs0 fc0 sc0 ls0 ws0">T<span class="_ _1"></span>o<span class="_ _9"> </span>ﬁnish<span class="_ _9"> </span>the<span class="_ _9"> </span>pro<span class="_ _12"></span>of,<span class="_ _9"> </span>we<span class="_ _11"> </span>only<span class="_ _9"> </span>need<span class="_ _11"> </span>to<span class="_ _9"> </span>chec<span class="_ _a"></span>k</div><div class="t m0 x1c h5 y37 ff7 fs0 fc0 sc0 ls0 ws0">D<span class="_ _12"></span><span class="ff8">(</span>B<span class="_ _12"></span>R<span class="_ _12"></span><span class="ff8">)<span class="_ _10"> </span><span class="ffd">≃<span class="_ _10"> </span></span></span>D<span class="_ _12"></span><span class="ff8">(</span>R<span class="ff8">)</span>.</div><div class="t m0 x0 h4 y38 ff3 fs0 fc0 sc0 ls0 ws0">Then<span class="_ _11"> </span>it<span class="_ _9"> </span>follows<span class="_ _11"> </span>that</div><div class="t m0 x7 h5 y39 ff8 fs0 fc0 sc0 ls0 ws0">[<span class="ff7">B<span class="_ _12"></span>R<span class="_ _12"></span>,<span class="_ _b"> </span>I<span class="_ _c"></span>nt</span>(<span class="ff7">C<span class="_ _6"></span></span>(<span class="ff7">k<span class="_ _12"></span></span>)]<span class="_ _10"> </span><span class="ffd">≃<span class="_ _10"> </span><span class="ff7">I<span class="_ _c"></span>so</span></span>(<span class="ff7">H<span class="_ _6"></span>o</span>(<span class="ff7">C<span class="_ _c"></span></span>(<span class="ff7">k</span>)</div><div class="t m0 x1d h6 y3a ff9 fs2 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R</div><div class="t m0 x1e h5 y39 ff8 fs0 fc0 sc0 ls0 ws0">))<span class="_ _7"> </span><span class="ffd">=<span class="_ _10"> </span><span class="ff7">I<span class="_ _c"></span>so</span></span>(<span class="ff7">D</span>(<span class="ff7">B<span class="_ _6"></span>R<span class="_ _12"></span></span>))<span class="_ _7"> </span><span class="ffd">≃<span class="_ _10"> </span><span class="ff7">I<span class="_ _c"></span>so</span></span>(<span class="ff7">D<span class="_ _12"></span></span>(<span class="ff7">R</span>))<span class="ff7">.</span></div><div class="t m0 x5 h5 y3b ff3 fs0 fc0 sc0 ls0 ws0">No<span class="_ _a"></span>w<span class="_ _9"> </span>let<span class="_ _11"> </span>us<span class="_ _9"> </span>chec<span class="_ _a"></span>k<span class="_ _11"> </span>the<span class="_ _9"> </span>equiv<span class="_ _a"></span>alence<span class="_ _11"> </span>relation<span class="_ _9"> </span><span class="ff7">D<span class="_ _12"></span><span class="ff8">(</span>B<span class="_ _6"></span>R<span class="ff8">)<span class="_ _10"> </span><span class="ffd">≃<span class="_ _10"> </span></span></span>D<span class="_ _12"></span><span class="ff8">(</span>R<span class="ff8">)</span></span>.</div><div class="t m0 x5 h5 y3c ff3 fs0 fc0 sc0 ls0 ws0">What<span class="_ _2"> </span>is<span class="_ _11"> </span><span class="ff7">D<span class="_ _12"></span><span class="ff8">(</span>R<span class="ff8">)</span></span>?<span class="_ _d"> </span>It is<span class="_ _11"> </span>deﬁned<span class="_ _11"> </span>as<span class="_ _11"> </span><span class="ff7">S</span></div><div class="t m0 x1f h8 y3d ffc fs2 fc0 sc0 ls0 ws0">−<span class="ffe">1</span></div><div class="t m0 x20 h5 y3c ff7 fs0 fc0 sc0 ls0 ws0">C<span class="_ _6"></span><span class="ff8">(</span>R<span class="_ _12"></span><span class="ff8">)<span class="ff3">,<span class="_ _2"> </span>the<span class="_ _11"> </span>lo<span class="_ _12"></span>calizing<span class="_ _11"> </span>of<span class="_ _11"> </span></span></span>C<span class="_ _c"></span><span class="ff8">(</span>R<span class="ff8">)<span class="_ _2"> </span><span class="ff3">along<span class="_ _2"> </span></span></span>S<span class="_ _c"></span><span class="ff3">, where</span></div><div class="t m0 x0 h5 y3e ff7 fs0 fc0 sc0 ls0 ws0">C<span class="_ _6"></span><span class="ff8">(</span>R<span class="_ _12"></span><span class="ff8">)<span class="_ _2"> </span><span class="ff3">is<span class="_ _11"> </span>the<span class="_ _11"> </span>category<span class="_ _11"> </span>of<span class="_ _9"> </span>c<span class="_ _a"></span>hain<span class="_ _11"> </span>complex<span class="_ _11"> </span>of<span class="_ _11"> </span>left<span class="_ _11"> </span><span class="ff7">R</span>-mo<span class="_ _12"></span>dules,<span class="_ _11"> </span>and<span class="_ _11"> </span><span class="ff7">S<span class="_ _4"> </span></span>is<span class="_ _11"> </span>the<span class="_ _11"> </span>set<span class="_ _11"> </span>of<span class="_ _11"> </span>quasi-</span></span></div><div class="t m0 x0 h4 y3f ff3 fs0 fc0 sc0 ls0 ws0">isomorphisms.<span class="_ _e"> </span>(See<span class="_ _9"> </span><span class="ff6">Y<span class="_ _1"></span>o<span class="_ _a"></span>osik<span class="_ _c"></span><span class="ff3">’s<span class="_ _11"> </span>lecture<span class="_ _9"> </span>on<span class="_ _9"> </span>Apr<span class="_ _9"> </span>4.)</span></span></div><div class="t m0 x5 h5 y40 ff3 fs0 fc0 sc0 ls0 ws0">What<span class="_ _11"> </span>is<span class="_ _9"> </span><span class="ff7">D<span class="_ _12"></span><span class="ff8">(</span>B<span class="_ _6"></span>R<span class="ff8">)</span></span>?<span class="_ _d"> </span>It<span class="_ _11"> </span>is<span class="_ _9"> </span>deﬁned<span class="_ _9"> </span>as<span class="_ _11"> </span><span class="ff7">W</span></div><div class="t m0 x21 h8 y41 ffc fs2 fc0 sc0 ls0 ws0">−<span class="ffe">1</span></div><div class="t m0 x22 h5 y40 ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">B<span class="_ _12"></span>R<span class="_ _8"> </span><span class="ff5">−<span class="_ _8"> </span></span>M<span class="_ _c"> </span>od</span>)<span class="ff3">,<span class="_ _9"> </span>the<span class="_ _9"> </span>lo<span class="_ _12"></span>calizing<span class="_ _11"> </span>of<span class="_ _9"> </span><span class="ff7">B<span class="_ _6"></span>R<span class="_ _8"> </span><span class="ff5">−<span class="_ _8"> </span></span>M<span class="_ _c"></span>od</span></span></div><div class="t m0 x0 h5 y42 ff3 fs0 fc0 sc0 ls0 ws0">along <span class="ff7">W<span class="_ _b"> </span></span>, where <span class="ff7">B<span class="_ _6"></span>R<span class="_ _b"> </span><span class="ff5">−<span class="_ _c"></span></span>M<span class="_ _c"></span>od<span class="_ _2"> </span></span>is the mo<span class="_ _12"></span>del category<span class="_ _1"></span>,<span class="_ _2"> </span>with the<span class="_ _2"> </span>mo<span class="_ _12"></span>del structure induced</div><div class="t m0 x0 h4 y43 ff3 fs0 fc0 sc0 ls0 ws0">b<span class="_ _a"></span>y<span class="_ _11"> </span>the<span class="_ _11"> </span>dg-structure<span class="_ _11"> </span>of<span class="_ _11"> </span><span class="ff7">B<span class="_ _6"></span>R</span>,<span class="_ _11"> </span>and<span class="_ _11"> </span><span class="ff7">W<span class="_ _d"> </span></span>is<span class="_ _11"> </span>the<span class="_ _11"> </span>set<span class="_ _11"> </span>of<span class="_ _11"> </span>weak equiv<span class="_ _a"></span>alences,<span class="_ _11"> </span>whic<span class="_ _a"></span>h<span class="_ _11"> </span>is<span class="_ _11"> </span>deﬁned</div><div class="t m0 x0 h4 y44 ff3 fs0 fc0 sc0 ls0 ws0">to<span class="_ _11"> </span>b<span class="_ _12"></span>e<span class="_ _9"> </span>the<span class="_ _9"> </span>set<span class="_ _9"> </span><span class="ff7">S<span class="_ _e"> </span></span>of<span class="_ _11"> </span>quasi-isomophisms.<span class="_ _e"> </span>(See<span class="_ _9"> </span><span class="ff6">Morimichi<span class="_ _b"> </span></span>’s<span class="_ _11"> </span>lecture<span class="_ _9"> </span>on<span class="_ _9"> </span>June<span class="_ _9"> </span>20.)</div><div class="t m0 x5 h5 y45 ff6 fs0 fc0 sc0 ls0 ws0">Claim.<span class="_ _e"> </span><span class="ff3">By forgetting<span class="_ _7"> </span>the mo<span class="_ _12"></span>del structure on <span class="ff7">B<span class="_ _12"></span>R<span class="_ _c"></span><span class="ff5">−<span class="_ _6"></span></span>M<span class="_ _c"> </span>od</span>, we ha<span class="_ _3"></span>ve<span class="_ _10"> </span>an equiv<span class="_ _3"></span>alence</span></div><div class="t m0 x0 h5 y46 ff3 fs0 fc0 sc0 ls0 ws0">of<span class="_ _11"> </span>categories<span class="_ _9"> </span><span class="ff7">B<span class="_ _6"></span>R<span class="_ _7"> </span><span class="ff5">−<span class="_ _8"> </span></span>M<span class="_ _c"></span>od<span class="_ _10"> </span><span class="ffd">≃<span class="_ _10"> </span></span>C<span class="_ _6"></span><span class="ff8">(</span>R<span class="_ _12"></span><span class="ff8">)</span></span>.</div><div class="t m0 x5 h5 y47 ff3 fs0 fc0 sc0 ls0 ws0">Let<span class="_ _17"> </span>us<span class="_ _17"> </span>c<span class="_ _a"></span>hec<span class="_ _a"></span>k<span class="_ _17"> </span>in<span class="_ _17"> </span>the<span class="_ _17"> </span>ob<span class="_ _6"></span>ject<span class="_ _17"> </span>lev<span class="_ _a"></span>el.<span class="_ _18"> </span>An<span class="_ _17"> </span>ob<span class="_ _6"></span>ject<span class="_ _17"> </span>in<span class="_ _17"> </span><span class="ff7">B<span class="_ _12"></span>R<span class="_ _9"> </span><span class="ff5">−<span class="_ _11"> </span></span>M<span class="_ _b"> </span>od<span class="_ _17"> </span></span>is<span class="_ _17"> </span>a<span class="_ _17"> </span>dg-functor</div><div class="t m0 x0 h5 y48 ff7 fs0 fc0 sc0 ls0 ws0">F<span class="_ _0"> </span><span class="ff5">∶<span class="_ _4"> </span></span>B<span class="_ _6"></span>R<span class="_ _4"> </span><span class="ffb">Ð<span class="_ _5"></span>→<span class="_ _4"> </span><span class="ff7">C<span class="_ _6"></span><span class="ff8">(</span>k<span class="_ _12"></span><span class="ff8">)<span class="ff3">,<span class="_ _d"> </span>whic<span class="_ _a"></span>h<span class="_ _e"> </span>maps<span class="_ _e"> </span>the<span class="_ _19"> </span>unique<span class="_ _19"> </span>ob<span class="_ _6"></span>ject<span class="_ _e"> </span><span class="ff5">∗<span class="_ _e"> </span></span>to<span class="_ _19"> </span><span class="ff7">F</span></span></span></span></span></div><div class="t m0 x23 h8 y49 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x24 h5 y48 ffd fs0 fc0 sc0 ls0 ws0">∈<span class="_ _4"> </span><span class="ff7">C<span class="_ _6"></span><span class="ff8">(</span>k<span class="_ _12"></span><span class="ff8">)<span class="ff3">,<span class="_ _d"> </span>together<span class="_ _19"> </span>with</span></span></span></div><div class="t m0 x0 h5 y4a ff3 fs0 fc0 sc0 ls0 ws0">morphism<span class="_ _11"> </span>in<span class="_ _9"> </span><span class="ff7">C<span class="_ _c"></span><span class="ff8">(</span>k<span class="ff8">)</span></span></div><div class="t m0 x25 h7 y4b ff7 fs0 fc0 sc0 ls0 ws0">F</div><div class="t m0 x26 h8 y4c ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x27 h5 y4b ff5 fs0 fc0 sc0 ls0 ws0">⊗</div><div class="t m0 x28 h6 y4c ff9 fs2 fc0 sc0 ls0 ws0">k</div><div class="t m0 x1f h5 y4b ff7 fs0 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R<span class="_ _12"></span><span class="ff8">(<span class="ff5">∗</span></span>,<span class="_ _b"> </span><span class="ff5">∗<span class="ff8">)<span class="_ _10"> </span><span class="ffb">Ð<span class="_ _5"></span>→<span class="_ _7"> </span><span class="ff7">F</span></span></span></span></div><div class="t m0 x29 h8 y4c ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x10 h7 y4b ff7 fs0 fc0 sc0 ls0 ws0">,</div><div class="t m0 x0 h5 y4d ff3 fs0 fc0 sc0 ls0 ws0">and<span class="_ _11"> </span>for<span class="_ _9"> </span>any<span class="_ _11"> </span>“pair”<span class="_ _9"> </span>of<span class="_ _9"> </span>ob<span class="_ _6"></span>jects<span class="_ _9"> </span><span class="ff8">(<span class="ff5">∗<span class="ff7">,<span class="_ _13"> </span></span>∗</span>)<span class="_ _10"> </span><span class="ffd">∈<span class="_ _10"> </span><span class="ff7">O<span class="_ _12"></span>bj<span class="_ _6"></span></span></span>(<span class="ff7">B<span class="_ _6"></span>R</span>)</span></div><div class="t m0 x2a h9 y4e ffe fs2 fc0 sc0 ls0 ws0">2</div><div class="t m0 x2b h5 y4d ff3 fs0 fc0 sc0 ls0 ws0">a<span class="_ _11"> </span>morphism<span class="_ _9"> </span>in<span class="_ _9"> </span><span class="ff7">C<span class="_ _c"></span><span class="ff8">(</span>k<span class="ff8">)</span></span>,</div><div class="t m0 x2c h7 y4f ff7 fs0 fc0 sc0 ls0 ws0">F</div><div class="t m0 x2d h8 y50 ffc fs2 fc0 sc0 ls0 ws0">∗<span class="ff9">,</span>∗</div><div class="t m0 x2e h5 y4f ff5 fs0 fc0 sc0 ls0 ws0">∶<span class="_ _7"> </span><span class="ff7">B<span class="_ _6"></span>R<span class="_ _12"></span><span class="ff8">(</span></span>∗<span class="ff7">,<span class="_ _b"> </span></span>∗<span class="ff8">)<span class="_ _10"> </span><span class="ffb">Ð<span class="_ _5"></span>→<span class="_ _7"> </span><span class="ff7">C<span class="_ _6"></span><span class="ff8">(</span>k<span class="_ _6"></span><span class="ff8">)(</span>F</span></span></span></div><div class="t m0 x2f h8 y50 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x30 h7 y4f ff7 fs0 fc0 sc0 ls0 ws0">,<span class="_ _b"> </span>F</div><div class="t m0 x31 h8 y50 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x32 h5 y4f ff8 fs0 fc0 sc0 ls0 ws0">)<span class="_ _7"> </span><span class="ffd">=<span class="_ _10"> </span><span class="ff7">H<span class="_ _c"></span>om</span></span></div><div class="t m0 x33 h8 y51 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x34 h5 y4f ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">F</span></div><div class="t m0 x24 h8 y50 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x35 h7 y4f ff7 fs0 fc0 sc0 ls0 ws0">,<span class="_ _b"> </span>F</div><div class="t m0 x36 h8 y50 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x37 h5 y4f ff8 fs0 fc0 sc0 ls0 ws0">)<span class="ff7">,</span></div><div class="t m0 x0 h4 y52 ff3 fs0 fc0 sc0 ls0 ws0">satisfying<span class="_ _11"> </span>the<span class="_ _9"> </span>usual<span class="_ _9"> </span>asso<span class="_ _12"></span>ciativity<span class="_ _11"> </span>(here<span class="_ _9"> </span>we<span class="_ _11"> </span>need<span class="_ _9"> </span><span class="ff7">R<span class="_ _9"> </span></span>to<span class="_ _9"> </span>b<span class="_ _12"></span>e<span class="_ _9"> </span>an<span class="_ _9"> </span>asso<span class="_ _12"></span>ciative<span class="_ _11"> </span><span class="ff7">k<span class="_ _12"></span></span>-algebra):</div><div class="t m0 x38 h5 y53 ff7 fs0 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R<span class="_ _12"></span><span class="ff8">(<span class="ff5">∗</span></span>,<span class="_ _b"> </span><span class="ff5">∗<span class="ff8">)<span class="_ _8"> </span></span>⊗</span></div><div class="t m0 x39 h6 y54 ff9 fs2 fc0 sc0 ls0 ws0">k</div><div class="t m0 x3a h5 y53 ff7 fs0 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R<span class="_ _12"></span><span class="ff8">(<span class="ff5">∗</span></span>,<span class="_ _b"> </span><span class="ff5">∗<span class="ff8">)</span></span></div><div class="t m0 x3b h6 y55 ff9 fs2 fc0 sc0 ls0 ws0">F</div><div class="t m0 x3c hb y56 fff fs3 fc0 sc0 ls0 ws0">∗<span class="ff10">,</span>∗</div><div class="t m0 x3d h8 y55 ffc fs2 fc0 sc0 ls0 ws0">⊗<span class="ff9">F</span></div><div class="t m0 x3e hb y56 fff fs3 fc0 sc0 ls0 ws0">∗<span class="ff10">,</span>∗</div><div class="t m0 x3f hc y57 ff11 fs0 fc0 sc0 ls0 ws0"><span class="ff12"></span></div><div class="t m0 x40 h6 y58 ff9 fs2 fc0 sc0 ls0 ws0">µ</div><div class="t m0 x41 hb y59 fff fs3 fc0 sc0 ls0 ws0">∗<span class="ff10">,</span>∗<span class="ff10">,</span>∗</div><div class="t m0 x42 hc y5a ff11 fs0 fc0 sc0 ls0 ws0">/<span class="ff12">/</span></div><div class="t m0 x43 h5 y53 ff7 fs0 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R<span class="_ _12"></span><span class="ff8">(<span class="ff5">∗</span></span>,<span class="_ _b"> </span><span class="ff5">∗<span class="ff8">)</span></span></div><div class="t m0 x35 h6 y55 ff9 fs2 fc0 sc0 ls0 ws0">F</div><div class="t m0 x44 hb y5b fff fs3 fc0 sc0 ls0 ws0">∗<span class="ff10">,</span>∗</div><div class="t m0 x45 hc y57 ff11 fs0 fc0 sc0 ls0 ws0"><span class="ff12"></span></div><div class="t m0 x46 h7 y5c ff7 fs0 fc0 sc0 ls0 ws0">H<span class="_ _c"></span>om</div><div class="t m0 x47 h8 y5d ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x2e h5 y5c ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">F</span></div><div class="t m0 x48 h8 y5e ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x49 h7 y5c ff7 fs0 fc0 sc0 ls0 ws0">,<span class="_ _b"> </span>F</div><div class="t m0 x4a h8 y5e ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x4b h5 y5c ff8 fs0 fc0 sc0 ls0 ws0">)<span class="_ _8"> </span><span class="ff5">⊗<span class="_ _8"> </span><span class="ff7">H<span class="_ _c"></span>om</span></span></div><div class="t m0 x4c h8 y5d ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x4d h5 y5c ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">F</span></div><div class="t m0 x4e h8 y5e ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x4f h7 y5c ff7 fs0 fc0 sc0 ls0 ws0">,<span class="_ _b"> </span>F</div><div class="t m0 x50 h8 y5e ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x51 h5 y5c ff8 fs0 fc0 sc0 ls0 ws0">)</div><div class="t m0 x52 h6 y5f ff9 fs2 fc0 sc0 ls0 ws0">µ</div><div class="t m0 x53 hd y60 fff fs3 fc0 sc0 ls0 ws0">′</div><div class="t m0 x53 hb y61 fff fs3 fc0 sc0 ls0 ws0">∗<span class="ff10">,</span>∗<span class="ff10">,</span>∗</div><div class="t m0 x54 hc y62 ff11 fs0 fc0 sc0 ls0 ws0">/<span class="ff12">/</span></div><div class="t m0 x55 h7 y5c ff7 fs0 fc0 sc0 ls0 ws0">H<span class="_ _c"></span>om</div><div class="t m0 x56 h8 y5d ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x57 h5 y5c ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">F</span></div><div class="t m0 x58 h8 y5e ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x59 h7 y5c ff7 fs0 fc0 sc0 ls0 ws0">,<span class="_ _b"> </span>F</div><div class="t m0 x5a h8 y5e ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x5b h5 y5c ff8 fs0 fc0 sc0 ls0 ws0">)<span class="ff7">,</span></div><div class="t m0 x0 h4 y63 ff3 fs0 fc0 sc0 ls0 ws0">and<span class="_ _11"> </span>unit<span class="_ _9"> </span>conditions<span class="_ _9"> </span>(here<span class="_ _9"> </span>we<span class="_ _11"> </span>need<span class="_ _9"> </span><span class="ff7">R<span class="_ _9"> </span></span>to<span class="_ _9"> </span>b<span class="_ _12"></span>e<span class="_ _9"> </span>a<span class="_ _9"> </span>unital<span class="_ _9"> </span><span class="ff7">k<span class="_ _12"></span></span>-algebra):</div><div class="t m0 x25 h7 y64 ff7 fs0 fc0 sc0 ls0 ws0">k</div><div class="t m0 x2 h6 y65 ff9 fs2 fc0 sc0 ls0 ws0">e</div><div class="t m0 x5c hd y66 fff fs3 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x1d hc y67 ff11 fs0 fc0 sc0 ls0 ws0">/<span class="ff12">/</span></div><div class="t m0 x5d h6 y68 ff9 fs2 fc0 sc0 ls0 ws0">e</div><div class="t m0 x2 hd y69 fff fs3 fc0 sc0 ls0 ws0">′</div><div class="t m0 x2 hb y6a ff10 fs3 fc0 sc0 ls0 ws0">F</div><div class="t m0 x1f hd y6b fff fs3 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x13 hc y6c ff11 fs0 fc0 sc0 ls0 ws0">%<span class="ff12">%</span></div><div class="t m0 x12 h5 y64 ff7 fs0 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R<span class="_ _12"></span><span class="ff8">(<span class="ff5">∗</span></span>,<span class="_ _b"> </span><span class="ff5">∗<span class="ff8">)</span></span></div><div class="t m0 x22 h6 y6d ff9 fs2 fc0 sc0 ls0 ws0">F</div><div class="t m0 x5e hb y6e fff fs3 fc0 sc0 ls0 ws0">∗<span class="ff10">,</span>∗</div><div class="t m0 x5f hc y6c ff11 fs0 fc0 sc0 ls0 ws0"><span class="ff12"></span></div><div class="t m0 x4d h7 y6f ff7 fs0 fc0 sc0 ls0 ws0">H<span class="_ _c"></span>om</div><div class="t m0 x1e h8 y70 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x60 h5 y6f ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">F</span></div><div class="t m0 x61 h8 y71 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x62 h7 y6f ff7 fs0 fc0 sc0 ls0 ws0">,<span class="_ _b"> </span>F</div><div class="t m0 xd h8 y71 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x29 h5 y6f ff8 fs0 fc0 sc0 ls0 ws0">)<span class="ff7">.</span></div><div class="t m0 x0 h5 y72 ff3 fs0 fc0 sc0 ls0 ws0">W<span class="_ _1"></span>e<span class="_ _4"> </span>therefore<span class="_ _19"> </span>asso<span class="_ _12"></span>ciate<span class="_ _4"> </span>each<span class="_ _4"> </span>ob<span class="_ _6"></span>ject<span class="_ _4"> </span><span class="ff7">F<span class="_ _0"> </span><span class="ffd">∈<span class="_ _11"> </span></span>O<span class="_ _12"></span>bj<span class="_ _6"></span><span class="ff8">(</span>B<span class="_ _6"></span>R<span class="_ _10"> </span><span class="ff5">−<span class="_ _7"> </span></span>M<span class="_ _c"> </span>od<span class="ff8">) </span></span>a<span class="_ _4"> </span>complex<span class="_ _4"> </span>of<span class="_ _4"> </span><span class="ff7">R</span>-mo<span class="_ _6"></span>dules</div><div class="t m0 x0 h7 y73 ff7 fs0 fc0 sc0 ls0 ws0">F</div><div class="t m0 x63 h8 y74 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x64 h5 y73 ff5 fs0 fc0 sc0 ls0 ws0">⊗</div><div class="t m0 x65 h6 y74 ff9 fs2 fc0 sc0 ls0 ws0">k</div><div class="t m0 x66 h5 y73 ff7 fs0 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R<span class="_ _12"></span><span class="ff8">(<span class="ff5">∗</span></span>,<span class="_ _b"> </span><span class="ff5">∗<span class="ff8">)<span class="_ _10"> </span><span class="ffd">∈<span class="_ _10"> </span></span></span></span>O<span class="_ _12"></span>bj<span class="_ _6"></span><span class="ff8">(</span>C<span class="_ _c"></span><span class="ff8">(</span>R<span class="ff8">))<span class="ff3">.</span></span></div><div class="t m0 x5 h5 y2a ff3 fs0 fc0 sc0 ls0 ws0">Let<span class="_ _19"> </span>us<span class="_ _e"> </span>chec<span class="_ _a"></span>k<span class="_ _19"> </span>in<span class="_ _e"> </span>the<span class="_ _e"> </span>morphisms<span class="_ _19"> </span>level.<span class="_ _15"> </span>A<span class="_ _e"> </span>morphism<span class="_ _e"> </span>in<span class="_ _e"> </span><span class="ff7">B<span class="_ _6"></span>R<span class="_ _10"> </span><span class="ff5">−<span class="_ _10"> </span></span>M<span class="_ _c"> </span>od<span class="_ _e"> </span></span>is<span class="_ _e"> </span>a<span class="_ _e"> </span>natural</div><div class="t m0 x0 h5 y2b ff3 fs0 fc0 sc0 ls0 ws0">transformation<span class="_ _4"> </span>betw<span class="_ _3"></span>een<span class="_ _4"> </span>dg-functors<span class="_ _4"> </span><span class="ff7">α<span class="_ _2"> </span><span class="ff5">∶<span class="_ _2"> </span></span>F<span class="_ _e"> </span><span class="ffb">Ð<span class="_ _5"></span>→<span class="_ _10"> </span><span class="ff7">F</span></span></span></div><div class="t m0 x67 h8 y75 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x68 h4 y2b ff3 fs0 fc0 sc0 ls0 ws0">,<span class="_ _4"> </span>whic<span class="_ _a"></span>h<span class="_ _9"> </span>maps<span class="_ _4"> </span><span class="ff7">F</span></div><div class="t m0 x37 h8 y76 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x69 h5 y2b ffb fs0 fc0 sc0 ls0 ws0">Ð<span class="_ _1a"></span>→<span class="_ _2"> </span><span class="ff7">F</span></div><div class="t m0 x6a h8 y75 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x6b h8 y77 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x6c h4 y2b ff3 fs0 fc0 sc0 ls0 ws0">with<span class="_ _4"> </span>the</div></div><div class="pi" data-data='{"ctm":[1.700000,0.000000,0.000000,1.700000,0.000000,0.000000]}'></div></div>
+<div id="pf3" class="pf w0 h0" data-page-no="3"><div class="pc pc3 w0 h0"><img class="bi x6d y78 w3 he" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZsAAARdCAIAAAAIc3ihAAAACXBIWXMAABYlAAAWJQFJUiTwAAAL4UlEQVR42u3cTY7aQBCA0VTk3nEV1DdEss8GF/BZ6F1LlV2iLPiJZght895qFhbDlNvftC1BZOYPeI1a67quA76xeZ5Pp5MTtD+haMBu/DQCQNEAFA1A0QAUDVA0AEUDUDQARQNQNEDRABQNtq+1Zgjj80l1eO5SCReLPRpPuFwuhgD2aP754zRhjwYoGoCiASgagKIBigagaACKBqBoAIoGKBqAogEoGoCiASgaoGgAigagaACKBigagKIBKBqAogEoGqBoAIoGoGgAigYoGoCiASgagKIBKBqgaACKBqBoAIoGoGiAogEoGoCiASgaoGgAigagaACKBqBogKLxQufz2RDGN8+zIYwvMtMUAHs0AEUDUDQARQMUDUDRABQNQNEAFA1QNABFA1A0AEUDFA2+Va01RlJrdVL2zbcJAfZoAIoGoGgAigYoGoCiASgagKIBKBqgaACKBqBoAIoGKBqAogEoGoCiASgaoGgAigagaACKBqBogKIBKBqAogEoGqBoAIoGoGgAigagaICiASgagKIBKBqgaACKBqBoAIoGoGiAogEoGoCiASgagKIBigagaACKBqBogKIBKBqAogEoGoCiAYoGoGgAigagaICiASgagKIBKBqAogGKBqBoAIoGoGgAigYoGoCiASgagKIBigagaACKBqBoAIoGKBqAogEoGoCiAYoGoGgAigagaACKBigagKIBKBqAogEoGqBoAIoGoGgAigYoGoCiASgagKIBKBqgaACKBqBoAIoGKBqAogEoGoCiASgaoGgAigagaACKBqBogKIBKBqAogEoGqBoAIoGoGgAigagaICiASgagKIBKBqAogGKBqBoAIoGoGiAogEoGoCiASgagKIBigagaACKBqBogKIBKBqAogEoGoCiAYoGoGgAigagaACKBigagKIBKBqAogGKBqBoAIoGoGgAigYoGoCiASgagKIBigagaACKBqBoAIoGKBqAogEoGoCiASgaoGgAigagaACKBigagKIBKBqAogEoGqBoAIoGoGgAigYoGoCiASgagKIBKBqgaACKBqBoAIoGoGiAogEoGoCiASgaoGgAigagaACKBqBogKIBKBqAogEoGqBoAIoGoGgAigagaICiASgagKIBKBqAogGKBqBoAIoGoGiAogEoGoCiASgagKIBigagaACKBqBogKIBKBqAogEoGoCiAYoGoGgAigagaACKBigagKIBKBqAogGKBqBoAIoGoGgAigYoGoCiASgagKIBKBqgaACKBqBoAIoGKBqAogEoGoCiASgaoGgAigagaACKBigagKIBKBqAogEoGqBoAIoGoGgAigagaICiASgagKIBKBqgaACKBqBoAIoGoGiAogEoGoCiASgaoGgAigagaACKBqBogKIBKBqAogEoGoCiAYoGoGgAigagaICiASgagKIBKBqAogGKBqBoAIoGoGiAogEoGoCiASgagKIBigagaACKBqBoAIoGKBqAogEoGoCiAYoGoGgAigagaACKBigagKIBKBqAogGKBqBoAIp2W2stHnHOgFsiM00BsEcDUDQARQNQNEDRABQNQNEAFA1A0QBFA1A0AEUDUDRA0QAUDUDRABQNQNEARQNQNABFA1A0QNEAFA1A0QAUDUDRAEUDUDQARQNQNABFAxQNQNEAFA1A0QBFA1A0AEUDUDQARQMUDUDRABQNQNEAFA1QNABFA1A0AEUDFA1A0QAUDUDRABQNUDQARQNQNABFAxQNQNEAFA1A0QAUDVA0AEUDUDQARQNQNEDRABQNQNEAFA1QNABFA1A0AEUDUDRA0QAUDUDRABQNUDQARQNQNABFA1A04BNMb/mttdZ1XU2ff7Ku6/F4NAfuiMw0BcBdJ4CiASgagKIBigagaACKBqBoAIoGKBpswLIshvCZfAqKPS7rsLDt0QAUDUDRAF5ZNM9TgU376wGq56nsZFlbyfZoAIoGoGgAigagaICiASgagKIBKBqAogGKBqBoAIoGoGiAogEoGoCiASgagKIBigagaACKBqBogKIBKBqAogEoGoCiAYoGoGgAigagaACKBigagKIBKBqAogGKBqBoAIoGoGgAigYoGoCiASgagKIBigawu6Jdr1cTYQes5I8VmWkKgLtOAEUDUDQARQMUDUDRABQNQNEAFA1QNABFA1A0AEUDFG1rlmWJwbTWrCp4F98mBNijASgagKIBKBqgaACKBqBoAIoGoGiAogEoGoCiASgaoGgAigagaACKBqBogKIBKBqAogEoGoCiAYoGoGgAigagaICiASgagKIBKBqAogGKBqBoAIoGoGiAogEoGoCiASgagKIBigagaACKBqBoAIoGKBqAogEoGoCiAYoGoGgAigagaACKBigagKIBKBqAogGKBqBoAIoGoGgAigYoGoCiASgagKIBKBqgaACKBqBoAIoGKBqAogEoGoCiASgaoGgAigagaACKBigagKIBKBqAogEoGqBoAIoGoGgAigagaICiASgagKIBKBqgaACKBqBoAIoGoGiAogEoGoCiASgaoGgAigagaACKBqBogKIBKBqAogEoGoCiAYoGoGgAigagaICiASgagKIBKBqAogGKBqBoAIoGoGgAigYoGoCiASgagKIBigagaACKBqBoAIoGKBqAogEoGoCiAYoGoGgAigagaACKBigagKIBKBqAogEoGqBoAIoGoGgAigYoGoCiASgagKIBKBqgaACKBqBoAIoGKBqAogEoGoCiASgaoGgAigagaACKBqBogKIBKBqAogEoGqBoAIoGoGgAigagaICiASgagKIBKBqgaACKBqBoAIoGoGiAogEoGoCiASgagKIBigagaACKBqBogKIBKBqAogEoGoCiAYoGoGgAigagaICiASgagKIBKBqAogGKBqBoAIoGoGgAigYoGoCiASgagKIBigagaACKBqBoAIoGKBqAogEoGoCiAYoGoGgAigagaACKBigagKIBKBqAogEoGqBoAIoGoGgAigYoGoCiASgagKIBKBqgaACKBqBoAIoGoGiAogEoGoCiASgaoGgAigagaACKBqBogKIBKBqAogEoGqBoAIoGoGgAigagaICiASgagKIBKBqAogGKBqBoAIoGoGiAogEoGoCiASgagKIBigagaACKBqBogKIBKBqAogF8v8kIgP+g915KuX9MZn7xt8TXXwLAXSeAogEoGqBoAIoGoGgAigagaICiASgagKIBKBqgaACKBqBoAIoGoGiAogEoGoCiASgaoGgAigagaACKBqBogKIBKBqAogEoGoCiAYoGoGgAigagaICiASgagKIBKBqAogGKBqBoAIoGoGiAogEoGsBApo/6a3vvpZT7x2SmZQEbFS5gwF0ngKIBKBqAogGKBqBoAIoGoGgAigYoGoCiASgagKIBigagaACKBqBoAIoGKBqAogEoGoCiASgaoGgAigagaABPmIxgWBHx8JjMNCj4c9W4JAB3nQCKBqBoAIoGKBqAogEoGoCiASgaoGgAigagaACKBigagKIBKBqAogEoGqBoAIoGoGgAigagaICiASgagKIBKBqgaACKBqBoAIoGoGjATk2/f+q9l1LuH52ZRgYMK0QKcNcJoGgAigbw0GQEo4mIEd6GB6xs8vKxcAF3nQCKBqBoAIoGKBqAogEoGoCiASgaoGgAigagaACKBigagKIBKBqAogEoGqBoAIoGoGgAigagaICiASgagKIBKBqgaACKBqBoAIoGoGiAogEoGoCiASgaoGgAigagaACKBqBogKIBKBqAogEoGoCiAYoGoGgAigagaICiASgagKIBKBqAogGKBqBoAIoGoGiAogEoGoCiASgagKIBigagaACKBqBoAIoGKBqAogEoGoCiAYoGoGgAigagaACKBigagKIBKBqAogGKBqBoAIoGoGgAigYoGoCiASgagKIBKBqgaACKBqBoAIoGKBqAogEoGoCiASgaoGgAigagaACKBigagKIBKBrAi8QzB2WmSW1La+1wOIzwTm4tnt57KeUVC+91r8x75//MK/8C9Beq39bYG8EAAAAASUVORK5CYII="/><div class="t m0 x6e h9 y2e ffe fs2 fc0 sc0 ls0 ws0">DERIVED<span class="_ _9"> </span>SEMINAR<span class="_ _1b"> </span>3</div><div class="t m0 x0 h4 y2f ff3 fs0 fc0 sc0 ls0 ws0">comm<span class="_ _a"></span>utativ<span class="_ _a"></span>e<span class="_ _9"> </span>diagram</div><div class="t m0 x6f h7 y79 ff7 fs0 fc0 sc0 ls0 ws0">F</div><div class="t m0 x70 h8 y7a ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x1c h5 y79 ff5 fs0 fc0 sc0 ls0 ws0">⊗</div><div class="t m0 x71 h6 y7a ff9 fs2 fc0 sc0 ls0 ws0">k</div><div class="t m0 x72 h5 y79 ff7 fs0 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R<span class="_ _12"></span><span class="ff8">(<span class="ff5">∗</span></span>,<span class="_ _b"> </span><span class="ff5">∗<span class="ff8">)</span></span></div><div class="t m0 x73 hc y7b ff11 fs0 fc0 sc0 ls0 ws0">/<span class="ff12">/</span></div><div class="t m0 x74 h6 y7c ff9 fs2 fc0 sc0 ls0 ws0">α</div><div class="t m0 x4a hd y7d fff fs3 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x4b h8 y7c ffc fs2 fc0 sc0 ls0 ws0">⊗</div><div class="t m0 x4 hb y7e ff10 fs3 fc0 sc0 ls0 ws0">k</div><div class="t m0 x6f h8 y7c ff9 fs2 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R<span class="ff13">(<span class="ffc">∗</span></span>,<span class="ffc">∗<span class="ff13">)</span></span></div><div class="t m0 x4d hc y7f ff11 fs0 fc0 sc0 ls0 ws0"><span class="ff12"></span></div><div class="t m0 x75 h7 y79 ff7 fs0 fc0 sc0 ls0 ws0">F</div><div class="t m0 x76 h8 y7a ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x77 h6 y80 ff9 fs2 fc0 sc0 ls0 ws0">α</div><div class="t m0 x43 hd y81 fff fs3 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x78 hc y82 ff11 fs0 fc0 sc0 ls0 ws0"><span class="ff12"></span></div><div class="t m0 x6f h7 y83 ff7 fs0 fc0 sc0 ls0 ws0">F</div><div class="t m0 x79 h8 y84 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x70 h8 y85 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x1c h5 y83 ff5 fs0 fc0 sc0 ls0 ws0">⊗</div><div class="t m0 x71 h6 y86 ff9 fs2 fc0 sc0 ls0 ws0">k</div><div class="t m0 x72 h5 y83 ff7 fs0 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R<span class="_ _12"></span><span class="ff8">(<span class="ff5">∗</span></span>,<span class="_ _b"> </span><span class="ff5">∗<span class="ff8">)</span></span></div><div class="t m0 x7a hc y87 ff11 fs0 fc0 sc0 ls0 ws0">/<span class="ff12">/</span></div><div class="t m0 x10 h7 y83 ff7 fs0 fc0 sc0 ls0 ws0">F</div><div class="t m0 x76 h8 y84 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x11 h8 y85 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x7b h7 y83 ff7 fs0 fc0 sc0 ls0 ws0">.</div><div class="t m0 x0 h5 y88 ff3 fs0 fc0 sc0 ls0 ws0">W<span class="_ _1"></span>e<span class="_ _d"> </span>therefore<span class="_ _e"> </span>asso<span class="_ _12"></span>ciate<span class="_ _d"> </span>eac<span class="_ _a"></span>h<span class="_ _e"> </span>morphism<span class="_ _d"> </span><span class="ff7">α<span class="_ _19"> </span><span class="ffd">∈<span class="_ _e"> </span></span>M<span class="_ _c"></span>or<span class="_ _12"></span><span class="ff8">(</span>B<span class="_ _6"></span>R<span class="_ _2"> </span><span class="ff5">−<span class="_ _10"> </span></span>M<span class="_ _c"> </span>od<span class="ff8">)<span class="_ _d"> </span></span></span>a<span class="_ _e"> </span>morphism<span class="_ _d"> </span><span class="ff7">α</span></div><div class="t m0 x7c h8 y89 ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x7d h5 y88 ff5 fs0 fc0 sc0 ls0 ws0">⊗</div><div class="t m0 x7e h6 y89 ff9 fs2 fc0 sc0 ls0 ws0">k</div><div class="t m0 x0 h5 y8a ff7 fs0 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R<span class="_ _12"></span><span class="ff8">(<span class="ff5">∗</span></span>,<span class="_ _b"> </span><span class="ff5">∗<span class="ff8">)<span class="_ _2"> </span><span class="ffd">∈<span class="_ _10"> </span></span></span></span>M<span class="_ _c"> </span>or<span class="_ _12"></span><span class="ff8">(</span>C<span class="_ _c"></span><span class="ff8">(</span>R<span class="ff8">))<span class="ff3">.<span class="_ _d"> </span>Moreo<span class="_ _a"></span>v<span class="_ _a"></span>er,<span class="_ _9"> </span><span class="ff7">α<span class="_ _9"> </span></span>is<span class="_ _4"> </span>deﬁned<span class="_ _11"> </span>to<span class="_ _4"> </span>be<span class="_ _9"> </span>a<span class="_ _9"> </span>weak<span class="_ _9"> </span>equiv<span class="_ _3"></span>alence<span class="_ _9"> </span>in<span class="_ _4"> </span><span class="ff7">B<span class="_ _12"></span>R<span class="_ _8"> </span><span class="ff5">−</span></span></span></span></div><div class="t m0 x0 h5 y8b ff7 fs0 fc0 sc0 ls0 ws0">M<span class="_ _c"></span>od<span class="_ _19"> </span><span class="ff3">(i.e.<span class="_ _1c"> </span></span>α<span class="_ _9"> </span><span class="ffd">∈<span class="_ _9"> </span></span>W<span class="_ _13"> </span><span class="ff3">)<span class="_ _4"> </span>if<span class="_ _19"> </span></span>α</div><div class="t m0 x7f h8 y8c ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x1 h5 y8b ff5 fs0 fc0 sc0 ls0 ws0">⊗</div><div class="t m0 x80 h6 y8c ff9 fs2 fc0 sc0 ls0 ws0">k</div><div class="t m0 x4b h5 y8b ff7 fs0 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R<span class="_ _12"></span><span class="ff8">(<span class="ff5">∗</span></span>,<span class="_ _b"> </span><span class="ff5">∗<span class="ff8">) <span class="ff3">is<span class="_ _4"> </span>a<span class="_ _19"> </span>quasi-isomorphism<span class="_ _19"> </span>in<span class="_ _19"> </span></span></span></span>C<span class="_ _6"></span><span class="ff8">(</span>R<span class="_ _12"></span><span class="ff8">) <span class="ff3">(i.e.<span class="_ _f"> </span></span></span>α</div><div class="t m0 x7c h8 y8c ffc fs2 fc0 sc0 ls0 ws0">∗</div><div class="t m0 x7d h5 y8b ff5 fs0 fc0 sc0 ls0 ws0">⊗</div><div class="t m0 x7e h6 y8c ff9 fs2 fc0 sc0 ls0 ws0">k</div><div class="t m0 x0 h5 y8d ff7 fs0 fc0 sc0 ls0 ws0">B<span class="_ _12"></span>R<span class="_ _12"></span><span class="ff8">(<span class="ff5">∗</span></span>,<span class="_ _b"> </span><span class="ff5">∗<span class="ff8">)<span class="_ _10"> </span><span class="ffd">∈<span class="_ _10"> </span></span></span></span>S<span class="_ _6"></span><span class="ff3">).</span></div><div class="t m0 x5 h5 y8e ff3 fs0 fc0 sc0 ls0 ws0">Therefore b<span class="_ _a"></span>y localizing the equiv<span class="_ _3"></span>alence of categories<span class="_ _7"> </span><span class="ff7">B<span class="_ _6"></span>R<span class="_ _c"></span><span class="ff5">−<span class="_ _c"></span></span>M<span class="_ _c"></span>od<span class="_ _7"> </span><span class="ffd">≃<span class="_ _10"> </span></span>C<span class="_ _c"></span><span class="ff8">(</span>R<span class="ff8">)<span class="_ _10"> </span></span></span>along the</div><div class="t m0 x0 h5 y8f ff3 fs0 fc0 sc0 ls0 ws0">same class of quasi-isomorphisms, we obtain the equiv<span class="_ _1"></span>alence of categories <span class="ff7">D<span class="_ _12"></span><span class="ff8">(</span>B<span class="_ _6"></span>R<span class="ff8">)<span class="_ _10"> </span><span class="ffd">≃</span></span></span></div><div class="t m0 x0 h5 y90 ff7 fs0 fc0 sc0 ls0 ws0">D<span class="_ _12"></span><span class="ff8">(</span>R<span class="ff8">)<span class="ff3">.</span></span></div><div class="t m0 x81 hf y91 ff14 fs0 fc0 sc0 ls0 ws0"></div><div class="t m0 x0 h4 y92 ff1 fs0 fc0 sc0 ls0 ws0">Corollary<span class="_ _4"> </span>1.1.<span class="_ _0"> </span><span class="ff3">[T<span class="_ _3"></span>o11,<span class="_ _9"> </span>P<span class="_ _a"></span>age<span class="_ _9"> </span>279<span class="_ _11"> </span>Corollary<span class="_ _9"> </span>1<span class="_ _9"> </span>or<span class="_ _9"> </span>page<span class="_ _9"> </span>37<span class="_ _9"> </span>of<span class="_ _9"> </span>preprint<span class="_ _11"> </span>v<span class="_ _a"></span>ersion]<span class="_ _9"> </span><span class="ffa">L<span class="_ _a"></span>et<span class="_ _9"> </span><span class="ff7">T</span></span></span></div><div class="t m0 x0 h7 y93 ffa fs0 fc0 sc0 ls0 ws0">and<span class="_ _9"> </span><span class="ff7">T</span></div><div class="t m0 x82 h8 y94 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x83 h7 y93 ffa fs0 fc0 sc0 ls0 ws0">b<span class="_ _3"></span>e<span class="_ _9"> </span>two<span class="_ _9"> </span>dg-c<span class="_ _a"></span>ate<span class="_ _3"></span>gories,<span class="_ _9"> </span>one<span class="_ _9"> </span>of<span class="_ _9"> </span>them<span class="_ _9"> </span>having<span class="_ _9"> </span>c<span class="_ _a"></span>oﬁbr<span class="_ _3"></span>ant<span class="_ _9"> </span>c<span class="_ _3"></span>omplexes<span class="_ _9"> </span>of<span class="_ _9"> </span>morphisms.</div><div class="t m0 x0 h5 y95 ffa fs0 fc0 sc0 ls0 ws0">Then,<span class="_ _11"> </span>ther<span class="_ _a"></span>e<span class="_ _11"> </span>exists<span class="_ _9"> </span>a<span class="_ _11"> </span>natur<span class="_ _a"></span>al<span class="_ _11"> </span>bije<span class="_ _3"></span>ction<span class="_ _9"> </span>b<span class="_ _3"></span>etwe<span class="_ _a"></span>en<span class="_ _11"> </span><span class="ff8">[<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>T</span></span></div><div class="t m0 x84 h8 y96 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xe h5 y95 ff8 fs0 fc0 sc0 ls0 ws0">]<span class="_ _11"> </span><span class="ffa">and<span class="_ _9"> </span>the<span class="_ _11"> </span>subset<span class="_ _9"> </span>of<span class="_ _11"> </span><span class="ff7">I<span class="_ _c"></span>so</span></span>(<span class="ff7">H<span class="_ _6"></span>o</span>(<span class="ff7">T<span class="_ _2"> </span><span class="ff5">⊗</span></span></div><div class="t m0 x0 h5 y97 ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">T</span></div><div class="t m0 x5 h8 y98 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x85 h5 y97 ff8 fs0 fc0 sc0 ls0 ws0">)</div><div class="t m0 x86 h6 y98 ff9 fs2 fc0 sc0 ls0 ws0">op</div><div class="t m0 x87 h5 y97 ff5 fs0 fc0 sc0 ls0 ws0">−<span class="_ _c"></span><span class="ff7">M<span class="_ _c"></span>od<span class="ff8">))<span class="_ _2"> </span><span class="ffa">c<span class="_ _a"></span>onsisting<span class="_ _2"> </span>of<span class="_ _11"> </span><span class="ff7">T<span class="_ _7"> </span><span class="ff5">⊗<span class="_ _c"></span><span class="ff8">(</span></span>T</span></span></span></span></div><div class="t m0 x2 h8 y98 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x5c h5 y97 ff8 fs0 fc0 sc0 ls0 ws0">)</div><div class="t m0 x4c h6 y98 ff9 fs2 fc0 sc0 ls0 ws0">op</div><div class="t m0 x88 h5 y97 ffa fs0 fc0 sc0 ls0 ws0">-dg-mo<span class="_ _3"></span>dules<span class="_ _11"> </span><span class="ff7">F<span class="_ _e"> </span></span>such<span class="_ _11"> </span>that<span class="_ _11"> </span>for<span class="_ _11"> </span>any<span class="_ _11"> </span><span class="ff7">x<span class="_ _7"> </span><span class="ffd">∈<span class="_ _10"> </span></span>T<span class="_ _13"> </span></span>,<span class="_ _11"> </span>ther<span class="_ _3"></span>e</div><div class="t m0 x0 h5 y99 ffa fs0 fc0 sc0 ls0 ws0">is<span class="_ _9"> </span><span class="ff7">y<span class="_ _2"> </span><span class="ffd">∈<span class="_ _10"> </span></span>T</span></div><div class="t m0 x83 h8 y9a ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x89 h7 y99 ffa fs0 fc0 sc0 ls0 ws0">such<span class="_ _9"> </span>that<span class="_ _4"> </span><span class="ff7">F</span></div><div class="t m0 x8a h8 y9b ff9 fs2 fc0 sc0 ls0 ws0">x,<span class="ffc">−</span></div><div class="t m0 x8b h7 y99 ffa fs0 fc0 sc0 ls0 ws0">and<span class="_ _9"> </span><span class="ff7">h</span></div><div class="t m0 x25 h6 y9c ff9 fs2 fc0 sc0 ls0 ws0">y</div><div class="t m0 x70 h5 y99 ffa fs0 fc0 sc0 ls0 ws0">ar<span class="_ _3"></span>e<span class="_ _4"> </span>isomorphic<span class="_ _9"> </span>in<span class="_ _4"> </span><span class="ff7">H<span class="_ _6"></span>o<span class="ff8">((</span>T</span></div><div class="t m0 x8c h8 y9a ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x34 h5 y99 ff8 fs0 fc0 sc0 ls0 ws0">)</div><div class="t m0 x8d h6 y9a ff9 fs2 fc0 sc0 ls0 ws0">op</div><div class="t m0 x8e h5 y99 ff5 fs0 fc0 sc0 ls0 ws0">−<span class="_ _8"> </span><span class="ff7">M<span class="_ _c"></span>od<span class="ff8">)<span class="ffa">.</span></span></span></div><div class="t m0 x0 h4 y9d ffa fs0 fc0 sc0 ls0 ws0">Pr<span class="_ _3"></span>o<span class="_ _a"></span>of.<span class="_ _0"> </span><span class="ff3">Let<span class="_ _4"> </span>us<span class="_ _19"> </span>denote<span class="_ _19"> </span>the<span class="_ _19"> </span>subset<span class="_ _19"> </span>in<span class="_ _4"> </span>the<span class="_ _19"> </span>corollary<span class="_ _19"> </span>by<span class="_ _4"> </span><span class="ff7">N<span class="_ _c"> </span></span>.<span class="_ _1c"> </span>Let<span class="_ _19"> </span>us<span class="_ _19"> </span>denote<span class="_ _19"> </span>the<span class="_ _19"> </span>mo<span class="_ _12"></span>del</span></div><div class="t m0 x0 h5 y9e ff3 fs0 fc0 sc0 ls0 ws0">category <span class="ff8">(<span class="ff7">T</span></span></div><div class="t m0 x8f h8 y9f ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x90 h5 y9e ff8 fs0 fc0 sc0 ls0 ws0">)</div><div class="t m0 x91 h6 y9f ff9 fs2 fc0 sc0 ls0 ws0">op</div><div class="t m0 x92 h5 y9e ff5 fs0 fc0 sc0 ls0 ws0">−<span class="_ _c"></span><span class="ff7">M<span class="_ _c"></span>od<span class="_ _10"> </span><span class="ff3">by<span class="_ _7"> </span></span>M<span class="_ _b"> </span><span class="ff3">.<span class="_ _19"> </span>W<span class="_ _3"></span>e need to<span class="_ _10"> </span>sho<span class="_ _a"></span>w the follo<span class="_ _3"></span>wing commutativ<span class="_ _3"></span>e diagram:</span></span></div><div class="t m0 x93 h5 ya0 ff8 fs0 fc0 sc0 ls0 ws0">[<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>T</span></div><div class="t m0 x94 h8 ya1 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x74 h5 ya0 ff8 fs0 fc0 sc0 ls0 ws0">]</div><div class="t m0 x8b h10 ya2 ff15 fs0 fc0 sc0 ls0 ws0"></div><div class="t m0 x49 h10 ya3 ff15 fs0 fc0 sc0 ls0 ws0">_</div><div class="t m0 x48 hc ya4 ff11 fs0 fc0 sc0 ls0 ws0"><span class="ff12"></span></div><div class="t m0 x4d h8 ya5 ff16 fs2 fc0 sc0 ls0 ws0">≃</div><div class="t m0 x95 h7 ya0 ff7 fs0 fc0 sc0 ls0 ws0">N</div><div class="t m0 xe h10 ya6 ff15 fs0 fc0 sc0 ls0 ws0"></div><div class="t m0 x73 h10 ya7 ff15 fs0 fc0 sc0 ls0 ws0">_</div><div class="t m0 x96 hc ya4 ff11 fs0 fc0 sc0 ls0 ws0"><span class="ff12"></span></div><div class="t m0 x97 h5 ya8 ff8 fs0 fc0 sc0 ls0 ws0">[<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>I<span class="_ _6"></span>nt</span>(<span class="ff7">M<span class="_ _b"> </span></span>)]</div><div class="t m0 x98 h8 ya9 ff16 fs2 fc0 sc0 ls0 ws0">≃</div><div class="t m0 x72 h5 ya8 ff7 fs0 fc0 sc0 ls0 ws0">I<span class="_ _6"></span>so<span class="ff8">(</span>H<span class="_ _c"></span>o<span class="ff8">(</span>T<span class="_ _9"> </span><span class="ff5">⊗<span class="_ _8"> </span><span class="ff8">(</span></span>T</div><div class="t m0 x73 h8 yaa ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x99 h5 ya8 ff8 fs0 fc0 sc0 ls0 ws0">)</div><div class="t m0 x9a h6 yaa ff9 fs2 fc0 sc0 ls0 ws0">op</div><div class="t m0 x43 h5 ya8 ff5 fs0 fc0 sc0 ls0 ws0">−<span class="_ _8"> </span><span class="ff7">M<span class="_ _c"></span>od<span class="ff8">))</span>,</span></div><div class="t m0 x0 h5 yab ff3 fs0 fc0 sc0 ls0 ws0">i.e.<span class="_ _19"> </span>we need to c<span class="_ _a"></span>hec<span class="_ _a"></span>k that those conditions on <span class="ff7">N<span class="_ _4"> </span></span>as a subset of <span class="ff7">I<span class="_ _c"></span>so<span class="ff8">(</span>H<span class="_ _6"></span>o<span class="ff8">(</span>T<span class="_ _7"> </span><span class="ff5">⊗<span class="_ _c"></span><span class="ff8">(</span></span>T</span></div><div class="t m0 x9b h8 yac ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x9c h5 yab ff8 fs0 fc0 sc0 ls0 ws0">)</div><div class="t m0 xb h6 yac ff9 fs2 fc0 sc0 ls0 ws0">op</div><div class="t m0 x9d h5 yab ff5 fs0 fc0 sc0 ls0 ws0">−</div><div class="t m0 x0 h5 yad ff7 fs0 fc0 sc0 ls0 ws0">M<span class="_ _c"></span>od<span class="ff8">))<span class="_ _e"> </span><span class="ff3">exactly<span class="_ _d"> </span>corresp<span class="_ _12"></span>ond<span class="_ _e"> </span>to<span class="_ _d"> </span>the<span class="_ _e"> </span>left<span class="_ _d"> </span>v<span class="_ _a"></span>ertical<span class="_ _e"> </span>inclusion,<span class="_ _0"> </span>and<span class="_ _e"> </span>the<span class="_ _e"> </span>corresp<span class="_ _12"></span>ondence</span></span></div><div class="t m0 x0 h4 yae ff3 fs0 fc0 sc0 ls0 ws0">from<span class="_ _11"> </span>left<span class="_ _9"> </span>to<span class="_ _9"> </span>right<span class="_ _11"> </span>is<span class="_ _9"> </span>given<span class="_ _11"> </span>by<span class="_ _11"> </span>the<span class="_ _9"> </span>Prop<span class="_ _12"></span>osition<span class="_ _9"> </span>4.1.2.</div><div class="t m0 x5 h4 yaf ff3 fs0 fc0 sc0 ls0 ws0">Firstly<span class="_ _1"></span>,<span class="_ _9"> </span>let<span class="_ _9"> </span>us<span class="_ _9"> </span>chec<span class="_ _3"></span>k<span class="_ _9"> </span>the<span class="_ _9"> </span>b<span class="_ _12"></span>ottom<span class="_ _9"> </span>equiv<span class="_ _3"></span>alence<span class="_ _9"> </span>in<span class="_ _9"> </span>the<span class="_ _9"> </span>diagram.<span class="_ _d"> </span>Recall<span class="_ _11"> </span>notations</div><div class="t m0 x9e h5 yb0 ff7 fs0 fc0 sc0 ls0 ws0">M<span class="_ _9"> </span><span class="ffd">=<span class="_ _10"> </span><span class="ff8">(</span></span>C<span class="_ _c"></span><span class="ff8">(</span>k<span class="ff8">))</span></div><div class="t m0 x94 h8 yb1 ff13 fs2 fc0 sc0 ls0 ws0">(<span class="ff9">T</span></div><div class="t m0 x3e hd yb2 fff fs3 fc0 sc0 ls0 ws0">′</div><div class="t m0 x9f h8 yb1 ff13 fs2 fc0 sc0 ls0 ws0">)</div><div class="t m0 xa0 hb yb2 ff10 fs3 fc0 sc0 ls0 ws0">op</div><div class="t m0 x39 h5 yb0 ff7 fs0 fc0 sc0 ls0 ws0">,<span class="_ _14"> </span>T<span class="_ _11"> </span><span class="ff5">⊗<span class="_ _8"> </span><span class="ff8">(</span></span>T</div><div class="t m0 x12 h8 yb1 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x22 h5 yb0 ff8 fs0 fc0 sc0 ls0 ws0">)</div><div class="t m0 xa1 h6 yb1 ff9 fs2 fc0 sc0 ls0 ws0">op</div><div class="t m0 xa2 h5 yb0 ff5 fs0 fc0 sc0 ls0 ws0">−<span class="_ _8"> </span><span class="ff7">M<span class="_ _c"></span>od<span class="_ _10"> </span><span class="ffd">=<span class="_ _10"> </span><span class="ff8">(</span></span>C<span class="_ _6"></span><span class="ff8">(</span>k<span class="_ _12"></span><span class="ff8">))</span></span></div><div class="t m0 xa3 h8 yb1 ff9 fs2 fc0 sc0 ls0 ws0">T<span class="_ _c"> </span><span class="ffc">⊗<span class="ff13">(</span></span>T</div><div class="t m0 x1b hd yb2 fff fs3 fc0 sc0 ls0 ws0">′</div><div class="t m0 xa4 h8 yb1 ff13 fs2 fc0 sc0 ls0 ws0">)</div><div class="t m0 xa5 hb yb2 ff10 fs3 fc0 sc0 ls0 ws0">op</div><div class="t m0 xa6 h7 yb0 ff7 fs0 fc0 sc0 ls0 ws0">.</div><div class="t m0 x0 h4 yb3 ff3 fs0 fc0 sc0 ls0 ws0">In<span class="_ _7"> </span><span class="ff6">Y<span class="_ _1"></span>oungjin<span class="_ _c"> </span><span class="ff3">’s<span class="_ _10"> </span>lecture<span class="_ _7"> </span>(Exercise 3.2.6),<span class="_ _7"> </span>we<span class="_ _8"> </span>know<span class="_ _7"> </span>the<span class="_ _7"> </span>equiv<span class="_ _a"></span>alence<span class="_ _7"> </span>of<span class="_ _7"> </span>mo<span class="_ _12"></span>del categories</span></span></div><div class="t m0 xa7 h5 yb4 ff8 fs0 fc0 sc0 ls0 ws0">((<span class="ff7">C<span class="_ _6"></span></span>(<span class="ff7">k<span class="_ _12"></span></span>))</div><div class="t m0 x6e h8 yb5 ff13 fs2 fc0 sc0 ls0 ws0">(<span class="ff9">T</span></div><div class="t m0 xa8 hd yb6 fff fs3 fc0 sc0 ls0 ws0">′</div><div class="t m0 xa9 h8 yb5 ff13 fs2 fc0 sc0 ls0 ws0">)</div><div class="t m0 x5c hb yb6 ff10 fs3 fc0 sc0 ls0 ws0">op</div><div class="t m0 x4d h5 yb4 ff8 fs0 fc0 sc0 ls0 ws0">)</div><div class="t m0 x88 h6 yb5 ff9 fs2 fc0 sc0 ls0 ws0">T</div><div class="t m0 x12 h5 yb4 ffd fs0 fc0 sc0 ls0 ws0">≃<span class="_ _7"> </span><span class="ff8">(<span class="ff7">C<span class="_ _c"></span></span>(<span class="ff7">k</span>))</span></div><div class="t m0 x95 h8 yb5 ff9 fs2 fc0 sc0 ls0 ws0">T<span class="_ _c"> </span><span class="ffc">⊗<span class="ff13">(</span></span>T</div><div class="t m0 x18 hd yb6 fff fs3 fc0 sc0 ls0 ws0">′</div><div class="t m0 x7b h8 yb5 ff13 fs2 fc0 sc0 ls0 ws0">)</div><div class="t m0 x43 hb yb6 ff10 fs3 fc0 sc0 ls0 ws0">op</div><div class="t m0 x34 h7 yb4 ff7 fs0 fc0 sc0 ls0 ws0">.</div><div class="t m0 x0 h4 yb7 ff3 fs0 fc0 sc0 ls0 ws0">The<span class="_ _11"> </span>b<span class="_ _12"></span>ottom<span class="_ _9"> </span>equiv<span class="_ _a"></span>alence<span class="_ _11"> </span>follows<span class="_ _11"> </span>by<span class="_ _11"> </span>the<span class="_ _9"> </span>Prop<span class="_ _12"></span>osition<span class="_ _9"> </span>1.1.</div><div class="t m0 x5 h5 yb8 ff3 fs0 fc0 sc0 ls0 ws0">Secondly<span class="_ _1"></span>,<span class="_ _4"> </span>let<span class="_ _19"> </span>us<span class="_ _4"> </span>chec<span class="_ _3"></span>k<span class="_ _4"> </span>the<span class="_ _4"> </span>left<span class="_ _4"> </span>inclusion<span class="_ _4"> </span>in<span class="_ _4"> </span>the<span class="_ _4"> </span>diagram.<span class="_ _f"> </span>Recall<span class="_ _4"> </span>that<span class="_ _4"> </span>the<span class="_ _4"> </span><span class="ff7">C<span class="_ _c"></span><span class="ff8">(</span>k<span class="ff8">)</span></span>-</div><div class="t m0 x0 h4 yb9 ff3 fs0 fc0 sc0 ls0 ws0">enric<span class="_ _a"></span>hed<span class="_ _0"> </span>Y<span class="_ _1"></span>oneda<span class="_ _0"> </span>em<span class="_ _a"></span>b<span class="_ _12"></span>edding<span class="_ _0"> </span>is<span class="_ _0"> </span>a<span class="_ _0"> </span>quasi-fully<span class="_ _d"> </span>faithful<span class="_ _0"> </span>dg-functor<span class="_ _0"> </span><span class="ff7">h<span class="_ _0"> </span></span>(in<span class="_ _0"> </span><span class="ff6">T<span class="_ _1"></span>ae-Su<span class="_ _c"></span><span class="ff3">’s</span></span></div><div class="t m0 x0 h4 yba ff3 fs0 fc0 sc0 ls0 ws0">lecture<span class="_ _11"> </span>on<span class="_ _9"> </span>June<span class="_ _9"> </span>27):</div><div class="t m0 x3a h5 ybb ff7 fs0 fc0 sc0 ls0 ws0">h<span class="_ _7"> </span><span class="ff5">∶<span class="_ _10"> </span></span>T</div><div class="t m0 x4c h8 ybc ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x4d h5 ybb ffb fs0 fc0 sc0 ls0 ws0">Ð<span class="_ _1a"></span>→<span class="_ _7"> </span><span class="ff7">I<span class="_ _c"></span>nt<span class="ff8">(</span>M<span class="_ _c"></span><span class="ff8">)</span>,</span></div><div class="t m0 x0 h5 ybd ff3 fs0 fc0 sc0 ls0 ws0">sending<span class="_ _11"> </span>an<span class="_ _9"> </span>ob<span class="_ _6"></span>jects<span class="_ _9"> </span><span class="ff7">y<span class="_ _2"> </span><span class="ffd">∈<span class="_ _10"> </span></span>T</span></div><div class="t m0 xa7 h8 ybe ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x74 h4 ybd ff3 fs0 fc0 sc0 ls0 ws0">to<span class="_ _11"> </span>an<span class="_ _9"> </span>ob<span class="_ _6"></span>ject<span class="_ _9"> </span><span class="ff7">h</span></div><div class="t m0 x1d h6 ybf ff9 fs2 fc0 sc0 ls0 ws0">y</div><div class="t m0 xaa h4 ybd ff3 fs0 fc0 sc0 ls0 ws0">in<span class="_ _11"> </span>the<span class="_ _9"> </span>interior<span class="_ _11"> </span>of<span class="_ _9"> </span><span class="ff7">M<span class="_ _c"> </span></span>.<span class="_ _d"> </span>Here</div><div class="t m0 x48 h7 yc0 ff7 fs0 fc0 sc0 ls0 ws0">h</div><div class="t m0 x1 h6 yc1 ff9 fs2 fc0 sc0 ls0 ws0">y</div><div class="t m0 x80 h5 yc0 ff5 fs0 fc0 sc0 ls0 ws0">∶<span class="_ _7"> </span><span class="ff8">(<span class="ff7">T</span></span></div><div class="t m0 x6f h8 yc2 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xab h5 yc0 ff8 fs0 fc0 sc0 ls0 ws0">)</div><div class="t m0 xac h6 yc2 ff9 fs2 fc0 sc0 ls0 ws0">op</div><div class="t m0 x5d h5 yc0 ffb fs0 fc0 sc0 ls0 ws0">Ð<span class="_ _1a"></span>→<span class="_ _7"> </span><span class="ff7">C<span class="_ _c"></span><span class="ff8">(</span>k<span class="ff8">)</span>,<span class="_ _14"> </span>z<span class="_ _2"> </span></span>↦<span class="_ _10"> </span><span class="ff7">T</span></div><div class="t m0 x99 h8 yc2 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xad h5 yc0 ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">z<span class="_ _12"></span>,<span class="_ _13"> </span>y<span class="_ _12"></span></span>)<span class="ff7">.</span></div><div class="t m0 x0 h5 yc3 ff3 fs0 fc0 sc0 ls0 ws0">The<span class="_ _4"> </span>interior<span class="_ _4"> </span><span class="ff7">I<span class="_ _6"></span>nt<span class="ff8">(</span>M<span class="_ _c"> </span><span class="ff8">) </span></span>is<span class="_ _4"> </span>deﬁned<span class="_ _4"> </span>as<span class="_ _4"> </span>the<span class="_ _4"> </span>full<span class="_ _4"> </span>sub<span class="_ _12"></span>category<span class="_ _19"> </span>of<span class="_ _4"> </span><span class="ff7">M<span class="_ _0"> </span></span>consisting<span class="_ _4"> </span>of<span class="_ _4"> </span>ﬁbrant</div><div class="t m0 x0 h4 yc4 ff3 fs0 fc0 sc0 ls0 ws0">and<span class="_ _d"> </span>coﬁbran<span class="_ _a"></span>t<span class="_ _e"> </span>ob<span class="_ _6"></span>jects<span class="_ _d"> </span>of<span class="_ _d"> </span><span class="ff7">M<span class="_ _c"> </span></span>.<span class="_ _1d"> </span>The<span class="_ _d"> </span>quasi-fully<span class="_ _e"> </span>faithful<span class="_ _d"> </span>dg-functor<span class="_ _d"> </span>means<span class="_ _d"> </span>that<span class="_ _d"> </span>the</div><div class="t m0 x0 h4 yc5 ff3 fs0 fc0 sc0 ls0 ws0">induced<span class="_ _11"> </span>morphism<span class="_ _9"> </span>of<span class="_ _9"> </span>complexes<span class="_ _9"> </span>of<span class="_ _9"> </span><span class="ff7">k<span class="_ _12"></span></span>-mo<span class="_ _12"></span>dules</div><div class="t m0 xae h5 yc6 ff5 fs0 fc0 sc0 ls0 ws0">∀<span class="ff7">x,<span class="_ _b"> </span>y<span class="_ _2"> </span><span class="ffd">∈<span class="_ _10"> </span></span>T</span></div><div class="t m0 xaf h8 yc7 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x47 h7 yc6 ff7 fs0 fc0 sc0 ls0 ws0">,<span class="_ _14"> </span>h</div><div class="t m0 xa7 h6 yc8 ff9 fs2 fc0 sc0 ls0 ws0">x,y</div><div class="t m0 x3e h5 yc6 ff5 fs0 fc0 sc0 ls0 ws0">∶<span class="_ _7"> </span><span class="ff7">T</span></div><div class="t m0 x6f h8 yc7 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xb0 h5 yc6 ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">x,<span class="_ _b"> </span>y<span class="_ _6"></span></span>)<span class="_ _7"> </span><span class="ffb">Ð<span class="_ _1a"></span>→<span class="_ _10"> </span><span class="ff7">H<span class="_ _c"></span>om<span class="ff8">(</span>h</span></span></div><div class="t m0 x67 h6 yc8 ff9 fs2 fc0 sc0 ls0 ws0">x</div><div class="t m0 x95 h7 yc6 ff7 fs0 fc0 sc0 ls0 ws0">,<span class="_ _b"> </span>h</div><div class="t m0 x73 h6 yc8 ff9 fs2 fc0 sc0 ls0 ws0">y</div><div class="t m0 xad h5 yc6 ff8 fs0 fc0 sc0 ls0 ws0">)<span class="_ _7"> </span><span class="ffd">=<span class="_ _10"> </span><span class="ff7">I<span class="_ _c"></span>nt</span></span>(<span class="ff7">M<span class="_ _c"></span></span>)(<span class="ff7">h</span></div><div class="t m0 xa5 h6 yc8 ff9 fs2 fc0 sc0 ls0 ws0">x</div><div class="t m0 xb1 h7 yc6 ff7 fs0 fc0 sc0 ls0 ws0">,<span class="_ _b"> </span>h</div><div class="t m0 xb2 h6 yc8 ff9 fs2 fc0 sc0 ls0 ws0">y</div><div class="t m0 xb3 h5 yc6 ff8 fs0 fc0 sc0 ls0 ws0">)</div></div><div class="pi" data-data='{"ctm":[1.700000,0.000000,0.000000,1.700000,0.000000,0.000000]}'></div></div>
+<div id="pf4" class="pf w0 h0" data-page-no="4"><div class="pc pc4 w0 h0"><img class="bi x17 yc9 w4 h11" alt="" src="data:image/png;base64,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"/><div class="t m0 x0 h9 y2e ffe fs2 fc0 sc0 ls0 ws0">4<span class="_ _16"> </span>W<span class="_ _1"></span>ANMIN<span class="_ _2"> </span>LIU</div><div class="t m0 x0 h5 y2f ff3 fs0 fc0 sc0 ls0 ws0">is<span class="_ _9"> </span>an<span class="_ _9"> </span>isomorphis.<span class="_ _d"> </span>And<span class="_ _9"> </span>the<span class="_ _9"> </span>complex<span class="_ _9"> </span><span class="ff7">H<span class="_ _c"></span>om<span class="ff8">(</span>h</span></div><div class="t m0 xb4 h6 yca ff9 fs2 fc0 sc0 ls0 ws0">x</div><div class="t m0 xa2 h7 y2f ff7 fs0 fc0 sc0 ls0 ws0">,<span class="_ _b"> </span>h</div><div class="t m0 x31 h6 yca ff9 fs2 fc0 sc0 ls0 ws0">y</div><div class="t m0 x32 h5 y2f ff8 fs0 fc0 sc0 ls0 ws0">)<span class="_ _10"> </span><span class="ffd">∈<span class="_ _10"> </span><span class="ff7">C<span class="_ _6"></span></span></span>(<span class="ff7">k<span class="_ _6"></span></span>)<span class="_ _9"> </span><span class="ff3">is<span class="_ _9"> </span>deﬁned<span class="_ _9"> </span>from<span class="_ _9"> </span>the<span class="_ _9"> </span><span class="ff7">C<span class="_ _c"></span></span></span>(<span class="ff7">k</span>)<span class="ff3">-</span></div><div class="t m0 x0 h4 ycb ff3 fs0 fc0 sc0 ls0 ws0">mo<span class="_ _12"></span>del<span class="_ _11"> </span>structure<span class="_ _9"> </span>on<span class="_ _9"> </span><span class="ff7">M<span class="_ _d"> </span></span>by</div><div class="t m0 xb5 h7 ycc ff7 fs0 fc0 sc0 ls0 ws0">H<span class="_ _c"></span>om</div><div class="t m0 x46 h8 ycd ff9 fs2 fc0 sc0 ls0 ws0">C<span class="_ _12"></span><span class="ff13">(</span>k<span class="_ _12"></span><span class="ff13">)</span></div><div class="t m0 xb6 h5 ycc ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">E<span class="_ _6"></span>,<span class="_ _b"> </span>H<span class="_ _c"></span>om</span>(<span class="ff7">h</span></div><div class="t m0 x6f h6 yce ff9 fs2 fc0 sc0 ls0 ws0">x</div><div class="t m0 xb7 h7 ycc ff7 fs0 fc0 sc0 ls0 ws0">,<span class="_ _b"> </span>h</div><div class="t m0 xb8 h6 yce ff9 fs2 fc0 sc0 ls0 ws0">y</div><div class="t m0 x71 h5 ycc ff8 fs0 fc0 sc0 ls0 ws0">))<span class="_ _7"> </span><span class="ffd">≃<span class="_ _10"> </span><span class="ff7">H<span class="_ _c"></span>om</span></span></div><div class="t m0 x30 h6 ycf ff9 fs2 fc0 sc0 ls0 ws0">M</div><div class="t m0 xb9 h5 ycc ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">E<span class="_ _10"> </span><span class="ff5">⊗<span class="_ _8"> </span></span>h</span></div><div class="t m0 xad h6 yce ff9 fs2 fc0 sc0 ls0 ws0">x</div><div class="t m0 x76 h7 ycc ff7 fs0 fc0 sc0 ls0 ws0">,<span class="_ _b"> </span>h</div><div class="t m0 x33 h6 yce ff9 fs2 fc0 sc0 ls0 ws0">y</div><div class="t m0 x34 h5 ycc ff8 fs0 fc0 sc0 ls0 ws0">)<span class="ff7">,<span class="_ _14"> </span><span class="ff5">∀</span>E<span class="_ _2"> </span><span class="ffd">∈<span class="_ _10"> </span></span>C<span class="_ _6"></span></span>(<span class="ff7">k<span class="_ _12"></span></span>)<span class="ff7">.</span></div><div class="t m0 x0 h5 yd0 ff3 fs0 fc0 sc0 ls0 ws0">Recall<span class="_ _7"> </span>that<span class="_ _7"> </span><span class="ff8">[<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>T</span></span></div><div class="t m0 xba h8 yd1 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xbb h5 yd0 ff8 fs0 fc0 sc0 ls0 ws0">]<span class="_ _7"> </span><span class="ff3">and<span class="_ _7"> </span></span>[<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>I<span class="_ _c"></span>nt</span>(<span class="ff7">M<span class="_ _c"></span></span>)]<span class="_ _7"> </span><span class="ff3">are<span class="_ _7"> </span>morphisms<span class="_ _7"> </span>in the<span class="_ _8"> </span>category<span class="_ _7"> </span><span class="ff7">H<span class="_ _c"></span>o</span></span>(<span class="ff7">dg<span class="_ _6"></span><span class="ff5">−</span>cat</span>)<span class="ff3">.<span class="_ _e"> </span>W<span class="_ _1"></span>e</span></div><div class="t m0 x0 h5 yd2 ff3 fs0 fc0 sc0 ls0 ws0">need<span class="_ _7"> </span>to<span class="_ _7"> </span>work<span class="_ _8"> </span>in<span class="_ _7"> </span>the<span class="_ _7"> </span>category<span class="_ _7"> </span><span class="ff7">dg<span class="_ _6"></span><span class="ff5">−</span>cat<span class="_ _7"> </span></span>ﬁrst.<span class="_ _e"> </span>By<span class="_ _7"> </span><span class="ffa">T<span class="_ _1"></span>abuada’s The<span class="_ _a"></span>or<span class="_ _3"></span>em<span class="_ _11"> </span><span class="ff3">(in<span class="_ _7"> </span><span class="ff6">Y<span class="_ _1"></span>ong-Geun<span class="_ _c"> </span><span class="ff3">’s</span></span></span></span></div><div class="t m0 x0 h5 yd3 ff3 fs0 fc0 sc0 ls0 ws0">lecture<span class="_ _4"> </span>on<span class="_ _19"> </span>June<span class="_ _4"> </span>12),<span class="_ _19"> </span>there<span class="_ _19"> </span>is<span class="_ _4"> </span>a<span class="_ _19"> </span>mo<span class="_ _12"></span>del<span class="_ _19"> </span>category<span class="_ _4"> </span>structure<span class="_ _19"> </span>on<span class="_ _4"> </span><span class="ff7">dg<span class="_ _2"> </span><span class="ff5">−<span class="_ _7"> </span></span>cat</span>.<span class="_ _1c"> </span>By<span class="_ _4"> </span>Lemma</div><div class="t m0 x0 h4 yd4 ff3 fs0 fc0 sc0 ls0 ws0">4.1.3,<span class="_ _4"> </span>we<span class="_ _4"> </span>can<span class="_ _4"> </span>assume<span class="_ _4"> </span>that<span class="_ _4"> </span><span class="ff7">T<span class="_ _0"> </span></span>is<span class="_ _4"> </span>a<span class="_ _4"> </span>coﬁbrant<span class="_ _4"> </span>dg-category<span class="_ _1"></span>.<span class="_ _f"> </span>Recall<span class="_ _4"> </span>that<span class="_ _4"> </span>all<span class="_ _4"> </span>ob<span class="_ _6"></span>jects<span class="_ _4"> </span>in</div><div class="t m0 x0 h5 yd5 ff3 fs0 fc0 sc0 ls0 ws0">the<span class="_ _11"> </span>category<span class="_ _9"> </span><span class="ff7">dg<span class="_ _8"> </span><span class="ff5">−<span class="_ _8"> </span></span>cat<span class="_ _11"> </span></span>are<span class="_ _9"> </span>ﬁbrant.<span class="_ _19"> </span>By<span class="_ _9"> </span>restriction<span class="_ _11"> </span>to<span class="_ _9"> </span>the<span class="_ _11"> </span>sub-category<span class="_ _9"> </span><span class="ff8">(<span class="ff7">dg<span class="_ _8"> </span><span class="ff5">−<span class="_ _8"> </span></span>cat</span>)</span></div><div class="t m0 x9c h6 yd6 ff9 fs2 fc0 sc0 ls0 ws0">cf</div><div class="t m0 x81 h4 yd5 ff3 fs0 fc0 sc0 ls0 ws0">of</div><div class="t m0 x0 h5 yd7 ff3 fs0 fc0 sc0 ls0 ws0">coﬁbran<span class="_ _a"></span>t<span class="_ _4"> </span>and<span class="_ _9"> </span>ﬁbrant<span class="_ _4"> </span>ob<span class="_ _12"></span>jects,<span class="_ _4"> </span>we<span class="_ _9"> </span>hence<span class="_ _4"> </span>get<span class="_ _4"> </span>an<span class="_ _4"> </span>equiv<span class="_ _1"></span>alence<span class="_ _4"> </span>of<span class="_ _4"> </span>categories<span class="_ _4"> </span>(here<span class="_ _4"> </span><span class="ffd">∼<span class="_ _9"> </span></span>is</div><div class="t m0 x0 h4 yd8 ff3 fs0 fc0 sc0 ls0 ws0">the<span class="_ _11"> </span>homotopic<span class="_ _9"> </span>equiv<span class="_ _a"></span>alence):</div><div class="t m0 x3d h5 yd9 ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">dg<span class="_ _7"> </span><span class="ff5">−<span class="_ _8"> </span></span>cat</span>)</div><div class="t m0 xa8 h6 yda ff9 fs2 fc0 sc0 ls0 ws0">cf</div><div class="t m0 xbc h5 yd9 ff8 fs0 fc0 sc0 ls0 ws0">/<span class="_ _7"> </span><span class="ffd">∼<span class="_ _9"> </span><span class="ffb">Ð<span class="_ _1a"></span>→<span class="_ _10"> </span><span class="ff7">H<span class="_ _c"></span>o<span class="ff8">(</span>dg<span class="_ _7"> </span><span class="ff5">−<span class="_ _8"> </span></span>cat<span class="ff8">)</span>.</span></span></span></div><div class="t m0 x0 h5 ydb ff3 fs0 fc0 sc0 ls0 ws0">In<span class="_ _11"> </span>the<span class="_ _9"> </span><span class="ff8">(<span class="ff7">dg<span class="_ _10"> </span><span class="ff5">−<span class="_ _8"> </span></span>cat</span>)</span></div><div class="t m0 xba h6 ydc ff9 fs2 fc0 sc0 ls0 ws0">cf</div><div class="t m0 xbd h4 ydb ff3 fs0 fc0 sc0 ls0 ws0">,<span class="_ _11"> </span>by<span class="_ _11"> </span>comp<span class="_ _12"></span>osing<span class="_ _9"> </span><span class="ff7">h<span class="_ _9"> </span></span>we<span class="_ _11"> </span>obtain</div><div class="t m0 x92 h7 ydd ff7 fs0 fc0 sc0 ls0 ws0">H<span class="_ _c"></span>om</div><div class="t m0 x2e h8 yde ff13 fs2 fc0 sc0 ls0 ws0">(<span class="ff9">dg<span class="_ _12"></span><span class="ffc">−</span>cat</span>)</div><div class="t m0 x9f hb ydf ff10 fs3 fc0 sc0 ls0 ws0">cf</div><div class="t m0 x25 h5 ydd ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>T</span></div><div class="t m0 x2 h8 ye0 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xbe h5 ydd ff8 fs0 fc0 sc0 ls0 ws0">)<span class="_ _7"> </span><span class="ffb">↪<span class="_ _10"> </span><span class="ff7">H<span class="_ _c"></span>om</span></span></div><div class="t m0 x51 h8 yde ff13 fs2 fc0 sc0 ls0 ws0">(<span class="ff9">dg<span class="_ _12"></span><span class="ffc">−</span>cat</span>)</div><div class="t m0 x73 hb ydf ff10 fs3 fc0 sc0 ls0 ws0">cf</div><div class="t m0 x11 h5 ydd ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>I<span class="_ _6"></span>nt</span>(<span class="ff7">M<span class="_ _b"> </span></span>))<span class="ff7">,</span></div><div class="t m0 x0 h5 ye1 ff3 fs0 fc0 sc0 ls0 ws0">whic<span class="_ _a"></span>h<span class="_ _9"> </span>descends<span class="_ _11"> </span>to<span class="_ _9"> </span>(recall<span class="_ _9"> </span>the<span class="_ _9"> </span>notation<span class="_ _9"> </span><span class="ff8">[<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>T</span></span></div><div class="t m0 x50 h8 ye2 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xa2 h5 ye1 ff8 fs0 fc0 sc0 ls0 ws0">]<span class="_ _7"> </span><span class="ff5">∶<span class="ffd">=<span class="_ _10"> </span><span class="ff7">H<span class="_ _c"></span>om</span></span></span></div><div class="t m0 x9a h8 ye3 ff9 fs2 fc0 sc0 ls0 ws0">H<span class="_ _6"></span>o<span class="ff13">(</span>dg<span class="_ _12"></span><span class="ffc">−</span>cat<span class="ff13">)</span></div><div class="t m0 xbf h5 ye1 ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>T</span></div><div class="t m0 xc0 h8 ye2 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xc1 h5 ye1 ff8 fs0 fc0 sc0 ls0 ws0">)<span class="ff3">)</span></div><div class="t m0 x6f h5 ye4 ff8 fs0 fc0 sc0 ls0 ws0">[<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>T</span></div><div class="t m0 xa9 h8 ye5 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xbe h5 ye4 ff8 fs0 fc0 sc0 ls0 ws0">]<span class="_ _7"> </span><span class="ffb">↪<span class="_ _10"> </span></span>[<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>I<span class="_ _c"></span>nt</span>(<span class="ff7">M<span class="_ _c"></span></span>)]<span class="ff7">,</span></div><div class="t m0 x0 h4 ye6 ff3 fs0 fc0 sc0 ls0 ws0">whose<span class="_ _0"> </span>image<span class="_ _0"> </span>consists<span class="_ _17"> </span>of<span class="_ _0"> </span>morphisms<span class="_ _0"> </span>in<span class="_ _17"> </span><span class="ff7">H<span class="_ _c"></span>om</span></div><div class="t m0 xb9 h8 ye7 ff13 fs2 fc0 sc0 ls0 ws0">(<span class="ff9">dg<span class="_ _12"></span><span class="ffc">−</span>cat</span>)</div><div class="t m0 x9a hb ye8 ff10 fs3 fc0 sc0 ls0 ws0">cf</div><div class="t m0 xc2 h5 ye9 ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>I<span class="_ _6"></span>nt</span>(<span class="ff7">M<span class="_ _b"> </span></span>))<span class="_ _0"> </span><span class="ff3">factorizing<span class="_ _0"> </span>in</span></div><div class="t m0 x0 h5 yea ff7 fs0 fc0 sc0 ls0 ws0">H<span class="_ _c"></span>o<span class="ff8">(</span>dg<span class="_ _8"> </span><span class="ff5">−<span class="_ _8"> </span></span>cat<span class="ff8">)<span class="_ _9"> </span><span class="ff3">through<span class="_ _9"> </span>the<span class="_ _9"> </span>quasi-essential<span class="_ _11"> </span>image<span class="_ _9"> </span>of<span class="_ _9"> </span></span></span>h<span class="ff3">.</span></div><div class="t m0 x5 h4 yeb ff3 fs0 fc0 sc0 ls0 ws0">Finally<span class="_ _1"></span>,<span class="_ _9"> </span>let<span class="_ _9"> </span>chec<span class="_ _a"></span>k<span class="_ _9"> </span>the<span class="_ _9"> </span>diagram<span class="_ _9"> </span>is<span class="_ _9"> </span>commutativ<span class="_ _3"></span>e,<span class="_ _4"> </span>i.e.<span class="_ _e"> </span>for<span class="_ _9"> </span>an<span class="_ _4"> </span>ob<span class="_ _12"></span>ject<span class="_ _9"> </span><span class="ff7">F<span class="_ _0"> </span></span>in<span class="_ _9"> </span>the<span class="_ _9"> </span>right-</div><div class="t m0 x0 h4 yec ff3 fs0 fc0 sc0 ls0 ws0">b<span class="_ _12"></span>ottom<span class="_ _2"> </span>and<span class="_ _11"> </span>assume<span class="_ _11"> </span>it<span class="_ _11"> </span>comes<span class="_ _11"> </span>from<span class="_ _2"> </span>top-left<span class="_ _11"> </span>by the<span class="_ _11"> </span>left<span class="_ _11"> </span>inclusion<span class="_ _2"> </span>and<span class="_ _11"> </span>b<span class="_ _12"></span>ottom<span class="_ _11"> </span>equiv<span class="_ _3"></span>a-</div><div class="t m0 x0 h5 yed ff3 fs0 fc0 sc0 ls0 ws0">lence,<span class="_ _2"> </span>then<span class="_ _11"> </span><span class="ff7">F<span class="_ _d"> </span></span>is the<span class="_ _11"> </span>form<span class="_ _11"> </span>as<span class="_ _11"> </span>in the<span class="_ _11"> </span>deﬁnition<span class="_ _11"> </span>of<span class="_ _11"> </span><span class="ff7">N<span class="_ _c"></span></span>.<span class="_ _e"> </span>Let<span class="_ _11"> </span><span class="ff7">F<span class="_ _4"> </span><span class="ffd">∈<span class="_ _10"> </span></span>O<span class="_ _12"></span>bj<span class="_ _6"></span><span class="ff8">(</span>T<span class="_ _2"> </span><span class="ff5">⊗<span class="_ _b"> </span><span class="ff8">(</span></span>T</span></div><div class="t m0 xc3 h8 yee ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xc4 h5 yed ff8 fs0 fc0 sc0 ls0 ws0">)</div><div class="t m0 x6b h6 yee ff9 fs2 fc0 sc0 ls0 ws0">op</div><div class="t m0 xc5 h5 yed ff5 fs0 fc0 sc0 ls0 ws0">−<span class="_ _b"> </span><span class="ff7">M<span class="_ _c"> </span>od<span class="ff8">)<span class="ff3">,</span></span></span></div><div class="t m0 x0 h4 yef ff3 fs0 fc0 sc0 ls0 ws0">i.e.<span class="_ _e"> </span>a<span class="_ _9"> </span>dg-functor</div><div class="t m0 x4 h5 yf0 ff7 fs0 fc0 sc0 ls0 ws0">F<span class="_ _4"> </span><span class="ff5">∶<span class="_ _10"> </span></span>T<span class="_ _9"> </span><span class="ff5">⊗<span class="_ _8"> </span><span class="ff8">(</span></span>T</div><div class="t m0 xc6 h8 yf1 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 x1d h5 yf0 ff8 fs0 fc0 sc0 ls0 ws0">)</div><div class="t m0 x22 h6 yf1 ff9 fs2 fc0 sc0 ls0 ws0">op</div><div class="t m0 xc7 h5 yf0 ffb fs0 fc0 sc0 ls0 ws0">Ð<span class="_ _1a"></span>→<span class="_ _7"> </span><span class="ff7">C<span class="_ _c"></span><span class="ff8">(</span>k<span class="ff8">)</span>.</span></div><div class="t m0 x0 h5 yf2 ff3 fs0 fc0 sc0 ls0 ws0">By<span class="_ _7"> </span>the bottom equiv<span class="_ _1"></span>alence of<span class="_ _7"> </span>the<span class="_ _10"> </span>diagram, w<span class="_ _3"></span>e regard<span class="_ _7"> </span><span class="ff7">F<span class="_ _4"> </span><span class="ffd">∈<span class="_ _10"> </span><span class="ff8">[</span></span>T<span class="_ _c"></span>,<span class="_ _b"> </span>I<span class="_ _c"></span>nt<span class="ff8">(</span>M<span class="_ _c"></span><span class="ff8">)]</span></span>, i.e.<span class="_ _4"> </span><span class="ff7">F<span class="_ _4"> </span><span class="ffd">=</span></span></div><div class="t m0 xc8 h4 yf3 ff3 fs0 fc0 sc0 ls0 ws0">˜</div><div class="t m0 x9c h5 yf2 ff7 fs0 fc0 sc0 ls0 ws0">F<span class="_ _b"> </span><span class="ff8">/<span class="_ _10"> </span><span class="ffd">∼</span></span></div><div class="t m0 x0 h4 yf4 ff3 fs0 fc0 sc0 ls0 ws0">for<span class="_ _4"> </span>some<span class="_ _19"> </span>lift</div><div class="t m0 x14 h4 yf5 ff3 fs0 fc0 sc0 ls0 ws0">˜</div><div class="t m0 xc9 h5 yf4 ff7 fs0 fc0 sc0 ls0 ws0">F<span class="_ _d"> </span><span class="ffd">∈<span class="_ _9"> </span></span>H<span class="_ _c"></span>om</div><div class="t m0 x3c h8 yf6 ff13 fs2 fc0 sc0 ls0 ws0">(<span class="ff9">dg<span class="_ _12"></span><span class="ffc">−</span>cat</span>)</div><div class="t m0 xca hb yf7 ff10 fs3 fc0 sc0 ls0 ws0">cf</div><div class="t m0 xac h5 yf4 ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>I<span class="_ _6"></span>nt</span>(<span class="ff7">M<span class="_ _b"> </span></span>))<span class="ff3">.<span class="_ _f"> </span>T<span class="_ _3"></span>o<span class="_ _4"> </span>chec<span class="_ _3"></span>k<span class="_ _19"> </span>the<span class="_ _19"> </span>top<span class="_ _4"> </span>equiv<span class="_ _3"></span>alence<span class="_ _19"> </span>of<span class="_ _19"> </span>the</span></div><div class="t m0 x0 h4 yf8 ff3 fs0 fc0 sc0 ls0 ws0">diagram,<span class="_ _11"> </span>we<span class="_ _11"> </span>further<span class="_ _9"> </span>regard</div><div class="t m0 xcb h4 yf9 ff3 fs0 fc0 sc0 ls0 ws0">˜</div><div class="t m0 x9f h4 yf8 ff7 fs0 fc0 sc0 ls0 ws0">F<span class="_ _d"> </span><span class="ff3">in<span class="_ _9"> </span>the<span class="_ _9"> </span>essential<span class="_ _11"> </span>image<span class="_ _9"> </span>of<span class="_ _9"> </span></span>h<span class="ff3">.<span class="_ _e"> </span>Therefore,</span></div><div class="t m0 xaf h4 yfa ff3 fs0 fc0 sc0 ls0 ws0">˜</div><div class="t m0 xbd h5 yfb ff7 fs0 fc0 sc0 ls0 ws0">F<span class="_ _4"> </span><span class="ffd">≃<span class="_ _10"> </span></span>h<span class="_ _8"> </span><span class="ff5">○<span class="_ _8"> </span></span>g<span class="_ _12"></span>,<span class="_ _14"> </span><span class="ff3">for<span class="_ _11"> </span>some<span class="_ _9"> </span></span>g<span class="_ _2"> </span><span class="ffd">∈<span class="_ _10"> </span></span>H<span class="_ _c"></span>om</div><div class="t m0 x53 h8 yfc ff13 fs2 fc0 sc0 ls0 ws0">(<span class="ff9">dg<span class="_ _12"></span><span class="ffc">−</span>cat</span>)</div><div class="t m0 x42 hb yfd ff10 fs3 fc0 sc0 ls0 ws0">cf</div><div class="t m0 xcc h5 yfb ff8 fs0 fc0 sc0 ls0 ws0">(<span class="ff7">T<span class="_ _c"></span>,<span class="_ _b"> </span>T</span></div><div class="t m0 x44 h8 yfe ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xcd h5 yfb ff8 fs0 fc0 sc0 ls0 ws0">)</div><div class="t m0 x0 h5 yff ff3 fs0 fc0 sc0 ls0 ws0">F<span class="_ _1"></span>or<span class="_ _9"> </span>any<span class="_ _11"> </span><span class="ff7">x<span class="_ _10"> </span><span class="ffd">∈<span class="_ _10"> </span></span>T<span class="_ _b"> </span></span>,<span class="_ _9"> </span>we<span class="_ _11"> </span>just<span class="_ _9"> </span>tak<span class="_ _a"></span>e</div><div class="t m0 x28 h5 y100 ff7 fs0 fc0 sc0 ls0 ws0">y<span class="_ _2"> </span><span class="ff5">∶<span class="ffd">=<span class="_ _7"> </span></span></span>g<span class="_ _6"></span><span class="ff8">(</span>x<span class="ff8">)<span class="_ _10"> </span><span class="ffd">∈<span class="_ _10"> </span></span></span>T</div><div class="t m0 x31 h8 y101 ffc fs2 fc0 sc0 ls0 ws0">′</div><div class="t m0 xce h7 y100 ff7 fs0 fc0 sc0 ls0 ws0">.</div><div class="t m0 x0 h4 y102 ff3 fs0 fc0 sc0 ls0 ws0">Hence</div><div class="t m0 xab h4 y103 ff3 fs0 fc0 sc0 ls0 ws0">˜</div><div class="t m0 x3f h5 y104 ff7 fs0 fc0 sc0 ls0 ws0">F<span class="_ _b"> </span><span class="ff8">(</span>x<span class="ff8">)<span class="_ _10"> </span><span class="ffd">≃<span class="_ _10"> </span></span></span>h<span class="ff8">(</span>y<span class="_ _12"></span><span class="ff8">)<span class="_ _10"> </span><span class="ffd">=<span class="_ _10"> </span></span></span>h</div><div class="t m0 xcf h6 y105 ff9 fs2 fc0 sc0 ls0 ws0">y</div><div class="t m0 x62 h5 y104 ffd fs0 fc0 sc0 ls0 ws0">∈<span class="_ _7"> </span><span class="ff7">M<span class="_ _6"></span>.</span></div><div class="t m0 x0 h4 y106 ff3 fs0 fc0 sc0 ls0 ws0">Since<span class="_ _11"> </span>the<span class="_ _9"> </span>lift</div><div class="t m0 xd0 h4 y107 ff3 fs0 fc0 sc0 ls0 ws0">˜</div><div class="t m0 x91 h4 y106 ff7 fs0 fc0 sc0 ls0 ws0">F<span class="_ _d"> </span><span class="ff3">is<span class="_ _9"> </span>upto<span class="_ _9"> </span>homotopy<span class="_ _5"></span>,<span class="_ _9"> </span>we<span class="_ _11"> </span>obtain<span class="_ _9"> </span><span class="ff7">F</span></span></div><div class="t m0 x31 h8 y108 ff9 fs2 fc0 sc0 ls0 ws0">x,<span class="ffc">−</span></div><div class="t m0 xd h5 y106 ffd fs0 fc0 sc0 ls0 ws0">∼</div><div class="t m0 x99 h4 y107 ff3 fs0 fc0 sc0 ls0 ws0">˜</div><div class="t m0 x73 h5 y106 ff7 fs0 fc0 sc0 ls0 ws0">F<span class="_ _b"> </span><span class="ff8">(</span>x<span class="ff8">)<span class="_ _10"> </span><span class="ffd">∈<span class="_ _10"> </span></span></span>M<span class="_ _e"> </span><span class="ff3">and<span class="_ _9"> </span>hence</span></div><div class="t m0 x70 h7 y109 ff7 fs0 fc0 sc0 ls0 ws0">F</div><div class="t m0 x1c h8 y10a ff9 fs2 fc0 sc0 ls0 ws0">x,<span class="ffc">−</span></div><div class="t m0 x72 h5 y109 ffd fs0 fc0 sc0 ls0 ws0">≃<span class="_ _7"> </span><span class="ff7">h</span></div><div class="t m0 xc6 h6 y10b ff9 fs2 fc0 sc0 ls0 ws0">y</div><div class="t m0 x22 h5 y109 ffd fs0 fc0 sc0 ls0 ws0">∈<span class="_ _7"> </span><span class="ff7">H<span class="_ _c"></span>o<span class="ff8">(</span>M<span class="_ _c"></span><span class="ff8">)</span>.</span></div><div class="t m0 x81 hf y10c ff14 fs0 fc0 sc0 ls0 ws0"></div><div class="t m0 xa8 h4 y10d ff4 fs0 fc0 sc0 ls0 ws0">References</div><div class="t m0 x0 h3 y10e ff2 fs1 fc0 sc0 ls0 ws0">[T<span class="_ _1"></span>o11]<span class="_ _e"> </span>B.<span class="_ _7"> </span>T<span class="_ _3"></span>o<span class="_ _a"></span>¨<span class="_ _1e"></span>en,<span class="_ _8"> </span><span class="ff17">Le<span class="_ _3"></span>ctur<span class="_ _3"></span>es<span class="_ _10"> </span>on<span class="_ _7"> </span>DG-Categories<span class="ff2">,<span class="_ _8"> </span>T<span class="_ _3"></span>opics<span class="_ _8"> </span>in<span class="_ _8"> </span>Algebraic<span class="_ _7"> </span>and<span class="_ _8"> </span>T<span class="_ _3"></span>op<span class="_ _12"></span>ological<span class="_ _8"> </span>K-Theory<span class="_ _3"></span>,<span class="_ _7"> </span>edited</span></span></div><div class="t m0 xd1 h3 y10f ff2 fs1 fc0 sc0 ls0 ws0">by<span class="_ _10"> </span>P<span class="_ _3"></span>.F.<span class="_ _2"> </span>Baum<span class="_ _2"> </span>et<span class="_ _2"> </span>al.,<span class="_ _2"> </span>Lecture<span class="_ _2"> </span>Notes<span class="_ _2"> </span>in<span class="_ _2"> </span>Math.<span class="_ _2"> </span>2008,<span class="_ _2"> </span>Springer-V<span class="_ _3"></span>erlag<span class="_ _2"> </span>Berlin<span class="_ _2"> </span>Heidelberg,<span class="_ _2"> </span>2011.</div></div><div class="pi" data-data='{"ctm":[1.700000,0.000000,0.000000,1.700000,0.000000,0.000000]}'></div></div>
+</div>
+<div class="loading-indicator">
+<img alt="" src="data:image/png;base64,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"/>
+</div>
+</body>
+</html>
