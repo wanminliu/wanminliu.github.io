@@ -21,7 +21,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
  
 ### Reading Notes
 
-- [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
+- [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), 2017.
 
 ### Useful Links
 [arXiv.AG](http://arxiv.org/list/math.AG/recent); [MathSciNet](http://www.ams.org/mathscinet/); [IBS Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar)
