@@ -17,7 +17,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 - Wanmin Liu, Song Yang, Xun Yu, _Classification of full exceptional collections of line bundles on three blow-ups of P^3_, submitted, 2018 March. (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.) 
 - Wanmin Liu, Jason Lo, _Fourier-Mukai transforms of stable torsion-free sheaves on Weierstrass elliptic surfaces_, preprint, 2018 Feb.
 - Wanmin Liu, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/doc/BM.html)_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), 595-621, see also [PDF](https://wanminliu.github.io/doc/BM.pdf), [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
-- Wanmin Liu, _Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces_, PhD thesis, (see the [link](https://wanminliu.github.io/thesis/thesis_WM.html) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
+- Wanmin Liu, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD thesis, (see the [link](https://wanminliu.github.io/doc/thesis_WM.pdf) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
  
 ### Reading Notes
 
