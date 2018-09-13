@@ -28,7 +28,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 
 Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html)
 
-HTML version of **Ravi Vakil**'s book (version 20171118) **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_**. 
+**_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_** -- HTML version of **Ravi Vakil**'s book (version 20171118)
 >The purpose of the HTML version is for a quick preview of the book without downloading the whole PDF. It is converted from the [PDF](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf) via the tool [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/). The PDF is available at [http://math.stanford.edu/~vakil/216blog/index.html](http://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/). 
 
 [LaTeX tutorial](https://wanminliu.github.io/introLaTeX/introLaTeX.html) (see also [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf))
