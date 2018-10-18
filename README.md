@@ -36,6 +36,6 @@ Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.e
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
 - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
-(Last modified: Sept 13, 2018)
+(Last modified: Oct 18, 2018)
 
 
