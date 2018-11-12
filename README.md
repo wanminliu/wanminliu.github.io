@@ -26,6 +26,8 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 ### Useful Links
 [arXiv.AG](http://arxiv.org/list/math.AG/recent); [MathSciNet](http://www.ams.org/mathscinet/); [IBS Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar)
 
+[Workshop on Moduli theory & Derived category, November 26–29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
+
 Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html)
 
 **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_** -- an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
