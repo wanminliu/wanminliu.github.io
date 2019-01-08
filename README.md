@@ -4,7 +4,7 @@
 
 <img src="https://avatars0.githubusercontent.com/u/5844031" width="200" height="200" />
 
-I am a postdoc at the [Department of Mathematics](http://www.math.uu.se/) of Uppsala University. I was a research fellow at [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) during 2015 Dec -- 2018 Nov. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the Hong Kong University of Science and Technology (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
+I am a postdoc at the [Department of Mathematics](http://www.math.uu.se/) of Uppsala University. I was a research fellow at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) during 2015 Dec -- 2018 Nov. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the Hong Kong University of Science and Technology (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
 
 ### [Curriculum Vitae (20170829)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_Pub.html) [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_Pub.pdf)
 
