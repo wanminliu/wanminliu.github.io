@@ -24,20 +24,22 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) (see also [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf)), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
 
 ### Useful Links
-[arXiv.AG](http://arxiv.org/list/math.AG/recent); [MathSciNet](http://www.ams.org/mathscinet/); [IBS-CGP Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar)
+[arXiv.AG](http://arxiv.org/list/math.AG/recent); [MathSciNet](http://www.ams.org/mathscinet/)
 
 Seminars:
 [UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
 [UU Algebra and Geometry Seminar, Tue 15:15--17:00](http://www2.math.uu.se/~mazor/seminar.html);
+[UU Geometry and Physics Seminar](http://www.physics.uu.se/research/theoretical-physics/Seminars/geom-phys-sem/);
 [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/en/sci/institutioner/math/forskning/matematik/alggeo/kth-su-algebra-and-geometry-seminar-spring-2019-1.868077);
-[Chalmers/GU Algebraic geometry and number theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
+[Chalmers/GU Algebraic Geometry and Number Theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
 
 [SMC](https://www.math-stockholm.se/); [Nordic-Math-Job](http://www.maths.lth.se/nordic/); [Chalmers](https://www.chalmers.se/en/departments/math/Pages/default.aspx); [Chalmers AG-NT](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/default.aspx); [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics-1.326304); [UU](https://www.math.uu.se/research/Algebra+and+Geometry); [Institut Mittag-Leffler](http://www.mittag-leffler.se/)
 
-
+[IBS-CGP Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar);
+[AG in China](http://www.alggeom.org/);
 [Workshop on Moduli theory & Derived category, November 26–29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
 
-Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html); [AG in China](http://www.alggeom.org/)
+Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html)
 
 **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_** -- an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
 >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [http://math.stanford.edu/~vakil/216blog/index.html](http://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/). 
