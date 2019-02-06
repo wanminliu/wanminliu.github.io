@@ -37,7 +37,7 @@ Seminars:
 
 [Workshop on Moduli theory & Derived category, November 26–29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
 
-Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html)
+Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html); [AG in China](http://www.alggeom.org/)
 
 **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_** -- an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
 >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [http://math.stanford.edu/~vakil/216blog/index.html](http://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/). 
