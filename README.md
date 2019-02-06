@@ -32,7 +32,7 @@ Seminars:
 [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/en/sci/institutioner/math/forskning/matematik/alggeo/kth-su-algebra-and-geometry-seminar-spring-2019-1.868077);
 [Chalmers/GU Algebraic geometry and number theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
 
-[SMC](https://www.math-stockholm.se/); [Nordic-Math-Job](http://www.maths.lth.se/nordic/); [Chalmers](https://www.chalmers.se/en/departments/math/Pages/default.aspx); [Chalmers AG-NT](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/default.aspx); [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics-1.326304); [UU](https://www.math.uu.se/research/Algebra+and+Geometry/medarbetare/); [Institut Mittag-Leffler](http://www.mittag-leffler.se/)
+[SMC](https://www.math-stockholm.se/); [Nordic-Math-Job](http://www.maths.lth.se/nordic/); [Chalmers](https://www.chalmers.se/en/departments/math/Pages/default.aspx); [Chalmers AG-NT](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/default.aspx); [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics-1.326304); [UU](https://www.math.uu.se/research/Algebra+and+Geometry); [Institut Mittag-Leffler](http://www.mittag-leffler.se/)
 
 
 [Workshop on Moduli theory & Derived category, November 26–29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
