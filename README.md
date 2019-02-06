@@ -27,9 +27,9 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 [arXiv.AG](http://arxiv.org/list/math.AG/recent); [MathSciNet](http://www.ams.org/mathscinet/); [IBS-CGP Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar)
 
 Seminars:
-[UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/)
-[UU Algebra and Geometry Seminar, Tue 15:15--17:00](http://www2.math.uu.se/~mazor/seminar.html)
-[KTH & SU Algebra and Geometry Seminar](https://www.kth.se/en/sci/institutioner/math/forskning/matematik/alggeo/kth-su-algebra-and-geometry-seminar-spring-2019-1.868077)
+[UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
+[UU Algebra and Geometry Seminar, Tue 15:15--17:00](http://www2.math.uu.se/~mazor/seminar.html);
+[KTH & SU Algebra and Geometry Seminar](https://www.kth.se/en/sci/institutioner/math/forskning/matematik/alggeo/kth-su-algebra-and-geometry-seminar-spring-2019-1.868077);
 [Chalmers/GU Algebraic geometry and number theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
 
 [SMC](https://www.math-stockholm.se/); [Nordic-Math-Job](http://www.maths.lth.se/nordic/); [Chalmers](https://www.chalmers.se/en/departments/math/Pages/default.aspx); [Chalmers AG-NT](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/default.aspx); [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics-1.326304); [UU](https://www.math.uu.se/research/Algebra+and+Geometry/medarbetare/); [Institut Mittag-Leffler](http://www.mittag-leffler.se/)
@@ -47,6 +47,6 @@ Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.e
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
 - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
-(Last modified: Jan 22, 2019)
+(Last modified: Feb 6, 2019)
 
 
