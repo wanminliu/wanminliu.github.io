@@ -26,21 +26,27 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 ### Useful Links
 [arXiv.AG](http://arxiv.org/list/math.AG/recent); [MathSciNet](http://www.ams.org/mathscinet/); [zbMATH](http://zbmath.org/)
 
-Seminars:
-[UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
-[UU Algebra and Geometry Seminar, Tue 15:15--17:00](http://www2.math.uu.se/~mazor/seminar.html);
-[UU Geometry and Physics Seminar](http://www.physics.uu.se/research/theoretical-physics/Seminars/geom-phys-sem/);
-[KTH & SU Algebra and Geometry Seminar](https://www.kth.se/en/sci/institutioner/math/forskning/matematik/alggeo/kth-su-algebra-and-geometry-seminar-spring-2019-1.868077);
-[Chalmers/GU Algebraic Geometry and Number Theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
+* Seminars:
+  * [UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
+  * [UU Algebra and Geometry Seminar, Tue 15:15--17:00](http://www2.math.uu.se/~mazor/seminar.html);
+  * [UU Geometry and Physics Seminar](http://www.physics.uu.se/research/theoretical-physics/Seminars/geom-phys-sem/);
+  * [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/en/sci/institutioner/math/forskning/matematik/alggeo/kth-su-algebra-and-geometry-seminar-spring-2019-1.868077);
+  * [Chalmers/GU Algebraic Geometry and Number Theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
 
-[SMC](https://www.math-stockholm.se/); [Nordic-Math-Job](http://www.maths.lth.se/nordic/); [Chalmers](https://www.chalmers.se/en/departments/math/Pages/default.aspx); [Chalmers AG-NT](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/default.aspx); [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics-1.326304); [UU](https://www.math.uu.se/research/Algebra+and+Geometry); [Institut Mittag-Leffler](http://www.mittag-leffler.se/)
+* Useful links:
+  * [Chalmers](https://www.chalmers.se/en/departments/math/Pages/default.aspx); [Chalmers AG-NT](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/default.aspx); 
+  * [Institut Mittag-Leffler](http://www.mittag-leffler.se/)
+  * [KTH](https://www.kth.se/en/sci/institutioner/math/forskning/matematik/alggeo/algebra-and-geometry-1.320490);
+  * [Nordic-Math-Job](http://www.maths.lth.se/nordic/); 
+  * [SMC](https://www.math-stockholm.se/); 
+  * [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics-1.326304); 
+  * [UU](https://www.math.uu.se/research/Algebra+and+Geometry); 
+  * [IBS-CGP Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar);
+  * [AG in China](http://www.alggeom.org/)
 
-[IBS-CGP Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar);
-[AG in China](http://www.alggeom.org/)
+ * [Workshop on Moduli theory & Derived category, November 26–29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
 
-[Workshop on Moduli theory & Derived category, November 26–29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
-
-Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html)
+ * Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html)
 
 **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_** -- an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
 >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [http://math.stanford.edu/~vakil/216blog/index.html](http://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/). 
@@ -50,6 +56,6 @@ Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.e
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
 - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
-(Last modified: Feb 6, 2019)
+(Last modified: Mar 7, 2019)
 
 
