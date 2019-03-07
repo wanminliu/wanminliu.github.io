@@ -34,15 +34,15 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
   * [Chalmers/GU Algebraic Geometry and Number Theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
 
 * Useful links:
+  * [AG in China](http://www.alggeom.org/)
   * [Chalmers](https://www.chalmers.se/en/departments/math/Pages/default.aspx); [Chalmers AG-NT](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/default.aspx); 
+  * [IBS-CGP Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar);
   * [Institut Mittag-Leffler](http://www.mittag-leffler.se/)
   * [KTH](https://www.kth.se/en/sci/institutioner/math/forskning/matematik/alggeo/algebra-and-geometry-1.320490);
   * [Nordic-Math-Job](http://www.maths.lth.se/nordic/); 
   * [SMC](https://www.math-stockholm.se/); 
   * [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics-1.326304); 
   * [UU](https://www.math.uu.se/research/Algebra+and+Geometry); 
-  * [IBS-CGP Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar);
-  * [AG in China](http://www.alggeom.org/)
 
  * [Workshop on Moduli theory & Derived category, November 26–29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
 
