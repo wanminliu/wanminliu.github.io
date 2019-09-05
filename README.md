@@ -11,6 +11,9 @@ I am a Researcher at the [Department of Mathematics](http://www.math.uu.se/) of 
 ### Research
 My research area is Algebraic Geometry. My research interests include Bridgeland stability conditions, moduli space, derived category, birational geometry, counting invariants and wall-crossing.
 
+### Teaching
+I am teaching *Differential Geometry* (1MA011) for undergraduate students in Uppsala University during the 2019 Fall semester.
+
 ### Papers
 - Wanmin Liu, Song Yang, Xun Yu, _Classification of full exceptional collections of line bundles on three blow-ups of P^3_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.) 
 - Wanmin Liu, _Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595-621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
@@ -30,10 +33,11 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
   * [UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
   * [UU Algebra and Geometry Seminar, Tue 15:15--17:00](http://www2.math.uu.se/~mazor/seminar.html);
   * [UU Geometry and Physics Seminar](http://www.physics.uu.se/research/theoretical-physics/Seminars/geom-phys-sem/);
-  * [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/en/sci/institutioner/math/forskning/matematik/alggeo/kth-su-algebra-and-geometry-seminar-spring-2019-1.868077);
+  * [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/math/math/alggeo/);
   * [Chalmers/GU Algebraic Geometry and Number Theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
 
 * Other links:
+  * [SMC Calendar](https://www.math-stockholm.se/en/kalender/)
   * [arXiv.AG](http://arxiv.org/list/math.AG/recent)
   * [MathSciNet](http://www.ams.org/mathscinet/)
   * [zbMATH](http://zbmath.org/)
@@ -47,7 +51,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
     * [Institut Mittag-Leffler](http://www.mittag-leffler.se/)
     * [KTH](https://www.kth.se/en/sci/institutioner/math/forskning/matematik/alggeo/algebra-and-geometry-1.320490)
     * [Nordic-Math-Job](http://www.maths.lth.se/nordic/)
-    * [SMC](https://www.math-stockholm.se/)
+    * [Stockholm Mathematics Centre](https://www.math-stockholm.se/)
     * [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics-1.326304)
     * [UU](https://www.math.uu.se/research/Algebra+and+Geometry)
 
@@ -59,6 +63,6 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
 - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
-(Last modified: Aug 26, 2019)
+(Last modified: Sept 05, 2019)
 
 
