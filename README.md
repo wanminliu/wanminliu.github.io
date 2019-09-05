@@ -13,6 +13,8 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 
 ### Teaching
 I am teaching *Differential Geometry* (1MA011) for undergraduate students in Uppsala University during the 2019 Fall semester.
+* Textbook: K. Tapp, Differential Geometry of Curves and Surfaces, Springer, 2016, [link](https://www.springer.com/gp/book/9783319397986). 
+* Timetable is available by the [link](https://cloud.timeedit.net/uu/web/schema/ri1X20gX0560Y9QQ4YZ630YY02y0007685761Q584v519Z8406Q307.html).
 
 ### Papers
 - Wanmin Liu, Song Yang, Xun Yu, _Classification of full exceptional collections of line bundles on three blow-ups of P^3_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.) 
