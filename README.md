@@ -22,7 +22,7 @@ I am teaching *Differential Geometry* (1MA011) for undergraduate students in Upp
 - Wanmin Liu, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD thesis, (see the [link](https://wanminliu.github.io/doc/thesis_WM.pdf) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
 
 ### Preprints
-- Wanmin Liu, Jason Lo, _Fourier-Mukai transforms of stable torsion-free sheaves on Weierstrass elliptic surfaces_, preprint, 2018 Feb, [CGP18043](https://cgp.ibs.re.kr/archive/preprints/2018).
+- Wanmin Liu, Jason Lo, Cristian Martinez, _Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
 
  
 ### Reading Notes
@@ -65,6 +65,6 @@ I am teaching *Differential Geometry* (1MA011) for undergraduate students in Upp
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
 - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
-(Last modified: Sept 05, 2019)
+(Last modified: Oct 08, 2019)
 
 
