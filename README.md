@@ -31,6 +31,12 @@ I am teaching *Differential Geometry* (1MA011) for undergraduate students in Upp
 
 ### Useful Links
 
+* Collaborators:
+  *  [Jason Lo](https://sites.google.com/site/chiehcjlo/home)
+  *  [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home)
+  *  [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44)
+  *  [Xun Yu](https://sites.google.com/site/xunyuhomepage/)
+
 * Seminars:
   * [UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
   * [UU Algebra and Geometry Seminar, Tue 15:15--17:00](http://www2.math.uu.se/~mazor/seminar.html);
