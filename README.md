@@ -64,7 +64,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 * Collaborators:
   *  [Yu-Wei Fan](https://ywfan-math.github.io/)
   *  [Chunyi Li](https://sites.google.com/site/chunyili0401/)
-  *  [Mulin Li](http://math.hnu.edu.cn/info/1031/1760.htm)
+  *  [Mu-Lin Li](http://math.hnu.edu.cn/info/1031/1760.htm)
   *  [Jason Lo](https://sites.google.com/site/chiehcjlo/home)
   *  [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home)
   *  [Yu Qiu](https://ubw-q.github.io/)
