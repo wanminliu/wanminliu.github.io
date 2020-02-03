@@ -12,9 +12,9 @@ I am a Researcher at the [Department of Mathematics](http://www.math.uu.se/) of 
 My research area is Algebraic Geometry. My research interests include Bridgeland stability conditions, moduli space, derived category, birational geometry, counting invariants and wall-crossing.
 
 ### Teaching
-I am teaching *Differential Geometry* (1MA011) for undergraduate students in Uppsala University during the 2019 Fall semester.
+-  2019 Fall, *Differential Geometry* (1MA011) for undergraduate students in Uppsala University.
 * Textbook: K. Tapp, Differential Geometry of Curves and Surfaces, Springer, 2016, [link](https://www.springer.com/gp/book/9783319397986). 
-* Timetable is available by the [link](https://cloud.timeedit.net/uu/web/schema/ri1X20gX0560Y9QQ4YZ630YY02y0007685761Q584v519Z8406Q307.html).
+
 
 ### Papers
 - Wanmin Liu, Song Yang, Xun Yu, _Classification of full exceptional collections of line bundles on three blow-ups of P^3_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.) 
@@ -22,20 +22,18 @@ I am teaching *Differential Geometry* (1MA011) for undergraduate students in Upp
 - Wanmin Liu, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD thesis, (see the [link](https://wanminliu.github.io/doc/thesis_WM.pdf) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
 
 ### Preprints
+
+- Yu-Wei Fan, Chunyi Li, Wanmin Liu, Yu Qiu, _Contractibility of space of stability conditions on the projective plane via global dimension function_, [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984).
+
 - Wanmin Liu, Jason Lo, Cristian Martinez, _Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
 
+- Mu-Lin Li, Wanmin Liu, _A note on limits of Kähler manifolds under deformation_, submitted, 2019 Apr.
  
 ### Reading Notes
 
 - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) (see also [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf)), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
 
 ### Useful Links
-
-* Collaborators:
-  *  [Jason Lo](https://sites.google.com/site/chiehcjlo/home)
-  *  [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home)
-  *  [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44)
-  *  [Xun Yu](https://sites.google.com/site/xunyuhomepage/)
 
 * Seminars:
   * [UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
@@ -63,6 +61,16 @@ I am teaching *Differential Geometry* (1MA011) for undergraduate students in Upp
     * [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics-1.326304)
     * [UU](https://www.math.uu.se/research/Algebra+and+Geometry)
 
+* Collaborators:
+  *  [Yu-Wei Fan](https://ywfan-math.github.io/)
+  *  [Chunyi Li](https://sites.google.com/site/chunyili0401/)
+  *  [Mulin Li](http://math.hnu.edu.cn/info/1031/1760.htm)
+  *  [Jason Lo](https://sites.google.com/site/chiehcjlo/home)
+  *  [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home)
+  *  [Yu Qiu](https://ubw-q.github.io/)
+  *  [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44)
+  *  [Xun Yu](https://sites.google.com/site/xunyuhomepage/)
+
 **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_** -- an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
 >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [http://math.stanford.edu/~vakil/216blog/index.html](http://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/). 
 
@@ -71,6 +79,6 @@ I am teaching *Differential Geometry* (1MA011) for undergraduate students in Upp
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
 - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
-(Last modified: Oct 08, 2019)
+(Last modified: Feb 03, 2020)
 
 
