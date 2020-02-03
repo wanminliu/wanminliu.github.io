@@ -12,7 +12,7 @@ I am a Researcher at the [Department of Mathematics](http://www.math.uu.se/) of 
 My research area is Algebraic Geometry. My research interests include Bridgeland stability conditions, moduli space, derived category, birational geometry, counting invariants and wall-crossing.
 
 ### Teaching
--  2019 Fall, *Differential Geometry* (1MA011) for undergraduate students in Uppsala University.  
+* 2019 Fall, *Differential Geometry* (1MA011) for undergraduate students in Uppsala University.  
   * Textbook: K. Tapp, Differential Geometry of Curves and Surfaces, Springer, 2016, [link](https://www.springer.com/gp/book/9783319397986). 
 
 
