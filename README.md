@@ -17,17 +17,17 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 
 
 ### Papers
-- Wanmin Liu, Song Yang, Xun Yu, _Classification of full exceptional collections of line bundles on three blow-ups of P^3_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.) 
-- Wanmin Liu, _Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595-621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
-- Wanmin Liu, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD thesis, (see the [link](https://wanminliu.github.io/doc/thesis_WM.pdf) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
+- &mdash;, Song Yang, Xun Yu, _Classification of full exceptional collections of line bundles on three blow-ups of P^3_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.) 
+- &mdash;, _Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595-621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
+- &mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD thesis, (see the [link](https://wanminliu.github.io/doc/thesis_WM.pdf) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
 
 ### Preprints
 
-- Yu-Wei Fan, Chunyi Li, Wanmin Liu, Yu Qiu, _Contractibility of space of stability conditions on the projective plane via global dimension function_, [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984).
+- Yu-Wei Fan, Chunyi Li, &mdash;, Yu Qiu, _Contractibility of space of stability conditions on the projective plane via global dimension function_, [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984).
 
-- Wanmin Liu, Jason Lo, Cristian Martinez, _Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
+- &mdash;, Jason Lo, Cristian Martinez, _Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
 
-- Mu-Lin Li, Wanmin Liu, _A note on limits of Kähler manifolds under deformation_, submitted, 2019 Apr.
+- Mu-Lin Li, &mdash;, _A note on limits of Kähler manifolds under deformation_, submitted, 2019 Apr.
  
 ### Others
 
@@ -52,7 +52,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
   * Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html)
   * [IBS-CGP Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar)
   * [Workshop on Moduli theory & Derived category, November 26 – 29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
-  * [Who is Who in Mirror SymmetryMay May 27 – June 1 2019, Moscow](http://hms.mirrorsymmetry.ru/index.html) and an interesting [Poster](http://hms.mirrorsymmetry.ru/Poster.pdf)
+  * [Who is Who in Mirror Symmetry, May 27 – June 1 2019, Moscow](http://hms.mirrorsymmetry.ru/index.html) and an interesting [Poster](http://hms.mirrorsymmetry.ru/Poster.pdf)
   * Sweden
     * [Chalmers](https://www.chalmers.se/en/departments/math/Pages/default.aspx); [Chalmers AG-NT](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/default.aspx)
     * [GU](https://www.gu.se/english/about_the_university/units/?languageId=100001&departmentId=013006)
