@@ -51,6 +51,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
   * Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html)
   * [IBS-CGP Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar)
   * [Workshop on Moduli theory & Derived category, November 26–29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
+  * [Who is Who in Mirror SymmetryMay May 27 – June 1 2019, Moscow](http://hms.mirrorsymmetry.ru/index.html) and an interesting [Poster](http://hms.mirrorsymmetry.ru/Poster.pdf)
   * Sweden
     * [Chalmers](https://www.chalmers.se/en/departments/math/Pages/default.aspx); [Chalmers AG-NT](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/default.aspx)
     * [GU](https://www.gu.se/english/about_the_university/units/?languageId=100001&departmentId=013006)
