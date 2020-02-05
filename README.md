@@ -17,17 +17,17 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 
 
 ### Papers
-- &mdash;, Song Yang, Xun Yu, _Classification of full exceptional collections of line bundles on three blow-ups of P^3_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.) 
-- &mdash;, _Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595-621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
-- &mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD thesis, (see the [link](https://wanminliu.github.io/doc/thesis_WM.pdf) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
+- &mdash;&mdash;, Song Yang, Xun Yu, _Classification of full exceptional collections of line bundles on three blow-ups of P^3_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.) 
+- &mdash;&mdash;, _Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595-621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
+- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD thesis, (see the [link](https://wanminliu.github.io/doc/thesis_WM.pdf) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
 
 ### Preprints
 
-- Yu-Wei Fan, Chunyi Li, &mdash;, Yu Qiu, _Contractibility of space of stability conditions on the projective plane via global dimension function_, [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984).
+- Yu-Wei Fan, Chunyi Li, &mdash;&mdash;, Yu Qiu, _Contractibility of space of stability conditions on the projective plane via global dimension function_, [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984).
 
-- &mdash;, Jason Lo, Cristian Martinez, _Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
+- &mdash;&mdash;, Jason Lo, Cristian Martinez, _Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
 
-- Mu-Lin Li, &mdash;, _A note on limits of Kähler manifolds under deformation_, submitted, 2019 Apr.
+- Mu-Lin Li, &mdash;&mdash;, _A note on limits of Kähler manifolds under deformation_, submitted, 2019 Apr.
  
 ### Others
 
