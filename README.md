@@ -29,9 +29,10 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 
 - Mu-Lin Li, Wanmin Liu, _A note on limits of Kähler manifolds under deformation_, submitted, 2019 Apr.
  
-### Reading Notes
+### Others
 
 - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) (see also [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf)), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
+- [A poster in StirngMath 2019](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.pdf)
 
 ### Useful Links
 
