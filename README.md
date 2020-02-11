@@ -6,14 +6,15 @@
 
 I am a Researcher at the [Department of Mathematics](http://www.math.uu.se/) of Uppsala University. I was a research fellow at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) during 2015 Dec -- 2018 Nov. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the [Hong Kong University of Science and Technology](https://www.math.ust.hk/) (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
 
-### [Curriculum Vitae (2020 Feb)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.pdf)
+### [Curriculum Vitae (2020 Feb)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.html) [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.pdf)
 
 ### Research
 My research area is Algebraic Geometry. My research interests include Bridgeland stability conditions, moduli space, derived category, birational geometry, counting invariants and wall-crossing.
 
 ### Teaching
 * 2019 Fall, *Differential Geometry* (1MA011) for undergraduate students in Uppsala University.  
-  * Textbook: K. Tapp, Differential Geometry of Curves and Surfaces, Springer, 2016, [link](https://www.springer.com/gp/book/9783319397986). 
+  * Textbook: K. Tapp, Differential Geometry of Curves and Surfaces, Springer, 2016, [link](https://www.springer.com/gp/book/9783319397986);
+  * Lecture Notes _[link](https://wanminliu.github.io/doc/DG/DG.html)_.
 
 
 ### Papers
