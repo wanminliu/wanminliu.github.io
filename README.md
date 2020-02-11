@@ -14,7 +14,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 ### Teaching
 * 2019 Fall, *Differential Geometry* (1MA011) for undergraduate students in Uppsala University.  
   * Textbook: K. Tapp, Differential Geometry of Curves and Surfaces, Springer, 2016, [link](https://www.springer.com/gp/book/9783319397986);
-  * Lecture Notes _[link](https://wanminliu.github.io/doc/DG/DG.html)_.
+  * Lecture Notes: _[link](https://wanminliu.github.io/doc/DG/DG.html)_.
 
 
 ### Papers
