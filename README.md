@@ -26,7 +26,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 
 - Yu-Wei Fan, Chunyi Li, &mdash;&mdash;, Yu Qiu, _[Contractibility of space of stability conditions on the projective plane via global dimension function](https://wanminliu.github.io/doc/FLLQ20/2001.11984.html)_, [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984).
 
-- &mdash;&mdash;, Jason Lo, Cristian Martinez, _Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
+- &mdash;&mdash;, Jason Lo, Cristian Martinez, _[Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/LLM19/1910.02477.html)_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
 
 - Mu-Lin Li, &mdash;&mdash;, _A note on limits of Kähler manifolds under deformation_, submitted, 2019 Apr.
  
