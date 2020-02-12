@@ -13,14 +13,14 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 
 ### Teaching
 * 2019 Fall, *Differential Geometry* (1MA011) for undergraduate students in Uppsala University.  
-  * Textbook: K. Tapp, Differential Geometry of Curves and Surfaces, Springer, 2016, [link](https://www.springer.com/gp/book/9783319397986);
+  * Textbook: K. Tapp, *Differential Geometry of Curves and Surfaces*, Springer, 2016, [link](https://www.springer.com/gp/book/9783319397986);
   * [**Lecture Notes**](https://wanminliu.github.io/doc/DG/DG.html).
 
 
 ### Papers
 - &mdash;&mdash;, Song Yang, Xun Yu, _Classification of full exceptional collections of line bundles on three blow-ups of P^3_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.) 
 - &mdash;&mdash;, _Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595-621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
-- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD thesis, (see the [link](https://wanminliu.github.io/doc/thesis_WM.pdf) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
+- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD thesis, (see the [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
 
 ### Preprints
 
@@ -32,8 +32,8 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
  
 ### Others
 
-- [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) (see also [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf)), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
-- [A poster in StringMath 2019](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.pdf)
+- [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) / [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
+- [A poster in StringMath 2019](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.html) / [PDF](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.pdf)
 
 ### Useful Links
 
@@ -53,7 +53,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
   * Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html)
   * [IBS-CGP Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar)
   * [Workshop on Moduli theory & Derived category, November 26 – 29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
-  * [**Who is Who in Mirror Symmetry**, May 27 – June 1 2019, Moscow](http://hms.mirrorsymmetry.ru/index.html) and an interesting [Poster](http://hms.mirrorsymmetry.ru/Poster.pdf)
+  * [**Who is Who in Mirror Symmetry**, May 27 – June 1 2019, Moscow](http://hms.mirrorsymmetry.ru/index.html) and an interesting [Poster](https://wanminliu.github.io/doc/Poster.html) / [PDF](http://hms.mirrorsymmetry.ru/Poster.pdf)
   * Sweden
     * [Chalmers](https://www.chalmers.se/en/departments/math/Pages/default.aspx); [Chalmers AG-NT](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/default.aspx)
     * [GU](https://www.gu.se/english/about_the_university/units/?languageId=100001&departmentId=013006)
