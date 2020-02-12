@@ -6,7 +6,7 @@
 
 I am a Researcher at the [Department of Mathematics](http://www.math.uu.se/) of Uppsala University. I was a research fellow at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) during 2015 Dec -- 2018 Nov. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the [Hong Kong University of Science and Technology](https://www.math.ust.hk/) (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
 
-### [Curriculum Vitae (2020 Feb)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.html) [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.pdf)
+### [Curriculum Vitae (2020 Feb)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.pdf)
 
 ### Research
 My research area is Algebraic Geometry. My research interests include Bridgeland stability conditions, moduli space, derived category, birational geometry, counting invariants and wall-crossing.
@@ -64,6 +64,13 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
     * [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics-1.326304)
     * [UU](https://www.math.uu.se/research/Algebra+and+Geometry)
 
+* Profiles
+  *  [arXiv](https://arxiv.org/search/math?query=Liu%2C+Wanmin&searchtype=author&abstracts=show&order=-announced_date_first&size=50)
+  *  [MathSciNet](https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=1286373)
+  *  [Zentralblatt](https://zbmath.org/authors/?q=wanmin+liu)
+  *  [ORCID](http://orcid.org/0000-0003-0999-5553)
+
+
 * Collaborators:
   *  [Yu-Wei Fan](https://ywfan-math.github.io/)
   *  [Chunyi Li](https://sites.google.com/site/chunyili0401/)
@@ -82,6 +89,6 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
 - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
-(Last modified: Feb 05, 2020)
+(Last modified: Feb 12, 2020)
 
 
