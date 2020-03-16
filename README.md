@@ -28,8 +28,7 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 
 - &mdash;&mdash;, Jason Lo, Cristian Martinez, _[Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/LLM19/1910.02477.html)_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
 
-- Mu-Lin Li, &mdash;&mdash;, _A note on limits of Kähler manifolds under deformation_, submitted, 2019 Apr.
- 
+
 ### Others
 
 - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) / [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
@@ -74,7 +73,6 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 * Collaborators:
   *  [Yu-Wei Fan](https://ywfan-math.github.io/)
   *  [Chunyi Li](https://sites.google.com/site/chunyili0401/)
-  *  [Mu-Lin Li](http://math.hnu.edu.cn/info/1031/1760.htm)
   *  [Jason Lo](https://sites.google.com/site/chiehcjlo/home)
   *  [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home)
   *  [Yu Qiu](https://ubw-q.github.io/)
@@ -89,6 +87,6 @@ My research area is Algebraic Geometry. My research interests include Bridgeland
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
 - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
-(Last modified: Feb 12, 2020)
+(Last modified: Mar 16, 2020)
 
 
