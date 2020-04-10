@@ -15,7 +15,7 @@ De så kallade abelska kategorierna är kategorier som uppfyller många bra egen
 
 _**Vad är ett Bridgeland-stabilitetsvillkor?**_
 
-Ett Bridgeland-stabilitetsvillkor _σ_=(_Z_, _P_) på en triangulerad kategori _D_ består av en centralladdning _Z_, som är ett användbart sätt att mäta olika objekt i _D_, samt en “slicing” _P_, som är en förfining av t-strukturen på _D_ från heltalen till de reella talen. Dessutom tillfredsställer paret (_Z_, _P_) vissa ytterligare axiom. I själva verket associerar _Z_ ett komplext tal till varje objekt, och vi kan använda det komplexa talets argument (dvs vinkel) för att jämföra olika objekt i _D_. Genom att sammanfoga dessa komplexa tal så får man en komplex mångfald, ett slags generellt typ av rum, som vi kallar för Bridgelands stabilitetsmångfald Stab(_D_).
+Ett Bridgeland-stabilitetsvillkor _σ=(Z, P)_ på en triangulerad kategori _D_ består av en centralladdning _Z_, som är ett användbart sätt att mäta olika objekt i _D_, samt en “slicing” _P_, som är en förfining av t-strukturen på _D_ från heltalen till de reella talen. Dessutom tillfredsställer paret _(Z, P)_ vissa ytterligare axiom. I själva verket associerar _Z_ ett komplext tal till varje objekt, och vi kan använda det komplexa talets argument (dvs vinkel) för att jämföra olika objekt i _D_. Genom att sammanfoga dessa komplexa tal så får man en komplex mångfald, ett slags generellt typ av rum, som vi kallar för Bridgelands stabilitetsmångfald Stab(_D_).
 
 _**Bridgelands stabilitetsvillkor ger nya aspekter på symmetri och klassificering.**_
 
