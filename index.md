@@ -4,6 +4,8 @@
 
 <img src="https://avatars0.githubusercontent.com/u/5844031" width="200" height="200" />
 
+<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point.png" width="200" height="200" />
+
 I am a Researcher at the [Department of Mathematics](http://www.math.uu.se/) of Uppsala University. I was a research fellow at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) during 2015 Dec -- 2018 Nov. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the [Hong Kong University of Science and Technology](https://www.math.ust.hk/) (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
 
 ### [Curriculum Vitae (2020 Feb)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.pdf)
