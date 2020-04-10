@@ -1,0 +1,111 @@
+<html><body>
+    <script src="7.js" type="text/javascript"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var cur_path_id = 0;
+      function draw() {
+        $('#label').text((cur_path_id + 1) + ' / ' + PATHS.length);
+        if (cur_path_id < 0 || cur_path_id >= PATHS.length) {
+          return;
+        }
+
+        var canvas = $('#canvas')[0];
+        var context = canvas.getContext('2d');
+        context.clearRect(0, 0, canvas.width, canvas.height);
+
+        path = PATHS[cur_path_id];
+        //console.log('path', path);
+
+        if (path.length <= 0) {
+          return;
+        }
+
+        var min_x = path[0][0];
+        var min_y = path[0][1];
+        var max_x = path[0][0];
+        var max_y = path[0][1];
+
+        path.forEach(function(p) {
+          min_x = Math.min(min_x, p[0]);
+          min_y = Math.min(min_y, p[1]);
+          max_x = Math.max(max_x, p[0]);
+          max_y = Math.max(max_y, p[1]);
+        });
+        //console.log('bounding box of all points', min_x, min_y, max_x, max_y);
+
+        var grid_size = Math.min(
+            canvas.width / (max_x - min_x + 1),
+            canvas.height / (max_y - min_y + 1));
+
+        //console.log('grid size', grid_size);
+
+        function get_canvas_x (x) {
+          return grid_size * (0.5 + x - min_x);
+        }
+
+        function get_canvas_y (y) {
+          return grid_size * (0.5 + max_y - y);
+        }
+
+        // draw all grid points
+        context.fillStyle = 'gray';
+        for (var x = min_x; x <= max_x; ++x) {
+          for (var y = min_y; y <= max_y; ++y) {
+            context.beginPath();
+            context.arc(get_canvas_x(x), get_canvas_y(y), 2, 0, 2 * Math.PI);
+            context.fill();
+          }
+        }
+
+        // draw all path points
+        context.fillStyle = 'black';
+        path.forEach(function(p) {
+          context.beginPath();
+          context.arc(get_canvas_x(p[0]), get_canvas_y(p[1]), 3, 0, 2 * Math.PI);
+          context.fill();
+        });
+
+        // highlight 0,0
+        context.fillStyle = 'blue';
+        context.beginPath();
+        context.arc(get_canvas_x(0), get_canvas_y(0), 4, 0, 2 * Math.PI);
+        context.fill();
+
+        context.beginPath();
+        var first = true;
+        path.forEach(function(p) {
+          if (first) {
+            first = false;
+            context.moveTo(get_canvas_x(p[0]), get_canvas_y(p[1]));
+          } else {
+            context.lineTo(get_canvas_x(p[0]), get_canvas_y(p[1]));
+          }
+        });
+        context.stroke();
+      }
+      $(function() {
+        draw();
+        $('#draw_prev').click(function() {
+          if (cur_path_id > 0) {
+            -- cur_path_id;
+            draw();
+          }
+        });
+        $('#draw_next').click(function() {
+          if (cur_path_id < PATHS.length - 1) {
+            ++ cur_path_id;
+            draw();
+          }
+        });
+      });
+    </script>
+    <div>
+      <button id="draw_prev">&lt;</button>
+      <span id="label">Loading...</span>
+      <button id="draw_next">&gt;</button>
+    </div>
+    <canvas id="canvas" width="600" height="600" style="border: 1px solid black;"></canvas>
+</body></html>
