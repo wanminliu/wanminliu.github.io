@@ -9,7 +9,7 @@ I am a Researcher at the [Department of Mathematics](http://www.math.uu.se/) of 
 ### [Curriculum Vitae (2020 Feb)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.pdf)
 
 ### Research
-My research area is Algebraic Geometry. My research interests include [Bridgeland stability conditions](https://wanminliu.github.io/rs/bsc), moduli space, derived category, birational geometry, counting invariants and wall-crossing.
+My research area is Algebraic Geometry. My research interests include [Bridgeland stability conditions](https://wanminliu.github.io/rs/bscev), moduli space, derived category, birational geometry, counting invariants and wall-crossing.
 
 ### Teaching
 * 2019 Fall, *Differential Geometry* (1MA011) for undergraduate students in Uppsala University.  
@@ -87,6 +87,6 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
 - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
-(Last modified: Mar 16, 2020)
+(Last modified: Apr 10, 2020)
 
 
