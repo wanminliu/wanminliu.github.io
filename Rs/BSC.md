@@ -1,4 +1,6 @@
-> **Chinese Name** 柳万民 <br>**Email** wanminliu (at) gmail.com  <br> **Skype** wanminliu <br> **Postal Address** Box 480, 751 06 Uppsala, Sweden <br> **Office** Room 14144, Ångströmlaboratoriet, Plan 4, Hus 1, (Lägerhyddsvägen 1), Uppsala University.
+Back to [**homepage**](https://wanminliu.github.io) 
+
+[Swedish version](https://wanminliu.github.io/rs/bscsv)
 
 ### Bridgeland stability condition -- new aspects to symmetry and classification
 
