@@ -1,10 +1,10 @@
 Back to [**homepage**](https://wanminliu.github.io) 
 
-[Engelsk version](https://wanminliu.github.io/rs/bsc)
+[Engelsk version](https://wanminliu.github.io/rs/bscen)
 
 _Tack till [Georgios](http://www.dimitroglou.name/) med hjälp av översättning._ 
 
-### Bridgelands stabilitetsvillkor - nya aspekter av symmetri och klassificering
+### Bridgelands stabilitetsvillkor -- nya aspekter av symmetri och klassificering
 
 Samverkan mellan matematik och fysik är fantastisk. Många djupa matematiska teorier har visat sig vara grundläggande i fysik, såsom Riemanniangeometri i allmän relativitetsteori, medan många vackra idéer inom fysik har visat sig vara djupa teorier i matematik, såsom strängteori i modern algebraisk geometri och symplektisk geometri. Begreppet Bridgelandsstabilitet, som introducerades av Bridgeland själv 2002, är ett utmärkt sådant exempel.
 
