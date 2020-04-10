@@ -12,7 +12,7 @@ Since the 1940s, mathematicians have upgraded the set theory to the category the
 
 _**What is a Bridgeland stability condition?**_
 
-A Bridgeland stability condition *σ=(Z, P)* on a triangulated category _D_ consists of a central charge _Z_, which is a fancy way to measure different objects in _D_, and a slicing _P_, which is an real-number indexed refinement of t-structure on _D_. Moreover, the pair of data satisfies some axioms. Indeed, _Z_ associates each object with a complex number, and we could use the phase of this complex number to compare objects in _D_. Putting all the complex numbers together, it forms a complex manifold -- the Bridgeland stability manifold Stab(_D_).
+A Bridgeland stability condition _σ_=(_Z_, _P_) on a triangulated category _D_ consists of a central charge _Z_, which is a fancy way to measure different objects in _D_, and a slicing _P_, which is an real-number indexed refinement of t-structure on _D_. Moreover, the pair of data satisfies some axioms. Indeed, _Z_ associates each object with a complex number, and we could use the phase of this complex number to compare objects in _D_. Putting all the complex numbers together, it forms a complex manifold -- the Bridgeland stability manifold Stab(_D_).
 
 _**Bridgeland stability condition brings new aspects to symmetry and classification.**_
 
