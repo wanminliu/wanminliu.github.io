@@ -68,6 +68,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
   *  [MathSciNet](https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=1286373)
   *  [Zentralblatt](https://zbmath.org/authors/?q=wanmin+liu)
   *  [ORCID](http://orcid.org/0000-0003-0999-5553)
+  *  [Uppsala University](https://katalog.uu.se/empinfo/?id=N18-1439)
 
 
 * Collaborators:
