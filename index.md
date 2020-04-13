@@ -35,7 +35,14 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) / [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
 - [A poster in StringMath 2019](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.html) / [PDF](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.pdf)
 
-### [Useful Links](https://wanminliu.github.io/link)
+### [Seminars]
+  * [UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
+  * [UU Algebra and Geometry Seminar, Tue 15:15--17:00](http://www2.math.uu.se/~mazor/seminar.html);
+  * [UU Geometry and Physics Seminar](http://www.physics.uu.se/research/theoretical-physics/Seminars/geom-phys-sem/);
+  * [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/math/math/alggeo/);
+  * [Chalmers/GU Algebraic Geometry and Number Theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
+
+### [Other Links](https://wanminliu.github.io/link)
 
 
 (Last modified: Apr 13, 2020)

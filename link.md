@@ -1,15 +1,7 @@
 Back to [**homepage**](https://wanminliu.github.io) 
 
-### Useful Links
+### Other Links
 
-* Seminars:
-  * [UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
-  * [UU Algebra and Geometry Seminar, Tue 15:15--17:00](http://www2.math.uu.se/~mazor/seminar.html);
-  * [UU Geometry and Physics Seminar](http://www.physics.uu.se/research/theoretical-physics/Seminars/geom-phys-sem/);
-  * [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/math/math/alggeo/);
-  * [Chalmers/GU Algebraic Geometry and Number Theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
-
-* Other links:
   * [SMC Calendar](https://www.math-stockholm.se/en/kalender/)
   * [arXiv.AG](http://arxiv.org/list/math.AG/recent)
   * [MathSciNet](http://www.ams.org/mathscinet/)
