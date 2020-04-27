@@ -36,6 +36,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 - [A poster in StringMath 2019](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.html) / [PDF](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.pdf)
 
 ### Seminars
+  * [Math Seminars](https://mathseminars.org/);
   * [UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
   * [UU Algebra and Geometry Seminar, Tue 15:15--17:00](http://www2.math.uu.se/~mazor/seminar.html);
   * [UU Geometry and Physics Seminar](http://www.physics.uu.se/research/theoretical-physics/Seminars/geom-phys-sem/);
