@@ -16,10 +16,10 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * 2019 Fall, *Differential Geometry* (1MA011) for undergraduate students in Uppsala University.  
   * Textbook: K. Tapp, *Differential Geometry of Curves and Surfaces*, Springer, 2016, [link](https://www.springer.com/gp/book/9783319397986);
   * [**Lecture Notes**](https://wanminliu.github.io/doc/DG/DG.html).
-
+* 2020 Spring, supervise a undergraduate student: Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis, 57 pp, Uppsala University, 2020 June.
 
 ### Papers
-- &mdash;&mdash;, Song Yang, Xun Yu, _[Classification of full exceptional collections of line bundles on three blow-ups of P^3](https://wanminliu.github.io/doc/LYY19/1810.06367.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.) 
+- &mdash;&mdash;, Song Yang, Xun Yu, _[Classification of full exceptional collections of line bundles on three blow-ups of P^3](https://wanminliu.github.io/doc/LYY19/1810.06367.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.)
 - &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/doc/L18/1501.06397.html)_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595-621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
 - &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD thesis, (see the [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
 
@@ -47,5 +47,3 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 
 (Last modified: Apr 13, 2020)
-
-
