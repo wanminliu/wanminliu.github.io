@@ -16,7 +16,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * 2019 Fall, *Differential Geometry* (1MA011) for undergraduate students in Uppsala University.  
   * Textbook: K. Tapp, *Differential Geometry of Curves and Surfaces*, Springer, 2016, [link](https://www.springer.com/gp/book/9783319397986);
   * [**Lecture Notes**](https://wanminliu.github.io/doc/DG/DG.html).
-* 2020 Spring, supervise a undergraduate student: Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis, 57 pp, Uppsala University, 2020 June.
+* 2020 Spring, supervise a undergraduate student: Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 57 pages, Uppsala University, 2020 June.
 
 ### Papers
 - &mdash;&mdash;, Song Yang, Xun Yu, _[Classification of full exceptional collections of line bundles on three blow-ups of P^3](https://wanminliu.github.io/doc/LYY19/1810.06367.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.)
