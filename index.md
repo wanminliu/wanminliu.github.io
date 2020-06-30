@@ -39,10 +39,6 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 - [**Who is Who in Mirror Symmetry**, May 27 - June 1, 2019](http://hms.mirrorsymmetry.ru/index.html), [Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](http://hms.mirrorsymmetry.ru/abstracts.html) and an interesting [Poster](https://wanminliu.github.io/doc/Poster.html) / [PDF](http://hms.mirrorsymmetry.ru/Poster.pdf)
 
 
-### Others
-- Classification of full exceptianl collection of line bundles (of FINITE type) on the [blow-up of P^7 at a point](https://wanminliu.github.io/rs/blowup/7)
-- [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) / [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
-
 
 ### Seminars
   * [Math Seminars](https://mathseminars.org/);
@@ -52,7 +48,20 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
   * [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/math/math/alggeo/);
   * [Chalmers/GU Algebraic Geometry and Number Theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
 
-### [Other Links](https://wanminliu.github.io/link)
+
+### Others
+  - Classification of full exceptianl collection of line bundles (of FINITE type) on the [blow-up of P^7 at a point](https://wanminliu.github.io/rs/blowup/7)
+  - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) / [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
+  - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_** -- an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
+  >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [http://math.stanford.edu/~vakil/216blog/index.html](http://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/).
+
+  - [LaTeX tutorial 2012](https://wanminliu.github.io/introLaTeX/introLaTeX.html) (see also [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf))
+
+  [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
+  - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
+
+
+### [More Links](https://wanminliu.github.io/link)
 
 
 (Last modified: June 30, 2020)
