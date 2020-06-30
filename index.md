@@ -34,10 +34,9 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 - Geometry and Mathematical Physics Seminar of USTC, June 4, 2020, [Contractibility of space of stability conditions on the projective plane via global dimension function](https://wanminliu.github.io/doc/P2slides/P2_gldim.html) / [PDF](https://wanminliu.github.io/doc/P2slides/P2_gldim.pdf)
 
-- [StringMath 2019, Gong Show Talk](https://www.stringmath2019.se/gong-show/), [Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/WMLiu_StringMath2019_Slide.html) / [PDF](https://wanminliu.github.io/doc/WMLiu_StringMath2019_Slide.pdf); and a [Poster][Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.html) / [PDF](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.pdf)
+- [StringMath 2019, Gong Show Talk](https://www.stringmath2019.se/gong-show/), [Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/WMLiu_StringMath2019_Slide.html) / [PDF](https://wanminliu.github.io/doc/WMLiu_StringMath2019_Slide.pdf); and a Poster [Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.html) / [PDF](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.pdf)
 
-- [Who is Who in Mirror Symmetry, May 27 - June 1, 2019]
-(http://hms.mirrorsymmetry.ru/index.html), [Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](http://hms.mirrorsymmetry.ru/abstracts.html) and an interesting [Poster](https://wanminliu.github.io/doc/Poster.html) / [PDF](http://hms.mirrorsymmetry.ru/Poster.pdf)
+- [**Who is Who in Mirror Symmetry**, May 27 - June 1, 2019](http://hms.mirrorsymmetry.ru/index.html), [Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](http://hms.mirrorsymmetry.ru/abstracts.html) and an interesting [Poster](https://wanminliu.github.io/doc/Poster.html) / [PDF](http://hms.mirrorsymmetry.ru/Poster.pdf)
 
 
 ### Others
