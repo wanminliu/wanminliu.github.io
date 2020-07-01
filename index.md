@@ -10,7 +10,10 @@ I am a Researcher at the [Department of Mathematics](http://www.math.uu.se/) of 
 ### [Curriculum Vitae (2020 Feb)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.pdf)
 
 ### Research
-My research area is Algebraic Geometry. My research interests include [Bridgeland stability conditions](https://wanminliu.github.io/rs/bscen), moduli space, derived category, birational geometry, counting invariants and wall-crossing.
+My research area is Algebraic Geometry. My research interests include [Bridgeland stability conditions](https://annals.math.princeton.edu/wp-content/uploads/annals-v166-n2-p01.pdf), moduli space, derived category, birational geometry, counting invariants and wall-crossing.
+
+* [Bridgeland stability condition – new aspects to symmetry and classification](https://wanminliu.github.io/rs/bscen)
+* [Bridgelands stabilitetsvillkor – nya aspekter av symmetri och klassificering](https://wanminliu.github.io/rs/bscsv)
 
 ### Teaching
 * 2019 Fall, *Differential Geometry* (1MA011) for undergraduate students in Uppsala University.  
@@ -34,14 +37,14 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 - Geometry and Mathematical Physics Seminar of USTC, June 4, 2020, [Contractibility of space of stability conditions on the projective plane via global dimension function](https://wanminliu.github.io/doc/P2slides/P2_gldim.html) / [PDF](https://wanminliu.github.io/doc/P2slides/P2_gldim.pdf)
 
-- [StringMath 2019, Gong Show Talk](https://www.stringmath2019.se/gong-show/), [Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/WMLiu_StringMath2019_Slide.html) / [PDF](https://wanminliu.github.io/doc/WMLiu_StringMath2019_Slide.pdf); and a Poster [Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.html) / [PDF](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.pdf)
+- [StringMath 2019, Gong Show Talk](https://www.stringmath2019.se/gong-show/), [Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/WMLiu_StringMath2019_Slide.html) / [PDF](https://wanminliu.github.io/doc/WMLiu_StringMath2019_Slide.pdf); and a [Poster](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.html) / [PDF](https://wanminliu.github.io/doc/SM2019_Poster_Wanmin.pdf)
 
 - [**Who is Who in Mirror Symmetry**, May 27 - June 1, 2019](http://hms.mirrorsymmetry.ru/index.html), [Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](http://hms.mirrorsymmetry.ru/abstracts.html) and an interesting [Poster](https://wanminliu.github.io/doc/Poster.html) / [PDF](http://hms.mirrorsymmetry.ru/Poster.pdf)
 
 
 
 ### Seminars
-  * [Math Seminars](https://mathseminars.org/);
+  * [Online Seminars](https://researchseminars.org/);
   * [UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
   * [UU Algebra and Geometry Seminar, Tue 15:15--17:00](http://www2.math.uu.se/~mazor/seminar.html);
   * [UU Geometry and Physics Seminar](http://www.physics.uu.se/research/theoretical-physics/Seminars/geom-phys-sem/);
@@ -57,11 +60,11 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
   - [LaTeX tutorial 2012](https://wanminliu.github.io/introLaTeX/introLaTeX.html) (see also [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf))
 
-  [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
+  - [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
   - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
 
-### [More Links](https://wanminliu.github.io/link)
+### [**More Links**](https://wanminliu.github.io/link)
 
 
 (Last modified: June 30, 2020)
