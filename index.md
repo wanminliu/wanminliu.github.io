@@ -16,10 +16,11 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * [Bridgelands stabilitetsvillkor – nya aspekter av symmetri och klassificering](https://wanminliu.github.io/rs/bscsv)
 
 ### Teaching
+* 2020 Fall, *Linear Algebra II* (1MA024), [Timetable of Programme E3](https://cloud.timeedit.net/uu/web/schema/ri1XQ0gZ5560YgQQ9YZ7843Y00y300x565069Q589v554Z92Y72769Q9ZyyQo.html#contentlinks) and [Timetable of Programme X2.A](https://cloud.timeedit.net/uu/web/schema/ri1XQ0gZ5560YgQQ9YZ7840Y05y300x565069Q589v552Z92Y82769Q9ZyyQo.html#contentlinks). Zoom Links of lectures are available via login [Studium](https://login.studium.uu.se/).
+* 2020 Spring, supervise a undergraduate student: Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 57 pages, Uppsala University, 2020 June.
 * 2019 Fall, *Differential Geometry* (1MA011) for undergraduate students in Uppsala University.  
   * Textbook: K. Tapp, *Differential Geometry of Curves and Surfaces*, Springer, 2016, [link](https://www.springer.com/gp/book/9783319397986);
   * [**Lecture Notes**](https://wanminliu.github.io/doc/DG/DG.html).
-* 2020 Spring, supervise a undergraduate student: Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 57 pages, Uppsala University, 2020 June.
 
 ### Papers
 - &mdash;&mdash;, [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44), [Xun Yu](https://sites.google.com/site/xunyuhomepage/), _[Classification of full exceptional collections of line bundles on three blow-ups of P^3](https://wanminliu.github.io/doc/LYY19/1810.06367.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.)
@@ -66,7 +67,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 ### [**More Links**](https://wanminliu.github.io/link)
 
-(Last modified: June 30, 2020)
+(Last modified: Aug 31, 2020)
 
 
-<img src="/pic/ClearWaterBay.JPG" id="rwidth: 100%;  height: auto;"> 
+<img src="/pic/ClearWaterBay.JPG" id="rwidth: 100%;  height: auto;">
