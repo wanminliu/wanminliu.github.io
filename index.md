@@ -16,7 +16,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * [Bridgelands stabilitetsvillkor – nya aspekter av symmetri och klassificering](https://wanminliu.github.io/rs/bscsv)
 
 ### Teaching
-* 2020 Fall, *Linear Algebra II* (1MA024), [Timetable of Programme E3](https://cloud.timeedit.net/uu/web/schema/ri1XQ0gZ5560YgQQ9YZ7843Y00y300x565069Q589v554Z92Y72769Q9ZyyQo.html#contentlinks) and [Timetable of Programme X2.A](https://cloud.timeedit.net/uu/web/schema/ri1XQ0gZ5560YgQQ9YZ7840Y05y300x565069Q589v552Z92Y82769Q9ZyyQo.html#contentlinks). Zoom Links of lectures are available via login [Studium](https://login.studium.uu.se/).
+* 2020 Fall, *Linear Algebra II* (1MA024), [Timetable of Programme E3](https://cloud.timeedit.net/uu/web/schema/ri1XQ0gZ5560YgQQ9YZ7843Y00y300x565069Q589v554Z92Y72769Q9ZyyQo.html#contentlinks) and [Timetable of Programme X2.A](https://cloud.timeedit.net/uu/web/schema/ri1XQ0gZ5560YgQQ9YZ7840Y05y300x565069Q589v552Z92Y82769Q9ZyyQo.html#contentlinks). Zoom Links of lectures are available via login [Studium](https://login.studium.uu.se/). [Lecture Notes](https://wanminliu.github.io/LinearAlgebra_II/)
 * 2020 Spring, supervise a undergraduate student: Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 57 pages, Uppsala University, 2020 June.
 * 2019 Fall, *Differential Geometry* (1MA011) for undergraduate students in Uppsala University.  
   * Textbook: K. Tapp, *Differential Geometry of Curves and Surfaces*, Springer, 2016, [link](https://www.springer.com/gp/book/9783319397986);
