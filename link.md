@@ -22,9 +22,9 @@ Back to [**homepage**](https://wanminliu.github.io)
     * [UU](https://www.math.uu.se/research/Algebra+and+Geometry)
 
 * Profiles
-  *  [arXiv](https://arxiv.org/search/math?query=Liu%2C+Wanmin&searchtype=author&abstracts=show&order=-announced_date_first&size=50)
-  *  [MathSciNet](https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=789188)
-  *  [Zentralblatt](https://zbmath.org/authors/?q=wanmin+liu)
+  *  [arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
+  *  [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
+  *  [Zentralblatt](https://zbmath.org/authors/?q=%22Wanmin+Liu%22)
   *  [ORCID](http://orcid.org/0000-0003-0999-5553)
   *  [Uppsala University](https://katalog.uu.se/empinfo/?id=N18-1439)
 
