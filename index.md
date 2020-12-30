@@ -1,11 +1,12 @@
-> **Chinese Name** 柳万民 <br>**Email** wanminliu (at) gmail.com  <br> **Skype** wanminliu <br> **Postal Address** Box 480, 751 06 Uppsala, Sweden <br> **Office** Room 14144, Ångströmlaboratoriet, Plan 4, Hus 1, (Lägerhyddsvägen 1), Uppsala University.
-
+> **Chinese Name** 柳万民 <br>**Email** wanminliu (at) gmail.com  <br> **Skype** wanminliu <br>
+ 
+ 
 ### About Me
 
 [<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_33.png" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      <img src="https://avatars0.githubusercontent.com/u/5844031" width="200" height="200" />      [<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_49.png" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      [<img src="https://wanminliu.github.io/pic/2001.11984_13.png" width="300" height="200" />](https://arxiv.org/abs/2001.11984)
 
 
-I am a Researcher at the [Department of Mathematics](http://www.math.uu.se/) of Uppsala University. I was a research fellow at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) during 2015 Dec -- 2018 Nov. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the [Hong Kong University of Science and Technology](https://www.math.ust.hk/) (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
+I was a Researcher at the [Department of Mathematics](http://www.math.uu.se/) of Uppsala University during 2019 Jan -- 2020 Dec. I was a Research Fellow at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) during 2015 Dec -- 2018 Nov. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the [Hong Kong University of Science and Technology](https://www.math.ust.hk/) (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
 
 ### [Curriculum Vitae (2020 Feb)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.pdf)
 
@@ -67,7 +68,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 ### [**More Links**](https://wanminliu.github.io/link)
 
-(Last modified: Nov 24, 2020)
+(Last modified: Dec 30, 2020)
 
 
 <img src="/pic/ClearWaterBay.JPG" id="rwidth: 100%;  height: auto;">
