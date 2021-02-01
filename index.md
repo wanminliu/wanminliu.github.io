@@ -1,12 +1,12 @@
 > **Chinese Name** 柳万民 <br>**Email** wanminliu (at) gmail.com  <br> **Skype** wanminliu <br>
- 
- 
+
+
 ### About Me
 
 [<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_33.png" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      <img src="https://avatars0.githubusercontent.com/u/5844031" width="200" height="200" />      [<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_49.png" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      [<img src="https://wanminliu.github.io/pic/2001.11984_13.png" width="300" height="200" />](https://arxiv.org/abs/2001.11984)
 
 
-I was a Researcher at the [Department of Mathematics](http://www.math.uu.se/) of Uppsala University during 2019 Jan -- 2020 Dec. I was a Research Fellow at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) during 2015 Dec -- 2018 Nov. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the [Hong Kong University of Science and Technology](https://www.math.ust.hk/) (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
+I am on the job market this year. I was a Researcher at the [Department of Mathematics](http://www.math.uu.se/) of Uppsala University during 2019 Jan -- 2020 Dec. I was a Research Fellow at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) during 2015 Dec -- 2018 Nov. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the [Hong Kong University of Science and Technology](https://www.math.ust.hk/) (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
 
 ### [Curriculum Vitae (2020 Feb)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.pdf)
 
@@ -17,7 +17,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * [Bridgelands stabilitetsvillkor – nya aspekter av symmetri och klassificering](https://wanminliu.github.io/rs/bscsv)
 
 ### Teaching
-* 2020 Fall, *Linear Algebra II* (1MA024).
+* 2020 Fall, *Linear Algebra II* (1MA024). (Teaching Assistant.)
 * 2020 Spring, supervise a undergraduate student: Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 57 pages, Uppsala University, 2020 June, [DiVA, id: diva2:1466472](http://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1466472).
 * 2019 Fall, *Differential Geometry* (1MA011) for undergraduate students in Uppsala University.  
   * Textbook: K. Tapp, *Differential Geometry of Curves and Surfaces*, Springer, 2016, [link](https://www.springer.com/gp/book/9783319397986);
