@@ -44,15 +44,17 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 - [**Who is Who in Mirror Symmetry**, May 27 - June 1, 2019](http://hms.mirrorsymmetry.ru/index.html), [Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](http://hms.mirrorsymmetry.ru/abstracts.html), [YouTube Video](https://www.youtube.com/watch?v=xGopibMJANg) and an interesting [Poster](https://wanminliu.github.io/doc/Poster.html) / [PDF](http://hms.mirrorsymmetry.ru/Poster.pdf)
 
 
+### Some Links
+* [SMC Calendar](https://www.math-stockholm.se/en/kalender/)
+* [arXiv.AG](http://arxiv.org/list/math.AG/recent)
+* [MathSciNet](http://www.ams.org/mathscinet/)
 
-### Seminars
-  * [Online Seminars](https://researchseminars.org/);
-  * [UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
-  * [UU Algebra and Geometry Seminar, Tue 15:15--17:00](http://www2.math.uu.se/~mazor/seminar.html);
-  * [UU Geometry and Physics Seminar](http://www.physics.uu.se/research/theoretical-physics/Seminars/geom-phys-sem/);
-  * [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/math/math/alggeo/);
-  * [Chalmers/GU Algebraic Geometry and Number Theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
-
+### Profiles
+* [arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
+* [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
+* [Zentralblatt](https://zbmath.org/authors/?q=%22Wanmin+Liu%22)
+* [ORCID](http://orcid.org/0000-0003-0999-5553)
+* [Uppsala University](https://katalog.uu.se/empinfo/?id=N18-1439)
 
 ### Others
   - Classification of full exceptianl collection of line bundles (of FINITE type) on the [blow-up of P^7 at a point](https://wanminliu.github.io/rs/blowup/7)
@@ -68,8 +70,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 ### [**More Links**](https://wanminliu.github.io/link)
 
-(Last modified: Dec 30, 2020)
+(Last modified: Feb 24, 2021)
 
 
 <img src="/pic/ClearWaterBay.JPG" id="rwidth: 100%;  height: auto;">
-sssss

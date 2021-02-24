@@ -1,5 +1,14 @@
 Back to [**homepage**](https://wanminliu.github.io)
 
+### Seminars
+  * [Online Seminars](https://researchseminars.org/);
+  * [UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
+  * [UU Algebra and Geometry Seminar, Tue 15:15--17:00](http://www2.math.uu.se/~mazor/seminar.html);
+  * [UU Geometry and Physics Seminar](http://www.physics.uu.se/research/theoretical-physics/Seminars/geom-phys-sem/);
+  * [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/math/math/alggeo/);
+  * [Chalmers/GU Algebraic Geometry and Number Theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
+  * [UU Ph.D. course in symplectic geometry](http://www2.math.uu.se/~georgios/sg21/)
+
 ### Other Links
 
   * [SMC Calendar](https://www.math-stockholm.se/en/kalender/)
@@ -39,4 +48,4 @@ Back to [**homepage**](https://wanminliu.github.io)
   *  [Xun Yu](https://sites.google.com/site/xunyuhomepage/)
 
 
-(Last modified: Apr 13, 2020)
+(Last modified: Feb 24, 2021)
