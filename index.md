@@ -8,7 +8,9 @@
 
 I am on the job market this year. I was a Researcher at the [Department of Mathematics](http://www.math.uu.se/) of Uppsala University during 2019 Jan -- 2020 Dec. I was a Research Fellow at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) during 2015 Dec -- 2018 Nov. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the [Hong Kong University of Science and Technology](https://www.math.ust.hk/) (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
 
-### [Curriculum Vitae (2020 Feb)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2020.pdf)
+### [My papers on arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
+
+### [Curriculum Vitae (2021 Feb)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.pdf)
 
 ### Research
 My research area is Algebraic Geometry. My research interests include [Bridgeland stability conditions](https://annals.math.princeton.edu/wp-content/uploads/annals-v166-n2-p01.pdf), moduli space, derived category, birational geometry, counting invariants and wall-crossing.
@@ -50,7 +52,6 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * [MathSciNet](http://www.ams.org/mathscinet/)
 
 ### Profiles
-* [arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
 * [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
 * [Zentralblatt](https://zbmath.org/authors/?q=%22Wanmin+Liu%22)
 * [ORCID](http://orcid.org/0000-0003-0999-5553)
