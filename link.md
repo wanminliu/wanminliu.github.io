@@ -28,7 +28,7 @@ Back to [**homepage**](https://wanminliu.github.io)
     * [Nordic-Math-Job](http://www.maths.lth.se/nordic/)
     * [Stockholm Mathematics Centre](https://www.math-stockholm.se/)
     * [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics-1.326304)
-    * [UU](https://www.math.uu.se/research/Algebra+and+Geometry)
+    * [UU](https://www.math.uu.se/research/algebra-and-geometry/)
 
 * Profiles
   *  [arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
