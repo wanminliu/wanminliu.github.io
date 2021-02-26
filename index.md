@@ -52,12 +52,6 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 - [**Who is Who in Mirror Symmetry**, May 27 - June 1, 2019](http://hms.mirrorsymmetry.ru/index.html), [Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](http://hms.mirrorsymmetry.ru/abstracts.html), [YouTube Video](https://www.youtube.com/watch?v=xGopibMJANg) and an interesting [Poster](https://wanminliu.github.io/doc/Poster.html) / [PDF](http://hms.mirrorsymmetry.ru/Poster.pdf)
 
 
-### Some Links
-* [SMC Calendar](https://www.math-stockholm.se/en/kalender/)
-* [arXiv.AG](http://arxiv.org/list/math.AG/recent)
-* [MathSciNet](http://www.ams.org/mathscinet/)
-
-
 ### Others
   - Classification of full exceptianl collection of line bundles (of FINITE type) on the [blow-up of P^7 at a point](https://wanminliu.github.io/rs/blowup/7)
   - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) / [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
