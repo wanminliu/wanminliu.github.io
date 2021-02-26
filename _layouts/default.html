@@ -36,7 +36,23 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
-    
+
+    {% if page.usemathjax %}
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    {% end if %}
+
+
+
+
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101195773);</script>
     <script async src="//static.getclicky.com/js"></script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101195773ns.gif" /></p></noscript>
