@@ -1,5 +1,13 @@
 Back to [**homepage**](https://wanminliu.github.io)
 
+### Profiles
+*  [arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
+*  [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
+*  [Zentralblatt](https://zbmath.org/authors/?q=%22Wanmin+Liu%22)
+*  [ORCID](http://orcid.org/0000-0003-0999-5553)
+*  [Uppsala University](https://katalog.uu.se/empinfo/?id=N18-1439)
+
+
 ### Seminars
   * [Online Seminars](https://researchseminars.org/);
   * [UU Geometry and Topology Seminar, Wed 14:15--16:15](http://www.math.uu.se/forskning/algebra-och-geometri/seminariet-geometri-och-topologi/);
@@ -30,15 +38,8 @@ Back to [**homepage**](https://wanminliu.github.io)
     * [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics-1.326304)
     * [UU](https://www.math.uu.se/research/algebra-and-geometry/)
 
-* Profiles
-  *  [arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
-  *  [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
-  *  [Zentralblatt](https://zbmath.org/authors/?q=%22Wanmin+Liu%22)
-  *  [ORCID](http://orcid.org/0000-0003-0999-5553)
-  *  [Uppsala University](https://katalog.uu.se/empinfo/?id=N18-1439)
 
-
-* Collaborators:
+### Collaborators:
   *  [Yu-Wei Fan](https://ywfan-math.github.io/)
   *  [Chunyi Li](https://sites.google.com/site/chunyili0401/)
   *  [Jason Lo](https://sites.google.com/site/chiehcjlo/home)

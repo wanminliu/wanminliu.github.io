@@ -57,11 +57,6 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * [arXiv.AG](http://arxiv.org/list/math.AG/recent)
 * [MathSciNet](http://www.ams.org/mathscinet/)
 
-### Profiles
-* [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
-* [Zentralblatt](https://zbmath.org/authors/?q=%22Wanmin+Liu%22)
-* [ORCID](http://orcid.org/0000-0003-0999-5553)
-* [Uppsala University](https://katalog.uu.se/empinfo/?id=N18-1439)
 
 ### Others
   - Classification of full exceptianl collection of line bundles (of FINITE type) on the [blow-up of P^7 at a point](https://wanminliu.github.io/rs/blowup/7)
