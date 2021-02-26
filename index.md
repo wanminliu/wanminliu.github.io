@@ -6,7 +6,7 @@
 [<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_33.png" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      <img src="https://avatars0.githubusercontent.com/u/5844031" width="200" height="200" />      [<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_49.png" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      [<img src="https://wanminliu.github.io/pic/2001.11984_13.png" width="300" height="200" />](https://arxiv.org/abs/2001.11984)
 
 
-I am currently on the job market. 
+I am currently on the job market.
 
 I was a Researcher at the [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/) of Uppsala University during 2019 Jan -- 2020 Dec. I was a Research Fellow at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/) during 2015 Dec -- 2018 Nov. I received my [PhD](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) from the [Hong Kong University of Science and Technology](https://www.math.ust.hk/) (HKUST) in 2015, under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
 
@@ -30,7 +30,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 ### Papers
 - &mdash;&mdash;, [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44), [Xun Yu](https://sites.google.com/site/xunyuhomepage/), _[Classification of full exceptional collections of line bundles on three blow-ups of P^3](https://wanminliu.github.io/doc/LYY19/1810.06367.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of P^3_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.)
 - &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/doc/L18/1501.06397.html)_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595-621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
-- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD thesis, (see the [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) for an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651)).
+
 
 ### Preprints
 
@@ -38,6 +38,10 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 - &mdash;&mdash;, [Jason Lo](https://sites.google.com/site/chiehcjlo/home), [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home), _Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
 
+### Thesis
+- PhD Thesis, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, Hong Kong University of Science and Technology, 2015. The [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) is an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651).
+- Master Thesis, _[Infinitely many solutions for two noncooperative p(x)-Laplacian elliptic systems](https://wanminliu.github.io/doc/Thesis/Thesis_Master_Wanmin_Liu_2007.pdf)_, Lanzhou University, 2007.
+- Bachelor Thesis, _[An Exact Inequality Involving Luxemburg Norm and Conjugate-Orlicz Norm in L^{p(x)}(\Omega)](https://wanminliu.github.io/doc/Thesis/Fan-Liu_en.pdf)_, Lanzhou University, 2004.
 
 ### Talks
 
