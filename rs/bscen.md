@@ -22,5 +22,8 @@ Bridgeland stability and derived category theory provide deep connections of dif
 
 The research on the notion of Bridgeland stability condition is very new and active and it attracts many talented young investigators. The purpose of my research is to create new understandings on the notion of Bridgeland stability condition, and find its new applications in Algebraic Geometry.
 
+_Reference_
+
+T. Bridgeland, [Stability conditions on triangulated categories](http://annals.math.princeton.edu/wp-content/uploads/annals-v166-n2-p01.pdf). Ann. of Math. (2) 166 (2007), no. 2, 317–345.  
 
 

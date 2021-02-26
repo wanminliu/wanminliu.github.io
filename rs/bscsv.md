@@ -1,8 +1,8 @@
-Back to [**homepage**](https://wanminliu.github.io) 
+Back to [**homepage**](https://wanminliu.github.io)
 
 [Engelsk version](https://wanminliu.github.io/rs/bscen)
 
-_Tack till [Georgios](http://www.dimitroglou.name/) med hjälp av översättning._ 
+_Tack till [Georgios](http://www.dimitroglou.name/) med hjälp av översättning._
 
 ### Bridgelands stabilitetsvillkor -- nya aspekter av symmetri och klassificering
 
@@ -24,5 +24,4 @@ Två centrala teman i matematik är _symmetri_ och _klassificering_. Bridgelands
 Forskningen om begreppet Bridgelandsstabilitet är mycket nytt och aktivt. Det ger djupa kopplingar mellan olika grenar av matematik. Syftet med denna forskningsplan är att skapa en ny förståelse av begreppet Bridgelandsstabilitet, samt att hitta nya tillämpningar av det inom ämnet algebraisk geometri.
 
 
-
-
+T. Bridgeland, [Stability conditions on triangulated categories](http://annals.math.princeton.edu/wp-content/uploads/annals-v166-n2-p01.pdf). Ann. of Math. (2) 166 (2007), no. 2, 317–345.
