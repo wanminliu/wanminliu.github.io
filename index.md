@@ -12,15 +12,17 @@ I was a Researcher (Jan 2019 - Dec 2020) at the [Department of Mathematics](http
 I was a Research Fellow (Dec 2015 - Nov 2018) at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/).  
 I received my [Ph.D.](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) (June 2015) from the [Hong Kong University of Science and Technology](https://www.math.ust.hk/) under the guidance of Prof [Wei-Ping Li](http://www.math.ust.hk/~mawpli/).
 
-### [My papers on arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
 
-### [Curriculum Vitae (2021 Feb)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.pdf)
+### [Curriculum Vitae (Feb 2021)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.pdf)
+
+### [My papers on arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
 
 ### Research
 My research area is Algebraic Geometry. My research interests include [Bridgeland stability conditions](https://annals.math.princeton.edu/wp-content/uploads/annals-v166-n2-p01.pdf), moduli space, derived category, birational geometry, counting invariants and wall-crossing.
 
 * [Bridgeland stability condition – new aspects to symmetry and classification](https://wanminliu.github.io/rs/bscen)
 * [Bridgelands stabilitetsvillkor – nya aspekter av symmetri och klassificering](https://wanminliu.github.io/rs/bscsv)
+
 
 ### Teaching
 * 2020 Fall, *Linear Algebra II* (1MA024). (Teaching Assistant.)
@@ -36,9 +38,9 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 ### Preprints
 
-- [Yu-Wei Fan](https://ywfan-math.github.io/), [Chunyi Li](https://sites.google.com/site/chunyili0401/), &mdash;&mdash;, [Yu Qiu](https://ubw-q.github.io/), _[Contractibility of space of stability conditions on the projective plane via global dimension function](https://wanminliu.github.io/doc/FLLQ20/P2.html)_, [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984).
+- [Yu-Wei Fan](https://ywfan-math.github.io/), [Chunyi Li](https://sites.google.com/site/chunyili0401/), &mdash;&mdash;, [Yu Qiu](https://ubw-q.github.io/), _[Contractibility of space of stability conditions on the projective plane via global dimension function](https://wanminliu.github.io/doc/FLLQ20/P2.html)_, [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984), submitted.
 
-- &mdash;&mdash;, [Jason Lo](https://sites.google.com/site/chiehcjlo/home), [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home), _Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
+- &mdash;&mdash;, [Jason Lo](https://sites.google.com/site/chiehcjlo/home), [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home), _Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477), submitted.
 
 
 
@@ -52,7 +54,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 
 ### Others
-  - Classification of full exceptianl collection of line bundles (of FINITE type) on the [blow-up of $\mathbb{P}^7$ at a point](https://wanminliu.github.io/rs/blowup/7)
+  - Classification of full exceptianl collection of line bundles (of FINITE type) on the [blow-up of $\mathbb{P}^7$ at a point](https://wanminliu.github.io/rs/blowup/7).
   - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) / [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
   - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_** -- an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
   >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [http://math.stanford.edu/~vakil/216blog/index.html](http://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/).
