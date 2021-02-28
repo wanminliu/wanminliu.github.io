@@ -6,7 +6,7 @@
 [<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_33.png" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      <img src="https://avatars0.githubusercontent.com/u/5844031" width="200" height="200" />      [<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_49.png" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      [<img src="https://wanminliu.github.io/pic/2001.11984_13.png" width="300" height="200" />](https://arxiv.org/abs/2001.11984)
 
 
-I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
+I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/20190420.jpg) in Stockholm.
 
 I was a Researcher (Jan 2019 - Dec 2020) at the [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/) of Uppsala University.  
 I was a Research Fellow (Dec 2015 - Nov 2018) at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/).  
