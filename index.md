@@ -28,7 +28,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * 2020 Fall, *Linear Algebra II* (1MA024). (Teaching Assistant.)
 * 2020 Spring, supervise an undergraduate student: Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 57 pages, Uppsala University, 2020 June, [DiVA, id: diva2:1466472](http://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1466472).
 * 2019 Fall, *Differential Geometry* (1MA011, 10 Credits) for undergraduate students in Uppsala University.  
-  * [**Course Plan, Lecture Notes, Homeworks and Oral Exam Plan**](https://wanminliu.github.io/doc/DG/DG.html)
+  * [**Course Plan, Lecture Notes, Homework and Oral Exam Plan**](https://wanminliu.github.io/doc/DG/DG.html)
 
 ### Papers
 - &mdash;&mdash;, [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44), [Xun Yu](https://sites.google.com/site/xunyuhomepage/), _[Classification of full exceptional collections of line bundles on three blow-ups of $\mathbb{P}^3$](https://wanminliu.github.io/doc/LYY19/1810.06367.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of $\mathbb{P}^3$_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.)
@@ -53,7 +53,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 
 ### Others
-  - Classification of full exceptianl collection of line bundles (of FINITE type) on the [blow-up of $\mathbb{P}^7$ at a point](https://wanminliu.github.io/rs/blowup/7).
+  - Classification of full exceptional collection of line bundles (of FINITE type) on the [blow-up of $\mathbb{P}^7$ at a point](https://wanminliu.github.io/rs/blowup/7).
   - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) / [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
   - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_** -- an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
   >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [http://math.stanford.edu/~vakil/216blog/index.html](http://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/).
