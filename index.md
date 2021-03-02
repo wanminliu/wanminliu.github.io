@@ -17,6 +17,16 @@ I received my [Ph.D.](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) (Ju
 
 ### [My papers on arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
 
+[![Linkedin](https://i.stack.imgur.com/gVE0j.png) linkedin.com/in/wanminliu](https://www.linkedin.com/in/wanminliu)
+&nbsp;
+[![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png) 0000-0001-2345-6789](http://orcid.org/0000-0003-0999-5553)
+&nbsp;
+[MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
+&nbsp;
+[zbMATH](https://zbmath.org/authors/?q=%22Wanmin+Liu%22)
+
+
+
 ### Research
 My research area is Algebraic Geometry. My research interests include [Bridgeland stability conditions](https://annals.math.princeton.edu/wp-content/uploads/annals-v166-n2-p01.pdf), moduli space, derived category, birational geometry, counting invariants and wall-crossing.
 
