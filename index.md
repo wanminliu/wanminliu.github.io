@@ -35,10 +35,16 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 
 ### Teaching
-* 2020 Fall, *Linear Algebra II* (1MA024). (Teaching Assistant.)
-* 2020 Spring, supervise an undergraduate student: Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 57 pages, Uppsala University, 2020 June, [DiVA, id: diva2:1466472](http://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1466472).
-* 2019 Fall, *Differential Geometry* (1MA011, 10 Credits) for undergraduate students in Uppsala University.  
-  * [**Course Plan, Lecture Notes, Homework and Oral Exam Plan**](https://wanminliu.github.io/doc/DG/DG.html)
+* 2020 Fall, *Linear Algebra II* (1MA024). Teaching Assistant for Two groups, each group 20 hours online tutorial teaching, online cooperation with other TAs and lecturers on grading homework, midterm and final exams.
+* 2020 Spring, supervise an undergraduate student (10 credits).
+
+ > Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 58 pages, Uppsala University, 2020 June, [DiVA, id: diva2:1466472](http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-419483).
+* 2019 Fall, *Differential Geometry* (1MA011, 10 Credits) for undergraduate students in Uppsala University. 50 hours lectures, 45 min oral exam to each student. The full teaching material (232 pages, with Pictures, Course Plan, Homework and Oral Exam Plan) is in the following link:
+  * [**Lecture Notes on Differential Geometry of Curves and Surfaces**](https://wanminliu.github.io/doc/DG/DG.html)
+* HKUST: Teaching Assistant for various courses: _Complex Analysis_, _Differential Geometry_, _Analysis_, _Linear Algebra_, _Concept in Math_, _Differential Geometry_ (won the **[Best Teaching Assitant Award](https://wanminliu.github.io/pic/BestTA.jpg)**), _Ordinary Differential Equation_.
+* Wanmin Liu, [Training to all new Teaching Assistants](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html), demo of Problems in Linear Algebra and Caculus, 40 pages, Department of Mathematics, HKUST, 2012. (see also [PDF](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html))
+* Wanmin Liu, [LaTeX tutorial 2012](https://wanminliu.github.io/introLaTeX/introLaTeX.html) (see also [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf)).
+
 
 ### Papers
 - &mdash;&mdash;, [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44), [Xun Yu](https://sites.google.com/site/xunyuhomepage/), _[Classification of full exceptional collections of line bundles on three blow-ups of $\mathbb{P}^3$](https://wanminliu.github.io/doc/LYY19/1810.06367.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of $\mathbb{P}^3$_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.)
@@ -62,7 +68,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 - [**Who is Who in Mirror Symmetry**, May 27 - June 1, 2019](http://hms.mirrorsymmetry.ru/index.html), [Fourier-Mukai transforms of slope stable torsion-free sheaves on Weierstrass elliptic surfaces](http://hms.mirrorsymmetry.ru/abstracts.html), [YouTube Video](https://www.youtube.com/watch?v=xGopibMJANg) and an interesting [Poster](https://wanminliu.github.io/doc/Poster.html) / [PDF](http://hms.mirrorsymmetry.ru/Poster.pdf)
 
 
-### Organizer
+### co-Organizer
 * [Workshop on Moduli theory & Derived category, November 26 – 29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
 
 
@@ -71,8 +77,6 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
   - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) / [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
   - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_** -- an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
   >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [http://math.stanford.edu/~vakil/216blog/index.html](http://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/).
-
-  - [LaTeX tutorial 2012](https://wanminliu.github.io/introLaTeX/introLaTeX.html) (see also [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf))
 
   - [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
   - Talk on TUG2013: Online publishing via pdf2htmlEX [HTML](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.html) / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
