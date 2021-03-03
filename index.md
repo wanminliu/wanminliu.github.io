@@ -39,11 +39,12 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * 2020 Spring, supervise an undergraduate student (10 credits).
 
  > Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 58 pages, Uppsala University, 2020 June, [DiVA, id: diva2:1466472](http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-419483).
-* 2019 Fall, *Differential Geometry* (1MA011, 10 Credits) for undergraduate students in Uppsala University. 50 hours lectures, 45 min oral exam to each student. The full teaching material (232 pages, with Pictures, Course Plan, Homework and Oral Exam Plan) is in the following link:
-  * [**Lecture Notes on Differential Geometry of Curves and Surfaces**](https://wanminliu.github.io/doc/DG/DG.html)
+
+* 2019 Fall, *Differential Geometry* (1MA011, 10 Credits) for undergraduate students in Uppsala University. 50 hours lectures, 45 min oral exam to each student. The full teaching material (with Course Plan, Homework and Oral Exam Plan and lots of Images) is in the following link:
+  * Wanmin Liu, [**Lecture Notes on Differential Geometry of Curves and Surfaces**](https://wanminliu.github.io/doc/DG/DG.html), 232 pages, Uppsala University, 2019.
 * HKUST: Teaching Assistant for various courses: _Complex Analysis_, _Differential Geometry_, _Analysis_, _Linear Algebra_, _Concept in Math_, _Differential Geometry_ (won the **[Best Teaching Assitant Award](https://wanminliu.github.io/pic/BestTA.jpg)**), _Ordinary Differential Equation_.
-* Wanmin Liu, [Training to all new Teaching Assistants](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html), demo of Problems in Linear Algebra and Caculus, 40 pages, Department of Mathematics, HKUST, 2012. (see also [PDF](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html))
-* Wanmin Liu, [LaTeX tutorial 2012](https://wanminliu.github.io/introLaTeX/introLaTeX.html) (see also [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf)).
+* Wanmin Liu, [Training to all new Teaching Assistants](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html), demo of Problems in Linear Algebra and Caculus, 40 pages, Department of Mathematics, HKUST, 2012. [PDF](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html)
+* Wanmin Liu, [LaTeX tutorial](https://wanminliu.github.io/introLaTeX/introLaTeX.html), HKUST, 2012. [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf)
 
 
 ### Papers
