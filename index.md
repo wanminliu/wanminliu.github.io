@@ -13,7 +13,7 @@ I was a Research Fellow (Dec 2015 - Nov 2018) at the [IBS Center for Geometry an
 I received my [Ph.D.](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) (June 2015) from the [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/) under the guidance of Prof [Wei-Ping Li](https://www.math.hkust.edu.hk/people/faculty/profile/mawpli/).
 
 
-### [Curriculum Vitae (Feb 2021)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.pdf)
+### [Curriculum Vitae (Mar 3, 2021)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.pdf)
 
 ### [My papers on arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
 
@@ -85,7 +85,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 ### [**More Links**](https://wanminliu.github.io/link)
 
-(Last modified: Feb 24, 2021)
+(Last modified: Mar 3, 2021)
 
 
 <img src="/pic/ClearWaterBay.JPG" id="rwidth: 100%;  height: auto;">
