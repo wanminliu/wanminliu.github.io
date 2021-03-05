@@ -10,7 +10,7 @@ I am currently on the job market. I am living with my [family](https://wanminliu
 
 I was a Researcher (Jan 2019 - Dec 2020) at the [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/) of Uppsala University.  
 I was a Research Fellow (Dec 2015 - Nov 2018) at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/).  
-I received my [Ph.D.](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) (June 2015) from the [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/) under the guidance of Prof [Wei-Ping Li](https://www.math.hkust.edu.hk/people/faculty/profile/mawpli/).
+I received my [Ph.D.](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) (June 2015) from the [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/) under the guidance of Prof [Wei-Ping Li](https://www.math.ust.hk/~mawpli/).
 
 
 ### [Curriculum Vitae (Mar 3, 2021)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.pdf)
