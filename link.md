@@ -50,7 +50,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 ### Thesis
 - PhD Thesis, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, Hong Kong University of Science and Technology, 2015. The [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) is an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651).
-- Master Thesis, _[Infinitely many solutions for two noncooperative  $p(x)$-Laplacian elliptic systems](https://wanminliu.github.io/doc/Thesis/Thesis_Master_Wanmin_Liu_2007.html)_, Lanzhou University, 2007. [PDF](https://wanminliu.github.io/doc/Thesis/Thesis_Master_Wanmin_Liu_2007.pdf)
-- Bachelor Thesis, _[An Exact Inequality Involving Luxemburg Norm and Conjugate-Orlicz Norm in  $L^{p(x)}(\Omega)$](https://wanminliu.github.io/doc/Thesis/Fan-Liu_en.pdf)_, Lanzhou University, 2004. [PDF in Chinese](https://wanminliu.github.io/doc/Thesis/Fan-Liu_cn.pdf)
+- Master Thesis, _[Infinitely many solutions for two noncooperative  $p(x)$-Laplacian elliptic systems](https://wanminliu.github.io/doc/Thesis/Thesis_Master_Wanmin_Liu_2007.html)_, Lanzhou University, 2007. [PDF](https://wanminliu.github.io/doc/Thesis/Thesis_Master_Wanmin_Liu_2007.pdf).
+- Bachelor Thesis, _[An Exact Inequality Involving Luxemburg Norm and Conjugate-Orlicz Norm in  $L^{p(x)}(\Omega)$](https://wanminliu.github.io/doc/Thesis/Fan-Liu_en.html)_, Lanzhou University, 2004. [PDF in English](https://wanminliu.github.io/doc/Thesis/Fan-Liu_en.pdf), [PDF in Chinese](https://wanminliu.github.io/doc/Thesis/Fan-Liu_cn.pdf).
 
 (Last modified: Feb 24, 2021)
