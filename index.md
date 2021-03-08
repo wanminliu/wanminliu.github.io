@@ -1,10 +1,9 @@
 > **Chinese Name** 柳万民 <br>**Email** wanminliu (at) gmail.com  <br> **Skype** wanminliu <br>
 
 
-### About Me
-
 [<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_33.png" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      <img src="https://avatars0.githubusercontent.com/u/5844031" width="200" height="200" />      [<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_49.png" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      [<img src="https://wanminliu.github.io/pic/2001.11984_13.png" width="300" height="200" />](https://arxiv.org/abs/2001.11984)
 
+### About Me
 
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
