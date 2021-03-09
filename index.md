@@ -1,7 +1,7 @@
 > **Chinese Name** 柳万民 <br>**Email** wanminliu (at) gmail.com  <br> **Skype** wanminliu <br>
 
 
-[<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_33.png" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      <img src="https://avatars0.githubusercontent.com/u/5844031" width="200" height="200" />      [<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_49.png" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      [<img src="https://wanminliu.github.io/pic/2001.11984_13.png" width="300" height="200" />](https://arxiv.org/abs/2001.11984)
+[<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_33.png" alt="blowup of P7 at a point" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      [<img src="https://avatars0.githubusercontent.com/u/5844031" alt="portrait of Wanmin Liu" width="200" height="200" />      [<img src="https://wanminliu.github.io/pic/Blowup_P7_a_point_49.png" alt="blowup of P7 at a point" width="90" height="200" />](https://wanminliu.github.io/rs/blowup/7)      [<img src="https://wanminliu.github.io/pic/2001.11984_13.png" alt="global dimension function on P2" width="300" height="200" />](https://arxiv.org/abs/2001.11984)
 
 ### About Me
 
@@ -87,4 +87,4 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 (Last modified: Mar 3, 2021)
 
 
-<img src="/pic/ClearWaterBay.JPG" id="rwidth: 100%;  height: auto;">
+<img src="/pic/ClearWaterBay.JPG" alt="Clear Water Bay" id="rwidth:100%;height:auto;">
