@@ -1,5 +1,6 @@
 theme: jekyll-theme-cayman
 title: Wanmin Liu
+description: Homepage
 markdown: kramdown
 kramdown:
   math_engine: mathjax
