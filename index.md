@@ -9,7 +9,7 @@ I am currently on the job market. I am living with my [family](https://wanminliu
 
 I was a Researcher (Jan 2019 - Dec 2020) at the [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/) of Uppsala University.  
 I was a Research Fellow (Dec 2015 - Nov 2018) at the [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/).  
-I received my [Ph.D.](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) (June 2015) from the [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/) under the guidance of Prof [Wei-Ping Li](https://www.math.ust.hk/~mawpli/).
+I received my [Ph.D.](https://genealogy.math.ndsu.nodak.edu/id.php?id=198052) (June 2015) from the [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/) under the guidance of Prof [Wei-Ping Li](https://www.math.ust.hk/~mawpli/).
 
 
 ### [Curriculum Vitae (Mar 3, 2021)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.pdf)
@@ -18,7 +18,7 @@ I received my [Ph.D.](http://genealogy.math.ndsu.nodak.edu/id.php?id=198052) (Ju
 
 [![Linkedin](https://i.stack.imgur.com/gVE0j.png) linkedin.com/in/wanminliu](https://www.linkedin.com/in/wanminliu)
 &nbsp;
-[![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png) 0000-0001-2345-6789](http://orcid.org/0000-0003-0999-5553)
+[![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png) 0000-0001-2345-6789](https://orcid.org/0000-0003-0999-5553)
 &nbsp;
 [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
 &nbsp;
@@ -37,7 +37,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * 2020 Fall, *Linear Algebra II* (1MA024). Teaching Assistant for Two groups, each group 20 hours online tutorial teaching, online cooperation with other TAs and lecturers on grading homework, midterm and final exams.
 * 2020 Spring, supervise an undergraduate student (10 credits).
 
- > Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 58 pages, Uppsala University, 2020 June, [DiVA, id: diva2:1466472](http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-419483).
+ > Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 58 pages, Uppsala University, 2020 June, [DiVA, id: diva2:1466472](https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-419483).
 
 * 2019 Fall, *Differential Geometry* (1MA011, 10 Credits) for undergraduate students in Uppsala University. 50 hours lectures, 45 min oral exam to each student. The full teaching material (with Course Plan, Lecture Notes, Homework and Oral Exam Plan) is in the following link:
   * Wanmin Liu, [**Lecture Notes on Differential Geometry of Curves and Surfaces**](https://wanminliu.github.io/doc/DG/DG.html), 232 pages, Uppsala University, 2019.
@@ -47,9 +47,9 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 
 ### Papers
-- &mdash;&mdash;, [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44), [Xun Yu](https://sites.google.com/site/xunyuhomepage/), _[Classification of full exceptional collections of line bundles on three blow-ups of $\mathbb{P}^3$](https://wanminliu.github.io/doc/LYY19/1810.06367.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](http://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of $\mathbb{P}^3$_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.)
-- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/doc/L18/1501.06397.html)_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595-621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](http://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
-- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD Thesis, Hong Kong University of Science and Technology, 2015. The [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) is an updated version of the [library version](http://lbezone.ust.hk/bib/b1487651).
+- &mdash;&mdash;, [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44), [Xun Yu](https://sites.google.com/site/xunyuhomepage/), _[Classification of full exceptional collections of line bundles on three blow-ups of $\mathbb{P}^3$](https://wanminliu.github.io/doc/LYY19/1810.06367.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](https://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf), [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367). (A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of $\mathbb{P}^3$_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.)
+- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/doc/L18/1501.06397.html)_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595-621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](https://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
+- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD Thesis, Hong Kong University of Science and Technology, 2015. The [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) is an updated version of the [library version](https://lbezone.ust.hk/bib/b1487651).
 
 ### Preprints
 
@@ -75,11 +75,11 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 ### Others
   - Classification of full exceptional collection of line bundles (of FINITE type) on the [blow-up of $\mathbb{P}^7$ at a point](https://wanminliu.github.io/rs/blowup/7).
   - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) / [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
-  - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_** -- an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
-  >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [http://math.stanford.edu/~vakil/216blog/index.html](http://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/).
+  - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_** -- an HTML version of **Ravi Vakil**'s [book](https://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
+  >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [https://math.stanford.edu/~vakil/216blog/index.html](https://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/).
 
-  - ![pdf2htmlEX](http://coolwanglu.github.io/pdf2htmlEX/images/pdf2htmlEX-64x64.png) [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
-  - Talk on TUG2013: [Online publishing via pdf2htmlEX](https://wanminliu.github.io/doc/pdf2htmlEX/tb108wang.html)  / [PDF](http://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
+  - ![pdf2htmlEX](https://coolwanglu.github.io/pdf2htmlEX/images/pdf2htmlEX-64x64.png) [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
+  - Talk on TUG2013: [Online publishing via pdf2htmlEX](https://wanminliu.github.io/doc/pdf2htmlEX/tb108wang.html)  / [PDF](https://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
 
 ### [**More Links**](https://wanminliu.github.io/link)
