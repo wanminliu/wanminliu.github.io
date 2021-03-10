@@ -85,4 +85,4 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 <br/><br/>
 
-<img src="https://wanminliu.github.io//pic/ClearWaterBay.jpg" alt="Clear Water Bay" id="width:100%;height:auto;">
+<img src="https://wanminliu.github.io//pic/cwb.jpg" alt="Clear Water Bay" id="width:100%;height:auto;">
