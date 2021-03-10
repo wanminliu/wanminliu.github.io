@@ -36,7 +36,6 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 ### Teaching
 * 2020 Fall, *Linear Algebra II* (1MA024). Teaching Assistant for Two groups, each group 20 hours online tutorial teaching, online cooperation with other TAs and lecturers on grading homework, midterm and final exams.
 * 2020 Spring, supervise an undergraduate student (10 credits).
-
  > Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 58 pages, Uppsala University, 2020 June, [DiVA, id: diva2:1466472](https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-419483).
 
 * 2019 Fall, *Differential Geometry* (1MA011, 10 Credits) for undergraduate students in Uppsala University. 50 hours lectures, 45 min oral exam to each student. The full teaching material (with Course Plan, Lecture Notes, Homework and Oral Exam Plan) is in the following link:
