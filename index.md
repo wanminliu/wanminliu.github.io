@@ -40,9 +40,9 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 * 2019 Fall, *Differential Geometry* (1MA011, 10 Credits) for undergraduate students in Uppsala University. 50 hours lectures, 45 min oral exam to each student. The full teaching material (with Course Plan, Lecture Notes, Homework and Oral Exam Plan) is in the following link:
   * Wanmin Liu, [**Lecture Notes on Differential Geometry of Curves and Surfaces**](https://wanminliu.github.io/doc/DG/DG.html), 232 pages, Uppsala University, 2019.
-* HKUST: Teaching Assistant for various courses: _Complex Analysis_, _Differential Geometry_, _Analysis_, _Linear Algebra_, _Concept in Math_, _Differential Geometry_ (I won the **[Best Teaching Assistant Award](https://wanminliu.github.io/pic/BestTA.jpg)**), _Ordinary Differential Equation_.
-* Wanmin Liu, [Training to all new Teaching Assistants](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html), demo of Problems in Linear Algebra and Calculus, 40 pages, Department of Mathematics, HKUST, 2012. [PDF](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.pdf)
-* Wanmin Liu, [LaTeX tutorial](https://wanminliu.github.io/introLaTeX/introLaTeX.html), HKUST, 2012. [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf)
+* Teaching Assistant for various courses in HKUST: _Complex Analysis_, _Differential Geometry_, _Analysis_, _Linear Algebra_, _Concept in Math_, _Differential Geometry_ (I won the **[Best Teaching Assistant Award](https://wanminliu.github.io/pic/BestTA.jpg)**), _Ordinary Differential Equation_.
+* Wanmin Liu, [Tutorial Demo of Problems in Linear Algebra and Calculus](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html), 40 pages, 2012. / [PDF](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.pdf)
+* Wanmin Liu, [LaTeX Tutorial](https://wanminliu.github.io/introLaTeX/introLaTeX.html), 2012. / [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf)
 
 
 ### Papers
@@ -77,8 +77,8 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
   - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/201711/Ravi_AG.html)_** -- an HTML version of **Ravi Vakil**'s [book](https://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
   >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [https://math.stanford.edu/~vakil/216blog/index.html](https://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/).
 
-  - ![pdf2htmlEX](https://coolwanglu.github.io/pdf2htmlEX/images/pdf2htmlEX-64x64.png) [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) -- Convert PDF to HTML without losing text or format.
-  - Talk on TUG2013: [Online publishing via pdf2htmlEX](https://wanminliu.github.io/doc/pdf2htmlEX/tb108wang.html)  / [PDF](https://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
+  - ![pdf2htmlEX](https://coolwanglu.github.io/pdf2htmlEX/images/pdf2htmlEX-64x64.png) [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) &mdash; Convert PDF to HTML without losing text or format.
+  - Talk on [TUG2013](https://tug.org/tug2013/): [Online publishing via pdf2htmlEX](https://wanminliu.github.io/doc/pdf2htmlEX/tb108wang.html)  / [PDF](https://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
 
 
 ### [**More Links**](https://wanminliu.github.io/link)
