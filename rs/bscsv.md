@@ -26,3 +26,7 @@ Forskningen om begreppet Bridgelandsstabilitet är mycket nytt och aktivt. Det g
 _Referens_
 
 T. Bridgeland, [Stability conditions on triangulated categories](http://annals.math.princeton.edu/wp-content/uploads/annals-v166-n2-p01.pdf). Ann. of Math. (2) 166 (2007), no. 2, 317–345.
+
+<br/><br/>
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color=#eafaf1 SIZE=3/>
+<p>Last update on {{ site.time | date_to_long_string }}.</p>

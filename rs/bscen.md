@@ -1,4 +1,4 @@
-Back to [**homepage**](https://wanminliu.github.io) 
+Back to [**homepage**](https://wanminliu.github.io)
 
 [Swedish version](https://wanminliu.github.io/rs/bscsv)
 
@@ -18,7 +18,7 @@ _**Bridgeland stability condition brings new aspects to symmetry and classificat
 
 Two central themes in mathematics are _symmetry_ and _classification_. Bridgeland stability condition brings new aspects to both of them. On the one hand, the notion of Bridgeland stability condition updates our understanding about symmetry: it is a key notion for the understanding of Kontsevich's _Homological Mirror Symmetry_, which is a deep categorical duality conjecture between algebraic geometry and symplectic geometry, and has been a major source of progress in mathematics. On the other hand, the notion of Bridgeland stability condition brings fresh ideas on the classification: many classification problems could be thought of as _wall-crossing_ phenomena in different Bridgeland stability manifolds.
 
-Bridgeland stability and derived category theory provide deep connections of different branches of mathematics. Some fundamental questions in algebraic geometry, which cannot be solved using the traditional method, have been solved by using Bridgeland stability condition. 
+Bridgeland stability and derived category theory provide deep connections of different branches of mathematics. Some fundamental questions in algebraic geometry, which cannot be solved using the traditional method, have been solved by using Bridgeland stability condition.
 
 The research on the notion of Bridgeland stability condition is very new and active and it attracts many talented young investigators. The purpose of my research is to create new understandings on the notion of Bridgeland stability condition, and find its new applications in Algebraic Geometry.
 
@@ -27,3 +27,6 @@ _Reference_
 T. Bridgeland, [Stability conditions on triangulated categories](http://annals.math.princeton.edu/wp-content/uploads/annals-v166-n2-p01.pdf). Ann. of Math. (2) 166 (2007), no. 2, 317–345.  
 
 
+<br/><br/>
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color=#eafaf1 SIZE=3/>
+<p>Last update on {{ site.time | date_to_long_string }}.</p>
