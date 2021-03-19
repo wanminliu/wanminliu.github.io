@@ -41,7 +41,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * 2019 Fall, *Differential Geometry* (1MA011, 10 Credits) for undergraduate students in Uppsala University. 50 hours lectures, 45 min oral exam to each student. The full teaching material (with Course Plan, Lecture Notes, Homework and Oral Exam Plan) is in the following link:
   * Wanmin Liu, [**Lecture Notes on Differential Geometry of Curves and Surfaces**](https://wanminliu.github.io/doc/DG/DG.html), 232 pages, Uppsala University, 2019.
 * Teaching Assistant for various courses in HKUST: _Complex Analysis_, _Differential Geometry_, _Analysis_, _Linear Algebra_, _Concept in Math_, _Differential Geometry_ (I won the **[Best Teaching Assistant Award](https://wanminliu.github.io/pic/BestTA.jpg)**), _Ordinary Differential Equation_.
-* Wanmin Liu, [Tutorial Demo of Problems in Linear Algebra and Calculus](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html), 40 pages, 2012. / [PDF](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.pdf)
+* Wanmin Liu, [Tutorial Demo of Problems in Linear Algebra and Calculus (for Training New Teaching Assistant)](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html), 40 pages, 2012. / [PDF](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.pdf)
 * Wanmin Liu, [LaTeX Tutorial](https://wanminliu.github.io/introLaTeX/introLaTeX.html), 2012. / [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf)
 
 

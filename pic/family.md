@@ -1,3 +1,3 @@
 Back to [**homepage**](https://wanminliu.github.io)
 
-<img src="/pic/20190420.jpg" id="rwidth: 100%;  height: auto;">
+<img src="https://wanminliu.github.io/pic/20190420.jpg" alt="Family of Wanmin Liu" id="width:100%;height:auto;">
