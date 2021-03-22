@@ -1,4 +1,4 @@
-Back to [**homepage**](https://wanminliu.github.io)
+Tillbaka till [**startsidan**](https://wanminliu.github.io).
 
 [Engelsk version](https://wanminliu.github.io/rs/bscen)
 
