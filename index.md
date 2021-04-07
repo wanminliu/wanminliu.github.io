@@ -23,6 +23,8 @@ I received my [Ph.D.](https://genealogy.math.ndsu.nodak.edu/id.php?id=198052) (J
 [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
 &nbsp;
 [zbMATH](https://zbmath.org/authors/?q=%22Wanmin+Liu%22)
+&nbsp;
+[Google Scholar](https://scholar.google.com/citations?user=KeZB0E4AAAAJ)
 
 
 
@@ -78,7 +80,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
   >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [https://math.stanford.edu/~vakil/216blog/index.html](https://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/).
 
   - ![pdf2htmlEX](https://coolwanglu.github.io/pdf2htmlEX/images/pdf2htmlEX-64x64.png) [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) &mdash; Convert PDF to HTML without losing text or format.
-  - Talk on [TUG2013](https://tug.org/tug2013/): [Online publishing via pdf2htmlEX](https://wanminliu.github.io/doc/pdf2htmlEX/tb108wang.html)  / [PDF](https://coolwanglu.github.io/pdf2htmlEX/doc/tb108wang.pdf)
+  - Talk on [TUG2013](https://tug.org/tug2013/): [Online publishing via pdf2htmlEX](https://wanminliu.github.io/doc/pdf2htmlEX/tb108wang.html)  / [PDF](https://tug.org/TUGboat/tb34-3/tb108wang.pdf)
 
 
 ### [**More Links**](https://wanminliu.github.io/link)

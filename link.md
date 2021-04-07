@@ -6,6 +6,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 *  [Zentralblatt](https://zbmath.org/authors/?q=%22Wanmin+Liu%22)
 *  [ORCID](http://orcid.org/0000-0003-0999-5553)
 *  [Uppsala University](https://katalog.uu.se/empinfo/?id=N18-1439)
+*  [Google Scholar](https://scholar.google.com/citations?user=KeZB0E4AAAAJ)
 
 
 ### Seminars
