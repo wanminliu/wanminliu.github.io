@@ -3,7 +3,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 ### Profiles
 *  [arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
 *  [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
-*  [Zentralblatt](https://zbmath.org/authors/?q=%22Wanmin+Liu%22)
+*  [Zentralblatt](https://zbmath.org/authors/?q=ai%3Aliu.wanmin)
 *  [ORCID](http://orcid.org/0000-0003-0999-5553)
 *  [Uppsala University](https://katalog.uu.se/empinfo/?id=N18-1439)
 *  [Google Scholar](https://scholar.google.com/citations?user=KeZB0E4AAAAJ)

@@ -22,7 +22,7 @@ I received my [Ph.D.](https://genealogy.math.ndsu.nodak.edu/id.php?id=198052) (J
 &nbsp;
 [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
 &nbsp;
-[zbMATH](https://zbmath.org/authors/?q=%22Wanmin+Liu%22)
+[zbMATH](https://zbmath.org/authors/?q=ai%3Aliu.wanmin)
 &nbsp;
 [Google Scholar](https://scholar.google.com/citations?user=KeZB0E4AAAAJ)
 
