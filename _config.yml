@@ -1,6 +1,7 @@
 theme: jekyll-theme-cayman
 title: Wanmin Liu
 markdown: kramdown
+google_analytics: G-BKHMZBJJZ1
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
