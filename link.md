@@ -30,13 +30,13 @@ Back to [**homepage**](https://wanminliu.github.io)
   * [Workshop on Moduli theory & Derived category, November 26 – 29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
   * [**Who is Who in Mirror Symmetry**, May 27 – June 1 2019, Moscow](http://hms.mirrorsymmetry.ru/index.html) and an interesting [Poster](https://wanminliu.github.io/doc/Poster.html) / [PDF](http://hms.mirrorsymmetry.ru/Poster.pdf)
   * Sweden
-    * [Chalmers](https://www.chalmers.se/en/departments/math/Pages/default.aspx); [Chalmers AG-NT](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/default.aspx)
-    * [GU](https://www.gu.se/english/about_the_university/units/?languageId=100001&departmentId=013006)
+    * [Chalmers](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/default.aspx)
+    * [GU](https://www.gu.se/en/research/algebraic-geometry-and-number-theory)
     * [Institut Mittag-Leffler](http://www.mittag-leffler.se/)
-    * [KTH](https://www.kth.se/en/sci/institutioner/math/forskning/matematik/alggeo/algebra-and-geometry-1.320490)
+    * [KTH](https://www.kth.se/math/math/algebraic-geometry-commutative-algebra)
     * [Nordic-Math-Job](http://www.maths.lth.se/nordic/)
     * [Stockholm Mathematics Centre](https://www.math-stockholm.se/)
-    * [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics-1.326304)
+    * [SU](https://www.math.su.se/english/research/research-groups/members-of-the-research-group-in-algebra-geometry-topology-and-combinatorics)
     * [UU](https://www.math.uu.se/research/algebra-and-geometry/)
 
 
