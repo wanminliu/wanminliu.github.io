@@ -6,7 +6,9 @@
 ### About Me
 
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
+I am learning Swedish at [ABF Stockholm](https://abfstockholm.se/sfi/).
 
+- 2021/09 &mdash; 2021/10: Teaching Assistant, [KTH](https://www.kth.se/profile/wanmin).
 - 2019/01 &mdash; 2020/12: Researcher, [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/), Uppsala University.
 - 2015/12 &mdash; 2018/11: Research Fellow, [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/), South Korea.
 - 2015/06: [Ph.D.](https://genealogy.math.ndsu.nodak.edu/id.php?id=198052), [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/), under the guidance of Prof [Wei-Ping Li](https://www.math.ust.hk/~mawpli/).
@@ -38,13 +40,14 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 
 ### Teaching
-* 2020 Fall, *Linear Algebra II* (1MA024). Teaching Assistant for Two groups, each group 20 hours online tutorial teaching, online cooperation with other TAs and lecturers on grading homework, midterm and final exams.
-* 2020 Spring, supervise an undergraduate student (10 credits).
+* 2021 Fall at KTH, Teaching Assistant for *Calculus in Several Variable* ([SF1686](https://canvas.kth.se/courses/27075)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri176505X20Z5XQ6Z76g8Y60y9066Y05006gQY6Q532805754Y08X7974Y47Q0.html), *Basic Course in Mathematics* ([SF1690](https://canvas.kth.se/courses/27072)), with [Timetable](https://cloud.timeedit.net/kth/web/public01/ri178504X20Z58Q6Z96g0YY0y6066YX080QgQY6Q5326257505777.html).
+* 2020 Fall at Uppsala University, Teaching Assistant for *Linear Algebra II* (1MA024). TA for Two groups, each group 20 hours online tutorial teaching, online cooperation with other TAs and lecturers on grading homework, midterm and final exams.
+* 2020 Spring at Uppsala University, supervise an undergraduate student (10 credits).
  > Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 58 pages, Uppsala University, 2020 June, [DiVA, id: diva2:1466472](https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-419483).
 
-* 2019 Fall, *Differential Geometry* (1MA011, 10 Credits) for undergraduate students in Uppsala University. 50 hours lectures, 45 min oral exam to each student. The full teaching material (with Course Plan, Lecture Notes, Homework and Oral Exam Plan) is in the following link:
+* 2019 Fall at Uppsala University, Lecturer for *Differential Geometry* (1MA011, 10 Credits). It contained 50 hours lectures, 45 min oral exam to each student. The full teaching material (with Course Plan, Lecture Notes, Homework and Oral Exam Plan) is in the following link:
   * Wanmin Liu, [**Lecture Notes on Differential Geometry of Curves and Surfaces**](https://wanminliu.github.io/doc/DG/DG.html), 232 pages, Uppsala University, 2019.
-* Teaching Assistant for various courses in HKUST: _Complex Analysis_, _Differential Geometry_, _Analysis_, _Linear Algebra_, _Concept in Math_, _Differential Geometry_ (I won the **[Best Teaching Assistant Award](https://wanminliu.github.io/pic/BestTA.jpg)**), _Ordinary Differential Equation_.
+* Teaching Assistant for various courses at HKUST: _Complex Analysis_, _Differential Geometry_, _Analysis_, _Linear Algebra_, _Concept in Math_, _Differential Geometry_ (I won the **[Best Teaching Assistant Award](https://wanminliu.github.io/pic/BestTA.jpg)**), _Ordinary Differential Equation_.
 * Wanmin Liu, [Tutorial Demo of Problems in Linear Algebra and Calculus (for Training New Teaching Assistant)](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html), 40 pages, 2012. / [PDF](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.pdf)
 * Wanmin Liu, [LaTeX Tutorial](https://wanminliu.github.io/introLaTeX/introLaTeX.html), 2012. / [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf)
 
