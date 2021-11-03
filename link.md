@@ -54,6 +54,10 @@ Back to [**homepage**](https://wanminliu.github.io)
 - Master Thesis, _[Infinitely many solutions for two noncooperative  $p(x)$-Laplacian elliptic systems](https://wanminliu.github.io/doc/Thesis/Thesis_Master_Wanmin_Liu_2007.html)_, Lanzhou University, 2007. [PDF](https://wanminliu.github.io/doc/Thesis/Thesis_Master_Wanmin_Liu_2007.pdf).
 - Bachelor Thesis, _[An Exact Inequality Involving Luxemburg Norm and Conjugate-Orlicz Norm in  $L^{p(x)}(\Omega)$](https://wanminliu.github.io/doc/Thesis/Fan-Liu_en.html)_, Lanzhou University, 2004. [PDF in English](https://wanminliu.github.io/doc/Thesis/Fan-Liu_en.pdf) / [PDF in Chinese](https://wanminliu.github.io/doc/Thesis/Fan-Liu_cn.pdf).
 
+
+### Svenska För Invandrare
+[Lennart Hellsing — Språkets mästare](https://slides.com/wanminliu/hellsing/fullscreen)
+
 <br/><br/>
 
 <img src="https://wanminliu.github.io//pic/Uppsala.jpg" alt="Uppsala" id="width:100%;height:auto;">
