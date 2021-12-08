@@ -27,7 +27,7 @@ I am currently on the job market. I am living with my [family](https://wanminliu
 &nbsp;
 [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
 &nbsp;
-[zbMATH](https://zbmath.org/authors/?q=ai%3Aliu.wanmin)
+[zbMATH Open](https://zbmath.org/authors/?q=ai%3Aliu.wanmin)
 &nbsp;
 [Google Scholar](https://scholar.google.com/citations?user=KeZB0E4AAAAJ)
 

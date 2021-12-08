@@ -1,11 +1,10 @@
 Back to [**homepage**](https://wanminliu.github.io)
 
 ### Profiles
-*  [arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
+*  [arXiv](http://arxiv.org/a/liu_w_7)
 *  [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
-*  [zbMATH](https://zbmath.org/authors/?q=ai%3Aliu.wanmin)
+*  [zbMATH Open](https://zbmath.org/authors/?q=ai%3Aliu.wanmin)
 *  [ORCID](http://orcid.org/0000-0003-0999-5553)
-*  [Uppsala University](https://katalog.uu.se/empinfo/?id=N18-1439)
 *  [Google Scholar](https://scholar.google.com/citations?user=KeZB0E4AAAAJ)
 
 
@@ -23,7 +22,7 @@ Back to [**homepage**](https://wanminliu.github.io)
   * [SMC Calendar](https://www.math-stockholm.se/en/kalender/)
   * [arXiv.AG](http://arxiv.org/list/math.AG/recent)
   * [MathSciNet](http://www.ams.org/mathscinet/)
-  * [zbMATH](http://zbmath.org/)
+  * [zbMATH Open](http://zbmath.org/)
   * [AG in China](http://www.alggeom.org/)
   * Ravi Vakil's page for [Conferences in Algebraic Geometry](http://math.stanford.edu/~vakil/conferences.html)
   * [IBS-CGP Mathematics Calendar](http://cgp.ibs.re.kr/activities/calendar)
