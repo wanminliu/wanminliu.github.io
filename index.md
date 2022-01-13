@@ -7,8 +7,8 @@
 
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
-- 2021/08 &mdash; 2021/12: Svenska För Invandrare (SFI) study at [ABF Stockholm](https://abfstockholm.se/sfi/).
-- 2021/09 &mdash; 2021/12: Teaching Assistant, [KTH](https://www.kth.se/profile/wanmin).
+- 2021/08 &mdash; current: Svenska För Invandrare (SFI) study at [ABF Stockholm](https://abfstockholm.se/sfi/).
+- 2021/09 &mdash; current: Teaching Assistant, [KTH](https://www.kth.se/profile/wanmin).
 - 2019/01 &mdash; 2020/12: Researcher, [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/), Uppsala University.
 - 2015/12 &mdash; 2018/11: Research Fellow, [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/), South Korea.
 - 2015/06: [Ph.D.](https://genealogy.math.ndsu.nodak.edu/id.php?id=198052), [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/), under the guidance of Prof [Wei-Ping Li](https://www.math.ust.hk/~mawpli/).
@@ -41,6 +41,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 
 ### Teaching
+* 2022 Spring at KTH, Teaching Assistant for *Calculus in Several Variable* ([SF1686](https://canvas.kth.se/courses/31806)), with [TimeTable CITEH1 CMAST1](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20220117.x%2C20220306.x&objects=203502.9%2C203509.9%2C448906.10&ox=0&types=0&fe=0), and [TimeTable CDEPR1](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20220117.x%2C20220306.x&objects=203502.9%2C203509.9%2C448908.10%2C386518.16&ox=0&types=0&fe=0).
 * 2021 Fall at KTH, Teaching Assistant for *Algebra and Geometry* ([SF1624](https://kth.instructure.com/courses/27038)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20211101.x%2C20211219.x&objects=203502.9%2C203509.9%2C443947.10%2C386461.16%2C-1%2C443880.10%2C203502.9%2C203509.9&ox=0&types=0&fe=0&info=f#), CDATE1 group 5, and CINEK1 group 3.
 * 2021 Fall at KTH, Teaching Assistant for *Calculus in Several Variable* ([SF1686](https://canvas.kth.se/courses/27075)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri176505X20Z5XQ6Z76g8Y60y9066Y05006gQY6Q532805754Y08X7974Y47Q0.html), *Basic Course in Mathematics* ([SF1690](https://canvas.kth.se/courses/27072)), with [Timetable](https://cloud.timeedit.net/kth/web/public01/ri178504X20Z58Q6Z96g0YY0y6066YX080QgQY6Q5326257505777.html).
 * 2020 Fall at Uppsala University, Teaching Assistant for *Linear Algebra II* (1MA024). TA for Two groups, each group 20 hours online tutorial teaching, online cooperation with other TAs and lecturers on grading homework, midterm and final exams.
