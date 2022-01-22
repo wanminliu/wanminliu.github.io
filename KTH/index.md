@@ -9,3 +9,12 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 <br/><br/>
 <p>Last update on {{ site.time | date_to_long_string }}.</p>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6X136VZ9Z5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6X136VZ9Z5');
+</script>
