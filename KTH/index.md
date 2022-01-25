@@ -4,7 +4,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 [SF1626 Flervariabelanalys VT22](https://canvas.kth.se/courses/31806/pages/cdepr1-cenmi1-citeh1-cmast-1)
 
-*  [Exercise 1 and 2](https://wanminliu.github.io/KTH/M1/SF1626M1.html)
+*  [Module 1: 3-dimensional geometry and functions of several variables](https://wanminliu.github.io/KTH/M1/SF1626M1.html)
 
 
 <br/><br/>
