@@ -7,9 +7,10 @@
 
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
-- 2022/03 &mdash; current: Svenska som andraspråk grund (SVA grund) study at [ABF Stockholm](https://abfstockholm.se/komvux/).
-- 2021/08 &mdash; 2021/02: Svenska För Invandrare (SFI), [ABF Stockholm](https://abfstockholm.se/sfi/).
-- 2021/09 &mdash; current: Teaching Assistant (parttime), [KTH](https://www.kth.se/profile/wanmin).
+- 2022/05 &mdash; 2022/07: Svenska som andraspråk grund (SVA grund 3) study at [ABF Stockholm](https://abfstockholm.se/komvux/).
+- 2022/03 &mdash; 2022/05: Svenska som andraspråk grund (SVA grund 2) study at [ABF Stockholm](https://abfstockholm.se/komvux/).
+- 2021/08 &mdash; 2022/02: Svenska För Invandrare (SFI), [ABF Stockholm](https://abfstockholm.se/sfi/).
+- 2021/09 &mdash; current: Teaching Assistant (part time), [KTH](https://www.kth.se/profile/wanmin).
 - 2019/01 &mdash; 2020/12: Researcher, [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/), Uppsala University.
 - 2015/12 &mdash; 2018/11: Research Fellow, [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/), South Korea.
 - 2015/06: [Ph.D.](https://genealogy.math.ndsu.nodak.edu/id.php?id=198052), [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/), under the guidance of Prof [Wei-Ping Li](https://www.math.ust.hk/~mawpli/).

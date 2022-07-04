@@ -45,6 +45,7 @@ Back to [**homepage**](https://wanminliu.github.io)
   *  [Jason Lo](https://sites.google.com/site/chiehcjlo/home)
   *  [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home)
   *  [Yu Qiu](https://ubw-q.github.io/)
+  *  [Lu Wang](https://wang-lu.com)
   *  [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44)
   *  [Xun Yu](https://sites.google.com/site/xunyuhomepage/)
 
