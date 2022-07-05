@@ -21,8 +21,8 @@ I am currently on the job market. I am living with my [family](https://wanminliu
 
 
 
-### [Curriculum Vitae (Mar 3, 2021)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.pdf)
-### [Curriculum Vitae på svenska (5 juli, 2022)](https://wanminliu.github.io/CV/CV_Wanmin_Liu_2022_sv.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_Liu_2022_sv.pdf)
+### [CV (Mar 3, 2021)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2021.pdf)
+### [CV på svenska (5 juli 2022)](https://wanminliu.github.io/CV/CV_Wanmin_Liu_2022_sv.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_Liu_2022_sv.pdf)
 
 ### [My papers on arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
 
