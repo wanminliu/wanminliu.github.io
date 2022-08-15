@@ -12,6 +12,7 @@ I am currently on the job market. I am living with my [family](https://wanminliu
   * 2021/08 &mdash; 2022/02: Sfi C and D;
   * 2022/03 &mdash; 2022/05: Svenska som andraspråk (SVA) grund 2;
   * 2022/05 &mdash; 2022/07: Svenska som andraspråk (SVA) grund 3.
+  * 2022/08 &mdash; 2022/10: Svenska som andraspråk (SVA) grund 4.
 
 - 2021/09 &mdash; current: Teaching Assistant (part time), [KTH](https://www.kth.se/profile/wanmin).
 - 2019/01 &mdash; 2020/12: Researcher, [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/), Uppsala University.
@@ -46,6 +47,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 
 ### Teaching
+* 2022 Fall at KTH, Teaching Assistant for *Algebra och geometri* ([SF1624](https://www.kth.se/social/course/SF1624/)), with [TimeTable CMAST1](https://cloud.timeedit.net/kth/web/public01/ri160604X14Z56Q6Z96g0YY0y0066YX0709gQY6Q53264596X4878673Y51X791927Y507Q7.html), and [TimeTable CDEPR1](https://cloud.timeedit.net/kth/web/public01/ri160604X14Z56Q6Z96g0YY0y0066YX0703gQY6Q53264596X4177459Y50X538298Y517Q7.html).
 * 2022 Spring at KTH, Teaching Assistant for *Calculus in Several Variable* ([SF1626](https://canvas.kth.se/courses/31806)), with [TimeTable CITEH1 CMAST1](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20220117.x%2C20220306.x&objects=203502.9%2C203509.9%2C448906.10&ox=0&types=0&fe=0), and [TimeTable CDEPR1](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20220117.x%2C20220306.x&objects=203502.9%2C203509.9%2C448908.10%2C386518.16&ox=0&types=0&fe=0).
 * 2021 Fall at KTH, Teaching Assistant for *Algebra and Geometry* ([SF1624](https://kth.instructure.com/courses/27038)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20211101.x%2C20211219.x&objects=203502.9%2C203509.9%2C443947.10%2C386461.16%2C-1%2C443880.10%2C203502.9%2C203509.9&ox=0&types=0&fe=0&info=f#), CDATE1 group 5, and CINEK1 group 3.
 * 2021 Fall at KTH, Teaching Assistant for *Calculus in Several Variable* ([SF1686](https://canvas.kth.se/courses/27075)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri176505X20Z5XQ6Z76g8Y60y9066Y05006gQY6Q532805754Y08X7974Y47Q0.html), *Basic Course in Mathematics* ([SF1690](https://canvas.kth.se/courses/27072)), with [Timetable](https://cloud.timeedit.net/kth/web/public01/ri178504X20Z58Q6Z96g0YY0y6066YX080QgQY6Q5326257505777.html).
