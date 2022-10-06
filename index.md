@@ -8,7 +8,7 @@
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
 
-- 2021/08 &mdash; 2022/07: Swedish learning at [ABF Stockholm](https://abfstockholm.se/sfi/).
+- 2021/08 &mdash; 2022/10: Swedish learning at [ABF Stockholm](https://abfstockholm.se/sfi/).
   * 2021/08 &mdash; 2022/02: Sfi C and D;
   * 2022/03 &mdash; 2022/05: Svenska som andraspråk (SVA) grund 2;
   * 2022/05 &mdash; 2022/07: Svenska som andraspråk (SVA) grund 3.
@@ -22,8 +22,8 @@ I am currently on the job market. I am living with my [family](https://wanminliu
 
 
 
-### [CV (Aug 2022)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2022.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2022.pdf)
-### [CV på svenska (aug 2022)](https://wanminliu.github.io/CV/CV_Wanmin_Liu_2022_sv.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_Liu_2022_sv.pdf)
+### [CV (Oct 2022)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2022.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2022.pdf)
+### [CV på svenska (oktober 2022)](https://wanminliu.github.io/CV/CV_Wanmin_Liu_2022_sv.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_Liu_2022_sv.pdf)
 
 ### [My papers on arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
 
