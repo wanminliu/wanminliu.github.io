@@ -8,10 +8,10 @@
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
 
-- 2021/08 &mdash; 2022/10: Swedish learning at [ABF Stockholm](https://abfstockholm.se/sfi/).
+- 2021/08 &mdash; 2022/12: Swedish learning at [ABF Stockholm](https://abfstockholm.se/).
   * 2021/08 &mdash; 2022/02: Sfi C and D;
   * 2022/03 &mdash; 2022/10: Svenska som andraspråk (SVA) grund 2, grund 3 and grund 4;
-  * 2022/10 &mdash; 2022/12: Svenska som andraspråk (SVA) 1.
+  * 2022/10 &mdash; 2022/12: Svenska som andraspråk 1.
 
 
 - 2021/09 &mdash; current: Teaching Assistant (part time), [KTH](https://www.kth.se/profile/wanmin).
