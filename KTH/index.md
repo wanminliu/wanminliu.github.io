@@ -1,5 +1,7 @@
 Back to [**homepage**](https://wanminliu.github.io)
 
+[Wanmin Liu's KTH Profile](https://www.kth.se/profile/wanmin/)
+
 ### [SF1626 (Calculus in Several Variable, Flervariabelanalys), KTH](https://www.kth.se/student/kurser/kurs/SF1626)
 
 *  [Module 1: 3-dimensional geometry and functions of several variables](https://wanminliu.github.io/KTH/M1/SF1626VT22M1.html)
