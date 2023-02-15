@@ -1,8 +1,6 @@
 Back to [**homepage**](https://wanminliu.github.io)
 
-### [SF1626 (Calculus in Several Variable, Flervariabelanalys), 2022 Spring at KTH](https://canvas.kth.se/courses/31806/pages/cdepr1-cenmi1-citeh1-cmast-1)
-
-(Solutions of Seminars are romoved.)
+### [SF1626 (Calculus in Several Variable, Flervariabelanalys), KTH](https://www.kth.se/student/kurser/kurs/SF1626)
 
 *  [Module 1: 3-dimensional geometry and functions of several variables](https://wanminliu.github.io/KTH/M1/SF1626VT22M1.html)
 *  [Module 2: Partial derivatives and linear approximation](https://wanminliu.github.io/KTH/M2/SF1626VT22M2.html)
