@@ -9,7 +9,21 @@ Back to [**homepage**](https://wanminliu.github.io)
 *  [Module 4: Integrals](https://wanminliu.github.io/KTH/M4/SF1626M4.html)
 *  [Module 5: Curve and surface integrals](https://wanminliu.github.io/KTH/M5/SF1626VT22M5.html)
 *  [Module 6: Vector Analysis](https://wanminliu.github.io/KTH/M6/SF1626VT22M6.html)
-  
+
+
+### Current Teaching
+
+* 2023 Spring at KTH, Period 3, Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)), with [TimeTable CITEH1, CMAST1](https://cloud.timeedit.net/kth/web/public01/ri150774X91Z06Q6Z96g0YY0y0066YX0709gQY6Q55264097X4478w17Y5o7o5Zr4QxQ0.html), and [TimeTable CDATE2](https://cloud.timeedit.net/kth/web/public01/ri150774X91Z06Q6Z96g0YY0y0066YX0709gQY6Q55264097X4478653w51x24r647Y50oQ7Z1YoXQ7.html).
+
+### Previous Teaching
+
+* 2022 Fall at KTH, Period 2, Teaching Assistant for *Algebra och geometri* ([SF1624](https://www.kth.se/social/course/SF1624/)), with [TimeTable  CELTE1](https://cloud.timeedit.net/kth/web/public01/ri170664X35Z56Q6Z96g0YY5y0066YX0709gQY6Q50264596X4878033w51x21r827Y50oQ7Z1YoXQ7.html), and [TimeTable CINEK1](https://cloud.timeedit.net/kth/web/public01/ri170664X35Z56Q6Z96g0YY5y0066YX0709gQY6Q50264596X4878133w51x51r827Y50oQ7Z1YoXQ7.html).
+* 2022 Fall at KTH, Period 1, Teaching Assistant for *Algebra och geometri* ([SF1624](https://www.kth.se/social/course/SF1624/)), with [TimeTable CMAST1](https://cloud.timeedit.net/kth/web/public01/ri160604X14Z56Q6Z96g0YY0y0066YX0709gQY6Q53264596X4878673Y51X791927Y507Q7.html), and [TimeTable CDEPR1](https://cloud.timeedit.net/kth/web/public01/ri160604X14Z56Q6Z96g0YY0y0066YX0703gQY6Q53264596X4177459Y50X538298Y517Q7.html).
+* 2022 Spring at KTH, Teaching Assistant for *Calculus in Several Variable* ([SF1626](https://canvas.kth.se/courses/31806)), with [TimeTable CITEH1 CMAST1](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20220117.x%2C20220306.x&objects=203502.9%2C203509.9%2C448906.10&ox=0&types=0&fe=0), and [TimeTable CDEPR1](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20220117.x%2C20220306.x&objects=203502.9%2C203509.9%2C448908.10%2C386518.16&ox=0&types=0&fe=0).
+* 2021 Fall at KTH, Teaching Assistant for *Algebra och geometri* ([SF1624](https://kth.instructure.com/courses/27038)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20211101.x%2C20211219.x&objects=203502.9%2C203509.9%2C443947.10%2C386461.16%2C-1%2C443880.10%2C203502.9%2C203509.9&ox=0&types=0&fe=0&info=f#), CDATE1, and CINEK1.
+* 2021 Fall at KTH, Teaching Assistant for *Calculus in Several Variable* ([SF1686](https://canvas.kth.se/courses/27075)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri176505X20Z5XQ6Z76g8Y60y9066Y05006gQY6Q532805754Y08X7974Y47Q0.html), *Basic Course in Mathematics* ([SF1690](https://canvas.kth.se/courses/27072)), with [Timetable](https://cloud.timeedit.net/kth/web/public01/ri178504X20Z58Q6Z96g0YY0y6066YX080QgQY6Q5326257505777.html).
+
+
 <br/><br/>
 <p>Last update on {{ site.time | date_to_long_string }}.</p>
 
