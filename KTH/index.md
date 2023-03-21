@@ -13,9 +13,12 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 ### Current Teaching
 
-* 2023 Spring at KTH, Period 3, Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)), with [TimeTable CITEH1, CMAST1](https://cloud.timeedit.net/kth/web/public01/ri150774X91Z06Q6Z96g0YY0y0066YX0709gQY6Q55264097X4478w17Y5o7o5Zr4QxQ0.html), and [TimeTable CDATE2](https://cloud.timeedit.net/kth/web/public01/ri150774X91Z06Q6Z96g0YY0y0066YX0709gQY6Q55264097X4478653w51x24r647Y50oQ7Z1YoXQ7.html).
+* 2023 Spring at KTH, Period 4, Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)), with [TimeTable CDATE1, CLGYM2, TIDAB](https://cloud.timeedit.net/kth/web/public01/ri160794X50Z06Q6Z96g0YY0y0066YX0709gQY6Q57264697X4478w27Y5o7o7Zr4QxQ0.html), and *Differentialekvationer* ([SF1633](https://canvas.kth.se/courses/38810)) with [TimeTable CMAST2](https://cloud.timeedit.net/kth/web/public01/ri166795X50Z0XQ6Z46g9Y60y9016Y0200QgQY6Q572806774Y747ZrwoxQo.html).
 
 ### Previous Teaching
+
+* 2023 Spring at KTH, Period 3, Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)), with [TimeTable CITEH1, CMAST1](https://cloud.timeedit.net/kth/web/public01/ri150774X91Z06Q6Z96g0YY0y0066YX0709gQY6Q55264097X4478w17Y5o7o5Zr4QxQ0.html), and [TimeTable CDATE2](https://cloud.timeedit.net/kth/web/public01/ri150774X91Z06Q6Z96g0YY0y0066YX0709gQY6Q55264097X4478653w51x24r647Y50oQ7Z1YoXQ7.html).
+
 
 * 2022 Fall at KTH, Period 2, Teaching Assistant for *Algebra och geometri* ([SF1624](https://www.kth.se/social/course/SF1624/)), with [TimeTable  CELTE1](https://cloud.timeedit.net/kth/web/public01/ri170664X35Z56Q6Z96g0YY5y0066YX0709gQY6Q50264596X4878033w51x21r827Y50oQ7Z1YoXQ7.html), and [TimeTable CINEK1](https://cloud.timeedit.net/kth/web/public01/ri170664X35Z56Q6Z96g0YY5y0066YX0709gQY6Q50264596X4878133w51x51r827Y50oQ7Z1YoXQ7.html).
 * 2022 Fall at KTH, Period 1, Teaching Assistant for *Algebra och geometri* ([SF1624](https://www.kth.se/social/course/SF1624/)), with [TimeTable CMAST1](https://cloud.timeedit.net/kth/web/public01/ri160604X14Z56Q6Z96g0YY0y0066YX0709gQY6Q53264596X4878673Y51X791927Y507Q7.html), and [TimeTable CDEPR1](https://cloud.timeedit.net/kth/web/public01/ri160604X14Z56Q6Z96g0YY0y0066YX0703gQY6Q53264596X4177459Y50X538298Y517Q7.html).
