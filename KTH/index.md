@@ -11,6 +11,8 @@ Back to [**homepage**](https://wanminliu.github.io)
 *  [Module 6: Vector Analysis](https://wanminliu.github.io/KTH/M6/SF1626VT22M6.html)
 
 
+Youtube Playlist [Flervariabelanalys](https://www.youtube.com/playlist?list=PLN8b0iQL-uXu6ww-gT1qx9tAf49ZfT08N) by [Lars Filipsson](https://www.kth.se/profile/lfn)
+
 ### Current Teaching
 
 * 2023 Spring at KTH, Period 4, Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)), with [TimeTable CDATE1, CLGYM2, TIDAB](https://cloud.timeedit.net/kth/web/public01/ri160794X50Z06Q6Z96g0YY0y0066YX0709gQY6Q57264697X4478w27Y5o7o7Zr4QxQ0.html), and *Differentialekvationer* ([SF1633](https://canvas.kth.se/courses/38810)) with [TimeTable CMAST2](https://cloud.timeedit.net/kth/web/public01/ri166795X50Z0XQ6Z46g9Y60y9016Y0200QgQY6Q572806774Y747ZrwoxQo.html).
