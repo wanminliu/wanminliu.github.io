@@ -73,7 +73,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 - &mdash;&mdash;, [Jason Lo](https://sites.google.com/site/chiehcjlo/home), [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home), _[Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/LLM/LLM.html)_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477), 45 pages, submitted.
 
-- Mu-Lin Li,  &mdash;&mdash;, _The limits of Kähler manifolds under holomorphic deformations_, 11 pages, 2023.
+- Mu-Lin Li,  &mdash;&mdash;, _The limits of Kähler manifolds under holomorphic deformations_, 11 pages, submitted, 2023.
 
 ### Talks
 
