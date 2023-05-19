@@ -10,11 +10,10 @@ I am currently on the job market. I am living with my [family](https://wanminliu
 
 - 2021/08 &mdash; current: Swedish learning at [ABF Stockholm](https://abfstockholm.se/).
   * 2023/03 &mdash; on-going: SVA 3.
-
 - 2021/09 &mdash; current: Teaching Assistant (part time), [KTH](https://www.kth.se/profile/wanmin).
 - 2019/01 &mdash; 2020/12: Researcher, [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/), Uppsala University.
 - 2015/12 &mdash; 2018/11: Research Fellow, [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/), South Korea.
-- 2015/06: [Ph.D.](https://genealogy.math.ndsu.nodak.edu/id.php?id=198052), [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/), under the guidance of Prof [Wei-Ping Li](https://www.math.ust.hk/~mawpli/).
+- 2015/06: [Ph.D.](https://genealogy.math.ndsu.nodak.edu/id.php?id=198052), [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/), under the guidance of Prof [Wei-Ping Li](https://www.math.hkust.edu.hk/people/faculty/profile/mawpli/).
 
 
 
@@ -62,7 +61,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 - &mdash;&mdash;, [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44), [Xun Yu](https://sites.google.com/site/xunyuhomepage/), _[Classification of full exceptional collections of line bundles on three blow-ups of $\mathbb{P}^3$](https://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](https://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf). See also [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367) and [Preview](https://wanminliu.github.io/doc/LYY19/1810.06367.html). A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of $\mathbb{P}^3$_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.
 - &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/doc/L18/1501.06397.html)_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595-621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](https://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
-- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD Thesis, Hong Kong University of Science and Technology, 2015. The [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) is an updated version of the [library version](https://lbezone.ust.hk/bib/b1487651).
+- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD Thesis, Hong Kong University of Science and Technology, 2015. The [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) is an updated version of the [library version](https://lbezone.hkust.edu.hk/bib/b1487651).
 
 ### Preprints
 
