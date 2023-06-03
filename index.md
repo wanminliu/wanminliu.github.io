@@ -41,6 +41,23 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * [Bridgeland stability condition – new aspects to symmetry and classification](https://wanminliu.github.io/rs/bscen)
 * [Bridgelands stabilitetsvillkor – nya aspekter av symmetri och klassificering](https://wanminliu.github.io/rs/bscsv)
 
+### Papers
+
+- [Yu-Wei Fan](https://ywfan-math.github.io/), [Chunyi Li](https://sites.google.com/site/chunyili0401/), &mdash;&mdash;, [Yu Qiu](https://ubw-q.github.io/), _[Contractibility of space of stability conditions on the projective plane via global dimension function](https://wanminliu.github.io/doc/FLLQ20/P2.html)_, *Mathematical Research Letters*, Vol. 30, No. 1 (2023), 51—87. [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984).
+
+- &mdash;&mdash;, [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44), [Xun Yu](https://sites.google.com/site/xunyuhomepage/), _[Classification of full exceptional collections of line bundles on three blow-ups of $\mathbb{P}^3$](https://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387—419](https://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf). See also [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367) and [Preview](https://wanminliu.github.io/doc/LYY19/1810.06367.html). A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of $\mathbb{P}^3$_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.
+- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/doc/L18/1501.06397.html)_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595—621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](https://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
+- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD Thesis, Hong Kong University of Science and Technology, 2015. The [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) is an updated version of the [library version](https://lbezone.hkust.edu.hk/bib/b1487651).
+
+### Preprints
+
+
+
+- &mdash;&mdash;, [Jason Lo](https://sites.google.com/site/chiehcjlo/home), [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home), _[Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/LLM/LLM.html)_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477), 45 pages, submitted.
+
+- [Mu-Lin Li](https://arxiv.org/search/math?query=%22Mu-Lin+Li%22&searchtype=author),  &mdash;&mdash;, _The limits of Kähler manifolds under holomorphic deformations_, 11 pages, submitted, 2023.
+
+
 
 ### Teaching
 * 2021/09 &mdash; current: KTH Royal Institute of Technology, various courses, *Flervariabelanalys*, *Algebra och geometri*, *Calculus in Several Variable*, *Basic Course in Mathematics*. More information is [here](https://wanminliu.github.io/KTH/).
@@ -55,21 +72,6 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * Wanmin Liu, [LaTeX Tutorial](https://wanminliu.github.io/introLaTeX/introLaTeX.html), 2012. / [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf)
 
 
-### Papers
-
-- [Yu-Wei Fan](https://ywfan-math.github.io/), [Chunyi Li](https://sites.google.com/site/chunyili0401/), &mdash;&mdash;, [Yu Qiu](https://ubw-q.github.io/), _[Contractibility of space of stability conditions on the projective plane via global dimension function](https://wanminliu.github.io/doc/FLLQ20/P2.html)_, *Mathematical Research Letters*, Vol. 30, No. 1 (2023), 51-87. [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984).
-
-- &mdash;&mdash;, [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44), [Xun Yu](https://sites.google.com/site/xunyuhomepage/), _[Classification of full exceptional collections of line bundles on three blow-ups of $\mathbb{P}^3$](https://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387-419](https://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf). See also [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367) and [Preview](https://wanminliu.github.io/doc/LYY19/1810.06367.html). A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of $\mathbb{P}^3$_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.
-- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/doc/L18/1501.06397.html)_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595-621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](https://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
-- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD Thesis, Hong Kong University of Science and Technology, 2015. The [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) is an updated version of the [library version](https://lbezone.hkust.edu.hk/bib/b1487651).
-
-### Preprints
-
-
-
-- &mdash;&mdash;, [Jason Lo](https://sites.google.com/site/chiehcjlo/home), [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home), _[Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/LLM/LLM.html)_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477), 45 pages, submitted.
-
-- [Mu-Lin Li](https://arxiv.org/search/math?query=%22Mu-Lin+Li%22&searchtype=author),  &mdash;&mdash;, _The limits of Kähler manifolds under holomorphic deformations_, 11 pages, submitted, 2023.
 
 ### Talks
 
