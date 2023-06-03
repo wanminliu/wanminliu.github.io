@@ -39,11 +39,12 @@ Back to [**homepage**](https://wanminliu.github.io)
 ### Collaborators:
   *  [Yu-Wei Fan](https://ywfan-math.github.io/)
   *  [Chunyi Li](https://sites.google.com/site/chunyili0401/)
-  *  [Jason Lo](https://sites.google.com/site/chiehcjlo/home)
-  *  [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home)
+  *  [Mu-Lin Li](https://grzy.hnu.edu.cn/site/index/limulin/)
+  *  [Jason Lo](https://sites.google.com/site/chiehcjlo/home/)
+  *  [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home/)
   *  [Yu Qiu](https://ubw-q.github.io/)
-  *  [Lu Wang](https://wang-lu.com)
-  *  [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44)
+  *  [Lu Wang](https://wang-lu.com/)
+  *  [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44/)
   *  [Xun Yu](https://sites.google.com/site/xunyuhomepage/)
 
 ### Thesis

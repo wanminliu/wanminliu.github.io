@@ -8,11 +8,11 @@
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
 
-- 2021/08 &mdash; current: Swedish learning at [ABF Stockholm](https://abfstockholm.se/).
-  * 2023/03 &mdash; on-going: SVA 3.
-- 2021/09 &mdash; current: Teaching Assistant (part time), [KTH](https://www.kth.se/profile/wanmin).
-- 2019/01 &mdash; 2020/12: Researcher, [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/), Uppsala University.
-- 2015/12 &mdash; 2018/11: Research Fellow, [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/), South Korea.
+- 2021/08 — current: Swedish learning at [ABF Stockholm](https://abfstockholm.se/).
+  * 2023/03 — on-going: SVA 3.
+- 2021/09 — current: Teaching Assistant (part time), [KTH](https://www.kth.se/profile/wanmin).
+- 2019/01 — 2020/12: Researcher, [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/), Uppsala University.
+- 2015/12 — 2018/11: Research Fellow, [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/), South Korea.
 - 2015/06: [Ph.D.](https://genealogy.math.ndsu.nodak.edu/id.php?id=198052), [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/), under the guidance of Prof [Wei-Ping Li](https://www.math.hkust.edu.hk/people/faculty/profile/mawpli/).
 
 
@@ -43,24 +43,24 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 ### Papers
 
-- [Yu-Wei Fan](https://ywfan-math.github.io/), [Chunyi Li](https://sites.google.com/site/chunyili0401/), &mdash;&mdash;, [Yu Qiu](https://ubw-q.github.io/), _[Contractibility of space of stability conditions on the projective plane via global dimension function](https://wanminliu.github.io/doc/FLLQ20/P2.html)_, *Mathematical Research Letters*, Vol. 30, No. 1 (2023), 51—87. [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984).
+- [Yu-Wei Fan](https://ywfan-math.github.io/), [Chunyi Li](https://sites.google.com/site/chunyili0401/), ——, [Yu Qiu](https://ubw-q.github.io/), _[Contractibility of space of stability conditions on the projective plane via global dimension function](https://wanminliu.github.io/doc/FLLQ20/P2.html)_, *Mathematical Research Letters*, Vol. 30, No. 1 (2023), 51—87. [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984).
 
-- &mdash;&mdash;, [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44), [Xun Yu](https://sites.google.com/site/xunyuhomepage/), _[Classification of full exceptional collections of line bundles on three blow-ups of $\mathbb{P}^3$](https://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387—419](https://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf). See also [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367) and [Preview](https://wanminliu.github.io/doc/LYY19/1810.06367.html). A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of $\mathbb{P}^3$_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.
-- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/doc/L18/1501.06397.html)_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595—621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](https://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
-- &mdash;&mdash;, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD Thesis, Hong Kong University of Science and Technology, 2015. The [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) is an updated version of the [library version](https://lbezone.hkust.edu.hk/bib/b1487651).
+- ——, [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44), [Xun Yu](https://sites.google.com/site/xunyuhomepage/), _[Classification of full exceptional collections of line bundles on three blow-ups of $\mathbb{P}^3$](https://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.html)_, *Journal of the Korean Mathematical Society*, Vol. 56, No. 2 (2019), [387—419](https://pdf.medrang.co.kr/kms01/JKMS/56/JKMS-56-2-387-419.pdf). See also [arXiv:1810.06367 [math.AG]](https://arxiv.org/abs/1810.06367) and [Preview](https://wanminliu.github.io/doc/LYY19/1810.06367.html). A previous version, titled by _On exceptional collections of line bundles of maximal length on the blow-ups of $\mathbb{P}^3$_, is available at [CGP17025](https://cgp.ibs.re.kr/archive/preprints/2017), 2017 July.
+- ——, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/doc/L18/1501.06397.html)_, *Kyoto Journal of Mathematics*, Vol. 58, No. 3 (2018), [595—621](https://projecteuclid.org/euclid.kjm/1529481669), [arXiv:1501.06397 [math.AG]](https://arxiv.org/abs/1501.06397) or [CGP16027](https://cgp.ibs.re.kr/archive/preprints/2016).
+- ——, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD Thesis, Hong Kong University of Science and Technology, 2015. The [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) is an updated version of the [library version](https://lbezone.hkust.edu.hk/bib/b1487651).
 
 ### Preprints
 
 
 
-- &mdash;&mdash;, [Jason Lo](https://sites.google.com/site/chiehcjlo/home), [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home), _[Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/LLM/LLM.html)_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477), 45 pages, submitted.
+- ——, [Jason Lo](https://sites.google.com/site/chiehcjlo/home), [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home), _[Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/LLM/LLM.html)_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477), 45 pages, submitted.
 
-- [Mu-Lin Li](https://arxiv.org/search/math?query=%22Mu-Lin+Li%22&searchtype=author),  &mdash;&mdash;, _The limits of Kähler manifolds under holomorphic deformations_, 11 pages, submitted, 2023.
+- [Mu-Lin Li](https://grzy.hnu.edu.cn/site/index/limulin),  ——, _The limits of Kähler manifolds under holomorphic deformations_, 11 pages, submitted, 2023.
 
 
 
 ### Teaching
-* 2021/09 &mdash; current: KTH Royal Institute of Technology, various courses, *Flervariabelanalys*, *Algebra och geometri*, *Calculus in Several Variable*, *Basic Course in Mathematics*. More information is [here](https://wanminliu.github.io/KTH/).
+* 2021/09 — current: KTH Royal Institute of Technology, various courses, *Flervariabelanalys*, *Algebra och geometri*, *Calculus in Several Variable*, *Basic Course in Mathematics*. More information is [here](https://wanminliu.github.io/KTH/).
 * 2020 Fall at Uppsala University, Teaching Assistant for *Linear Algebra II* (1MA024). TA for Two groups, each group 20 hours online tutorial teaching, online cooperation with other TAs and lecturers on grading homework, midterm and final exams.
 * 2020 Spring at Uppsala University, supervise an undergraduate student (10 credits).
  > Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 58 pages, Uppsala University, 2020 June, [DiVA, id: diva2:1466472](https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-419483).
@@ -83,16 +83,16 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 
 ### co-Organizer
-* [Workshop on Moduli theory & Derived category, November 26 – 29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
+* [Workshop on Moduli theory & Derived category, November 26 — 29 2018, Pohang](https://cgp.ibs.re.kr/conferences/Workshop_on_Moduli_theory_and_Derived_category/)
 
 
 ### Others
   - Classification of full exceptional collection of line bundles (of FINITE type) on the [blow-up of $\mathbb{P}^7$ at a point](https://wanminliu.github.io/rs/blowup/7).
   - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) / [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://atlas.mat.ub.edu/grgta/articles/Toen2.pdf), 2017.
-  - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/Ravi_AG.html)_** -- an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGapr0123public.pdf)
+  - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/Ravi_AG.html)_** — an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGapr0123public.pdf)
   >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [https://math.stanford.edu/~vakil/216blog/index.html](https://math.stanford.edu/~vakil/216blog/index.html) under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/).
 
-  - ![pdf2htmlEX](https://coolwanglu.github.io/pdf2htmlEX/images/pdf2htmlEX-64x64.png) [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) &mdash; Convert PDF to HTML without losing text or format.
+  - ![pdf2htmlEX](https://coolwanglu.github.io/pdf2htmlEX/images/pdf2htmlEX-64x64.png) [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) — Convert PDF to HTML without losing text or format.
   - Talk on [TUG2013](https://tug.org/tug2013/): [Online publishing via pdf2htmlEX](https://wanminliu.github.io/doc/pdf2htmlEX/tb108wang.html)  / [PDF](https://tug.org/TUGboat/tb34-3/tb108wang.pdf)
 
 
