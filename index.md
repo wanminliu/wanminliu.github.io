@@ -7,10 +7,8 @@
 
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
-
-- 2021/08 — current: Swedish learning at [ABF Stockholm](https://abfstockholm.se/).
-  * 2023/03 — on-going: SVA 3.
 - 2021/09 — current: Teaching Assistant (part time), [KTH](https://www.kth.se/profile/wanmin).
+- 2021/08 — 2023/05: Swedish learning at [ABF Stockholm](https://abfstockholm.se/). [**Svenska som andraspråk 3**](https://www.skolverket.se/undervisning/gymnasieskolan/bedomning-i-gymnasieskolan/bedomningsstod-i-amnen-pa-gymnasial-niva/bedomningsstod-i-svenska-och-svenska-som-andrasprak-pa-gymnasial-niva#h-Svenskasomandrasprak3), **godkänd**.
 - 2019/01 — 2020/12: Researcher, [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/), Uppsala University.
 - 2015/12 — 2018/11: Research Fellow, [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/), South Korea.
 - 2015/06: [Ph.D.](https://genealogy.math.ndsu.nodak.edu/id.php?id=198052), [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/), under the guidance of Prof [Wei-Ping Li](https://www.math.hkust.edu.hk/people/faculty/profile/mawpli/).
@@ -19,7 +17,7 @@ I am currently on the job market. I am living with my [family](https://wanminliu
 
 
 ### [CV (Nov 2022)](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2022.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_LIU_2022.pdf)
-### [CV på svenska (oktober 2022)](https://wanminliu.github.io/CV/CV_Wanmin_Liu_2022_sv.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_Liu_2022_sv.pdf)
+### [CV på svenska (juni 2023)](https://wanminliu.github.io/CV/CV_Wanmin_Liu_2023_sv.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_Liu_2023_sv.pdf)
 
 ### [My papers on arXiv](https://arxiv.org/search/math?query=%22Wanmin+Liu%22&searchtype=author)
 
