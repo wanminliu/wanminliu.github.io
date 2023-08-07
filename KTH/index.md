@@ -15,9 +15,11 @@ Youtube Playlist [Flervariabelanalys](https://www.youtube.com/playlist?list=PLN8
 
 ### Current Teaching
 
-* 2023 Spring at KTH, Period 4, Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)), with [TimeTable CDATE1, CLGYM2, TIDAB](https://cloud.timeedit.net/kth/web/public01/ri160794X50Z06Q6Z96g0YY0y0066YX0709gQY6Q57264697X4478w27Y5o7o7Zr4QxQ0.html), and *Differentialekvationer* ([SF1633](https://canvas.kth.se/courses/38810)) with [TimeTable CMAST2](https://cloud.timeedit.net/kth/web/public01/ri166795X50Z0XQ6Z46g9Y60y9016Y0200QgQY6Q572806774Y747ZrwoxQo.html).
+
 
 ### Previous Teaching
+
+* 2023 Spring at KTH, Period 4, Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)), with [TimeTable CDATE1, CLGYM2, TIDAB](https://cloud.timeedit.net/kth/web/public01/ri160794X50Z06Q6Z96g0YY0y0066YX0709gQY6Q57264697X4478w27Y5o7o7Zr4QxQ0.html), and *Differentialekvationer* ([SF1633](https://canvas.kth.se/courses/38810)) with [TimeTable CMAST2](https://cloud.timeedit.net/kth/web/public01/ri166795X50Z0XQ6Z46g9Y60y9016Y0200QgQY6Q572806774Y747ZrwoxQo.html).
 
 * 2023 Spring at KTH, Period 3, Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)), with [TimeTable CITEH1, CMAST1](https://cloud.timeedit.net/kth/web/public01/ri150774X91Z06Q6Z96g0YY0y0066YX0709gQY6Q55264097X4478w17Y5o7o5Zr4QxQ0.html), and [TimeTable CDATE2](https://cloud.timeedit.net/kth/web/public01/ri150774X91Z06Q6Z96g0YY0y0066YX0709gQY6Q55264097X4478653w51x24r647Y50oQ7Z1YoXQ7.html).
 
