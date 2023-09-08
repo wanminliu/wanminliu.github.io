@@ -2,6 +2,11 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 [Wanmin Liu's KTH Profile](https://www.kth.se/profile/wanmin/)
 
+
+### [SF1682 HT23(Analytiska och numeriska metoder för differentialekvationer), KTH](https://canvas.kth.se/courses/41658)
+
+* [Slide for the summary the first six lectures](https://wanminliu.github.io/KTH/ODE/ODE.html)
+
 ### [SF1626 (Calculus in Several Variable, Flervariabelanalys), KTH](https://www.kth.se/student/kurser/kurs/SF1626)
 
 *  [Module 1: 3-dimensional geometry and functions of several variables](https://wanminliu.github.io/KTH/M1/SF1626VT22M1.html)

@@ -23,7 +23,7 @@ I am currently on the job market. I am living with my [family](https://wanminliu
 
 [![Linkedin](https://i.stack.imgur.com/gVE0j.png) linkedin.com/in/wanminliu](https://www.linkedin.com/in/wanminliu)
 &nbsp;
-[![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png) 0000-0003-0999-5553](https://orcid.org/0000-0003-0999-5553)
+[![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png) ORCID](https://orcid.org/0000-0003-0999-5553)
 &nbsp;
 [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
 &nbsp;
