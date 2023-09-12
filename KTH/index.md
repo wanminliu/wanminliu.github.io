@@ -3,7 +3,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 [Wanmin Liu's KTH Profile](https://www.kth.se/profile/wanmin/)
 
 
-### [SF1682 HT23(Analytiska och numeriska metoder för differentialekvationer), KTH](https://canvas.kth.se/courses/41658)
+### [SF1682 HT23 (Analytiska och numeriska metoder för differentialekvationer), KTH](https://canvas.kth.se/courses/41658)
 
 * [Slide for the summary the first six lectures](https://wanminliu.github.io/KTH/ODE/ODE.html)
 
@@ -23,6 +23,8 @@ Youtube Playlist [Flervariabelanalys](https://www.youtube.com/playlist?list=PLN8
 
 
 ### Previous Teaching
+
+* 2023 Fall at KTH,  Substitute teacher for *Analytical and Numerical Methods for Differential Equations* ([SF1682](https://canvas.kth.se/courses/41658)), Lecture 1 to Lecture 6.
 
 * 2023 Spring at KTH, Period 4, Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)), with [TimeTable CDATE1, CLGYM2, TIDAB](https://cloud.timeedit.net/kth/web/public01/ri160794X50Z06Q6Z96g0YY0y0066YX0709gQY6Q57264697X4478w27Y5o7o7Zr4QxQ0.html), and *Differentialekvationer* ([SF1633](https://canvas.kth.se/courses/38810)) with [TimeTable CMAST2](https://cloud.timeedit.net/kth/web/public01/ri166795X50Z0XQ6Z46g9Y60y9016Y0200QgQY6Q572806774Y747ZrwoxQo.html).
 
