@@ -7,7 +7,7 @@
 
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
-- 2021/09 — current: Teaching Assistant (part time), [KTH](https://www.kth.se/profile/wanmin).
+- 2021/09 — current: Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
 - 2021/08 — 2023/05: Swedish learning at [ABF Stockholm](https://abfstockholm.se/). [**Svenska som andraspråk 3**](https://www.skolverket.se/undervisning/gymnasieskolan/bedomning-i-gymnasieskolan/bedomningsstod-i-amnen-pa-gymnasial-niva/bedomningsstod-i-svenska-och-svenska-som-andrasprak-pa-gymnasial-niva#h-Svenskasomandrasprak3), **godkänd**.
 - 2019/01 — 2020/12: Researcher, [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/), Uppsala University.
 - 2015/12 — 2018/11: Research Fellow, [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/), South Korea.
