@@ -9,7 +9,8 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 ### [SF1682 HT23 (Analytiska och numeriska metoder för differentialekvationer), KTH](https://canvas.kth.se/courses/41658)
 
-* [Slide for the summary the first six lectures](https://wanminliu.github.io/KTH/ODE/ODE.html)
+*  [Slide for the summary the first six lectures](https://wanminliu.github.io/KTH/ODE/ODE.html)
+
 
 ### [SF1626 (Calculus in Several Variable, Flervariabelanalys), KTH](https://www.kth.se/student/kurser/kurs/SF1626)
 
