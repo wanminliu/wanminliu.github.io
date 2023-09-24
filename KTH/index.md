@@ -2,29 +2,27 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 [Wanmin Liu's KTH Profile](https://www.kth.se/profile/wanmin/)
 
-### [SF1673 HT23 (Analys i en variabel), KTH](https://www.kth.se/student/kurser/kurs/SF1673)
-
-* [Limit of quotients](https://wanminliu.github.io/KTH/SF1673_LimitofQuotients.pdf)
-
-
-### [SF1682 HT23 (Analytiska och numeriska metoder för differentialekvationer), KTH](https://canvas.kth.se/courses/41658)
-
-*  [Slide for the summary the first six lectures](https://wanminliu.github.io/KTH/ODE/ODE.html)
 
 
 ### [SF1626 (Calculus in Several Variable, Flervariabelanalys), KTH](https://www.kth.se/student/kurser/kurs/SF1626)
 
-*  [Module 1: 3-dimensional geometry and functions of several variables](https://wanminliu.github.io/KTH/M1/SF1626VT22M1.html)
-*  [Module 2: Partial derivatives and linear approximation](https://wanminliu.github.io/KTH/M2/SF1626VT22M2.html)
-*  [Module 4: Integrals](https://wanminliu.github.io/KTH/M4/SF1626M4.html)
-*  [Module 5: Curve and surface integrals](https://wanminliu.github.io/KTH/M5/SF1626VT22M5.html)
-*  [Module 6: Vector Analysis](https://wanminliu.github.io/KTH/M6/SF1626VT22M6.html)
+*  [Notes for Module 1: 3-dimensional geometry and functions of several variables](https://wanminliu.github.io/KTH/M1/SF1626VT22M1.html)
+*  [Notes for Module 2: Partial derivatives and linear approximation](https://wanminliu.github.io/KTH/M2/SF1626VT22M2.html)
+*  [Notes for Module 4: Integrals](https://wanminliu.github.io/KTH/M4/SF1626M4.html)
+*  [Notes for Module 5: Curve and surface integrals](https://wanminliu.github.io/KTH/M5/SF1626VT22M5.html)
+*  [Notes for Module 6: Vector Analysis](https://wanminliu.github.io/KTH/M6/SF1626VT22M6.html)
+
+### [SF1682 (Analytiska och numeriska metoder för differentialekvationer), KTH](https://canvas.kth.se/courses/41658)
+
+*  [Notes for the summary the first six lectures](https://wanminliu.github.io/KTH/ODE/ODE.html)
 
 
-Youtube Playlist [Flervariabelanalys](https://www.youtube.com/playlist?list=PLN8b0iQL-uXu6ww-gT1qx9tAf49ZfT08N) by [Lars Filipsson](https://www.kth.se/profile/lfn)
 
 ### Current Teaching
 
+* 2023 Fall at KTH,  Substitute teacher for *Single variable Calculus* ([SF1625](https://canvas.kth.se/courses/42734/pages/celte-cinek-cmete-copen-cmedt)), Lecture 12 to Lecture 21.
+
+* 2023 Fall at KTH,  Teaching Assistant for *Analys i en variabel* ([SF1673](https://www.kth.se/student/kurser/kurs/SF1673)). [Notes for limit of quotients](https://wanminliu.github.io/KTH/SF1673_LimitofQuotients.pdf)
 
 
 ### Previous Teaching
@@ -42,6 +40,7 @@ Youtube Playlist [Flervariabelanalys](https://www.youtube.com/playlist?list=PLN8
 * 2021 Fall at KTH, Teaching Assistant for *Algebra och geometri* ([SF1624](https://kth.instructure.com/courses/27038)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20211101.x%2C20211219.x&objects=203502.9%2C203509.9%2C443947.10%2C386461.16%2C-1%2C443880.10%2C203502.9%2C203509.9&ox=0&types=0&fe=0&info=f#), CDATE1, and CINEK1.
 * 2021 Fall at KTH, Teaching Assistant for *Calculus in Several Variable* ([SF1686](https://canvas.kth.se/courses/27075)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri176505X20Z5XQ6Z76g8Y60y9066Y05006gQY6Q532805754Y08X7974Y47Q0.html), *Basic Course in Mathematics* ([SF1690](https://canvas.kth.se/courses/27072)), with [Timetable](https://cloud.timeedit.net/kth/web/public01/ri178504X20Z58Q6Z96g0YY0y6066YX080QgQY6Q5326257505777.html).
 
+Youtube Playlist [Flervariabelanalys](https://www.youtube.com/playlist?list=PLN8b0iQL-uXu6ww-gT1qx9tAf49ZfT08N) by [Lars Filipsson](https://www.kth.se/profile/lfn)
 
 <br/><br/>
 <p>Last update on {{ site.time | date_to_long_string }}.</p>
