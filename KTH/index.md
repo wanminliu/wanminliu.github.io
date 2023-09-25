@@ -3,6 +3,15 @@ Back to [**homepage**](https://wanminliu.github.io)
 [Wanmin Liu's KTH Profile](https://www.kth.se/profile/wanmin/)
 
 
+### Current Teaching
+
+* 2023 Fall at KTH,  Lecturer for *Single variable Calculus* ([SF1625](https://wanminliu.github.io/KTH/SF1625)), Lecture 12 to Lecture 21. 
+[**Lecture Notes**](https://wanminliu.github.io/KTH/SF1625)
+
+* 2023 Fall at KTH,  Teaching Assistant for *Analys i en variabel* ([SF1673](https://www.kth.se/student/kurser/kurs/SF1673)). 
+[Notes for limit of quotients](https://wanminliu.github.io/KTH/LimitofQuotients.html)
+
+
 
 ### [SF1626 (Calculus in Several Variable, Flervariabelanalys), KTH](https://www.kth.se/student/kurser/kurs/SF1626)
 
@@ -18,11 +27,6 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 
 
-### Current Teaching
-
-* 2023 Fall at KTH,  Substitute teacher for *Single variable Calculus* ([SF1625](https://wanminliu.github.io/KTH/SF1625)), Lecture 12 to Lecture 21.
-
-* 2023 Fall at KTH,  Teaching Assistant for *Analys i en variabel* ([SF1673](https://www.kth.se/student/kurser/kurs/SF1673)). [Notes for limit of quotients](https://wanminliu.github.io/KTH/LimitofQuotients.html)
 
 
 ### Previous Teaching
