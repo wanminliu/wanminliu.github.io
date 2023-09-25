@@ -11,7 +11,9 @@ Back to [**homepage**](https://wanminliu.github.io)
 * 2023 Fall at KTH,  Teaching Assistant for *Analys i en variabel* ([SF1673](https://www.kth.se/student/kurser/kurs/SF1673)). 
 [Notes for limit of quotients](https://wanminliu.github.io/KTH/LimitofQuotients.html)
 
+### [SF1682 (Analytiska och numeriska metoder för differentialekvationer), KTH](https://canvas.kth.se/courses/41658)
 
+*  [Notes for the summary the first six lectures](https://wanminliu.github.io/KTH/ODE/ODE.html)
 
 ### [SF1626 (Calculus in Several Variable, Flervariabelanalys), KTH](https://www.kth.se/student/kurser/kurs/SF1626)
 
@@ -20,10 +22,6 @@ Back to [**homepage**](https://wanminliu.github.io)
 *  [Notes for Module 4: Integrals](https://wanminliu.github.io/KTH/M4/SF1626M4.html)
 *  [Notes for Module 5: Curve and surface integrals](https://wanminliu.github.io/KTH/M5/SF1626VT22M5.html)
 *  [Notes for Module 6: Vector Analysis](https://wanminliu.github.io/KTH/M6/SF1626VT22M6.html)
-
-### [SF1682 (Analytiska och numeriska metoder för differentialekvationer), KTH](https://canvas.kth.se/courses/41658)
-
-*  [Notes for the summary the first six lectures](https://wanminliu.github.io/KTH/ODE/ODE.html)
 
 
 
