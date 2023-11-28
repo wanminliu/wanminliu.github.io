@@ -11,7 +11,8 @@ Back to [**homepage**](https://wanminliu.github.io)
 ### Seminars
   * [UU Geometry and Topology Seminar](https://www.math.uu.se/research/geometry-and-physics/geometry-and-topology-seminar/);
   * [UU Geometry and Physics Seminar](https://www.math.uu.se/research/geometry-and-physics/gp-seminars/);
-  * [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/math/math/alggeo/);
+  * [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/math/kalender/alggeo);
+  * [KTH & SU Algebraic Geometry (arXiv)](https://www.kth.se/math/kalender/arxiv)
   * [Chalmers/GU Algebraic Geometry and Number Theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
   * [UU Ph.D. course in symplectic geometry](http://www2.math.uu.se/~georgios/sg21/)
 
