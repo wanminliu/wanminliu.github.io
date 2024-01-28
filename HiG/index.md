@@ -7,6 +7,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 * 20240129  [**Föreläsning**](https://wanminliu.github.io/HiG/integralen.html)
 * 20240129  [**Kursplanering**](https://docs.google.com/document/d/e/2PACX-1vQJ35506dMtl90ohX4rF3zItnLyp54fM0o9cKcIhvRz9dg5jK3njfx3LD5HMwSBmLaWdmCMBg0KZQcg/pub)
 * 20240129  [**Sammanfatta**](https://wanminliu.github.io/HiG/integralensammanfatta.html) 
+* 202309 [Tidigare föreläsningsanteckningar på KTH](https://wanminliu.github.io/KTH/SF1625)
 
 
 
