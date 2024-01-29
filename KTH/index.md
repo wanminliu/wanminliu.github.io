@@ -45,6 +45,10 @@ Back to [**homepage**](https://wanminliu.github.io)
 Youtube Playlist [Flervariabelanalys](https://www.youtube.com/playlist?list=PLN8b0iQL-uXu6ww-gT1qx9tAf49ZfT08N) by [Lars Filipsson](https://www.kth.se/profile/lfn)
 
 <br/><br/>
+
+<img src="https://wanminliu.github.io//pic/KTH20231129.jpg" alt="KTH" id="width:100%;height:auto;">
+
+<br/><br/>
 <p>Last update on {{ site.time | date_to_long_string }}.</p>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6X136VZ9Z5"></script>

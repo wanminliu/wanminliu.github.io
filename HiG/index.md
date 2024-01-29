@@ -12,7 +12,9 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 
 
+<br/><br/>
 
+<img src="https://wanminliu.github.io//pic/HiGbibliotek.jpg" alt="HiG" id="width:100%;height:auto;">
 
 
 <br/><br/>
