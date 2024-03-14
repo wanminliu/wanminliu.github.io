@@ -57,6 +57,10 @@ Back to [**homepage**](https://wanminliu.github.io)
 ### Svenska För Invandrare
 [Lennart Hellsing — Språkets mästare](https://slides.com/wanminliu/hellsing/fullscreen)
 
+
+### Pi-dagen
+[Pi-dagen](https://wanminliu.github.io/doc/Pi-dagen.pdf)
+
 <br/><br/>
 
 <img src="https://wanminliu.github.io//pic/Uppsala.jpg" alt="Uppsala" id="width:100%;height:auto;">
