@@ -58,8 +58,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 [Lennart Hellsing — Språkets mästare](https://slides.com/wanminliu/hellsing/fullscreen)
 
 
-### Pi-dagen
-[Pi-dagen](https://wanminliu.github.io/doc/Pi-dagen.pdf)
+### [Pi-dagen](https://wanminliu.github.io/doc/Pi-dagen.html)
 
 <br/><br/>
 
