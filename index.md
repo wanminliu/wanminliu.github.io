@@ -70,6 +70,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * Teaching Assistant for various courses at HKUST: _Complex Analysis_, _Differential Geometry_, _Analysis_, _Linear Algebra_, _Concept in Math_, _Differential Geometry_ (I won the **[Best Teaching Assistant Award](https://wanminliu.github.io/pic/BestTA.jpg)**), _Ordinary Differential Equation_.
 * Wanmin Liu, [Tutorial Demo of Problems in Linear Algebra and Calculus (for Training New Teaching Assistant)](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html), 40 pages, 2012. / [PDF](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.pdf)
 * Wanmin Liu, [LaTeX Tutorial](https://wanminliu.github.io/introLaTeX/introLaTeX.html), 2012. / [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf)
+* Wanmin Liu, [ODE, SageMath and General AI](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.pdf), 2024.
 
 
 
