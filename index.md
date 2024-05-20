@@ -7,7 +7,8 @@
 
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
-- 2021/09 — current: Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
+- 2024/01 — current: [KPUFU](https://www.su.se/sok-kurser-och-program/lkfoy-1.413299) program of fulltime study, Stockholm University.
+- 2021/09 — 2023/12: Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
 - 2021/08 — 2023/05: Swedish learning at [ABF Stockholm](https://abfstockholm.se/). [**Svenska som andraspråk 3**](https://www.skolverket.se/undervisning/gymnasieskolan/bedomning-i-gymnasieskolan/bedomningsstod-i-amnen-pa-gymnasial-niva/bedomningsstod-i-svenska-och-svenska-som-andrasprak-pa-gymnasial-niva#h-Svenskasomandrasprak3), **godkänd**.
 - 2019/01 — 2020/12: Researcher, [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/), Uppsala University.
 - 2015/12 — 2018/11: Research Fellow, [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/), South Korea.
@@ -51,16 +52,17 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 ### Preprints
 
-
+- [Mu-Lin Li](https://grzy.hnu.edu.cn/site/index/limulin),  ——, _The limits of Kähler manifolds under holomorphic deformations_, 11 pages, submitted, 2023.
 
 - ——, [Jason Lo](https://sites.google.com/site/chiehcjlo/home), [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home), _[Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/LLM/LLM.html)_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477), 45 pages, submitted.
-
-- [Mu-Lin Li](https://grzy.hnu.edu.cn/site/index/limulin),  ——, _The limits of Kähler manifolds under holomorphic deformations_, 11 pages, submitted, 2023.
 
 
 
 ### Teaching
-* 2021/09 — current: KTH Royal Institute of Technology, various courses, *Flervariabelanalys*, *Algebra och geometri*, *Calculus in Several Variable*, *Basic Course in Mathematics*. More information is [here](https://wanminliu.github.io/KTH/).
+* 2024/03 — 2024/05: [Kärrtorps gymnasium](https://karrtorpsgymnasium.stockholm/), *Matematik 1A*, *Matematik 1B*, *Matematik 3C*.
+  * Wanmin Liu, [ODE, SageMath and General AI](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.pdf)
+  * Kambiz Kafi, Wanmin Liu, Poster on π-Day: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/Pi-dagen.pdf)
+* 2021/09 — 2023/12: KTH Royal Institute of Technology, various courses, *Flervariabelanalys*, *Algebra och geometri*, *Calculus in Several Variable*, *Basic Course in Mathematics*. More information is [here](https://wanminliu.github.io/KTH/).
 * 2020 Fall at Uppsala University, Teaching Assistant for *Linear Algebra II* (1MA024). TA for Two groups, each group 20 hours online tutorial teaching, online cooperation with other TAs and lecturers on grading homework, midterm and final exams.
 * 2020 Spring at Uppsala University, supervise an undergraduate student (10 credits).
  > Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 58 pages, Uppsala University, 2020 June, [DiVA, id: diva2:1466472](https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-419483).
@@ -70,8 +72,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * Teaching Assistant for various courses at HKUST: _Complex Analysis_, _Differential Geometry_, _Analysis_, _Linear Algebra_, _Concept in Math_, _Differential Geometry_ (I won the **[Best Teaching Assistant Award](https://wanminliu.github.io/pic/BestTA.jpg)**), _Ordinary Differential Equation_.
 * Wanmin Liu, [Tutorial Demo of Problems in Linear Algebra and Calculus (for Training New Teaching Assistant)](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html), 40 pages, 2012. / [PDF](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.pdf)
 * Wanmin Liu, [LaTeX Tutorial](https://wanminliu.github.io/introLaTeX/introLaTeX.html), 2012. / [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf)
-* Wanmin Liu, [ODE, SageMath and General AI](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.pdf)
-* [Pi-dagen](https://wanminliu.github.io/doc/Pi-dagen.html), 2024.
+
 
 ### Talks
 
