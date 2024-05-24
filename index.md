@@ -50,6 +50,10 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 - ——, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, PhD Thesis, Hong Kong University of Science and Technology, 2015. The [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) corrects some typos in the [library version](https://lbezone.hkust.edu.hk/bib/b1487651).
 
+- Xianling Fan, ——, _An Exact Inequality Involving Luxemburg Norm and Conjugate-Orlicz Norm in  $L^{p(x)}(\Omega)$_, *Chinese Ann. Math. Ser. A*, Vol. 27, No. 2 (2006), [177—188](https://wanminliu.github.io/doc/Thesis/Fan-Liu_cn.html); translation in
+*Chinese J. Contemp. Math.*, Vol. 27, No. 2 (2006), [147—158](https://wanminliu.github.io/doc/Thesis/Fan-Liu_en.html). 
+
+
 ### Preprints
 
 - [Mu-Lin Li](https://grzy.hnu.edu.cn/site/index/limulin),  ——, _The limits of Kähler manifolds under holomorphic deformations_, 11 pages, submitted, 2023.
@@ -59,9 +63,10 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 
 ### Teaching
+
 * 2024/03 — 2024/05: [Kärrtorps gymnasium](https://karrtorpsgymnasium.stockholm/), *Matematik 1A*, *Matematik 1B*, *Matematik 3C*.
-  * Wanmin Liu, [ODE, SageMath and General AI](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.pdf)
-  * Kambiz Kafi, Wanmin Liu, Poster on π-Day: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/Pi-dagen.pdf)
+  - Wanmin Liu, [ODE, SageMath and General AI](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.pdf)
+  - Kambiz Kafi, Wanmin Liu, Poster on π-Day: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/Pi-dagen.pdf)
 * 2021/09 — 2023/12: KTH Royal Institute of Technology, various courses, *Flervariabelanalys*, *Algebra och geometri*, *Calculus in Several Variable*, *Basic Course in Mathematics*. More information is [here](https://wanminliu.github.io/KTH/).
 * 2020 Fall at Uppsala University, Teaching Assistant for *Linear Algebra II* (1MA024). TA for Two groups, each group 20 hours online tutorial teaching, online cooperation with other TAs and lecturers on grading homework, midterm and final exams.
 * 2020 Spring at Uppsala University, supervise an undergraduate student (10 credits).
