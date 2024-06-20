@@ -3,19 +3,20 @@ Back to [**homepage**](https://wanminliu.github.io)
 [Wanmin Liu's KTH Profile](https://www.kth.se/profile/wanmin/)
 
 
-### Current Teaching
+### Teaching Notes
 
-* 2023 Fall at KTH,  Lecturer for *Single variable Calculus* ([SF1625](https://wanminliu.github.io/KTH/SF1625)), Lecture 12 to Lecture 21. 
-[**Lecture Notes**](https://wanminliu.github.io/KTH/SF1625)
 
-* 2023 Fall at KTH,  Teaching Assistant for *Analys i en variabel* ([SF1673](https://www.kth.se/student/kurser/kurs/SF1673)). 
-[Notes for limit of quotients](https://wanminliu.github.io/KTH/LimitofQuotients.html)
 
-### [SF1682 (Analytiska och numeriska metoder för differentialekvationer), KTH](https://canvas.kth.se/courses/41658)
 
-*  [Notes for the summary the first six lectures](https://wanminliu.github.io/KTH/ODE/ODE.html)
+ 
+[**Lecture Notes of SF1625 (Single variable Calculus)**](https://wanminliu.github.io/KTH/SF1625)
 
-### [SF1626 (Calculus in Several Variable, Flervariabelanalys), KTH](https://www.kth.se/student/kurser/kurs/SF1626)
+
+[**Notes for limit of quotients, SF1673 (Analys i en variabel)**](https://wanminliu.github.io/KTH/LimitofQuotients.html)
+
+[**Notes for the summary the first six lectures, SF1682 (Analytiska och numeriska metoder för differentialekvationer)**](https://wanminliu.github.io/KTH/ODE/ODE.html)
+
+#### [SF1626 (Calculus in Several Variable, Flervariabelanalys), KTH](https://www.kth.se/student/kurser/kurs/SF1626)
 
 *  [Notes for Module 1: 3-dimensional geometry and functions of several variables](https://wanminliu.github.io/KTH/M1/SF1626VT22M1.html)
 *  [Notes for Module 2: Partial derivatives and linear approximation](https://wanminliu.github.io/KTH/M2/SF1626VT22M2.html)
@@ -24,12 +25,13 @@ Back to [**homepage**](https://wanminliu.github.io)
 *  [Notes for Module 6: Vector Analysis](https://wanminliu.github.io/KTH/M6/SF1626VT22M6.html)
 
 
-
-
-
 ### Previous Teaching
 
+* 2023 Fall at KTH,  Lecturer for *Single variable Calculus* ([SF1625](https://wanminliu.github.io/KTH/SF1625)), Lecture 12 to Lecture 21.
+
 * 2023 Fall at KTH,  Substitute teacher for *Analytical and Numerical Methods for Differential Equations* ([SF1682](https://canvas.kth.se/courses/41658)), Lecture 1 to Lecture 6.
+
+* 2023 Fall at KTH,  Teaching Assistant for *Analys i en variabel* ([SF1673](https://www.kth.se/student/kurser/kurs/SF1673)). 
 
 * 2023 Spring at KTH, Period 4, Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)), with [TimeTable CDATE1, CLGYM2, TIDAB](https://cloud.timeedit.net/kth/web/public01/ri160794X50Z06Q6Z96g0YY0y0066YX0709gQY6Q57264697X4478w27Y5o7o7Zr4QxQ0.html), and *Differentialekvationer* ([SF1633](https://canvas.kth.se/courses/38810)) with [TimeTable CMAST2](https://cloud.timeedit.net/kth/web/public01/ri166795X50Z0XQ6Z46g9Y60y9016Y0200QgQY6Q572806774Y747ZrwoxQo.html).
 

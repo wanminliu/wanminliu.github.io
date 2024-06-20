@@ -100,7 +100,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
   - ![pdf2htmlEX](https://coolwanglu.github.io/pdf2htmlEX/images/pdf2htmlEX-64x64.png) [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) — Convert PDF to HTML without losing text or format.
   - Talk on [TUG2013](https://tug.org/tug2013/): [Online publishing via pdf2htmlEX](https://wanminliu.github.io/doc/pdf2htmlEX/tb108wang.html)  / [PDF](https://tug.org/TUGboat/tb34-3/tb108wang.pdf)
-  - [Ten steps of using Zotero](https://wanminliu.github.io/doc/Zotero.html) 
+  - [Ten steps of using Zotero, June 2024](https://wanminliu.github.io/doc/Zotero.html) 
   
 ### [**More Links**](https://wanminliu.github.io/link)
 
