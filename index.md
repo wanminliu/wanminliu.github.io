@@ -56,7 +56,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 ### Preprints
 
-- [Mu-Lin Li](https://grzy.hnu.edu.cn/site/index/limulin),  ——, _The limits of Kähler manifolds under holomorphic deformations_, 11 pages, submitted, 2023.
+- [Mu-Lin Li](https://grzy.hnu.edu.cn/site/index/limulin),  ——, _[The limits of Kähler manifolds under holomorphic deformations](https://wanminliu.github.io/doc/LL/2406.14076.html)_, [arXiv:2406.14076v1 [math.AG]](https://arxiv.org/abs/2406.14076), 12 pages, submitted.
 
 - ——, [Jason Lo](https://sites.google.com/site/chiehcjlo/home), [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home), _[Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces](https://wanminliu.github.io/doc/LLM/LLM.html)_, [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477), 45 pages, submitted.
 
@@ -67,6 +67,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 * 2024/03 — 2024/05: [Kärrtorps gymnasium](https://karrtorpsgymnasium.stockholm/), *Matematik 1A*, *Matematik 1B*, *Matematik 3C*, undervisa på svenska.
   - Wanmin Liu, [ODE, SageMath and General AI](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.pdf)
   - Kambiz Kafi, Wanmin Liu, Poster on π-Day: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/Pi-dagen.pdf)
+  - More on [High School](https://wanminliu.github.io/gymnasium/).
 * 2021/09 — 2023/12: KTH Royal Institute of Technology, various courses, *Flervariabelanalys*, *Algebra och geometri*, *Calculus in Several Variable*, *Basic Course in Mathematics*. More information is [here](https://wanminliu.github.io/KTH/).
 * 2020 Fall at Uppsala University, Teaching Assistant for *Linear Algebra II* (1MA024). TA for Two groups, each group 20 hours online tutorial teaching, online cooperation with other TAs and lecturers on grading homework, midterm and final exams.
 * 2020 Spring at Uppsala University, supervise an undergraduate student (10 credits).
