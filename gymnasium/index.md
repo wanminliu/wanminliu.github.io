@@ -20,6 +20,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 
   - Wanmin Liu, [ODE, SageMath and General AI -- An Example from High School Teaching](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.pdf)
   - Kambiz Kafi, Wanmin Liu, Affisch på π-dagen: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/Pi-dagen.pdf)
+  - Wanmin Liu, [Pythagoras sats](https://wanminliu.github.io/gymnasium/Pythagoras_sats.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/Pythagoras_sats.pdf)
 
 #### Undervisningsanteckningar
 
