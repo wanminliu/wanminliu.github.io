@@ -14,7 +14,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 * Matematik 1A
 * Matematik 1B
 * Matematik 3C (till en elev)
-* Matematik 5 (en vikarierande klass)
+* Matematik 5 (en vikarierande lektion)
 
 #### Undervisningsartiklar
 
