@@ -8,6 +8,11 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 <br/><br/>
 
-<img src="https://wanminliu.github.io//pic/KTH20231129.jpg" alt="Uppsala" id="width:100%;height:auto;">
+<img src="https://wanminliu.github.io/pic/Double_Rainbow.jpeg" alt="Double Rainbow" id="width:100%;height:auto;">
+
+[Bill Casselman, AMS: The Mathematics of Rainbows](https://www.ams.org/publicoutreach/feature-column/fcarc-rainbows)
+
+[Bill Casselman, AMS: The Mathematics of Rainbows, Part II](https://www.ams.org/publicoutreach/feature-column/fc-2015-02)
+
 
 <p>Last update on {{ site.time | date_to_long_string }}.</p>
