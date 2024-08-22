@@ -25,6 +25,12 @@ Back to [**homepage**](https://wanminliu.github.io)
 *  [Notes for Module 6: Vector Analysis](https://wanminliu.github.io/KTH/M6/SF1626VT22M6.html)
 
 
+### Current Teaching
+
+* 2024 Fall at KTH,  Lärarvikarie for *Analytical and Numerical Methods for Ordinary Differential Equations* ([SF1692](https://www.kth.se/student/kurser/kurs/SF1692)), Lecture 2 to Lecture 3.
+
+* 2024 Fall at KTH,  Teaching Assistant for *Analys i en variabel* ([SF1673](https://www.kth.se/student/kurser/kurs/SF1673)), övning 1 till  övning 5.
+
 ### Previous Teaching
 
 * 2023 Fall at KTH,  Lecturer for *Single variable Calculus* ([SF1625](https://wanminliu.github.io/KTH/SF1625)), Lecture 12 to Lecture 21.
