@@ -7,7 +7,8 @@
 
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
-- 2024/01 — current: [KPUFU](https://www.su.se/sok-kurser-och-program/lkfoy-1.413299) program of fulltime study, Stockholm University.
+- 2024/08 - : Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
+- 2024/01 — 2024/08: [KPUFU](https://www.su.se/sok-kurser-och-program/lkfoy-1.413299) program of fulltime study, Stockholm University.
 - 2021/09 — 2023/12: Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
 - 2021/08 — 2023/05: Swedish learning at [ABF Stockholm](https://abfstockholm.se/). [**Svenska som andraspråk 3**](https://www.skolverket.se/undervisning/gymnasieskolan/bedomning-i-gymnasieskolan/bedomningsstod-i-amnen-pa-gymnasial-niva/bedomningsstod-i-svenska-och-svenska-som-andrasprak-pa-gymnasial-niva#h-Svenskasomandrasprak3), **godkänd**.
 - 2019/01 — 2020/12: Researcher, [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/), Uppsala University.
@@ -64,7 +65,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 ### Teaching
 
-* 2024/09 — ——: KTH Royal Institute of Technology, various courses. More information is [here](https://wanminliu.github.io/KTH/).
+* 2024/08 — ——: KTH Royal Institute of Technology, various courses. More information is [here](https://wanminliu.github.io/KTH/).
 * 2024/03 — 2024/05: [Kärrtorps gymnasium](https://karrtorpsgymnasium.stockholm/), *Matematik 1A*, *Matematik 1B*, *Matematik 3C*, undervisa på svenska.
   - Wanmin Liu, [ODE, SageMath, and General AI - An Example From High School Teaching](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.pdf)
   - Kambiz Kafi, Wanmin Liu, Poster on π-Day: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/Pi-dagen.pdf)
