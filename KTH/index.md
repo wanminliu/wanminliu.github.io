@@ -5,9 +5,8 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 ### Teaching Notes
 
-[**SF1692 (ODE), Lecture 2**](https://wanminliu.github.io/KTH/ODE/SF1692F2.html)
-
-[**SF1692 (ODE), Lecture 3**](https://wanminliu.github.io/KTH/ODE/SF1692F3.html)
+**SF1692 (ODE)** [**Lecture 2**](https://wanminliu.github.io/KTH/ODE/SF1692F2.html)
+[**Lecture 3**](https://wanminliu.github.io/KTH/ODE/SF1692F3.html)
  
 [**Lecture Notes of SF1625 (Single variable Calculus)**](https://wanminliu.github.io/KTH/SF1625)
 
@@ -27,9 +26,9 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 ### Current Teaching
 
-* 2024 Fall at KTH,  Lärarvikarie for *Analytical and Numerical Methods for Ordinary Differential Equations* ([SF1692](https://www.kth.se/student/kurser/kurs/SF1692)), [Lecture 2](https://wanminliu.github.io/KTH/ODE/SF1692F2.html) to Lecture 3.
+* 2024 Fall at KTH,  Lärarvikarie for *Analytical and Numerical Methods for Ordinary Differential Equations* ([SF1692](https://www.kth.se/student/kurser/kurs/SF1692)), [Lecture 2](https://wanminliu.github.io/KTH/ODE/SF1692F2.html) to [Lecture 3](https://wanminliu.github.io/KTH/ODE/SF1692F3.html).
 
-* 2024 Fall at KTH,  Teaching Assistant for *Analys i en variabel* ([SF1673](https://www.kth.se/student/kurser/kurs/SF1673)), övning 1 till  övning 5.
+* 2024 Fall at KTH,  Teaching Assistant for *Analys i en variabel* ([SF1673](https://www.kth.se/student/kurser/kurs/SF1673)), [övning 1 till  övning 5](https://wanminliu.github.io/KTH/SF1673.html).
 
 ### Previous Teaching
 
