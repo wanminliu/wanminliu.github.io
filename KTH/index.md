@@ -5,8 +5,9 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 ### Teaching Notes
 
+[**SF1692 (ODE), Lecture 2**](https://wanminliu.github.io/KTH/ODE/SF1692F2.html)
 
-
+[**SF1692 (ODE), Lecture 3**](https://wanminliu.github.io/KTH/ODE/SF1692F3.html)
  
 [**Lecture Notes of SF1625 (Single variable Calculus)**](https://wanminliu.github.io/KTH/SF1625)
 
