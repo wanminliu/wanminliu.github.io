@@ -11,7 +11,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 [**Lecture Notes of SF1625 (Single variable Calculus)**](https://wanminliu.github.io/KTH/SF1625)
 
 
-[**Notes for limit of quotients, SF1673 (Analys i en variabel)**](https://wanminliu.github.io/KTH/LimitofQuotients.html)
+[**SF1673 (Analys i en variabel)**](https://wanminliu.github.io/KTH/SF1673/index)
 
 [**Notes for the summary the first six lectures, SF1682 (Analytiska och numeriska metoder för differentialekvationer)**](https://wanminliu.github.io/KTH/ODE/ODE.html)
 
