@@ -5,9 +5,9 @@ Back to [**Teaching Page**](https://wanminliu.github.io/KTH/)
 
 
 
-###  [:pray: Teaching Evaluation (Google Forms)](https://docs.google.com/forms/d/e/1FAIpQLSe94HiDHKs7EKbmcrh3VCt0T6o0RsPBUDAJkLXeBnJKb2c3Rw/viewform?usp=sf_link)
+###  🙏[Teaching Evaluation (Google Forms)](https://docs.google.com/forms/d/e/1FAIpQLSe94HiDHKs7EKbmcrh3VCt0T6o0RsPBUDAJkLXeBnJKb2c3Rw/viewform?usp=sf_link)
 
-:pray: Tack så mycket för att du tog dig tid att hjälpa mig att utvärdera min undervisning! :pray:
+Tack så mycket för att du tog dig tid att hjälpa mig att utvärdera min undervisning! 
 
 *  [Tutorial 1: Mängder](https://wanminliu.github.io/KTH/SF1673/SF1673E1.html)
 *  [Tutorial 2: Funktioner, I](https://wanminliu.github.io/KTH/SF1673/SF1673E2.html)
