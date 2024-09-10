@@ -7,13 +7,12 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 **SF1692 (ODE), KTH** [**Lecture 2**](https://wanminliu.github.io/KTH/ODE/SF1692F2.html)
 [**Lecture 3**](https://wanminliu.github.io/KTH/ODE/SF1692F3.html)
- 
-[**SF1625 (Single variable Calculus), KTH**](https://wanminliu.github.io/KTH/SF1625)
-
-
-[**SF1673 (Analys i en variabel), KTH**](https://wanminliu.github.io/KTH/SF1673/index)
 
 [**SF1682 (Analytiska och numeriska metoder för differentialekvationer), KTH**](https://wanminliu.github.io/KTH/ODE/ODE.html)
+ 
+[**SF1673 (Analys i en variabel), KTH**](https://wanminliu.github.io/KTH/SF1673/index)
+
+[**SF1625 (Single variable Calculus), KTH**](https://wanminliu.github.io/KTH/SF1625)
 
 [**SF1626 (Calculus in Several Variable, Flervariabelanalys), KTH**](https://www.kth.se/student/kurser/kurs/SF1626)
 
@@ -23,7 +22,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 *  [Notes for Module 5: Curve and surface integrals](https://wanminliu.github.io/KTH/M5/SF1626VT22M5.html)
 *  [Notes for Module 6: Vector Analysis](https://wanminliu.github.io/KTH/M6/SF1626VT22M6.html)
 
-[**1MA011, Lecture Notes on Differential Geometry of Curves and Surfaces**](https://wanminliu.github.io/doc/DG/DG.html), 236 pages, Uppsala University, 2019.
+[**1MA011 (Differential Geometry of Curves and Surfaces), Uppsala University, Lecture Notes, 236 pages, 2019**](https://wanminliu.github.io/doc/DG/DG.html)
 
 
 ### Current Teaching
@@ -51,6 +50,8 @@ None.
 * 2022 Spring at KTH, Teaching Assistant for *Calculus in Several Variable* ([SF1626](https://canvas.kth.se/courses/31806)), with [TimeTable CITEH1 CMAST1](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20220117.x%2C20220306.x&objects=203502.9%2C203509.9%2C448906.10&ox=0&types=0&fe=0), and [TimeTable CDEPR1](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20220117.x%2C20220306.x&objects=203502.9%2C203509.9%2C448908.10%2C386518.16&ox=0&types=0&fe=0).
 * 2021 Fall at KTH, Teaching Assistant for *Algebra och geometri* ([SF1624](https://kth.instructure.com/courses/27038)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20211101.x%2C20211219.x&objects=203502.9%2C203509.9%2C443947.10%2C386461.16%2C-1%2C443880.10%2C203502.9%2C203509.9&ox=0&types=0&fe=0&info=f#), CDATE1, and CINEK1.
 * 2021 Fall at KTH, Teaching Assistant for *Calculus in Several Variable* ([SF1686](https://canvas.kth.se/courses/27075)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri176505X20Z5XQ6Z76g8Y60y9066Y05006gQY6Q532805754Y08X7974Y47Q0.html), *Basic Course in Mathematics* ([SF1690](https://canvas.kth.se/courses/27072)), with [Timetable](https://cloud.timeedit.net/kth/web/public01/ri178504X20Z58Q6Z96g0YY0y6066YX080QgQY6Q5326257505777.html).
+* 2020 Fall at Uppsala University, Teaching Assitant for Linear Algebra.
+* 2019 Fall at Uppsala University, teacher for [1MA011 (Differential Geometry)](https://wanminliu.github.io/doc/DG/DG.html).
 
 Youtube Playlist [Flervariabelanalys](https://www.youtube.com/playlist?list=PLN8b0iQL-uXu6ww-gT1qx9tAf49ZfT08N) by [Lars Filipsson](https://www.kth.se/profile/lfn)
 
