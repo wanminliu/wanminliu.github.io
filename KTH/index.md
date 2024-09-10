@@ -5,17 +5,17 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 ### Teaching Notes
 
-**SF1692 (ODE)** [**Lecture 2**](https://wanminliu.github.io/KTH/ODE/SF1692F2.html)
+**SF1692 (ODE), KTH** [**Lecture 2**](https://wanminliu.github.io/KTH/ODE/SF1692F2.html)
 [**Lecture 3**](https://wanminliu.github.io/KTH/ODE/SF1692F3.html)
  
-[**Lecture Notes of SF1625 (Single variable Calculus)**](https://wanminliu.github.io/KTH/SF1625)
+[**SF1625 (Single variable Calculus), KTH**](https://wanminliu.github.io/KTH/SF1625)
 
 
-[**SF1673 (Analys i en variabel)**](https://wanminliu.github.io/KTH/SF1673/index)
+[**SF1673 (Analys i en variabel), KTH**](https://wanminliu.github.io/KTH/SF1673/index)
 
-[**Notes for the summary the first six lectures, SF1682 (Analytiska och numeriska metoder för differentialekvationer)**](https://wanminliu.github.io/KTH/ODE/ODE.html)
+[**SF1682 (Analytiska och numeriska metoder för differentialekvationer), KTH**](https://wanminliu.github.io/KTH/ODE/ODE.html)
 
-#### [SF1626 (Calculus in Several Variable, Flervariabelanalys), KTH](https://www.kth.se/student/kurser/kurs/SF1626)
+[**SF1626 (Calculus in Several Variable, Flervariabelanalys), KTH**](https://www.kth.se/student/kurser/kurs/SF1626)
 
 *  [Notes for Module 1: 3-dimensional geometry and functions of several variables](https://wanminliu.github.io/KTH/M1/SF1626VT22M1.html)
 *  [Notes for Module 2: Partial derivatives and linear approximation](https://wanminliu.github.io/KTH/M2/SF1626VT22M2.html)
@@ -23,7 +23,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 *  [Notes for Module 5: Curve and surface integrals](https://wanminliu.github.io/KTH/M5/SF1626VT22M5.html)
 *  [Notes for Module 6: Vector Analysis](https://wanminliu.github.io/KTH/M6/SF1626VT22M6.html)
 
-#### [**Lecture Notes on Differential Geometry of Curves and Surfaces**](https://wanminliu.github.io/doc/DG/DG.html), 236 pages, Uppsala University, 2019.
+[**1MA011, Lecture Notes on Differential Geometry of Curves and Surfaces**](https://wanminliu.github.io/doc/DG/DG.html), 236 pages, Uppsala University, 2019.
 
 
 ### Current Teaching
