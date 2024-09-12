@@ -98,7 +98,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 ### Others
   - Classification of full exceptional collection of line bundles (of FINITE type) on the [blow-up of $\mathbb{P}^7$ at a point](https://wanminliu.github.io/rs/blowup/7).
   - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) / [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://hal.science/hal-00772841/document), 2017.
-  - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/Ravi_AG.html)_** — an HTML version of **Ravi Vakil**'s [book](https://math.stanford.edu/~vakil/216blog/FOAGjul2724public.pdf)
+  - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/Ravi_AG.html)_** — an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGsep0824public.pdf)
   >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [https://math.stanford.edu/~vakil/216blog/index.html](https://math.stanford.edu/~vakil/216blog/index.html).
 
   - ![pdf2htmlEX](https://coolwanglu.github.io/pdf2htmlEX/images/pdf2htmlEX-64x64.png) [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) — Convert PDF to HTML without losing text or format.
