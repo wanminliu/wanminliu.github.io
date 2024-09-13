@@ -32,6 +32,8 @@ I am currently on the job market. I am living with my [family](https://wanminliu
 [zbMATH Open](https://zbmath.org/authors/?q=ai%3Aliu.wanmin)
 &nbsp;
 [Google Scholar](https://scholar.google.com/citations?user=KeZB0E4AAAAJ)
+&nbsp;
+[WordPress Blog](https://wanminliu.wordpress.com/)
 
 
 
@@ -114,3 +116,4 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 <br/><br/>
 <p>Last update on {{ site.time | date_to_long_string }}.</p>
+s
