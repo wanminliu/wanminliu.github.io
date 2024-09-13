@@ -16,5 +16,7 @@ Tack så mycket för att du tog dig tid att hjälpa mig att utvärdera min under
 *  [Tutorial 5: Talföljder, II](https://wanminliu.github.io/KTH/SF1673/SF1673E5.html)
 *  [Limit of quotients](https://wanminliu.github.io/KTH/SF1673/LimitofQuotients.html)
 
+It is hard to leave a comment on Github page for the original notes, so I repost them also on my [WordPress](https://wanminliu.wordpress.com/2024/09/13/tutorial-notes-on-analysis-sf1673-kth-ht24/). You are welcome to give me comments or feedback to my notes there. Thank you.
+
 <br/><br/>
 <p>Last update on {{ site.time | date_to_long_string }}.</p>
