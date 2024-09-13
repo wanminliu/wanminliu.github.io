@@ -23,9 +23,9 @@ I am currently on the job market. I am living with my [family](https://wanminliu
 
 ### [My papers on arXiv](http://arxiv.org/a/liu_w_7)
 
-[![Linkedin](https://i.stack.imgur.com/gVE0j.png) linkedin.com/in/wanminliu](https://www.linkedin.com/in/wanminliu)
+[Linkedin](https://www.linkedin.com/in/wanminliu)
 &nbsp;
-[![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png) ORCID](https://orcid.org/0000-0003-0999-5553)
+[ORCID](https://orcid.org/0000-0003-0999-5553)
 &nbsp;
 [MathSciNet](https://mathscinet.ams.org/mathscinet/MRAuthorID/789188)
 &nbsp;
@@ -33,7 +33,7 @@ I am currently on the job market. I am living with my [family](https://wanminliu
 &nbsp;
 [Google Scholar](https://scholar.google.com/citations?user=KeZB0E4AAAAJ)
 &nbsp;
-[WordPress Blog](https://wanminliu.wordpress.com/)
+[WordPress](https://wanminliu.wordpress.com/)
 
 
 
