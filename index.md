@@ -116,4 +116,3 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 <br/><br/>
 <p>Last update on {{ site.time | date_to_long_string }}.</p>
-s
