@@ -45,7 +45,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 ### Papers
 
-- ——, [Jason Lo](https://sites.google.com/site/chiehcjlo/home), [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home), _[Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces](https://link.springer.com/article/10.1007/s00574-024-00422-7)_, *Bulletin of the Brazilian Mathematical Society, New Series*, Vol. 55, article number 47, (2024). See also [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
+- ——, [Jason Lo](https://sites.google.com/site/chiehcjlo/home), [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home), _[Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces](https://link.springer.com/article/10.1007/s00574-024-00422-7)_, *Bulletin of the Brazilian Mathematical Society, New Series*, Vol. 55, article number 47, (2024). See also [DOI](https://doi.org/10.1007/s00574-024-00422-7) or [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
 
 - [Yu-Wei Fan](https://ywfan-math.github.io/), [Chunyi Li](https://sites.google.com/site/chunyili0401/), ——, [Yu Qiu](https://ubw-q.github.io/), _[Contractibility of space of stability conditions on the projective plane via global dimension function](https://wanminliu.github.io/doc/FLLQ20/P2.html)_, *Mathematical Research Letters*, Vol. 30, No. 1 (2023), [51—87](https://wanminliu.github.io/doc/FLLQ20/MRL_30_01_A03.pdf). See also [DOI](https://dx.doi.org/10.4310/MRL.2023.v30.n1.a3) or [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984).
 
