@@ -2,7 +2,7 @@ Tillbaka till [**startsidan**](https://wanminliu.github.io).
 
 [Engelsk version](https://wanminliu.github.io/rs/bscen)
 
-_Tack till [Georgios](http://www.dimitroglou.name/) med hjälp av översättning._
+_Tack till [Georgios](https://www.uu.se/kontakt-och-organisation/personal?query=N7-1534) med hjälp av översättning._
 
 ### Bridgelands stabilitetsvillkor -- nya aspekter av symmetri och klassificering
 
