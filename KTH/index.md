@@ -5,6 +5,9 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 ### Teaching Notes
 
+[**Derivator**](https://wanminliu.github.io/KTH/Derivator/Derivator.html) [PDF](https://wanminliu.github.io/KTH/Derivator/Derivator.pdf)
+
+
 **SF1692 (ODE), KTH** [**Lecture 2**](https://wanminliu.github.io/KTH/ODE/SF1692F2.html)
 [**Lecture 3**](https://wanminliu.github.io/KTH/ODE/SF1692F3.html)
 
