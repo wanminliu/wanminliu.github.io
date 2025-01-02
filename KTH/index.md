@@ -3,7 +3,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 
 
-_This is my personal teaching page. It contains my various teaching notes._
+_This is my personal **teaching page**. It contains my various teaching notes._
 
 
 
@@ -11,6 +11,7 @@ _This is my personal teaching page. It contains my various teaching notes._
 
 [**Derivator**](https://wanminliu.github.io/KTH/Derivator/Derivator.html) [PDF](https://wanminliu.github.io/KTH/Derivator/Derivator.pdf)
 
+[**Integraler**](https://wanminliu.github.io/HiG/integralen.html) och [integralensammanfatta](https://wanminliu.github.io/HiG/integralensammanfatta.html)
 
 **SF1692 (ODE), KTH** [**Lecture 2**](https://wanminliu.github.io/KTH/ODE/SF1692F2.html)
 [**Lecture 3**](https://wanminliu.github.io/KTH/ODE/SF1692F3.html)
@@ -83,7 +84,7 @@ None.
 * 2012 Fall. [*Training to all new Teaching Assistants*](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.pdf), Department of Mathematics, HKUST. 
 * 2012, Fall. [*LaTeX  Tutorial*](https://wanminliu.github.io/doc/introLaTeX.pdf). 
 * 2011, Spring. *Ordinary Differential Equation*.
-* 2010, Fall. [*Differential Geometry*](https://wanminliu.github.io/doc/DG2010/DG2010_Liu.pdf). I won the _**Best Teaching Assistant Award**_ of the Math Dept of HKUST in 2011 for this course.
+* 2010, Fall. [*Differential Geometry*](https://wanminliu.github.io/doc/DG2010/DG2010_Liu.html). I won the _**Best Teaching Assistant Award**_ of the Math Dept of HKUST in 2011 for this course.
 * 2009, Fall. *Concept in Math*.
 * 2009, Fall. *Linear Algebra*.
 * 2009, Spring. *Analysis*.
