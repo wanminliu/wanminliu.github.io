@@ -109,7 +109,8 @@ Jag skulle vilja tacka följande pedagoger för deras gratis videor som undervis
 * [Jonas Vikström](https://www.youtube.com/@vikstromjonas)
 
 
-------
+### Teaching Blog
+
 [Teaching Blog](https://wanminliu.wordpress.com/category/teaching/)
 
 
