@@ -8,14 +8,6 @@ Back to [**homepage**](https://wanminliu.github.io)
 *  [Google Scholar](https://scholar.google.com/citations?user=KeZB0E4AAAAJ)
 
 
-### Seminars
-  * [UU Geometry and Topology Seminar](https://www.math.uu.se/research/geometry-and-physics/geometry-and-topology-seminar/);
-  * [UU Geometry and Physics Seminar](https://www.math.uu.se/research/geometry-and-physics/gp-seminars/);
-  * [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/math/kalender/alggeo);
-  * [KTH & SU Algebraic Geometry (arXiv)](https://www.kth.se/math/kalender/arxiv)
-  * [Chalmers/GU Algebraic Geometry and Number Theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
-  * [UU Ph.D. course in symplectic geometry](http://www2.math.uu.se/~georgios/sg21/)
-
 ### Other Links
 
   * [SMC Calendar](https://www.math-stockholm.se/en/kalender/)
@@ -39,21 +31,29 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 ### Collaborators:
   *  [Yu-Wei Fan](https://ywfan-math.github.io/)
-  *  [Kambiz Kafi](https://www.linkedin.com/in/kambiz-kafi-38706a8/)
   *  [Chunyi Li](https://sites.google.com/site/chunyili0401/)
   *  [Mu-Lin Li](https://grzy.hnu.edu.cn/site/index/limulin/)
-  *  [Jason Lo](https://sites.google.com/site/chiehcjlo/home/)
+  *  [Jason Lo](https://sites.google.com/site/chiehcjlo/)
   *  [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home/)
   *  [Yu Qiu](https://ubw-q.github.io/)
   *  [Lu Wang](https://wang-lu.com/)
-  *  [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44/)
-  *  [Xun Yu](https://sites.google.com/site/xunyuhomepage/)
+  *  [Song Yang](http://cam.tju.edu.cn/en/faculty/index.php?id=44)
+  *  [Xun Yu](http://cam.tju.edu.cn/en/faculty/index.php?id=45)
 
 
 ### Thesis
 - PhD Thesis, _[Bayer-Macrì decomposition on Bridgeland moduli spaces over surfaces](https://wanminliu.github.io/thesis/thesis_WM.html)_, Hong Kong University of Science and Technology, 2015. The [PDF](https://wanminliu.github.io/doc/thesis_WM.pdf) is an updated version of the [library version](https://lbezone.hkust.edu.hk/bib/b1487651).
-- Master Thesis, _[Infinitely many solutions for two noncooperative  $p(x)$-Laplacian elliptic systems](https://wanminliu.github.io/doc/Thesis/Thesis_Master_Wanmin_Liu_2007.html)_, Lanzhou University, 2007. [PDF](https://wanminliu.github.io/doc/Thesis/Thesis_Master_Wanmin_Liu_2007.pdf).
+- Master Thesis, _[Infinitely many solutions for two noncooperative  $p(x)$-Laplacian elliptic systems](https://wanminliu.github.io/doc/Thesis/Thesis_Master_Wanmin_Liu_2007.html)_, Lanzhou University, 2007. [PDF](https://wanminliu.github.io/doc/Thesis/Thesis_Master_Wanmin_Liu_2007.pdf). [The Chinese version](https://doi.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD2007&filename=2007114508.nh&uniplatform=OVERSEA&v=WnjYQX_Wskyi7JbXOjsIe6Q419dXN0ZThjoBRSM5BQeXiYIgwz-7S_u1QpjzD5Zl).
 - Bachelor Thesis, _[An Exact Inequality Involving Luxemburg Norm and Conjugate-Orlicz Norm in  $L^{p(x)}(\Omega)$](https://wanminliu.github.io/doc/Thesis/Fan-Liu_en.html)_, Lanzhou University, 2004. [PDF in English](https://wanminliu.github.io/doc/Thesis/Fan-Liu_en.pdf) / [PDF in Chinese](https://wanminliu.github.io/doc/Thesis/Fan-Liu_cn.pdf).
+
+### Seminars
+  * [UU Geometry and Topology Seminar](https://www.math.uu.se/research/geometry-and-physics/geometry-and-topology-seminar/);
+  * [UU Geometry and Physics Seminar](https://www.math.uu.se/research/geometry-and-physics/gp-seminars/);
+  * [KTH & SU Algebra and Geometry Seminar](https://www.kth.se/math/kalender/alggeo);
+  * [KTH & SU Algebraic Geometry (arXiv)](https://www.kth.se/math/kalender/arxiv)
+  * [Chalmers/GU Algebraic Geometry and Number Theory Seminar](https://www.chalmers.se/en/departments/math/research/research-groups/algebraic-geometry-and-number-theory/Pages/Seminar-2019.aspx)
+  * [UU Ph.D. course in symplectic geometry](http://www2.math.uu.se/~georgios/sg21/)
+
 
 
 ### Svenska För Invandrare
