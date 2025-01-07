@@ -838,7 +838,11 @@ try{
 pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
 }catch(e){}
 </script>
-<title></title>
+<title>Derivator - Wanmin Liu</title>
+<style>
+#sidebar_button{position:fixed;top:0;left:0;height:76px;width:76px;z-index:1000;cursor:pointer;background-image:url(appbar.chevron.right.svg);-webkit-transition:left 500ms;transition:left 500ms}
+#sidebar.opened+#page-container>#sidebar_button{left:250px;background-image:url(appbar.chevron.left.svg)}
+</style>
 </head>
 <body>
 <div id="sidebar">
@@ -846,6 +850,7 @@ pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
 <ul><li><a class="l" href="#pf3" data-dest-detail='[3,"XYZ",28.35,272.13,null]'>Derivat vid en punkt</a></li><li><a class="l" href="#pf9" data-dest-detail='[9,"XYZ",28.35,272.13,null]'>Derivata som funktion</a></li><li><a class="l" href="#pfb" data-dest-detail='[11,"XYZ",28.35,272.13,null]'>Derivata och differentialer</a></li></ul></div>
 </div>
 <div id="page-container">
+<div id="sidebar_button" onclick="document.getElementById('sidebar').classList.toggle('opened')"></div>
 <div id="pf1" class="pf w0 h0" data-page-no="1" data-page-url="Derivator-1.page"></div>
 <div id="pf2" class="pf w0 h0" data-page-no="2" data-page-url="Derivator-2.page"></div>
 <div id="pf3" class="pf w0 h0" data-page-no="3" data-page-url="Derivator-3.page"></div>
