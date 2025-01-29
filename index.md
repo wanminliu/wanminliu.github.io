@@ -9,10 +9,10 @@ I am currently on the job market. I am living with my [family](https://wanminliu
 
 - 2025/01 — (2025/12, expected): [KPUFU](https://www.su.se/sok-kurser-och-program/lkfoy-1.413299) program of fulltime study, Stockholm University and KTH.
 - 2024/08 — 2024/12: Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
-- 2024/01 — 2024/08: [KPUFU](https://www.su.se/sok-kurser-och-program/lkfoy-1.413299) program of fulltime study, Stockholm University.
+- 2024/01 — 2024/08: [KPUFU](https://www.su.se/sok-kurser-och-program/lkfoy-1.413299) program of fulltime study, Stockholm University and KTH.
 - 2021/09 — 2023/12: Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
-- 2021/08 — 2023/05: Swedish learning at [ABF Stockholm](https://abfstockholm.se/). [**Svenska som andraspråk 3**](https://www.skolverket.se/undervisning/gymnasieskolan/bedomning-i-gymnasieskolan/bedomningsstod-i-amnen-pa-gymnasial-niva/bedomningsstod-i-svenska-och-svenska-som-andrasprak-pa-gymnasial-niva#h-Svenskasomandrasprak3), **godkänd**.
-- 2019/01 — 2020/12: Researcher, [Department of Mathematics](https://www.math.uu.se/research/algebra-and-geometry/), Uppsala University.
+- 2021/08 — 2023/05: Swedish learning at [ABF Stockholm](https://abfstockholm.se/). [**Svenska som andraspråk 3**](https://www.skolverket.se/undervisning/gymnasieskolan/nationella-prov-i-gymnasieskolan/digitala-nationella-prov-i-gymnasieskolan/lararinformation-gymnasieskolan/nationellt-prov-i-svenska-3-och-svenska-som-andrasprak-3), **godkänd**.
+- 2019/01 — 2020/12: Researcher, [Department of Mathematics](https://www.uu.se/en/department/mathematics/research/geometry-and-physics), Uppsala University.
 - 2015/12 — 2018/11: Research Fellow, [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/), South Korea.
 - 2015/06: [Ph.D.](https://genealogy.math.ndsu.nodak.edu/id.php?id=198052), [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/), under the guidance of Prof [Wei-Ping Li](https://www.math.hkust.edu.hk/people/faculty/profile/mawpli/).
 
@@ -105,12 +105,20 @@ Below is a brief introduction to my teaching. For more details, please refer to 
 ### Others
   - Classification of full exceptional collection of line bundles (of FINITE type) on the [blow-up of $\mathbb{P}^7$ at a point](https://wanminliu.github.io/rs/blowup/7).
   - [Notes on Maps in the Homotopy Category of dg-Categories](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.html) / [PDF](https://wanminliu.github.io/doc/20170704_dg-seminar-wm.pdf), [CGP Derived seminar](https://cgp.ibs.re.kr/activities/seminars/derived_seminar) on Bertrand Toën's [Lecture on DG-categories](https://hal.science/hal-00772841/document), 2017.
+  - Tutorial: [Ten steps of using Zotero, June 2024](https://wanminliu.github.io/doc/Zotero.html) 
+
+### pdf2htmlEX ![pdf2htmlEX](https://coolwanglu.github.io/pdf2htmlEX/images/pdf2htmlEX-64x64.png)
+
+[pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) is an open source software which can convert PDF to HTML. It is mainly developed by [coolwanglu](https://wang-lu.com/).   
+
+   -  [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) — Convert PDF to HTML without losing text or format.
+  - Talk on [TUG2013](https://tug.org/tug2013/): [Online publishing via pdf2htmlEX](https://wanminliu.github.io/doc/pdf2htmlEX/tb108wang.html)  / [PDF](https://tug.org/TUGboat/tb34-3/tb108wang.pdf)
+ 
+Here are some application of pdf2htmlEX for online publishing of mathematics.
+ 
   - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/Ravi_AG.html)_** — an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGsep0824public.pdf)
   >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [https://math.stanford.edu/~vakil/216blog/index.html](https://math.stanford.edu/~vakil/216blog/index.html).
-
-  - ![pdf2htmlEX](https://coolwanglu.github.io/pdf2htmlEX/images/pdf2htmlEX-64x64.png) [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX/wiki) — Convert PDF to HTML without losing text or format.
-  - Talk on [TUG2013](https://tug.org/tug2013/): [Online publishing via pdf2htmlEX](https://wanminliu.github.io/doc/pdf2htmlEX/tb108wang.html)  / [PDF](https://tug.org/TUGboat/tb34-3/tb108wang.pdf)
-  - [Ten steps of using Zotero, June 2024](https://wanminliu.github.io/doc/Zotero.html) 
+  - Si Li, [Quantum Mechanics and Geometry](https://sili-math.github.io/notes/QMG/QMG.html).
   
 ### [**More Links**](https://wanminliu.github.io/link)
 
