@@ -3,7 +3,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 
 
-_This is my personal **teaching page**. It contains my various teaching notes._
+_This is my personal **Teaching Page**. It contains my various teaching notes._
 
 
 
@@ -13,8 +13,7 @@ _This is my personal **teaching page**. It contains my various teaching notes._
 
 [**Integraler**](https://wanminliu.github.io/HiG/integralen.html) och [integralensammanfatta](https://wanminliu.github.io/HiG/integralensammanfatta.html)
 
-**SF1692 (ODE), KTH** [**Lecture 2**](https://wanminliu.github.io/KTH/ODE/SF1692F2.html)
-[**Lecture 3**](https://wanminliu.github.io/KTH/ODE/SF1692F3.html)
+**SF1692 (ODE), KTH** [**Lecture 2**](https://wanminliu.github.io/KTH/ODE/SF1692F2.html) och [**Lecture 3**](https://wanminliu.github.io/KTH/ODE/SF1692F3.html)
 
 [**SF1682 (Analytiska och numeriska metoder för differentialekvationer), KTH**](https://wanminliu.github.io/KTH/ODE/ODE.html)
  
@@ -36,7 +35,7 @@ _This is my personal **teaching page**. It contains my various teaching notes._
 ### Current Teaching
 None.
 
-### Previous Teaching at KTH
+### Teaching at KTH
 
 [Wanmin Liu's KTH Profile](https://www.kth.se/profile/wanmin/)
 
@@ -63,7 +62,7 @@ None.
 * 2021 Fall. Teaching Assistant for *Algebra och geometri* ([SF1624](https://kth.instructure.com/courses/27038)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20211101.x%2C20211219.x&objects=203502.9%2C203509.9%2C443947.10%2C386461.16%2C-1%2C443880.10%2C203502.9%2C203509.9&ox=0&types=0&fe=0&info=f#), CDATE1, and CINEK1.
 * 2021 Fall. Teaching Assistant for *Calculus in Several Variable* ([SF1686](https://canvas.kth.se/courses/27075)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri176505X20Z5XQ6Z76g8Y60y9066Y05006gQY6Q532805754Y08X7974Y47Q0.html), *Basic Course in Mathematics* ([SF1690](https://canvas.kth.se/courses/27072)), with [Timetable](https://cloud.timeedit.net/kth/web/public01/ri178504X20Z58Q6Z96g0YY0y6066YX080QgQY6Q5326257505777.html).
 
-### Previous Teaching at Uppsala University
+### Teaching at Uppsala University
 
 * 2020 Fall. Teaching Assitant for *Linear Algebra II* (1MA323, Master Programme in Electrical Engineering, year 3, E3).
 * 2020 Fall. Teaching Assitant for *Linear Algebra II* (1MA323, Master Programme in Molecular Biotechnology Engineering, year 2, X2.A)
@@ -73,13 +72,15 @@ None.
 * 2019 Fall. **Teacher** for [1MA011 (Differential Geometry)](https://wanminliu.github.io/doc/DG/DG.html).
 
 
-### Previous Teaching of Mini-courses in the research level.
+### Mini-courses
 
 * 2017 Feb. Lecture Series in Algebraic Geometry: _[Bridgeland Stability Conditions (I), (II), (III)](http://www.ims.cuhk.edu.hk/activities/conferences/mist/2017/mist_2017-i_3-14feb2017/)_ (6 hours mini-course), the Institute of Mathematical Sciences, CUHK.
 
 * 2015 Nov. Lecture Series in Algebraic Geometry: _Lectures on Bayer-Macrì's Nef Line Bundle Theory [I, II](https://www.math.hkust.edu.hk/events/?menu=18)_ (Two lectures, 4 hours), HKUST.
 
-### Previous Teaching at Hong Kong University of Science and Technology (All courses were taught in English.)
+### Teaching at HKUST.
+
+Below is a list of my previous teaching at the Hong Kong University of Science and Technology. All courses were taught in English.
 
 * 2012 Fall. [*Training to all new Teaching Assistants*](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.pdf), Department of Mathematics, HKUST. 
 * 2012, Fall. [*LaTeX  Tutorial*](https://wanminliu.github.io/doc/introLaTeX.pdf). 
@@ -91,8 +92,9 @@ None.
 * 2008, Fall. *Differential Geometry*.
 * 2008, Spring. *Complex Analysis*.
 
-### Previous Teaching at Lanzhou University (All courses were taught in Chinese.)
+### Teaching at Lanzhou University 
 
+All courses were taught in Chinese.
 
 * 2004 Fall. *Functional Analysis*. 
 * 2004 Spring. *Differential Geometry*.
@@ -109,9 +111,9 @@ Jag skulle vilja tacka följande pedagoger för deras gratis videor som undervis
 * [Jonas Vikström](https://www.youtube.com/@vikstromjonas)
 
 
-### Teaching Blog
+### [Teaching Blog](https://wanminliu.wordpress.com/category/teaching/)
 
-[Teaching Blog](https://wanminliu.wordpress.com/category/teaching/)
+
 
 
 

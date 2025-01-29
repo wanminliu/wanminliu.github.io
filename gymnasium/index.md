@@ -30,6 +30,9 @@ _Det är min undervisningssida på gymnasiet._
   - [Grafer och funktioner](https://wanminliu.github.io/gymnasium/Funktioner.html), 3 maj 2024.
   - [Förändringsfaktor och Index](https://wanminliu.github.io/gymnasium/FF.html), 25 apr 2024.
 
+
+#### [Undervisningsblogg](https://wanminliu.wordpress.com/category/teaching/)
+
 <br/><br/>
 
 <img src="https://wanminliu.github.io//pic/karrtorpsgymnasium.jpg" alt="KTH" id="width:100%;height:auto;">

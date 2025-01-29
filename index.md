@@ -7,6 +7,7 @@
 
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
+- 2025/01 — (2025/12, expected): [KPUFU](https://www.su.se/sok-kurser-och-program/lkfoy-1.413299) program of fulltime study, Stockholm University and KTH.
 - 2024/08 - : Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
 - 2024/01 — 2024/08: [KPUFU](https://www.su.se/sok-kurser-och-program/lkfoy-1.413299) program of fulltime study, Stockholm University.
 - 2021/09 — 2023/12: Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
@@ -69,7 +70,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 ### Teaching
 
-Below is a brief introduction to my teaching. For more details, please refer to my [teaching page](https://wanminliu.github.io/KTH/).
+Below is a brief introduction to my teaching. For more details, please refer to my [Teaching Page](https://wanminliu.github.io/KTH/).
 
 * 2024/08 — ——: KTH Royal Institute of Technology, various courses. More information is [here](https://wanminliu.github.io/KTH/).
 * 2024/03 — 2024/05: [Kärrtorps gymnasium](https://karrtorpsgymnasium.stockholm/), *Matematik 1A*, *Matematik 1B*, *Matematik 3C*, undervisa på svenska.
