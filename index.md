@@ -8,7 +8,7 @@
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
 - 2025/01 — (2025/12, expected): [KPUFU](https://www.su.se/sok-kurser-och-program/lkfoy-1.413299) program of fulltime study, Stockholm University and KTH.
-- 2024/08 - : Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
+- 2024/08 — 2024/12: Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
 - 2024/01 — 2024/08: [KPUFU](https://www.su.se/sok-kurser-och-program/lkfoy-1.413299) program of fulltime study, Stockholm University.
 - 2021/09 — 2023/12: Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
 - 2021/08 — 2023/05: Swedish learning at [ABF Stockholm](https://abfstockholm.se/). [**Svenska som andraspråk 3**](https://www.skolverket.se/undervisning/gymnasieskolan/bedomning-i-gymnasieskolan/bedomningsstod-i-amnen-pa-gymnasial-niva/bedomningsstod-i-svenska-och-svenska-som-andrasprak-pa-gymnasial-niva#h-Svenskasomandrasprak3), **godkänd**.
