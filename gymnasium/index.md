@@ -12,7 +12,11 @@ _Det är min undervisningssida på gymnasiet._
 
 [Om Kleindagarna](https://www.kleindagarna.se/)
 
-#### Mars -- maj 2024, [Kärrtorps gymnasium](https://karrtorpsgymnasium.stockholm/), Stockholm
+#### Mars – maj 2025, [Ekens skola, 7–9](https://grundskola.stockholm/hitta-grundskola/grundskola/ekens-skola), Stockholm
+
+* Matematik, årskurs 7 och 8, på olika nivå.
+
+#### Mars – maj 2024, [Kärrtorps gymnasium](https://karrtorpsgymnasium.stockholm/), Stockholm
 
 * Matematik 1A
 * Matematik 1B
@@ -21,13 +25,15 @@ _Det är min undervisningssida på gymnasiet._
 
 #### Undervisningsartiklar
 
+  - Wanmin Liu, [Areaformel för regelbunden femhörning -- ett elementärt bevis](https://wanminliu.github.io/gymnasium/PythagorasArea.html), 13 feb 2025.
   - Wanmin Liu, [ODE, SageMath and General AI -- An Example from High School Teaching](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.html), June 2024.
   - Wanmin Liu, [Pythagoras sats](https://wanminliu.github.io/gymnasium/Pythagoras_sats.html), 10 feb 2024.
-  - Wanmin Liu, [Areaformel för regelbunden femhörning -- ett elementärt bevis](https://wanminliu.github.io/gymnasium/PythagorasArea.html), 13 feb 2025.
+
 
 #### Affischer
-  - Kambiz Kafi, Wanmin Liu, Affisch på π-dagen: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen.html), mar 2024.
   - Wanmin Liu, Affisch på π-dagen: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen2025.html), mar 2025.
+  - Kambiz Kafi, Wanmin Liu, Affisch på π-dagen: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen.html), mar 2024.
+
 
 #### Undervisningsanteckningar
 
