@@ -36,7 +36,8 @@ _Det är min undervisningssida på gymnasiet._
 
 
 #### Undervisningsanteckningar
-  - [Statistik och Sannolikhet Nivå E](https://wanminliu.github.io/gymnasium/sse/Statistik_Sannolikhet.html), 3 maj 2024.
+  - [Statistik och Sannolikhet Nivå A](https://wanminliu.github.io/gymnasium/ssa/Statistik_Sannolikhet_N4.html), 8 maj 2025.
+  - [Statistik och Sannolikhet Nivå E](https://wanminliu.github.io/gymnasium/sse/Statistik_Sannolikhet_N1.html), 7 maj 2025.
   - [Grafer och funktioner](https://wanminliu.github.io/gymnasium/Funktioner.html), 3 maj 2024.
   - [Förändringsfaktor och Index](https://wanminliu.github.io/gymnasium/FF.html), 25 apr 2024.
 
