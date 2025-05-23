@@ -36,6 +36,7 @@ _Det är min undervisningssida på gymnasiet._
 
 
 #### Undervisningsanteckningar
+  - [Pythagoras sats](https://wanminliu.github.io/gymnasium/Pythagoras.pdf), 23 maj 2025.
   - [Statistik och Sannolikhet Nivå A](https://wanminliu.github.io/gymnasium/ssa/Statistik_Sannolikhet_N4.html), 8 maj 2025.
   - [Statistik och Sannolikhet: Kasta två tärningar](https://wanminliu.github.io/gymnasium/ssa/Statistik_Sannolikhet_N42.pdf), 8 maj 2025.
   - [Statistik och Sannolikhet Nivå E](https://wanminliu.github.io/gymnasium/sse/Statistik_Sannolikhet_N1.html), 7 maj 2025.
