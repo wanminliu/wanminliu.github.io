@@ -59,6 +59,7 @@ Back to [**homepage**](https://wanminliu.github.io)
 ### Svenska För Invandrare
 [Lennart Hellsing — Språkets mästare](https://slides.com/wanminliu/hellsing/fullscreen)
 
+[Skiljetecken](https://slides.com/wanminliu/skiljetecken/fullscreen)
 
 ### [Pi-dagen](https://wanminliu.github.io/doc/Pi-dagen.html)
 
