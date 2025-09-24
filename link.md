@@ -55,13 +55,17 @@ Back to [**homepage**](https://wanminliu.github.io)
   * [UU Ph.D. course in symplectic geometry](http://www2.math.uu.se/~georgios/sg21/)
 
 
-
 ### Svenska För Invandrare
 [Lennart Hellsing — Språkets mästare](https://slides.com/wanminliu/hellsing/fullscreen)
 
 [Skiljetecken](https://slides.com/wanminliu/skiljetecken/fullscreen)
 
 ### [Pi-dagen](https://wanminliu.github.io/doc/Pi-dagen.html)
+
+### 汉字书写米字格模版
+[A4每行6字](https://wanminliu.github.io/doc/6hanzi.pdf)
+
+[A4每行8字](https://wanminliu.github.io/doc/8hanzi.pdf)
 
 <br/><br/>
 
