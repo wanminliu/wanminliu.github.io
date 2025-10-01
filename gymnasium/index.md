@@ -12,7 +12,12 @@ _Detta är min hemsida för undervisning på gymnasiet._
 
 [Om Kleindagarna](https://www.kleindagarna.se/)
 
-#### Mars – maj 2025, [Ekens skola, 7–9](https://grundskola.stockholm/hitta-grundskola/grundskola/ekens-skola), Stockholm
+#### Sep – Nov 2025, [Anna Whitlocks gymnasium](https://annawhitlocksgymnasium.stockholm/), Stockholm
+
+* Matematik 3c.
+
+
+#### Mars – Maj 2025, [Ekens skola, 7–9](https://grundskola.stockholm/hitta-grundskola/grundskola/ekens-skola), Stockholm
 
 * Matematik, årskurs 7 och 8, på olika nivå.
 
@@ -36,6 +41,7 @@ _Detta är min hemsida för undervisning på gymnasiet._
 
 
 #### Undervisningsanteckningar
+  - [Exponentialfunktioner och deras derivator](https://wanminliu.github.io/gymnasium/Exp.pdf), 2 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/ExpElev.pdf) och [Anteckningar](https://wanminliu.github.io/gymnasium/Exponentialfunktioner.pdf)
   - [Pythagoras sats](https://wanminliu.github.io/gymnasium/Pythagoras.pdf), 23 maj 2025.
   - [Statistik och Sannolikhet Nivå A](https://wanminliu.github.io/gymnasium/ssa/Statistik_Sannolikhet_N4.html), 8 maj 2025.
   - [Statistik och Sannolikhet: Kasta två tärningar](https://wanminliu.github.io/gymnasium/ssa/Statistik_Sannolikhet_N42.pdf), 8 maj 2025.
