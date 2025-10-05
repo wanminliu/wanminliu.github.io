@@ -41,6 +41,7 @@ _Detta är min hemsida för undervisning på gymnasiet._
 
 
 #### Undervisningsanteckningar
+  - [Tillämpningar av derivatan](https://wanminliu.github.io/gymnasium/Derivatan_P.pdf), 6 okt 2025. [Anteckningar](https://wanminliu.github.io/gymnasium/Derivatan_F.pdf)
   - [Exponentialfunktioner och deras derivator](https://wanminliu.github.io/gymnasium/Exp.pdf), 2 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/ExpElev.pdf) och [Anteckningar](https://wanminliu.github.io/gymnasium/Exponentialfunktioner.pdf)
   - [Pythagoras sats](https://wanminliu.github.io/gymnasium/Pythagoras.pdf), 23 maj 2025.
   - [Statistik och Sannolikhet Nivå A](https://wanminliu.github.io/gymnasium/ssa/Statistik_Sannolikhet_N4.html), 8 maj 2025.
