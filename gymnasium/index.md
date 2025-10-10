@@ -33,7 +33,7 @@ _Detta är min hemsida för undervisning på gymnasiet._
   - Wanmin Liu, [Areaformel för regelbunden femhörning -- ett elementärt bevis](https://wanminliu.github.io/gymnasium/PythagorasArea.html), 13 feb 2025.
   - Wanmin Liu, [ODE, SageMath and General AI -- An Example from High School Teaching](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.html), June 2024.
   - Wanmin Liu, [Pythagoras sats](https://wanminliu.github.io/gymnasium/Pythagoras_sats.html), 10 feb 2024.
-
+  - Wanmin Liu, [Gruppregler för att lösa uppgifter på tavlan](https://wanminliu.github.io/gymnasium/Gruppregler-för-att-lösa-uppgifter-på-tavlan.pdf), 10 okt 2024.
 
 #### Affischer
   - Wanmin Liu, Affisch på π-dagen: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen2025.html), mar 2025.
@@ -41,7 +41,8 @@ _Detta är min hemsida för undervisning på gymnasiet._
 
 
 #### Undervisningsanteckningar
-  - [Tillämpningar av derivatan](https://wanminliu.github.io/gymnasium/Derivatan_P.pdf), 6 okt 2025. [Anteckningar](https://wanminliu.github.io/gymnasium/Derivatan_F.pdf)
+  - [Problemlösning, Ma1b](https://wanminliu.github.io/gymnasium/20251009Ma1b-Problemlösning.pdf), 9 okt 2025. 
+  - [Tillämpningar av derivatan](https://wanminliu.github.io/gymnasium/Derivatan_P.pdf), 6 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/Derivatan2Elev.pdf) och [Anteckningar](https://wanminliu.github.io/gymnasium/Derivatan_F.pdf)
   - [Exponentialfunktioner och deras derivator](https://wanminliu.github.io/gymnasium/Exp.pdf), 2 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/ExpElev.pdf) och [Anteckningar](https://wanminliu.github.io/gymnasium/Exponentialfunktioner.pdf)
   - [Pythagoras sats](https://wanminliu.github.io/gymnasium/Pythagoras.pdf), 23 maj 2025.
   - [Statistik och Sannolikhet Nivå A](https://wanminliu.github.io/gymnasium/ssa/Statistik_Sannolikhet_N4.html), 8 maj 2025.
