@@ -41,7 +41,7 @@ _Detta är min hemsida för undervisning på gymnasiet._
 
 
 #### Undervisningsanteckningar
-  - [Extremvärdesproblem, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Extremvärdesproblem.pdf), 23 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/Ma3c_ExtremvärdesproblemE.pdf). 
+  - [Extremvärdesproblem, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Extremproblem.pdf), 23 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/Ma3c_ExtremproblemE.pdf). 
   - [Problemlösning, Ma1b](https://wanminliu.github.io/gymnasium/20251009Ma1b-Problem.pdf), 9 okt 2025. 
   - [Tillämpningar av derivatan](https://wanminliu.github.io/gymnasium/Derivatan_P.pdf), 6 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/Derivatan2Elev.pdf) och [Anteckningar](https://wanminliu.github.io/gymnasium/Derivatan_F.pdf)
   - [Exponentialfunktioner och deras derivator](https://wanminliu.github.io/gymnasium/Exp.pdf), 2 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/ExpElev.pdf) och [Anteckningar](https://wanminliu.github.io/gymnasium/Exponentialfunktioner.pdf)
