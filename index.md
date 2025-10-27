@@ -116,7 +116,7 @@ Below is a brief introduction to my teaching. For more details, please refer to 
  
 Here are some application of pdf2htmlEX for online publishing of mathematics.
  
-  - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/Ravi_AG.html)_** — an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGsep0824public.pdf)
+  - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/Ravi_AG.html)_** — an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGoct2125public.pdf)
   >The purpose of the HTML version (via the tool pdf2htmlEX) is for a quick preview of the book without downloading the whole PDF. The PDF is available at [https://math.stanford.edu/~vakil/216blog/index.html](https://math.stanford.edu/~vakil/216blog/index.html).
   - Si Li, [Quantum Mechanics and Geometry](https://sili-math.github.io/notes/QMG/QMG.html).
   
