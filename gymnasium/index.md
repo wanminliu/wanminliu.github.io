@@ -41,6 +41,7 @@ _Detta är min hemsida för undervisning på gymnasiet._
 
 
 #### Undervisningsanteckningar
+  - [Koordinatsystem, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b-koordinatsystem.pdf), 6 nov 2025. 
   - [Andragradsekvation, Ma2b](https://wanminliu.github.io/gymnasium/Ma2b_Andragradsekvation.pdf), 5 nov 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/Ma2b_AndragradsekvationElev.pdf).
   - [Extremvärdesproblem, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Extremproblem.pdf), 23 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/Ma3c_ExtremproblemE.pdf). 
   - [Problemlösning, Ma1b](https://wanminliu.github.io/gymnasium/20251009Ma1b-Problem.pdf), 9 okt 2025. 
