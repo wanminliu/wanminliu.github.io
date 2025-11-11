@@ -28,12 +28,12 @@ _Detta är min hemsida för undervisning på gymnasiet._
 * Matematik 3C (till en elev)
 * Matematik 5 (en vikarierande lektion)
 
-#### Undervisningsartiklar
-
+#### Undervisningsartiklar 
+  - Wanmin Liu, [Gruppregler för att lösa uppgifter på tavlan](https://wanminliu.github.io/gymnasium/Gruppregler.pdf), 10 okt 2025.
   - Wanmin Liu, [Areaformel för regelbunden femhörning -- ett elementärt bevis](https://wanminliu.github.io/gymnasium/PythagorasArea.html), 13 feb 2025.
   - Wanmin Liu, [ODE, SageMath and General AI -- An Example from High School Teaching](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.html), June 2024.
   - Wanmin Liu, [Pythagoras sats](https://wanminliu.github.io/gymnasium/Pythagoras_sats.html), 10 feb 2024.
-  - Wanmin Liu, [Gruppregler för att lösa uppgifter på tavlan](https://wanminliu.github.io/gymnasium/Gruppregler.pdf), 10 okt 2024.
+
 
 #### Affischer
   - Wanmin Liu, Affisch på π-dagen: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen2025.html), mar 2025.
