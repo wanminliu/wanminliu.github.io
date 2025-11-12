@@ -41,7 +41,9 @@ _Detta är min hemsida för undervisning på gymnasiet._
 
 
 #### Undervisningsanteckningar
-  - [Koordinatsystem, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b-koordinatsystem.pdf), 6 nov 2025. 
+  - [Trigonometri, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Trigonometri.pdf), 20 nov 2025. [Enhetscirkeln blad, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Enhetscirkelnblad.pdf)
+  - [Talteori, Ma5](https://wanminliu.github.io/gymnasium/Ma5_talteori.pdf), 17 nov 2025. 
+  - [Koordinatsystem, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_koordinatsystem.pdf), 6 nov 2025. [Koordinater blad, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_koordinaterblad.pdf)
   - [Andragradsekvation, Ma2b](https://wanminliu.github.io/gymnasium/Ma2b_Andragradsekvation.pdf), 5 nov 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/Ma2b_AndragradsekvationElev.pdf).
   - [Extremvärdesproblem, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Extremproblem.pdf), 23 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/Ma3c_ExtremproblemE.pdf). 
   - [Problemlösning, Ma1b](https://wanminliu.github.io/gymnasium/20251009Ma1b-Problem.pdf), 9 okt 2025. 
