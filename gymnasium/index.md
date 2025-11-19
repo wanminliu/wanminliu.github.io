@@ -42,6 +42,7 @@ _Detta är min hemsida för undervisning på gymnasiet._
 
 #### Undervisningsanteckningar
   - [Trigonometri, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Trigonometri.pdf), 20 nov 2025. [Enhetscirkeln blad, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Enhetscirkelnblad.pdf)
+  - [Linjensekvationblad, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_linjensekvationblad.pdf), 20 nov 2025. 
   - [Talteori, Ma5](https://wanminliu.github.io/gymnasium/Ma5_talteori.pdf), 17 nov 2025. 
   - [Linjens ekvation, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_linjensekvation.pdf), 14 nov 2025. 
   - [Koordinatsystem, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_koordinatsystem.pdf), 6 nov 2025. [Koordinater blad, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_koordinaterblad.pdf)
