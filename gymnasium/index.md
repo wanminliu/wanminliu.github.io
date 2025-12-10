@@ -45,12 +45,15 @@ _Detta är min hemsida för undervisning på gymnasiet._
 #### Undervisningsanteckningar
 
 * Matematik 1
+  - [Vad är summan av de första n positiva udda talen II](https://wanminliu.github.io/gymnasium/Ma1b_summan_udda_talen2.pdf), 24 nov 2025.  [Blogg](https://wanminliu.wordpress.com/2025/11/24/vad-ar-summan-av-de-forsta-n-positiva-udda-talen-ii/)
   - [Linjensekvationblad, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_linjensekvationblad.pdf), 20 nov 2025. 
   - [Linjens ekvation, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_linjensekvation.pdf), 14 nov 2025. 
   - [Koordinatsystem, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_koordinatsystem.pdf), 6 nov 2025. [Koordinater blad, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_koordinaterblad.pdf)
   - [Problemlösning, Ma1b](https://wanminliu.github.io/gymnasium/20251009Ma1b-Problem.pdf), 9 okt 2025. 
+  - [Vad är summan av de första n positiva udda talen I](https://wanminliu.github.io/gymnasium/Ma1b_summan_udda_talen1.pdf), 16 sept 2025. [Blogg](https://wanminliu.wordpress.com/2025/09/19/vad-ar-summan-av-de-forsta-n-positiva-udda-talen/)
   - [Grafer och funktioner](https://wanminliu.github.io/gymnasium/Funktioner.html), 3 maj 2024.
   - [Förändringsfaktor och Index](https://wanminliu.github.io/gymnasium/FF.html), 25 apr 2024.
+
 
 
 * Matematik 2
@@ -61,9 +64,10 @@ _Detta är min hemsida för undervisning på gymnasiet._
   - [Trigonometri III, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Trigonometri3.pdf), 24 och 27 nov 2025. 
   - [Trigonometri II, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Trigonometri2.pdf), 24 och 27 nov 2025. 
   - [Trigonometri I, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Trigonometri.pdf), 20 nov 2025. [Enhetscirkeln blad, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Enhetscirkelnblad.pdf)
+  - [Extremvärdesproblem, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Extremproblem.pdf), 23 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/Ma3c_ExtremproblemE.pdf). 
   - [Tillämpningar av derivatan](https://wanminliu.github.io/gymnasium/Derivatan_P.pdf), 6 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/Derivatan2Elev.pdf) och [Anteckningar](https://wanminliu.github.io/gymnasium/Derivatan_F.pdf)
   - [Exponentialfunktioner och deras derivator](https://wanminliu.github.io/gymnasium/Exp.pdf), 2 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/ExpElev.pdf) och [Anteckningar](https://wanminliu.github.io/gymnasium/Exponentialfunktioner.pdf)
-  - [Extremvärdesproblem, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Extremproblem.pdf), 23 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/Ma3c_ExtremproblemE.pdf). 
+
 
 * Matematik 5
   - [Talteori, Ma5](https://wanminliu.github.io/gymnasium/Ma5_talteori.pdf), 17 nov 2025. 
