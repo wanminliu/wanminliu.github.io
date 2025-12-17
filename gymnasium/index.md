@@ -2,13 +2,15 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 Back to [**Teaching page in University**](https://wanminliu.github.io/KTH/)
 
+------
+
 _Detta är min hemsida för undervisning på gymnasiet._
 
 
 <div style="display: grid; grid-template-columns: auto 1fr; align-items: center;">
     <img src="Math_is_Fun_Shiing-Shen_Chern.jpg" alt="Math is fun" style="width:102px;height:187px;">    
-    <span style="position: relative; left: 30px;"><B>數學好玩</B> 二〇〇二 七卅 <a href="https://zh.wikipedia.org/wiki/%E9%99%88%E7%9C%81%E8%BA%AB">陳省身</a><br> 
-<B>Math is fun</B> 20020730 <a href="https://en.wikipedia.org/wiki/Shiing-Shen_Chern">Shiing-Shen Chern</a><br> </span>
+     <span style="position: relative; left: 30px;"><q><B>數學好玩</B></q> 二〇〇二 七卅 <a href="https://zh.wikipedia.org/wiki/%E9%99%88%E7%9C%81%E8%BA%AB">陳省身</a><br> 
+<q><B>Math is fun</B></q> 20020730 <a href="https://en.wikipedia.org/wiki/Shiing-Shen_Chern">Shiing-Shen Chern</a><br> </span> 
 </div>
 
 
