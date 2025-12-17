@@ -4,6 +4,17 @@ Back to [**Teaching page in University**](https://wanminliu.github.io/KTH/)
 
 _Detta är min hemsida för undervisning på gymnasiet._
 
+<div class="container">
+  <img src="Math_is_Fun_Shiing-Shen_Chern.jpg" width="102" height="187" alt="Math is Fun">
+  <div class="text-content">
+    <p><B>數學好玩</B> 二〇〇二 七卅 <a href="https://zh.wikipedia.org/wiki/%E9%99%88%E7%9C%81%E8%BA%AB">陳省身</a><br> 
+<B>Math is fun</B> 20020730 <a href="https://en.wikipedia.org/wiki/Shiing-Shen_Chern">Shiing-Shen Chern</a><br> 
+</p>
+  </div>
+</div>
+
+
+
 ## Undervisning i matematik i gymnasieskolan
 
 >_Ett särskilt tack till [Kambiz Kafi](https://www.linkedin.com/in/kambiz-kafi-38706a8/) för att han inspirerat mig i gymnasieundervisningen!_
@@ -82,6 +93,8 @@ _Detta är min hemsida för undervisning på gymnasiet._
 
 
 #### [Undervisningsblogg](https://wanminliu.wordpress.com/category/teaching/)
+
+<a href="https://www.mathsisfun.com/">Math Is Fun - Maths Resources</a>
 
 <br/><br/>
 
