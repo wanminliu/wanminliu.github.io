@@ -46,6 +46,8 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 ### Papers
 
+- [Mu-Lin Li](https://grzy.hnu.edu.cn/site/index/limulin),  ——, _[The limits of Kähler manifolds under holomorphic deformations](https://wanminliu.github.io/doc/LL/2406.14076v2.html)_, [arXiv:2406.14076 [math.AG]](https://arxiv.org/abs/2406.14076), 12 pages, to appear in *Acta Mathematica Sinica, English Series*.
+
 - ——, [Jason Lo](https://sites.google.com/site/chiehcjlo/home), [Cristian Martinez](https://sites.google.com/site/cristianmathinez/home), _[Fourier-Mukai transforms and stable sheaves on Weierstrass elliptic surfaces](https://link.springer.com/article/10.1007/s00574-024-00422-7)_, *Bulletin of the Brazilian Mathematical Society, New Series*, Vol. 55, article number 47, (2024). See also [DOI](https://doi.org/10.1007/s00574-024-00422-7) or [arXiv:1910.02477 [math.AG]](https://arxiv.org/abs/1910.02477).
 
 - [Yu-Wei Fan](https://ywfan-math.github.io/), [Chunyi Li](https://sites.google.com/site/chunyili0401/), ——, [Yu Qiu](https://ubw-q.github.io/), _[Contractibility of space of stability conditions on the projective plane via global dimension function](https://wanminliu.github.io/doc/FLLQ20/P2.html)_, *Mathematical Research Letters*, Vol. 30, No. 1 (2023), [51—87](https://wanminliu.github.io/doc/FLLQ20/MRL_30_01_A03.pdf). See also [DOI](https://dx.doi.org/10.4310/MRL.2023.v30.n1.a3) or [arXiv:2001.11984 [math.AG]](https://arxiv.org/abs/2001.11984).
@@ -58,12 +60,6 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 - Xianling Fan, ——, _An Exact Inequality Involving Luxemburg Norm and Conjugate-Orlicz Norm in  $L^{p(x)}(\Omega)$_, *Chinese Ann. Math. Ser. A*, Vol. 27, No. 2 (2006), [177—188](https://wanminliu.github.io/doc/Thesis/Fan-Liu_cn.html); translation in
 *Chinese J. Contemp. Math.*, Vol. 27, No. 2 (2006), [147—158](https://wanminliu.github.io/doc/Thesis/Fan-Liu_en.html). 
-
-
-### Preprints
-
-- [Mu-Lin Li](https://grzy.hnu.edu.cn/site/index/limulin),  ——, _[The limits of Kähler manifolds under holomorphic deformations](https://wanminliu.github.io/doc/LL/2406.14076v2.html)_, [arXiv:2406.14076 [math.AG]](https://arxiv.org/abs/2406.14076), 12 pages, submitted.
-
 
 
 
