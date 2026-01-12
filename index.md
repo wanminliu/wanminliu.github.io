@@ -68,7 +68,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 Below is a brief introduction to my teaching. For more details, please refer to my [Teaching Page](https://wanminliu.github.io/KTH/).
 
-* 2024/08 — ——: KTH Royal Institute of Technology, various courses. More information is [here](https://wanminliu.github.io/KTH/).
+* 2024/08 — 2024/11: KTH Royal Institute of Technology, various courses. More information is [here](https://wanminliu.github.io/KTH/).
 * 2024/03 — 2024/05: [Kärrtorps gymnasium](https://karrtorpsgymnasium.stockholm/), *Matematik 1A*, *Matematik 1B*, *Matematik 3C*, undervisa på svenska.
   - Wanmin Liu, [ODE, SageMath, and General AI - An Example From High School Teaching](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.pdf)
   - Kambiz Kafi, Wanmin Liu, Poster on π-Day: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/Pi-dagen.pdf)
