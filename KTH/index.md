@@ -1,5 +1,6 @@
 Back to [**homepage**](https://wanminliu.github.io)
 
+Back to [**Teaching page in High school**](https://wanminliu.github.io/gymnasium/)
 
 
 

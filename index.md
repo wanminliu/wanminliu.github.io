@@ -7,10 +7,8 @@
 
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
-- 2025/01 — 2025/12: [KPUFU](https://www.su.se/sok-kurser-och-program/lkfoy-1.413299) program of fulltime study, Stockholm University and KTH.
-- 2024/08 — 2024/11: Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
-- 2024/01 — 2024/08: [KPUFU](https://www.su.se/sok-kurser-och-program/lkfoy-1.413299) program of fulltime study, Stockholm University and KTH.
-- 2021/09 — 2023/12: Teaching Assistant (part time), [KTH](https://wanminliu.github.io/KTH/).
+- 2024/01 — 2025/12: [Kompletterande pedagogisk utbildning (KPUFU)](https://www.su.se/utbildning/utbildningskatalog/lk/lkfoy) program of study, Stockholm University and KTH.
+- 2021/09 — 2023/11, 2024/08 — 2024/11: Teaching Assistant and substitute teacher (part time), [KTH](https://wanminliu.github.io/KTH/).
 - 2021/08 — 2023/05: Swedish learning at [ABF Stockholm](https://abfstockholm.se/). [**Svenska som andraspråk 3**](https://www.skolverket.se/undervisning/gymnasieskolan/nationella-prov-i-gymnasieskolan/digitala-nationella-prov-i-gymnasieskolan/lararinformation-gymnasieskolan/nationellt-prov-i-svenska-3-och-svenska-som-andrasprak-3), **godkänd**.
 - 2019/01 — 2020/12: Researcher, [Department of Mathematics](https://www.uu.se/en/department/mathematics/research/geometry-and-physics), Uppsala University.
 - 2015/12 — 2018/11: Research Fellow, [IBS Center for Geometry and Physics](https://cgp.ibs.re.kr/), South Korea.
@@ -70,13 +68,7 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 
 Below is a brief introduction to my teaching. For more details, please refer to my [Teaching Page](https://wanminliu.github.io/KTH/).
 
-* 2024/08 — 2024/11: KTH Royal Institute of Technology, various courses. More information is [here](https://wanminliu.github.io/KTH/).
-* 2024/03 — 2024/05: [Kärrtorps gymnasium](https://karrtorpsgymnasium.stockholm/), *Matematik 1A*, *Matematik 1B*, *Matematik 3C*, undervisa på svenska.
-  - Wanmin Liu, [ODE, SageMath, and General AI - An Example From High School Teaching](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/ODE_SageMath_AI.pdf)
-  - Kambiz Kafi, Wanmin Liu, Poster on π-Day: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen.html), 2024. / [PDF](https://wanminliu.github.io/gymnasium/Pi-dagen.pdf)
-  - More on [High School](https://wanminliu.github.io/gymnasium/).
-* 2021/09 — 2023/12: KTH Royal Institute of Technology, various courses, *Flervariabelanalys*, *Algebra och geometri*, *Calculus in Several Variable*, *Basic Course in Mathematics*. More information is [here](https://wanminliu.github.io/KTH/).
-* 2020 Fall at Uppsala University, Teaching Assistant for *Linear Algebra II* (1MA024). TA for Two groups, each group 20 hours online tutorial teaching, online cooperation with other TAs and lecturers on grading homework, midterm and final exams.
+* 2021/09 — 2023/11, 2024/08 — 2024/11: KTH Royal Institute of Technology, various courses, *Flervariabelanalys*, *Algebra och geometri*, *Calculus in Several Variable*, *Basic Course in Mathematics*. More information is [here](https://wanminliu.github.io/KTH/).
 * 2020 Spring at Uppsala University, supervise an undergraduate student (10 credits).
  > Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 58 pages, Uppsala University, 2020 June, [DiVA, id: diva2:1466472](https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-419483).
 
@@ -86,6 +78,7 @@ Below is a brief introduction to my teaching. For more details, please refer to 
 * Wanmin Liu, [Tutorial Demo of Problems in Linear Algebra and Calculus (for Training New Teaching Assistant)](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.html), 40 pages, 2012. / [PDF](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.pdf)
 * Wanmin Liu, [LaTeX Tutorial](https://wanminliu.github.io/introLaTeX/introLaTeX.html), 2012. / [PDF](https://wanminliu.github.io/doc/introLaTeX.pdf)
 
+### Teaching in [High School](https://wanminliu.github.io/gymnasium/).
 
 ### Talks
 
