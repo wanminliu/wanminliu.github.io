@@ -62,7 +62,9 @@ Jag har klarat Kompletterande pedagogisk utbildning ([KPUFU](https://www.su.se/u
   - [Linjensekvationblad, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_linjensekvationblad.pdf), 20 nov 2025. 
   - [Linjens ekvation, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_linjensekvation.pdf), 14 nov 2025. 
   - [Koordinatsystem, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_koordinatsystem.pdf), 6 nov 2025. [Koordinater blad, Ma1b](https://wanminliu.github.io/gymnasium/Ma1b_koordinaterblad.pdf)
+   - [Avstämning 1 - Potens och Algebra](https://wanminliu.github.io/gymnasium/Ma1b-potens-algebra_HT25.pdf), 17 okt 2025. 
   - [Problemlösning, Ma1b](https://wanminliu.github.io/gymnasium/20251009Ma1b-Problem.pdf), 9 okt 2025. 
+  - [PEDMAS – hemlig kod för räkneordning](https://wanminliu.wordpress.com/2025/09/19/pedmas-hemlig-kod-for-rakneordning/), 19 sept 2025. 
   - [Vad är summan av de första n positiva udda talen I](https://wanminliu.github.io/gymnasium/Ma1b_summan_udda_talen1.pdf), 16 sept 2025. [Blogg](https://wanminliu.wordpress.com/2025/09/19/vad-ar-summan-av-de-forsta-n-positiva-udda-talen/)
   - [Grafer och funktioner](https://wanminliu.github.io/gymnasium/Funktioner.html), 3 maj 2024.
   - [Förändringsfaktor och Index](https://wanminliu.github.io/gymnasium/FF.html), 25 apr 2024.
@@ -80,6 +82,8 @@ Jag har klarat Kompletterande pedagogisk utbildning ([KPUFU](https://www.su.se/u
   - [Extremvärdesproblem, Ma3c](https://wanminliu.github.io/gymnasium/Ma3c_Extremproblem.pdf), 23 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/Ma3c_ExtremproblemE.pdf). 
   - [Tillämpningar av derivatan](https://wanminliu.github.io/gymnasium/Derivatan_P.pdf), 6 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/Derivatan2Elev.pdf) och [Anteckningar](https://wanminliu.github.io/gymnasium/Derivatan_F.pdf)
   - [Exponentialfunktioner och deras derivator](https://wanminliu.github.io/gymnasium/Exp.pdf), 2 okt 2025. [Utdelningsblad till elev](https://wanminliu.github.io/gymnasium/ExpElev.pdf) och [Anteckningar](https://wanminliu.github.io/gymnasium/Exponentialfunktioner.pdf)
+  - [En intressant ekvation om rationella funktioner](https://wanminliu.wordpress.com/2025/09/24/en-intressant-ekvation-om-rationella-funktioner/), 2 okt 2025. 
+
 
 
 * Matematik 5
@@ -88,6 +92,7 @@ Jag har klarat Kompletterande pedagogisk utbildning ([KPUFU](https://www.su.se/u
 
 * Matematik årskurs 7 och 8. 
   - [Pythagoras sats](https://wanminliu.github.io/gymnasium/Pythagoras.pdf), 23 maj 2025.
+  - [Pythagoras sats: elevers affischer](https://wanminliu.wordpress.com/2025/06/16/pythagoras-sats/), 20 maj 2025.
   - [Statistik och Sannolikhet Nivå A](https://wanminliu.github.io/gymnasium/ssa/Statistik_Sannolikhet_N4.html), 8 maj 2025.
   - [Statistik och Sannolikhet: Kasta två tärningar](https://wanminliu.github.io/gymnasium/ssa/Statistik_Sannolikhet_N42.pdf), 8 maj 2025.
   - [Statistik och Sannolikhet Nivå E](https://wanminliu.github.io/gymnasium/sse/Statistik_Sannolikhet_N1.html), 7 maj 2025.
