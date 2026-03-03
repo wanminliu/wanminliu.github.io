@@ -7,7 +7,8 @@
 
 I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
 
-- 2024/01 — 2025/12: [Kompletterande pedagogisk utbildning (KPUFU)](https://www.su.se/utbildning/utbildningskatalog/lk/lkfoy) program of study, Stockholm University and KTH.
+- 2024/01 — 2025/12: [Kompletterande pedagogisk utbildning (KPUFU)](https://www.su.se/utbildning/utbildningskatalog/lk/lkfoy), Degree of Bachelor of Science in Upper
+Secondary Education, Stockholm University and KTH.
 - 2021/09 — 2023/11, 2024/08 — 2024/11: Teaching Assistant and substitute teacher (part time), [KTH](https://wanminliu.github.io/KTH/).
 - 2021/08 — 2023/05: Swedish learning at [ABF Stockholm](https://abfstockholm.se/). [**Svenska som andraspråk 3**](https://www.skolverket.se/undervisning/gymnasieskolan/nationella-prov-i-gymnasieskolan/digitala-nationella-prov-i-gymnasieskolan/lararinformation-gymnasieskolan/nationellt-prov-i-svenska-3-och-svenska-som-andrasprak-3), **godkänd**.
 - 2019/01 — 2020/12: Researcher, [Department of Mathematics](https://www.uu.se/en/department/mathematics/research/geometry-and-physics), Uppsala University.
@@ -17,7 +18,7 @@ I am currently on the job market. I am living with my [family](https://wanminliu
 
 
 
-### [CV (June 2024)](https://wanminliu.github.io/CV/CV_Wanmin_Liu.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_Liu.pdf)  and  [CV på svenska (Dec 2024)](https://wanminliu.github.io/CV/CV_Wanmin_Liu_24SV.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_Liu_24SV.pdf) 
+### [CV (Mar 2026)](https://wanminliu.github.io/CV/CV_Wanmin_Liu_26EN.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_Liu_26EN.pdf)  and  [CV på svenska (mars 2026)](https://wanminliu.github.io/CV/CV_Wanmin_Liu_26SV.html) / [PDF](https://wanminliu.github.io/CV/CV_Wanmin_Liu_26SV.pdf) 
 
 
 ### [My papers on arXiv](http://arxiv.org/a/liu_w_7)
