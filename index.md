@@ -34,7 +34,8 @@ Secondary Education, Stockholm University and KTH.
 [Google Scholar](https://scholar.google.com/citations?user=KeZB0E4AAAAJ)
 &nbsp;
 [WordPress](https://wanminliu.wordpress.com/)
-
+&nbsp;
+[DiVA](https://www.diva-portal.org/smash/resultList.jsf?query=%22Wanmin+Liu%22&language=en&searchType=SIMPLE)
 
 
 ### Research
