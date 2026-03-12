@@ -52,9 +52,9 @@ Jag har klarat Kompletterande pedagogisk utbildning ([KPUFU](https://www.su.se/u
 
 
 #### Affischer
-  - Wanmin Liu, Affisch på π-dagen: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen2026.pdf), mar 2026.
-  - Wanmin Liu, Affisch på π-dagen: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen2025.pdf), mar 2025.
-  - Kambiz Kafi, Wanmin Liu, Affisch på π-dagen: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen.pdf), mar 2024.
+  - Wanmin Liu, Affisch på π-dagen 2026: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen2026.html), mar 2026.
+  - Wanmin Liu, Affisch på π-dagen 2025: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen2025.html), mar 2025.
+  - Kambiz Kafi, Wanmin Liu, Affisch på π-dagen 2024: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen.html), mar 2024.
 
 
 #### Undervisningsanteckningar
