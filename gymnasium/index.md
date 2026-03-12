@@ -6,7 +6,8 @@ Back to [**Teaching page in University**](https://wanminliu.github.io/KTH/)
 
 _Detta är min hemsida för undervisning på gymnasiet._
 
-Jag har klarat Kompletterande pedagogisk utbildning ([KPUFU](https://www.su.se/utbildning/utbildningskatalog/lk/lkfoy), 90 hp) och kommer snart att få lärarlegitimation.
+Jag är matematiklärare baserad i Sverige, med en doktorsexamen i matematik och gymnasielärarlegitimation. Jag brinner för att överbrygga klyftan mellan matematisk teori på högre nivå och tillgänglig och engagerande utbildning.
+
 
 <div style="display: grid; grid-template-columns: auto 1fr; align-items: center;">
     <img src="Math_is_Fun_Shiing-Shen_Chern.jpg" alt="Math is fun" style="width:102px;height:187px;">    
