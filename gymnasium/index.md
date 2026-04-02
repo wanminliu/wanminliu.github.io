@@ -55,7 +55,7 @@ Jag är matematiklärare baserad i Sverige, med en doktorsexamen i matematik och
 #### Affischer
   - Wanmin Liu, Affisch på π-dagen 2026: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen2026.html), mar 2026.
   - Wanmin Liu, Affisch på π-dagen 2025: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen2025.html), mar 2025.
-  - Kambiz Kafi, Wanmin Liu, Affisch på π-dagen 2024: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen.html), mar 2024.
+  - Kambiz Kafi, Wanmin Liu, Affisch på π-dagen 2024: [Pi-dagen](https://wanminliu.github.io/gymnasium/Pi-dagen2024.html), mar 2024.
 
 
 #### Undervisningsanteckningar
