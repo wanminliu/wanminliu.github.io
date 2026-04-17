@@ -48,7 +48,8 @@ Jag är matematiklärare baserad i Sverige, med en doktorsexamen i matematik och
 
 
 #### Undervisningsartiklar 
-  - Wanmin Liu, [Den otroliga sanningen om π: Varför en meter gör skillnad för både jorden och katten](https://wanminliu.github.io/gymnasium/Jordensomkrets.pdf), 2 apr 2026.
+  - Wanmin Liu, [Vad händer om jordens midja ökar med en meter? –  Tangentmodellen och kraften i ett enpunktslyft](https://wanminliu.github.io/gymnasium/Jordensmidja2.pdf), 17 apr 2026.
+  - Wanmin Liu, [Vad händer om jordens midja ökar med en meter? – Det jämna lyftet och cirkelns linjäritet](https://wanminliu.github.io/gymnasium/Jordensmidja1.pdf), 17 apr 2026.
   - Wanmin Liu, [Utforskande och heuristiskt lärande i algebra på gymnasiet](https://urn.kb.se/resolve?urn=urn:nbn:se:su:diva-252970), [PDF](https://www.diva-portal.org/smash/get/diva2:2042679/FULLTEXT01.pdf), 3 mars 2026.
   - Wanmin Liu, [Gruppregler för att lösa uppgifter på tavlan](https://wanminliu.github.io/gymnasium/Gruppregler.pdf), 10 okt 2025.
   - Wanmin Liu, [Areaformel för regelbunden femhörning -- ett elementärt bevis](https://wanminliu.github.io/gymnasium/PythagorasArea.html), 13 feb 2025.
