@@ -8,7 +8,7 @@ _Detta är min hemsida för undervisning på gymnasiet._
 
 [CV](https://wanminliu.github.io/gymnasium/CV_Wanmin_Liu_26gySV.pdf)
 
-Jag är matematiklärare baserad i Sverige, med en doktorsexamen i matematik och gymnasielärarlegitimation. Jag brinner för att överbrygga klyftan mellan matematisk teori på högre nivå och tillgänglig och engagerande utbildning.
+Jag är matematiklärare baserad i Sverige, med en doktorsexamen i matematik och gymnasielärarlegitimation. Jag arbetar med att överbrygga klyftan mellan avancerad matematisk teori och tillgänglig och engagerande undervisning.
 
 
 <div style="display: grid; grid-template-columns: auto 1fr; align-items: center;">

@@ -5,7 +5,9 @@
 
 ### About Me
 
-I am currently on the job market. I am living with my [family](https://wanminliu.github.io/pic/family) in Stockholm.
+I am a mathematician with a PhD in Algebraic Geometry and a certified upper secondary school teacher of mathematics in Sweden. My experience includes academic research, university teaching, and secondary education. I am currently seeking opportunities in mathematics education and related fields. 
+
+I live in Stockholm with my [family](https://wanminliu.github.io/pic/family).
 
 - 2024/01 — 2025/12: [Kompletterande pedagogisk utbildning (KPUFU)](https://www.su.se/utbildning/utbildningskatalog/lk/lkfoy), Degree of Bachelor of Science in Upper
 Secondary Education, Stockholm University and KTH.
