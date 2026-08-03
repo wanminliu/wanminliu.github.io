@@ -5,10 +5,10 @@
 
 ### About Me
 
-I am a mathematician with a PhD in Algebraic Geometry and a certified upper secondary school teacher of mathematics in Sweden. My experience includes academic research, university teaching, and secondary education. I am currently seeking opportunities in mathematics education and related fields. 
-
+I am a mathematician with a PhD in Algebraic Geometry and a certified upper secondary school teacher of mathematics in Sweden. My experience includes academic research, university teaching, and secondary education. 
 I live in Stockholm with my [family](https://wanminliu.github.io/pic/family).
 
+- 2026/08 — 2027/07: timlärare i matematik, [Chalmers University of Technology](https://www.chalmers.se/personer/wanmin/).
 - 2024/01 — 2025/12: [Kompletterande pedagogisk utbildning (KPUFU)](https://www.su.se/utbildning/utbildningskatalog/lk/lkfoy), Degree of Bachelor of Science in Upper
 Secondary Education, Stockholm University and KTH.
 - 2021/09 — 2023/11, 2024/08 — 2024/11: Teaching Assistant and substitute teacher (part time), [KTH](https://wanminliu.github.io/KTH/).
