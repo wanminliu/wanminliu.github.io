@@ -1,6 +1,6 @@
 Back to [**homepage**](https://wanminliu.github.io)
 
-Back to [**Teaching page in University**](https://wanminliu.github.io/KTH/)
+Back to [**Teaching page in University**](https://wanminliu.github.io/uni/)
 
 ------
 
