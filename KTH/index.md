@@ -1,10 +1,11 @@
 Back to [**homepage**](https://wanminliu.github.io)
 
-Back to [**Teaching page in High school**](https://wanminliu.github.io/gymnasium/)
+Back to [**Upper Secondary Mathematics**](https://wanminliu.github.io/gymnasium/)
 
 
 
-_This is my personal **Teaching Page**. It contains my various teaching notes._
+
+_This is my old personal Teaching Page. The new page is available at [University Teaching](https://wanminliu.github.io/uni/)._
 
 
 
@@ -122,14 +123,4 @@ Jag skulle vilja tacka följande pedagoger för deras gratis videor som undervis
 
 <img src="https://wanminliu.github.io//pic/KTH20231129.jpg" alt="KTH" id="width:100%;height:auto;">
 
-<br/><br/>
-<p>Last update on {{ site.time | date_to_long_string }}.</p>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6X136VZ9Z5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6X136VZ9Z5');
-</script>
