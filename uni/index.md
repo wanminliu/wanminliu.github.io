@@ -2,6 +2,8 @@ Back to [**homepage**](https://wanminliu.github.io)
 
 Back to [**Upper Secondary Mathematics**](https://wanminliu.github.io/gymnasium/)
 
+------
+
 ### Current Teaching at Chalmers
 [MVE375 Matematik, undervisning och bedömning](https://www.chalmers.se/utbildning/dina-studier/hitta-kurs-och-programplaner/kursplaner/MVE375/?acYear=2026/2027)
 

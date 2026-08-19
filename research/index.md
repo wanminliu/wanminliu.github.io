@@ -1,8 +1,6 @@
- **Chinese Name** 柳万民 <br>**Email** wanminliu (at) gmail.com  <br>
-
-
 Back to [**homepage**](https://wanminliu.github.io)
 
+------
 
 ### Papers
 
