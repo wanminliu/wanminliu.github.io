@@ -63,9 +63,8 @@ Back to [**homepage**](https://wanminliu.github.io)
 ### [Pi-dagen](https://wanminliu.github.io/doc/Pi-dagen.html)
 
 ### 汉字书写米字格模版
-[A4每行6字](https://wanminliu.github.io/doc/6hanzi.pdf)
-
-[A4每行8字](https://wanminliu.github.io/doc/8hanzi.pdf)
+  * [A4每行6字](https://wanminliu.github.io/doc/6hanzi.pdf)
+  * [A4每行8字](https://wanminliu.github.io/doc/8hanzi.pdf)
 
 <br/><br/>
 

@@ -1,12 +1,15 @@
 Back to [**homepage**](https://wanminliu.github.io)
 
-Back to [**Teaching page in High school**](https://wanminliu.github.io/gymnasium/)
+Back to [**Upper Secondary Mathematics**](https://wanminliu.github.io/gymnasium/)
 
 
 
 _This is my personal **Teaching Page**. It contains my various teaching notes._
 
 
+
+### Current Teaching at Chalmers
+[MVE375 Matematik, undervisning och bedömning](https://www.chalmers.se/utbildning/dina-studier/hitta-kurs-och-programplaner/kursplaner/MVE375/?acYear=2026/2027)
 
 ### Teaching Notes
 
@@ -32,9 +35,6 @@ _This is my personal **Teaching Page**. It contains my various teaching notes._
 
 [**1MA011 (Differential Geometry of Curves and Surfaces), Uppsala University, Lecture Notes, 236 pages, 2019**](https://wanminliu.github.io/doc/DG/DG.html)
 
-
-### Current Teaching
-[MVE375](https://www.chalmers.se/utbildning/dina-studier/hitta-kurs-och-programplaner/kursplaner/MVE375/?acYear=2026/2027)
 
 ### Teaching at KTH
 
@@ -99,7 +99,7 @@ All courses were taught in Chinese.
 * 2004 Fall. *Functional Analysis*. 
 * 2004 Spring. *Differential Geometry*.
 
-### Teaching in High School 
+### Teaching in Upper Secondary Mathematics
 
 Jag undervisade några gymnasiekurser i matematik på svenska. Se [länk](https://wanminliu.github.io/gymnasium/) för detaljer.
 
@@ -111,7 +111,7 @@ Jag skulle vilja tacka följande pedagoger för deras gratis videor som undervis
 * [Jonas Vikström](https://www.youtube.com/@vikstromjonas)
 
 
-### [Teaching Blog](https://wanminliu.wordpress.com/category/teaching/)
+### [Math Blog](https://wanminliu.wordpress.com/category/teaching/)
 
 
 

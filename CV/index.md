@@ -10,7 +10,7 @@ Secondary Education, Stockholm University and KTH.
 - 2015/06: [PhD in Mathematics](https://genealogy.math.ndsu.nodak.edu/id.php?id=198052), [Hong Kong University of Science and Technology](https://www.math.hkust.edu.hk/), under the guidance of Prof [Wei-Ping Li](https://www.math.hkust.edu.hk/people/faculty/profile/mawpli/).
 
 
-
+### [CV (Aug 2026)](https://wanminliu.github.io/CV/CV_Wanmin_Liu_26EN.pdf)
 
 
 <br/><br/>

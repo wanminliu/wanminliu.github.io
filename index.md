@@ -44,7 +44,7 @@ Courses and teaching materials from Chalmers, KTH, Uppsala University and HKUST.
 Teaching materials and writings on mathematics education for Swedish upper secondary school.
 
 
-
+### [Math Blog](https://wanminliu.wordpress.com/)
 
 
 ### pdf2htmlEX ![pdf2htmlEX](https://coolwanglu.github.io/pdf2htmlEX/images/pdf2htmlEX-64x64.png)
@@ -59,8 +59,6 @@ Here are some application of pdf2htmlEX for online publishing of mathematics.
   - **_[THE RISING SEA: Foundations of Algebraic Geometry](https://wanminliu.github.io/Ravi_AG/Ravi_AG.html)_** — an HTML version of **Ravi Vakil**'s [book](http://math.stanford.edu/~vakil/216blog/FOAGoct2125public.pdf)
   - Si Li, [Quantum Mechanics and Geometry](https://sili-math.github.io/notes/QMG/QMG.html).
   
-
-### [Math Blog](https://wanminliu.wordpress.com/)
 
 ### [Links](https://wanminliu.github.io/link)
 
