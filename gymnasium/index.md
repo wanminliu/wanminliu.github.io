@@ -6,7 +6,7 @@ Back to [**University teaching**](https://wanminliu.github.io/uni/)
 
 _Detta är min hemsida för matematikundervisning i skolan._
 
-[CV](https://wanminliu.github.io/gymnasium/CV_Wanmin_Liu_26gySV.pdf)
+[CV – skolundervisning (svenska)](https://wanminliu.github.io/gymnasium/CV_Wanmin_Liu_26gySV.pdf)
 
 Jag är legitimerad lärare i matematik för årskurs 7–9 och gymnasieskolan och har en doktorsexamen i matematik. Här samlar jag material från min matematikundervisning, egna undervisningsartiklar och andra texter om matematik och matematikdidaktik.
 
@@ -110,7 +110,9 @@ Jag är legitimerad lärare i matematik för årskurs 7–9 och gymnasieskolan o
 
 <br/><br/>
 
-<img src="https://wanminliu.github.io//pic/karrtorpsgymnasium.jpg" alt="KTH" id="width:100%;height:auto;">
+<img src="https://wanminliu.github.io/pic/karrtorpsgymnasium.jpg"
+     alt="Kärrtorps gymnasium"
+     style="width:100%;height:auto;">
 
 <br/><br/>
 <p>Last update on {{ site.time | date_to_long_string }}.</p>

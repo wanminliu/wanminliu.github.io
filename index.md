@@ -37,11 +37,11 @@ My research area is Algebraic Geometry. My research interests include [Bridgelan
 ### Teaching
 
 #### [University Teaching](https://wanminliu.github.io/uni/)
-Courses and teaching materials from Chalmers, KTH, Uppsala University and HKUST.
+University-level teaching experience and selected teaching materials from Chalmers, KTH, Uppsala University, HKUST and other universities.
 
 
-#### [Upper Secondary Mathematics](https://wanminliu.github.io/gymnasium/) 
-Teaching materials and writings on mathematics education for Swedish upper secondary school.
+#### [School Mathematics Teaching](https://wanminliu.github.io/gymnasium/) 
+Teaching experience, materials and writings on mathematics education for Swedish lower-secondary and upper-secondary schools.
 
 
 ### [Math Blog](https://wanminliu.wordpress.com/)

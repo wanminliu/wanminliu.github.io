@@ -1,123 +1,166 @@
 Back to [**homepage**](https://wanminliu.github.io)
 
-Back to [**Upper Secondary Mathematics**](https://wanminliu.github.io/gymnasium/)
+Back to [**School mathematics teaching**](https://wanminliu.github.io/gymnasium/)
 
 ------
 
-### Current Teaching at Chalmers
-[MVE375 Matematik, undervisning och bedömning](https://www.chalmers.se/utbildning/dina-studier/hitta-kurs-och-programplaner/kursplaner/MVE375/?acYear=2026/2027)
+_This is my webpage for university-level mathematics teaching._
 
-### Teaching Notes
-
-[**Derivator**](https://wanminliu.github.io/KTH/Derivator/Derivator.html) [PDF](https://wanminliu.github.io/KTH/Derivator/Derivator.pdf)
-
-[**Integraler**](https://wanminliu.github.io/HiG/integralen.html) och [integralensammanfatta](https://wanminliu.github.io/HiG/integralensammanfatta.html)
-
-**SF1692 (ODE), KTH** [**Lecture 2**](https://wanminliu.github.io/KTH/ODE/SF1692F2.html) och [**Lecture 3**](https://wanminliu.github.io/KTH/ODE/SF1692F3.html)
-
-[**SF1682 (Analytiska och numeriska metoder för differentialekvationer), KTH**](https://wanminliu.github.io/KTH/ODE/ODE.html)
- 
-[**SF1673 (Analys i en variabel), KTH**](https://wanminliu.github.io/KTH/SF1673/index)
-
-[**SF1625 (Single variable Calculus), KTH**](https://wanminliu.github.io/KTH/SF1625)
-
-[**SF1626 (Calculus in Several Variable, Flervariabelanalys), KTH**](https://www.kth.se/student/kurser/kurs/SF1626)
-
-*  [Notes for Module 1: 3-dimensional geometry and functions of several variables](https://wanminliu.github.io/KTH/M1/SF1626VT22M1.html)
-*  [Notes for Module 2: Partial derivatives and linear approximation](https://wanminliu.github.io/KTH/M2/SF1626VT22M2.html)
-*  [Notes for Module 4: Integrals](https://wanminliu.github.io/KTH/M4/SF1626M4.html)
-*  [Notes for Module 5: Curve and surface integrals](https://wanminliu.github.io/KTH/M5/SF1626VT22M5.html)
-*  [Notes for Module 6: Vector Analysis](https://wanminliu.github.io/KTH/M6/SF1626VT22M6.html)
-
-[**1MA011 (Differential Geometry of Curves and Surfaces), Uppsala University, Lecture Notes, 236 pages, 2019**](https://wanminliu.github.io/doc/DG/DG.html)
+I have taught mathematics at universities in Sweden, Hong Kong and China, including courses in calculus, linear algebra, differential equations, differential geometry and algebraic geometry. Here I collect selected teaching notes and a record of my university teaching.
 
 
-### Teaching at KTH
+## Current Teaching
 
-[Wanmin Liu's KTH Profile](https://www.kth.se/profile/wanmin/)
+### Chalmers University of Technology
 
-* 2024 Fall.  **Lärarvikarie** for *Analytical and Numerical Methods for Ordinary Differential Equations* ([SF1692](https://www.kth.se/student/kurser/kurs/SF1692)), [Lecture 2](https://wanminliu.github.io/KTH/ODE/SF1692F2.html) to [Lecture 3](https://wanminliu.github.io/KTH/ODE/SF1692F3.html). _**Undervisa på svenska**_
-
-* 2024 Fall.  Teaching Assistant for *Analys i en variabel* ([SF1673](https://www.kth.se/student/kurser/kurs/SF1673)), [övning 1 till  övning 5](https://wanminliu.github.io/KTH/SF1673.html).  _**Undervisa på svenska**_
+- [**MVE375 Matematik, undervisning och bedömning**](https://www.chalmers.se/utbildning/dina-studier/hitta-kurs-och-programplaner/kursplaner/MVE375/?acYear=2026/2027), 2026–2027.
 
 
-* 2023 Fall.  **Substitute teacher** for *Single variable Calculus* ([SF1625](https://wanminliu.github.io/KTH/SF1625)), Lecture 12 to Lecture 21.
+## Selected Teaching Notes
 
-* 2023 Fall.  **Substitute teacher** for *Analytical and Numerical Methods for Differential Equations* ([SF1682](https://canvas.kth.se/courses/41658)), Lecture 1 to Lecture 6.
+### Calculus
 
-* 2023 Fall.  Teaching Assistant for *Analys i en variabel* ([SF1673](https://www.kth.se/student/kurser/kurs/SF1673)). 
+- [**Derivator**](https://wanminliu.github.io/KTH/Derivator/Derivator.html) ([PDF](https://wanminliu.github.io/KTH/Derivator/Derivator.pdf))
 
-* 2023 Spring, Period 4. Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)), with [TimeTable CDATE1, CLGYM2, TIDAB](https://cloud.timeedit.net/kth/web/public01/ri160794X50Z06Q6Z96g0YY0y0066YX0709gQY6Q57264697X4478w27Y5o7o7Zr4QxQ0.html), and *Differentialekvationer* ([SF1633](https://canvas.kth.se/courses/38810)) with [TimeTable CMAST2](https://cloud.timeedit.net/kth/web/public01/ri166795X50Z0XQ6Z46g9Y60y9016Y0200QgQY6Q572806774Y747ZrwoxQo.html).
+- [**Integraler**](https://wanminliu.github.io/HiG/integralen.html) och [**Sammanfattning av integraler**](https://wanminliu.github.io/HiG/integralensammanfatta.html)
 
-* 2023 Spring, Period 3. Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)), with [TimeTable CITEH1, CMAST1](https://cloud.timeedit.net/kth/web/public01/ri150774X91Z06Q6Z96g0YY0y0066YX0709gQY6Q55264097X4478w17Y5o7o5Zr4QxQ0.html), and [TimeTable CDATE2](https://cloud.timeedit.net/kth/web/public01/ri150774X91Z06Q6Z96g0YY0y0066YX0709gQY6Q55264097X4478653w51x24r647Y50oQ7Z1YoXQ7.html).
+- [**SF1673 Analys i en variabel, KTH**](https://wanminliu.github.io/KTH/SF1673/index)
 
-* 2022 Fall, Period 2. Teaching Assistant for *Algebra och geometri* ([SF1624](https://www.kth.se/social/course/SF1624/)), with [TimeTable  CELTE1](https://cloud.timeedit.net/kth/web/public01/ri170664X35Z56Q6Z96g0YY5y0066YX0709gQY6Q50264596X4878033w51x21r827Y50oQ7Z1YoXQ7.html), and [TimeTable CINEK1](https://cloud.timeedit.net/kth/web/public01/ri170664X35Z56Q6Z96g0YY5y0066YX0709gQY6Q50264596X4878133w51x51r827Y50oQ7Z1YoXQ7.html).
-* 2022 Fall, Period 1. Teaching Assistant for *Algebra och geometri* ([SF1624](https://www.kth.se/social/course/SF1624/)), with [TimeTable CMAST1](https://cloud.timeedit.net/kth/web/public01/ri160604X14Z56Q6Z96g0YY0y0066YX0709gQY6Q53264596X4878673Y51X791927Y507Q7.html), and [TimeTable CDEPR1](https://cloud.timeedit.net/kth/web/public01/ri160604X14Z56Q6Z96g0YY0y0066YX0703gQY6Q53264596X4177459Y50X538298Y517Q7.html).
-
-* 2022 Spring. Teaching Assistant for *Calculus in Several Variable* ([SF1626](https://canvas.kth.se/courses/31806)), with [TimeTable CITEH1 CMAST1](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20220117.x%2C20220306.x&objects=203502.9%2C203509.9%2C448906.10&ox=0&types=0&fe=0), and [TimeTable CDEPR1](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20220117.x%2C20220306.x&objects=203502.9%2C203509.9%2C448908.10%2C386518.16&ox=0&types=0&fe=0).
-* 2021 Fall. Teaching Assistant for *Algebra och geometri* ([SF1624](https://kth.instructure.com/courses/27038)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&sid=7&p=20211101.x%2C20211219.x&objects=203502.9%2C203509.9%2C443947.10%2C386461.16%2C-1%2C443880.10%2C203502.9%2C203509.9&ox=0&types=0&fe=0&info=f#), CDATE1, and CINEK1.
-* 2021 Fall. Teaching Assistant for *Calculus in Several Variable* ([SF1686](https://canvas.kth.se/courses/27075)), with [TimeTable](https://cloud.timeedit.net/kth/web/public01/ri176505X20Z5XQ6Z76g8Y60y9066Y05006gQY6Q532805754Y08X7974Y47Q0.html), *Basic Course in Mathematics* ([SF1690](https://canvas.kth.se/courses/27072)), with [Timetable](https://cloud.timeedit.net/kth/web/public01/ri178504X20Z58Q6Z96g0YY0y6066YX080QgQY6Q5326257505777.html).
-
-### Teaching at Uppsala University
-
-* 2020 Fall. Teaching Assitant for *Linear Algebra II* (1MA323, Master Programme in Electrical Engineering, year 3, E3).
-* 2020 Fall. Teaching Assitant for *Linear Algebra II* (1MA323, Master Programme in Molecular Biotechnology Engineering, year 2, X2.A)
-* 2020 Spring. **Mentor** of an undergraduate student (10 credits).
- > Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor Thesis (Kandidatarbete), 58 pages, Uppsala University, 2020 June, [DiVA, id: diva2:1466472](https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-419483).
- 
-* 2019 Fall. **Teacher** for [1MA011 (Differential Geometry)](https://wanminliu.github.io/doc/DG/DG.html).
+- [**SF1625 Single Variable Calculus, KTH**](https://wanminliu.github.io/KTH/SF1625)
 
 
-### Mini-courses
+### Differential Equations
 
-* 2017 Feb. Lecture Series in Algebraic Geometry: _[Bridgeland Stability Conditions (I), (II), (III)](http://www.ims.cuhk.edu.hk/activities/conferences/mist/2017/mist_2017-i_3-14feb2017/)_ (6 hours mini-course), the Institute of Mathematical Sciences, CUHK.
+- **SF1692 Ordinary Differential Equations, KTH:** [**Lecture 2**](https://wanminliu.github.io/KTH/ODE/SF1692F2.html) and [**Lecture 3**](https://wanminliu.github.io/KTH/ODE/SF1692F3.html)
 
-* 2015 Nov. Lecture Series in Algebraic Geometry: _Lectures on Bayer-Macrì's Nef Line Bundle Theory [I, II](https://www.math.hkust.edu.hk/events/?menu=18)_ (Two lectures, 4 hours), HKUST.
+- [**SF1682 Analytical and Numerical Methods for Differential Equations, KTH**](https://wanminliu.github.io/KTH/ODE/ODE.html)
 
-### Teaching at HKUST.
 
-Below is a list of my previous teaching at the Hong Kong University of Science and Technology. All courses were taught in English.
+### Calculus in Several Variables
 
-* 2012 Fall. [*Training to all new Teaching Assistants*](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.pdf), Department of Mathematics, HKUST. 
-* 2012, Fall. [*LaTeX  Tutorial*](https://wanminliu.github.io/doc/introLaTeX.pdf). 
-* 2011, Spring. *Ordinary Differential Equation*.
-* 2010, Fall. [*Differential Geometry*](https://wanminliu.github.io/doc/DG2010/DG2010_Liu.html). I won the _**Best Teaching Assistant Award**_ of the Math Dept of HKUST in 2011 for this course.
-* 2009, Fall. *Concept in Math*.
-* 2009, Fall. *Linear Algebra*.
-* 2009, Spring. *Analysis*.
-* 2008, Fall. *Differential Geometry*.
-* 2008, Spring. *Complex Analysis*.
+- [**SF1626 Calculus in Several Variables (Flervariabelanalys), KTH**](https://www.kth.se/student/kurser/kurs/SF1626)
 
-### Teaching at Lanzhou University 
+  - [Notes for Module 1: 3-dimensional geometry and functions of several variables](https://wanminliu.github.io/KTH/M1/SF1626VT22M1.html)
+  - [Notes for Module 2: Partial derivatives and linear approximation](https://wanminliu.github.io/KTH/M2/SF1626VT22M2.html)
+  - [Notes for Module 4: Integrals](https://wanminliu.github.io/KTH/M4/SF1626M4.html)
+  - [Notes for Module 5: Curve and surface integrals](https://wanminliu.github.io/KTH/M5/SF1626VT22M5.html)
+  - [Notes for Module 6: Vector analysis](https://wanminliu.github.io/KTH/M6/SF1626VT22M6.html)
+
+
+### Differential Geometry
+
+- [**1MA011 Differential Geometry of Curves and Surfaces, Uppsala University -- Lecture Notes, 2019**](https://wanminliu.github.io/doc/DG/DG.html)
+
+
+## University Teaching Experience
+
+### KTH Royal Institute of Technology
+
+[Wanmin Liu's KTH profile](https://www.kth.se/profile/wanmin/)
+
+- **Fall 2024.** **Substitute lecturer** for *Analytical and Numerical Methods for Ordinary Differential Equations* ([SF1692](https://www.kth.se/student/kurser/kurs/SF1692)), Lectures 2–3. _Teaching language: Swedish._
+
+- **Fall 2024.** Teaching Assistant for *Analys i en variabel* ([SF1673](https://www.kth.se/student/kurser/kurs/SF1673)), exercises 1–5. _Teaching language: Swedish._
+
+- **Fall 2023.** **Substitute lecturer** for *Single Variable Calculus* ([SF1625](https://wanminliu.github.io/KTH/SF1625)), Lectures 12–21.
+
+- **Fall 2023.** **Substitute lecturer** for *Analytical and Numerical Methods for Differential Equations* ([SF1682](https://canvas.kth.se/courses/41658)), Lectures 1–6.
+
+- **Fall 2023.** Teaching Assistant for *Analys i en variabel* ([SF1673](https://www.kth.se/student/kurser/kurs/SF1673)).
+
+- **Spring 2023, Period 4.** Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)) and *Differentialekvationer* ([SF1633](https://canvas.kth.se/courses/38810)).
+
+- **Spring 2023, Period 3.** Teaching Assistant for *Flervariabelanalys* ([SF1626](https://canvas.kth.se/courses/37846)).
+
+- **Fall 2022, Period 2.** Teaching Assistant for *Algebra och geometri* ([SF1624](https://www.kth.se/social/course/SF1624/)).
+
+- **Fall 2022, Period 1.** Teaching Assistant for *Algebra och geometri* ([SF1624](https://www.kth.se/social/course/SF1624/)).
+
+- **Spring 2022.** Teaching Assistant for *Calculus in Several Variables* ([SF1626](https://canvas.kth.se/courses/31806)).
+
+- **Fall 2021.** Teaching Assistant for *Algebra och geometri* ([SF1624](https://kth.instructure.com/courses/27038)).
+
+- **Fall 2021.** Teaching Assistant for *Calculus in Several Variables* ([SF1686](https://canvas.kth.se/courses/27075)) and *Basic Course in Mathematics* ([SF1690](https://canvas.kth.se/courses/27072)).
+
+
+### Uppsala University
+
+- **Fall 2020.** Teaching Assistant for *Linear Algebra II* (1MA323), Master Programme in Electrical Engineering, year 3.
+
+- **Fall 2020.** Teaching Assistant for *Linear Algebra II* (1MA323), Master Programme in Molecular Biotechnology Engineering, year 2.
+
+- **Spring 2020.** **Supervisor** of a bachelor's thesis:
+
+  > Patrik Deigård, *Liouville's equation on simply connected domains*, Bachelor's thesis, 58 pages, Uppsala University, June 2020. [DiVA, id: diva2:1466472](https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-419483).
+
+- **Fall 2019.** **Lecturer and examiner** for [*Differential Geometry of Curves and Surfaces* (1MA011)](https://wanminliu.github.io/doc/DG/DG.html).
+
+
+### Hong Kong University of Science and Technology (HKUST)
+
+All courses were taught in English.
+
+- **Fall 2012.** [*Training to All New Teaching Assistants*](https://wanminliu.github.io/doc/Tutorial/Tutorial_Training.pdf), Department of Mathematics, HKUST.
+
+- **Fall 2012.** [*LaTeX Tutorial*](https://wanminliu.github.io/doc/introLaTeX.pdf).
+
+- **Spring 2011.** *Ordinary Differential Equations*.
+
+- **Fall 2010.** [*Differential Geometry*](https://wanminliu.github.io/doc/DG2010/DG2010_Liu.html). I received the **Best Teaching Assistant Award** from the Department of Mathematics at HKUST in 2011 for this course.
+
+- **Fall 2009.** *Concept in Math*.
+
+- **Fall 2009.** *Linear Algebra*.
+
+- **Spring 2009.** *Analysis*.
+
+- **Fall 2008.** *Differential Geometry*.
+
+- **Spring 2008.** *Complex Analysis*.
+
+
+### Lanzhou University
 
 All courses were taught in Chinese.
 
-* 2004 Fall. *Functional Analysis*. 
-* 2004 Spring. *Differential Geometry*.
+- **Fall 2004.** *Functional Analysis*.
 
-### Teaching in Upper Secondary Mathematics
-
-Jag undervisade några gymnasiekurser i matematik på svenska. Se [länk](https://wanminliu.github.io/gymnasium/) för detaljer.
-
-### Några intressanta matteundervisningsvideor
-
-Jag skulle vilja tacka följande pedagoger för deras gratis videor som undervisar i matematik på svenska.
-
-* [Lars Filipsson](https://www.youtube.com/@lasrfilipsson)
-* [Jonas Vikström](https://www.youtube.com/@vikstromjonas)
+- **Spring 2004.** *Differential Geometry*.
 
 
-### [Math Blog](https://wanminliu.wordpress.com/category/teaching/)
+## Mini-courses and Lecture Series
+
+- **February 2017.** *[Bridgeland Stability Conditions (I), (II), (III)](http://www.ims.cuhk.edu.hk/activities/conferences/mist/2017/mist_2017-i_3-14feb2017/)*, 6-hour mini-course, Institute of Mathematical Sciences, CUHK.
+
+- **November 2015.** *Lectures on Bayer-Macrì's Nef Line Bundle Theory [I, II](https://www.math.hkust.edu.hk/events/?menu=18)*, two lectures, 4 hours, HKUST.
 
 
+## School Mathematics Teaching
 
+I have also taught mathematics in Swedish at lower-secondary and upper-secondary schools. See my [**school mathematics teaching page**](https://wanminliu.github.io/gymnasium/) for details.
+
+
+## Selected Teaching Resources
+
+I have found the following Swedish-language mathematics teaching channels useful:
+
+- [Lars Filipsson](https://www.youtube.com/@lasrfilipsson)
+- [Jonas Vikström](https://www.youtube.com/@vikstromjonas)
+
+
+## Math Blog
+
+[Posts on mathematics and teaching](https://wanminliu.wordpress.com/category/teaching/)
 
 
 <br/><br/>
 
-<img src="https://wanminliu.github.io//pic/KTH20231129.jpg" alt="KTH" id="width:100%;height:auto;">
+<img src="https://wanminliu.github.io/pic/KTH20231129.jpg"
+     alt="KTH Royal Institute of Technology"
+     style="width:100%;height:auto;">
 
 <br/><br/>
+
 <p>Last update on {{ site.time | date_to_long_string }}.</p>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6X136VZ9Z5"></script>
