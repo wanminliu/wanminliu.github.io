@@ -140,18 +140,15 @@ All courses were taught in Chinese.
 I have also taught mathematics in Swedish at lower-secondary and upper-secondary schools. See my [**school mathematics teaching page**](https://wanminliu.github.io/gymnasium/) for details.
 
 
-## Selected Teaching Resources
-
-I have found the following Swedish-language mathematics teaching channels useful:
-
-- [Lars Filipsson](https://www.youtube.com/@lasrfilipsson)
-- [Jonas Vikström](https://www.youtube.com/@vikstromjonas)
-
-
 ## Math Blog
 
 [Posts on mathematics and teaching](https://wanminliu.wordpress.com/category/teaching/)
 
+## Selected Teaching Resources
+
+I have found the following Swedish-language mathematics teaching channels very useful, and I would like to thank Lars Filipsson and Jonas Vikström for making their teaching videos freely available:
+- [Lars Filipsson](https://www.youtube.com/@lasrfilipsson)
+- [Jonas Vikström](https://www.youtube.com/@vikstromjonas)
 
 <br/><br/>
 
