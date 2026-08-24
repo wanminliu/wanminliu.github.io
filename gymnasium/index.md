@@ -106,6 +106,7 @@ Jag är legitimerad lärare i matematik för årskurs 7–9 och gymnasieskolan o
 ## Externa resurser
 
 - [Math Is Fun](https://www.mathsisfun.com/) – matematiska förklaringar och övningar.
+- [Matematikens historia, idéer och undervisning – samlade texter av Anders Tengstrand](https://www.anderstengstrand-funderingarkringmatematik.se/)
 
 
 <br/><br/>
