@@ -56,12 +56,18 @@ Här samlar vi digitala verktyg, webbsidor och annat material som kan vara anvä
 ### Videor och webbresurser
   * [Vidma](https://vidma.se/) – skapad av Jonas Vikström. Videogenomgångar, förklaringar och material i matematik för olika nivåer. Se även [Jonas Vikström – YouTube](https://www.youtube.com/@vikstromjonas).
   * [Smatte – Smittad av matte](https://www.smatte.nu/) – skapad av Simon Engholm. Videor, förklaringar och övningsuppgifter i matematik, framför allt för årskurs 7–9 och vissa gymnasiekurser. Kan användas för repetition, individuellt arbete och undervisning i olika tempo. Se även [Smatte – YouTube](https://www.youtube.com/@smatte).
+  * [YouTube: Nationellt Centrum för Matematikutbildning](https://www.youtube.com/@ncm_matematikutbildning)
 
 ### Specialpedagogik och matematiksvårigheter
   * [Stödmaterial matematiksvårigheter – SPSM](https://www.spsm.se/stodmaterial-matematiksvarigheter/valkommen-till-stodmaterial-matematiksvarigheter/) – stöd för att upptäcka och förstå matematiksvårigheter och för att utveckla undervisningen utifrån elevers olika behov.
 
 ### Matematikens historia
   * [Funderingar kring matematik](https://www.anderstengstrand-funderingarkringmatematik.se/) – Anders Tengstrands texter om matematik, matematikens historia och matematiska idéer.
+
+### Kognitionsvetenskap
+  * [Spacing och interleaving – om det skall nötas skall det göras smart](https://ncm.gu.se/2022/09/zoomseminarie-20-november-olof-dahl-spacing-och-interleaving-om-det-skall-notas-skall-det-goras-smart/) – Olof Dahl om hur spacing och interleaving kan användas för att stödja långsiktigt lärande i matematik. [YouTube länk](https://www.youtube.com/watch?v=4NRr2Ah9xkY)
+  * [Snäv bild av kognitionsvetenskap kan försämra matteundervisningen](https://ncm.gu.se/2025/03/snav-bild-av-kognitionsvetenskap-kan-forsamra-matteundervisningen/) – om arbetsminne, långtidsminne och vikten av att koppla kognitionsvetenskap till förståelse av matematiska begrepp och samband. [Kognitionsvetenskap i matematikundervisning: Långtidsminne](https://www.youtube.com/watch?v=VVpx2swPWBE) och [Arbetsminnet i matematikundervisningen](https://www.youtube.com/watch?v=-d_1Z5iGiVs)
+  * [Retrieval Practice](https://www.retrievalpractice.org/) – forskningsbaserade resurser om retrieval practice, spacing, interleaving och metakognition, med kopplingar till forskning inom kognitionsvetenskap och praktiska exempel för undervisning.
 
 <br/><br/>
 
