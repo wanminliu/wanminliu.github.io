@@ -33,8 +33,8 @@ Här samlar vi digitala verktyg, webbsidor och annat material som kan vara anvä
   * [NCM – Nationellt centrum för matematikutbildning](https://ncm.gu.se/) – material och resurser om matematikundervisning och matematikdidaktik.
   * [NCM – Klassrum](https://ncm.gu.se/klassrum/) – lektionsaktiviteter, problemlösning, Strävorna, matematikpapper och annat material för användning i klassrummet.
   * [Kängurun](https://ncm.gu.se/klassrum/kanguru/) – problemlösningsuppgifter, lösningar och material för att arbeta vidare med problemen i undervisningen.
-  * [Nämnaren](https://ncm.gu.se/namnaren) – tidskrift för matematikundervisning med artiklar, undervisningsidéer, aktiviteter och erfarenheter från matematiklärare.
-  * [Rika matematiska problem](https://www.liber.se/webshop/product/rika-matematiska-problem-9789147051502) – idéer och exempel på rika problem som kan användas på olika nivåer och stimulera problemlösning, resonemang och matematisk kommunikation.
+  * [Nämnaren](https://ncm.gu.se/namnaren) – tidskrift för matematikundervisning med artiklar, undervisningsidéer, aktiviteter och erfarenheter från matematiklärare. [Tidigare nummer](https://ncm.gu.se/tidigarenummer)
+  * [Rika matematiska problem](https://www.liber.se/webshop/product/rika-matematiska-problem-9789147051502) – idéer och exempel på rika problem som kan användas på olika nivåer och stimulera problemlösning, resonemang och matematisk kommunikation.[Provläs](https://www.smakprov.se/las/9789147051502) och [Övningar](https://www.liber.se/plus/E470515001.pdf)
   * [Kleindagarna](https://www.kleindagarna.se/) – matematikdagar som arrangeras tre gånger per år på världsledande Institut Mittag-Leffler utanför Stockholm. Deltagandet är kostnadsfritt och mat och boende ingår. Studenter uppmuntras att söka och delta.
   * [Math Is Fun](https://www.mathsisfun.com/) – matematiska förklaringar och övningar.
 
@@ -50,6 +50,8 @@ Här samlar vi digitala verktyg, webbsidor och annat material som kan vara anvä
 ### Bedömning och nationella prov
   * [PRIM-gruppen](https://www.su.se/primgruppen/) – material om bedömning och nationella prov i matematik, bland annat tidigare prov, bedömningsstöd och analyser.
   * [Skolverket – Nationella prov](https://www.skolverket.se/undervisning/gymnasieskolan/nationella-prov-i-gymnasieskolan) – information om nationella prov, genomförande och bedömning.
+  * [Nationella prov i matematik](https://www.umu.se/npma/)
+  * [Formelblad för nationella prov](https://www.umu.se/institutionen-for-tillampad-utbildningsvetenskap/np/np-2-4/formelblad/)
 
 ### Videor och webbresurser
   * [Vidma](https://vidma.se/) – videogenomgångar, förklaringar och material i matematik för olika nivåer. Se även [Jonas Vikström – YouTube](https://www.youtube.com/@vikstromjonas).
@@ -63,4 +65,4 @@ Här samlar vi digitala verktyg, webbsidor och annat material som kan vara anvä
 
 <br/><br/>
 
-Den här sidan är tänkt som en gemensam resursbank. Den kommer att utvecklas och kompletteras under kursens gång.
+Den här sidan är tänkt som en gemensam resursbank.
