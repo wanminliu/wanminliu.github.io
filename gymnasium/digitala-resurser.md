@@ -54,8 +54,8 @@ Här samlar vi digitala verktyg, webbsidor och annat material som kan vara anvä
   * [Formelblad för nationella prov](https://www.umu.se/institutionen-for-tillampad-utbildningsvetenskap/np/np-2-4/formelblad/)
 
 ### Videor och webbresurser
-  * [Vidma](https://vidma.se/) – videogenomgångar, förklaringar och material i matematik för olika nivåer. Se även [Jonas Vikström – YouTube](https://www.youtube.com/@vikstromjonas).
-  * [Smatte – Smittad av matte](https://www.smatte.nu/) – videor, förklaringar och övningsuppgifter i matematik, framför allt för årskurs 7–9 och vissa gymnasiekurser. Kan användas för repetition, individuellt arbete och undervisning i olika tempo. Se även [Smatte – YouTube](https://www.youtube.com/@smatte).
+  * [Vidma](https://vidma.se/) – skapad av Jonas Vikström. Videogenomgångar, förklaringar och material i matematik för olika nivåer. Se även [Jonas Vikström – YouTube](https://www.youtube.com/@vikstromjonas).
+  * [Smatte – Smittad av matte](https://www.smatte.nu/) – skapad av Simon Engholm. Videor, förklaringar och övningsuppgifter i matematik, framför allt för årskurs 7–9 och vissa gymnasiekurser. Kan användas för repetition, individuellt arbete och undervisning i olika tempo. Se även [Smatte – YouTube](https://www.youtube.com/@smatte).
 
 ### Specialpedagogik och matematiksvårigheter
   * [Stödmaterial matematiksvårigheter – SPSM](https://www.spsm.se/stodmaterial-matematiksvarigheter/valkommen-till-stodmaterial-matematiksvarigheter/) – stöd för att upptäcka och förstå matematiksvårigheter och för att utveckla undervisningen utifrån elevers olika behov.
