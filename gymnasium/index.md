@@ -4,6 +4,8 @@ Back to [**University teaching**](https://wanminliu.github.io/uni/)
 
 ------
 
+# School Mathematics Teaching
+
 _Detta är min hemsida för matematikundervisning i skolan._
 
 [CV – skolundervisning (svenska)](https://wanminliu.github.io/gymnasium/CV_Wanmin_Liu_26gySV.pdf)
@@ -38,7 +40,7 @@ Jag är legitimerad lärare i matematik för årskurs 7–9 och gymnasieskolan o
 
   - [Varför ger en seger tre poäng – Matematiken bakom fotbollens poängsystem](https://wanminliu.wordpress.com/2026/06/25/varfor-ger-en-seger-tre-poang-matematiken-bakom-fotbollstabellen/), [PDF](https://wanminliu.github.io/gymnasium/VM.pdf), 25 juni 2026. 
   - Vad händer om repet runt jordens midja blir en meter längre? 
-    - [Del 1. Det jämna lyftet: omkretsens linjäritet](https://wanminliu.github.io/gymnasium/Jordensmidja1.pdf), 20 aug. 2026.
+    - [Del 1. Det jämna lyftet: omkretsens linjäritet](https://wanminliu.github.io/gymnasium/Jordensmidja1.pdf), 20 aug. 2026. Publicerad i [_Nämnaren_](https://ncm.gu.se/namnaren-nr-3-2026/), nr 3, 2026.
     - [Del 2. Enpunktslyftet: tangentmodellen och det icke-linjära sambandet](https://wanminliu.github.io/gymnasium/Jordensmidja2.pdf), 20 aug. 2026.
     - [Del 3. Från enpunktslyft till jämnt lyft: en resa mellan modeller](https://wanminliu.github.io/gymnasium/Jordensmidja3.pdf), 20 aug. 2026.
   - [Utforskande och heuristiskt lärande i algebra på gymnasiet](https://urn.kb.se/resolve?urn=urn:nbn:se:su:diva-252970), [PDF](https://www.diva-portal.org/smash/get/diva2:2042679/FULLTEXT01.pdf), 3 mars 2026.
@@ -105,8 +107,7 @@ Jag är legitimerad lärare i matematik för årskurs 7–9 och gymnasieskolan o
 
 ## Externa resurser
 
-- [Math Is Fun](https://www.mathsisfun.com/) – matematiska förklaringar och övningar.
-- [Matematikens historia, idéer och undervisning – samlade texter av Anders Tengstrand](https://www.anderstengstrand-funderingarkringmatematik.se/)
+- [Digitala resurser och verktyg](https://wanminliu.github.io/gymnasium/digitala-resurser/)
 
 
 <br/><br/>
