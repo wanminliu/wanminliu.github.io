@@ -7,7 +7,7 @@ step are needed to use the website.
 
 ## 最快使用方法
 
-1. 解压 `math-dance.zip`。
+1. 解压 `math-dance-github.zip`。
 2. 打开 `math-dance/index.html`；也可把整个文件夹上传到网站。
 3. 选择浅色／深色、2／3 分钟和内容级别。
 4. 点击“开始”，允许浏览器启动音频，然后进入全屏。
@@ -45,14 +45,14 @@ https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-gi
 - Level 2: level 1 plus absolute value, cubic and W-shaped quartic functions.
 - Level 3: level 2 plus sine, cosine, tangent, exponential and logarithmic functions.
 - “Choose functions” exposes independent switches. The level presets reset these
-  switches. Quadratics have a higher selection weight; advanced functions are rarer.
+  switches. Each selected type is visited before another selection cycle. When several types are selected, ordinary horizontal-line scenes appear only once per session (up to two frames), in addition to the fixed ending. Quadratics have a higher ordering weight; advanced types are guaranteed a turn, rather than left to rare independent random draws.
 - The derivative switch can be used independently of the level. The full sequence is:
   `f(x)=x⁴/24−x²/2`, `f′(x)=x³/6−x`, `f″(x)=x²/2−1`, `f‴(x)=x`, `f⁽⁴⁾(x)=1`, `f⁽⁵⁾(x)=0`.
   Derivative notation remains visible even with the formula switch off.
 - The graph axes always cover −6 to 6 with equal x/y scales. Trigonometric arguments
   use radians. Tangent branches are disconnected at their asymptotes; logarithms
   are only drawn on their valid domains. Screen clipping does not redefine domains.
-- Low-to-high sequences include `y=−4 → y=4 → y=0`. Rise quickly or use a small jump;
+- Low-to-high sequences include `y=−4 → y=4`. Rise quickly or use a small jump;
   seated or smaller movements are equally valid. Graph units are not physical metres.
 - A graph's prescribed pose represents its visible shape. A jump is the transition
   between poses, not the mathematical meaning of a constant function.
@@ -97,10 +97,11 @@ prerecorded words and schedule their decoded audio buffers on the same audio clo
 ## Files
 
 - `index.html`, `style.css`, `app.js`: interface and session control.
-- `graphs.js`: 535 precomputed graph paths; no runtime curve calculation.
+- `graphs.js`: 1087 precomputed graph paths; no runtime curve calculation.
+- `scenes.js`: 13 curated transformation sequences.
 - `sequence.js`: weighted selection, complete phrases, timing and fixed ending.
 - `music.js`: fully procedural 120 BPM music.
-- `scripts/generate_graphs.py`: regenerate graph paths using Python's standard library.
+- `scripts/generate_graphs.py`, `scripts/scenes.py`: regenerate graph paths and scene data using Python's standard library.
 - `tests/verify.cjs`: mathematical, timeline and audio checks; optional Node.js command.
 - `LICENSE`, `ASSET-LICENSES.md`: MIT and detailed source/asset provenance.
 
@@ -110,6 +111,7 @@ Normal visitors do not need Python or Node.js. Developers can run:
 python3 scripts/generate_graphs.py
 node tests/verify.cjs
 node tests/session.cjs
+node tests/scenes.cjs
 ```
 
 To serve locally if needed, from this folder:
@@ -131,3 +133,38 @@ level, projection visibility and available movement space in the actual setting.
 
 MIT for the supplied source and generated materials where rights exist. Speech
 engine rights remain with the visitor's provider. See ASSET-LICENSES.md for details.
+
+## Revised graph variety and mathematical typography
+
+- 12 line slopes: ±1/4, ±1/2, ±1, ±3/2, ±2, ±3, with different intercepts.
+- Quadratic, cubic and absolute-value curves include coefficients ±1/4, ±1/2, ±1, ±2.
+- Shorter scenes and shuffled rounds ensure variety; each enabled type is covered in the default two- and three-minute presets.
+- Formulas use precomputed native MathML for stacked fractions, exponents, logarithm bases and derivative notation. No online LaTeX renderer or third-party fonts are required. Every graph also includes its LaTeX source in the `latex` field.
+- Positive x and y directions have arrowheads in both themes.
+- Music and voice behavior are unchanged.
+
+## 2026-09-24：数学变化片段
+
+“数学变化片段”开关默认开启。片段整体随机穿插，每张保留 4 秒，便于观察；
+普通图形仍按加速选项逐步加快。只有能完整播完的片段才会插入，不挤占最后 10 秒。
+关闭开关后，仍播放原有的随机函数及平移、斜率变化。
+
+- 绝对值：`|x/2| → |x| → |2x| → |3x|`，观察宽窄；
+  `|-2x| → |2x|`，公式不同、图像相同；`|2x| → −|2x|`，上下翻转。
+- 顶点式：`a(x−1)²−2` 改变 a，顶点和对称轴固定；
+  `(x−1)²+1 → −(x−1)²+1` 保持顶点，改变开口方向。
+  后者是关于水平线 y=1 的翻转，而非关于 x 轴。
+- 因式分解式：`a(x+2)(x−2)` 改变 a，标出两个固定零点；
+  `(x+2)(x−2) → (x+1)(x−1) → x²`，两个零点靠近并合为双重根。
+- 同图异式：`(x−1)²−4 → (x+1)(x−3) → x²−2x−3`，提示保持姿势。
+- 翻折：`x²−1 → |x²−1|`，只把 x 轴下方的部分翻到上方。
+- 三次函数：`x³ → −x³`。
+- 正弦：分别改变振幅和频率，区分波浪变高与波浪变密。
+- 反函数：`2^x → log₂(x)`，显示 y=x 参照线及互换的坐标点。
+
+这些片段按已勾选的函数类型启用。例如，翻折片段需要同时勾选二次函数和绝对值；
+指数／对数镜像需要同时勾选这两种函数。连续求导仍由独立开关控制。
+新增标记只在相关片段显示，普通随机图形保持简洁。屏幕上的数学提示用于认识图形；
+不要求学生精确用身体表示每一个点或每一段曲线。
+
+公式使用离线生成的 MathML 排版，并保留 LaTeX 源字段；无需在线公式服务。
