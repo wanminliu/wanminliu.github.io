@@ -9,12 +9,24 @@ const listeners={};const document={documentElement:new Element('html'),getElemen
 let clock=0,raf,spoken=[],suspended=false;
 class AudioContext{get currentTime(){return clock}async resume(){suspended=false}suspend(){suspended=true}createGain(){return {connect(){},disconnect(){},gain:{value:0,setTargetAtTime(){}}}}createBuffer(){return {copyToChannel(){}}}createBufferSource(){return {connect(){},start(){},stop(){}}}}
 const speechSynthesis={getVoices:()=>[{localService:true,lang:'en-US',name:'Samantha'}],addEventListener(){},cancel(){},speak:u=>spoken.push(u.text)};
-const c={document,window:{AudioContext,speechSynthesis,addEventListener(){}},speechSynthesis,SpeechSynthesisUtterance:class{constructor(t){this.text=t}},requestAnimationFrame:f=>{raf=f},console};vm.createContext(c);const root=path.resolve(__dirname,'..');vm.runInContext(fs.readFileSync(path.join(root,'graphs.js'),'utf8'),c);vm.runInContext(fs.readFileSync(path.join(root,'scenes.js'),'utf8'),c);c.DanceSequence=require('../sequence.js');c.DanceMusic={render:()=>({data:new Float32Array(1),sampleRate:22050})};vm.runInContext(fs.readFileSync(path.join(root,'app.js'),'utf8'),c);
+const c={document,window:{AudioContext,speechSynthesis,addEventListener(){}},speechSynthesis,SpeechSynthesisUtterance:class{constructor(t){this.text=t}},requestAnimationFrame:f=>{raf=f},console};vm.createContext(c);const root=path.resolve(__dirname,'..');vm.runInContext(fs.readFileSync(path.join(root,'graphs.js'),'utf8'),c);vm.runInContext(fs.readFileSync(path.join(root,'scenes.js'),'utf8'),c);vm.runInContext(fs.readFileSync(path.join(root,'timing.js'),'utf8'),c);c.DanceSequence=require('../sequence.js');c.DanceMusic={render:()=>({data:new Float32Array(1),sampleRate:22050})};vm.runInContext(fs.readFileSync(path.join(root,'app.js'),'utf8'),c);
 (async()=>{
  await vm.runInContext('start()',c);assert.equal(vm.runInContext('state',c),'running');assert.equal(spoken[0],'Let’s do the math dance together!');
  const at=t=>{clock=t+.08;raf()};at(3.4);at(5);at(6);at(7);assert.deepEqual(spoken.slice(1),['Are you ready?','Three','Two','One']);at(8);assert.equal(get('clock').textContent,'02:00');assert.equal(get('intro').hidden,true);
  at(20);vm.runInContext('pause()',c);assert(suspended);assert.equal(vm.runInContext('state',c),'paused');await vm.runInContext('resume()',c);assert(!suspended);
  at(118);assert.equal(get('countdown').textContent,10);assert.equal(vm.runInContext('current.id',c),'constant_1_0_2');at(120);assert.equal(vm.runInContext('current.id',c),'constant_1_0_0');at(122);assert.equal(vm.runInContext('current.id',c),'constant_1_0_-2');at(127);assert.equal(get('countdown').textContent,1);at(128);assert.equal(vm.runInContext('state',c),'finished');assert.equal(get('clock').textContent,'00:00');assert.equal(get('done').hidden,false);assert.equal(spoken.at(-1),'Well done!');
  vm.runInContext('reset()',c);assert.equal(vm.runInContext('state',c),'ready');assert.equal(get('clock').textContent,'02:00');assert.equal(get('done').hidden,true);
+ get('speed').value='medium';get('display-mode').value='predict';get('formula-toggle').checked=false;
+ await vm.runInContext('start()',c);const origin=vm.runInContext('origin',c);
+ const tick=t=>{clock=origin+8+t;raf()};tick(0);
+ assert.equal(get('curve').style.visibility,'hidden');assert.equal(get('annotations').style.visibility,'hidden');assert.equal(get('guides').style.visibility,'hidden');assert(get('formula').innerHTML.includes('<math'));assert(get('formula-toggle').disabled);
+ tick(1.5);assert.equal(get('curve').style.visibility,'hidden');
+ vm.runInContext('pause()',c);assert.equal(get('curve').style.visibility,'hidden');await vm.runInContext('resume()',c);
+ const firstDot=get('beats').children[0];tick(2);assert.strictEqual(get('beats').children[0],firstDot);assert.equal(get('beats').children.length,8);assert(Math.abs(parseFloat(get('progress').style.width)-50)<1e-8);assert.equal(get('curve').style.visibility,'visible');assert(get('formula').innerHTML.includes('<math'));
+ const next=vm.runInContext('frames[1].start',c);tick(next);assert.equal(get('curve').style.visibility,'hidden');
+ tick(110);assert.equal(get('curve').style.visibility,'visible');assert.equal(get('phase-label').hidden,true);assert.equal(get('countdown').textContent,10);
+ vm.runInContext('reset()',c);assert.equal(get('curve').style.visibility,'visible');assert.equal(get('phase-label').hidden,true);
+ get('display-mode').value='together';vm.runInContext('reset()',c);assert.equal(get('formula-toggle').disabled,false);assert.equal(get('formula').innerHTML,'');
+ console.log('PASS: prediction visibility, formula override, reveal boundary, pause/resume, next prediction, ending and setting restoration.');
  console.log('PASS: opening speech, 3–2–1, start, pause/resume, closing graph/number alignment, zero, finish and reset.');
 })().catch(e=>{console.error(e);process.exitCode=1});

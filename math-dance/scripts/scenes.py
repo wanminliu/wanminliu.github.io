@@ -3,6 +3,7 @@ import math,json
 
 def extend(records,helpers,root):
     mi,mn,mo,row,frac,power,number,texnum,path=[helpers[x] for x in ['mi','mn','mo','row','frac','power','number','texnum','path']]
+    absolute_math=helpers['absolute_math']
     scenes=[]
     def par(s):return mo('(')+s+mo(')')
     def shift(h):return mi('x')+(mo('−' if h>0 else '+')+mn(abs(h)) if h else '')
@@ -18,13 +19,13 @@ def extend(records,helpers,root):
         records.append(g);return id
     def scene(id,kinds,cards,cues):scenes.append(dict(id=id,requires=kinds,cards=[dict(graph=g,cue=cues[i]) for i,g in enumerate(cards)]))
     ids=[]
-    for i,a in enumerate([.5,1,2,3]):ids.append(card('abs_width_'+str(i),'absolute',mo('|')+coef(a)+mi('x')+mo('|'),r'\left|'+tc(a)+r'x\right|',lambda x,a=a:abs(a*x),model={'type':'abs','inside':a,'outside':1}))
+    for i,a in enumerate([.5,1,2,3]):ids.append(card('abs_width_'+str(i),'absolute',absolute_math(coef(a)+mi('x')),r'\left|'+tc(a)+r'x\right|',lambda x,a=a:abs(a*x),model={'type':'abs','inside':a,'outside':1}))
     scene('abs_width',['absolute'],ids,['width','narrow','narrow','narrow'])
     ids=[]
-    for i,a in enumerate([-2,2]):ids.append(card('abs_sign_'+str(i),'absolute',mo('|')+coef(a)+mi('x')+mo('|'),r'\left|'+tc(a)+r'x\right|',lambda x,a=a:abs(a*x),model={'type':'abs','inside':a,'outside':1}))
+    for i,a in enumerate([-2,2]):ids.append(card('abs_sign_'+str(i),'absolute',absolute_math(coef(a)+mi('x')),r'\left|'+tc(a)+r'x\right|',lambda x,a=a:abs(a*x),model={'type':'abs','inside':a,'outside':1}))
     scene('abs_sign',['absolute'],ids,['same','same'])
     ids=[]
-    for i,a in enumerate([1,-1]):ids.append(card('abs_flip_'+str(i),'absolute',coef(a)+mo('|')+mn(2)+mi('x')+mo('|'),tc(a)+r'|2x|',lambda x,a=a:a*abs(2*x),model={'type':'abs','inside':2,'outside':a}))
+    for i,a in enumerate([1,-1]):ids.append(card('abs_flip_'+str(i),'absolute',coef(a)+absolute_math(mn(2)+mi('x')),tc(a)+r'|2x|',lambda x,a=a:a*abs(2*x),model={'type':'abs','inside':2,'outside':a}))
     scene('abs_flip',['absolute'],ids,['shape','flip'])
     ids=[]
     for i,a in enumerate([.25,1,2]):ids.append(card('vertex_'+str(i),'quadratic',coef(a)+power(row(factor(1)),mn(2))+mo('−')+mn(2),tc(a)+'(x-1)^2-2',lambda x,a=a:a*(x-1)**2-2,markers=[{'x':1,'y':-2}],guide={'type':'vertical','x':1},model={'type':'vertex','a':a,'b':1,'c':-2}))
@@ -46,7 +47,7 @@ def extend(records,helpers,root):
     ids=[]
     for i,fold in enumerate([False,True]):
         expr=power(mi('x'),mn(2))+mo('−')+mn(1)
-        ids.append(card('fold_'+str(i),'absolute' if fold else 'quadratic',(mo('|')+expr+mo('|')) if fold else expr,'|x^2-1|' if fold else 'x^2-1',lambda x,fold=fold:abs(x*x-1) if fold else x*x-1,markers=[{'x':-1,'y':0},{'x':1,'y':0}],model={'type':'fold','fold':fold}))
+        ids.append(card('fold_'+str(i),'absolute' if fold else 'quadratic',absolute_math(expr) if fold else expr,'|x^2-1|' if fold else 'x^2-1',lambda x,fold=fold:abs(x*x-1) if fold else x*x-1,markers=[{'x':-1,'y':0},{'x':1,'y':0}],model={'type':'fold','fold':fold}))
     scene('fold',['quadratic','absolute'],ids,['roots','fold'])
     scene('cubic_flip',['cubic'],['cubic_1_0_0','cubic_-1_0_0'],['shape','flip'])
     for name,values in [('amplitude',[.5,1,2]),('frequency',[1,2,3])]:

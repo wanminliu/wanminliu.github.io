@@ -1,51 +1,16 @@
-# Verification for this release
+# Verification — eight-count BPM release
 
-Completed using Node.js and Python, September 2026:
+- All 1,087 paths have finite coordinates; log domains, tangent branch separation and the five derivative transitions are checked.
+- 289 absolute-value formulas have isolated symmetric fences; earlier graph data were unchanged by that typography fix.
+- 360 medium-speed sessions check variety, complete derivative chains and exact endings.
+- 13 mathematical scene families: sampled mathematics, equivalent graph identities, eligibility and whole-scene scheduling.
+- 560 paired seated/footwork sessions: default off, matching side-step directions, return positions and complete blocks.
+- 720 speed/display/duration/footwork/level configurations verify every question occupies exactly eight music beats and prediction reveals on beat five.
+- Synthesized audio was checked at all three BPM values and both durations, including beat-event alignment with question starts and reveals, 120-BPM closing events, finite samples and peak limits.
+- UI controller adapter checks opening, pause/resume, predicted visibility, an unchanged set of eight dots at reveal, 50% progress at reveal, fixed ending and restored settings.
+- Local asset links and JavaScript syntax were checked. ZIP integrity is checked before delivery.
 
-- JavaScript syntax checks for app.js, sequence.js and music.js.
-- All 1087 precomputed curve paths have finite coordinate data.
-- Logarithmic paths stay on x > h; tangent branches are separated.
-- All five transitions in the W-shaped derivative chain were checked algebraically.
-- 360 seeded session configurations were checked across both durations, all level
-  presets and acceleration on/off: no gaps, no overlaps, no truncated derivative
-  chains, and an exact fixed ten-second ending.
-- Both generated audio buffers were checked for correct duration, finite samples,
-  nonzero energy and maximum amplitude below clipping.
-- Local asset links were checked; the deployed page has no external file dependency.
-- The app controller was exercised with a minimal DOM/audio adapter through the
-  welcome, preparation, 3–2–1, start, pause/resume, final graphs and numbers, zero,
-  completion and restart.
+The controller adapter is not a real browser visual test. Cross-device MathML appearance,
+projector contrast, fullscreen and audible local speech timing require device testing.
 
-The last check is a state-machine test, not an actual browser rendering or speaker
-playback test. Cross-device voice availability, audible speech timing, fullscreen
-behavior and projector contrast have not been verified on the recipient's hardware.
-The local English speech API remains optional and is not sample-accurate.
-
-Run:
-
-```sh
-node tests/verify.cjs
-node tests/session.cjs
-node tests/scenes.cjs
-node tests/footwork.cjs
-```
-
-Revision checks: every selected type appears in all 360 default-preset test sessions; ordinary horizontal scenes occupy under 25% of the random section; all 12 line slopes are present; all MathML expressions parse as XML. Music and the complete start/pause/finish state-machine checks still pass.
-
-
-2026-09-24 transformation update:
-- 13 scene families validated against existing graph identifiers and enabled types.
-- Sampled curve coordinates checked for absolute-value, vertex, root, folding and sine transformations.
-- Identical paths verified for the absolute-value sign identity and all three equivalent quadratic formulas.
-- 200 additional seeded sessions verified: every scene family is reachable, whole scenes stay consecutive, and none overlaps the fixed ending.
-- The transformation switch and individual function exclusions were verified.
-- A local browser renderer was unavailable; visual rendering has not been newly verified in a real browser for this update.
-
-
-Footwork option update:
-- 560 paired sessions (default seated mode versus enabled footwork) across both durations, acceleration settings, all level presets and every single-function selection.
-- Checked 4,174 complete footwork blocks, including 2,690 side-step blocks: graph direction agrees with the cue, each side step returns to its starting graph, and blocks stay before the ending.
-- Confirmed both new-session footwork and jumping defaults are off; the seated planner never emits footwork or jump frames even if a stale jump preference is true.
-- Confirmed optional jump transitions settle at the middle with an appropriate cue.
-- Existing graph, scene, audio and controller regression checks remain passing.
-- Browser visual verification remains unavailable in this execution environment.
+Run the five `node tests/*.cjs` commands individually as listed in README.md.

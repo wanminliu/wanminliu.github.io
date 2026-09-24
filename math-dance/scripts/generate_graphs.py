@@ -38,6 +38,10 @@ def mi(s):return '<mi>'+s+'</mi>'
 def mn(n):return '<mn>'+str(n)+'</mn>'
 def mo(s):return '<mo>'+s+'</mo>'
 def row(s):return '<mrow>'+s+'</mrow>'
+def absolute_math(s):
+    # Isolate the fences from coefficients outside the absolute value.
+    attrs=' fence="true" stretchy="true" symmetric="true" lspace="0em" rspace="0em"'
+    return row('<mo form="prefix"'+attrs+'>|</mo>'+row(s)+'<mo form="postfix"'+attrs+'>|</mo>')
 def frac(a,b):return '<mfrac>'+row(a)+row(b)+'</mfrac>'
 def power(a,b):return '<msup>'+row(a)+row(b)+'</msup>'
 def number(v):
@@ -58,7 +62,7 @@ def formatted(g):
     bare=mi('x')+(mo('−' if h>0 else '+')+mn(abs(h)) if h else '')
     z=row(mo('(')+bare+mo(')')) if h else mi('x')
     tz='x' if not h else r'\left(x'+('-' if h>0 else '+')+str(abs(h))+r'\right)'
-    simple={'linear':(z,tz),'quadratic':(power(z,mn(2)),tz+'^2'),'cubic':(power(z,mn(3)),tz+'^3'),'absolute':(mo('|')+bare+mo('|'),r'\left|'+('x'+('-' if h>0 else '+')+str(abs(h)) if h else 'x')+r'\right|'),'quartic':(frac(power(z,mn(4)),mn(24))+mo('−')+frac(power(z,mn(2)),mn(2)),r'\frac{'+tz+r'^4}{24}-\frac{'+tz+'^2}{2}'),'exp':(power(mn(2),bare),'2^{'+('x'+('-' if h>0 else '+')+str(abs(h)) if h else 'x')+'}'),'log':('<msub><mi mathvariant="normal">log</mi><mn>2</mn></msub>'+mo('(')+bare+mo(')'),r'\log_2'+tz)}
+    simple={'linear':(z,tz),'quadratic':(power(z,mn(2)),tz+'^2'),'cubic':(power(z,mn(3)),tz+'^3'),'absolute':(absolute_math(bare),r'\left|'+('x'+('-' if h>0 else '+')+str(abs(h)) if h else 'x')+r'\right|'),'quartic':(frac(power(z,mn(4)),mn(24))+mo('−')+frac(power(z,mn(2)),mn(2)),r'\frac{'+tz+r'^4}{24}-\frac{'+tz+'^2}{2}'),'exp':(power(mn(2),bare),'2^{'+('x'+('-' if h>0 else '+')+str(abs(h)) if h else 'x')+'}'),'log':('<msub><mi mathvariant="normal">log</mi><mn>2</mn></msub>'+mo('(')+bare+mo(')'),r'\log_2'+tz)}
     for t in ['sin','cos','tan']:simple[t]=('<mi mathvariant="normal">'+t+'</mi>'+mo('(')+bare+mo(')'), '\\'+t+' '+tz)
     if kind=='constant':body=number(k);tex=texnum(k)
     else:
