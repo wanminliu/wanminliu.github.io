@@ -27,6 +27,7 @@ Run:
 node tests/verify.cjs
 node tests/session.cjs
 node tests/scenes.cjs
+node tests/footwork.cjs
 ```
 
 Revision checks: every selected type appears in all 360 default-preset test sessions; ordinary horizontal scenes occupy under 25% of the random section; all 12 line slopes are present; all MathML expressions parse as XML. Music and the complete start/pause/finish state-machine checks still pass.
@@ -39,3 +40,12 @@ Revision checks: every selected type appears in all 360 default-preset test sess
 - 200 additional seeded sessions verified: every scene family is reachable, whole scenes stay consecutive, and none overlaps the fixed ending.
 - The transformation switch and individual function exclusions were verified.
 - A local browser renderer was unavailable; visual rendering has not been newly verified in a real browser for this update.
+
+
+Footwork option update:
+- 560 paired sessions (default seated mode versus enabled footwork) across both durations, acceleration settings, all level presets and every single-function selection.
+- Checked 4,174 complete footwork blocks, including 2,690 side-step blocks: graph direction agrees with the cue, each side step returns to its starting graph, and blocks stay before the ending.
+- Confirmed both new-session footwork and jumping defaults are off; the seated planner never emits footwork or jump frames even if a stale jump preference is true.
+- Confirmed optional jump transitions settle at the middle with an appropriate cue.
+- Existing graph, scene, audio and controller regression checks remain passing.
+- Browser visual verification remains unavailable in this execution environment.

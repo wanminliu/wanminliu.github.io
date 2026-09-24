@@ -14,7 +14,7 @@ function createPlanner(graphs,scenes=[]){
   let bag=[],previous='',round=0,jumped=false,derived=false;const usedScenes=new Set();
   const refill=()=>{bag=kinds.filter(k=>k!=='constant'||!jumped||kinds.length===1);round++};
   const choose=()=>{if(!bag.length)refill();let pool=bag.filter(k=>k!==previous);if(!pool.length)pool=bag;let n=rng()*pool.reduce((s,k)=>s+weights[k],0);const k=pool.find(k=>(n-=weights[k])<0)||pool.at(-1);bag.splice(bag.indexOf(k),1);previous=k;return k};
-  let time=0;const frames=[],limit=duration-10;
+  let time=0,footBlocks=0;const frames=[],limit=duration-10;
   const base=p=>!accelerate?4:p<duration*.5?4:p<duration*.75?3:2;
   const add=(g,seconds,cue,scene=null)=>{frames.push({start:time,end:time+seconds,graph:g.id,cue,scene});time+=seconds};
   while(time<limit-1e-8){
@@ -22,6 +22,27 @@ function createPlanner(graphs,scenes=[]){
    if(derivatives&&!derived&&round>=1&&!bag.length&&remain>=24){for(let i=0;i<6;i++)add(map.get(`derivative_${i}`),4,i===0?'derivativeStart':'differentiate');derived=true;continue}
    const kind=choose(),secs=base(time),sign=pick([-1,1]);
    const reserve=bag.length*4;
+   // Complete out-and-back steps; never leave students drifting across the room.
+   if(options.footwork&&remain-reserve>=12&&(footBlocks===0||rng()<.7)){
+    const seconds=4,block=`footwork_${footBlocks}`;
+    if(kind==='constant'){
+     const jump=jumps&&!jumped;
+     const values=jump?[-4,4,0]:[0,-3,0];
+     const cues=jump?['feetBend','jump','feetFinish']:['feetReady','feetBend','feetStand'];
+     values.forEach((k,i)=>add(get(kind,1,0,k),seconds,cues[i],block));jumped=true;
+    }else{
+     const a=sign*(kind==='linear'?pick([.5,1]):['quadratic','absolute'].includes(kind)?.5:kind==='cubic'?.25:1);
+     const vertical=footBlocks%3===2;
+     const direction=Math.floor(footBlocks/3)%2===0?(footBlocks%3===0?1:-1):(footBlocks%3===0?-1:1);
+     for(let i=0;i<3;i++){
+      const h=!vertical&&i===1?direction*2:0,k=vertical&&i===1?-2:0;
+      const graph=kind==='linear'?get(kind,a,0,k-a*h):get(kind,a,h,k);
+      const cue=i===0?'feetReady':i===2?(vertical?'feetStand':'feetReturn'):vertical?'feetBend':direction>0?'stepRight':'stepLeft';
+      add(graph,seconds,cue,block);
+     }
+    }
+    footBlocks++;continue;
+   }
    if(options.relations!==false){
     const eligible=scenes.filter(s=>s.requires.includes(kind)&&s.requires.every(k=>kinds.includes(k))&&s.cards.length*4<=remain-reserve);
     let fresh=eligible.filter(s=>!usedScenes.has(s.id));
@@ -31,7 +52,7 @@ function createPlanner(graphs,scenes=[]){
    let maxFrames=Math.max(1,Math.floor((remain-reserve)/4));
    const long=['quartic','sin','cos','tan','exp','log'].includes(kind),stepSecs=long?4:secs;
    if(kind==='constant'){
-    const values=jumps&&!jumped?[-4,4]:[pick([-3,-2,2,3]),0];
+    const values=options.footwork&&jumps&&!jumped?[-4,4]:[pick([-3,-2,2,3]),0];
     values.slice(0,Math.min(2,maxFrames)).forEach((v,i)=>{if(time<limit)add(get('constant',1,0,v),Math.min(stepSecs,limit-time),i===1&&v===4?'jump':v>0?'high':v<0?'low':'middle')});jumped=true;continue;
    }
    if(kind==='linear'){

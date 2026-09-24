@@ -52,8 +52,9 @@ https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-gi
 - The graph axes always cover −6 to 6 with equal x/y scales. Trigonometric arguments
   use radians. Tangent branches are disconnected at their asymptotes; logarithms
   are only drawn on their valid domains. Screen clipping does not redefine domains.
-- Low-to-high sequences include `y=−4 → y=4`. Rise quickly or use a small jump;
-  seated or smaller movements are equally valid. Graph units are not physical metres.
+- Arm movements are the default, including low-to-high transitions. Footwork is
+  opt-in; small jumps require a separate, initially unchecked option.
+  Graph units are not physical metres.
 - A graph's prescribed pose represents its visible shape. A jump is the transition
   between poses, not the mathematical meaning of a constant function.
 
@@ -112,6 +113,7 @@ python3 scripts/generate_graphs.py
 node tests/verify.cjs
 node tests/session.cjs
 node tests/scenes.cjs
+node tests/footwork.cjs
 ```
 
 To serve locally if needed, from this folder:
@@ -168,3 +170,20 @@ engine rights remain with the visitor's provider. See ASSET-LICENSES.md for deta
 不要求学生精确用身体表示每一个点或每一段曲线。
 
 公式使用离线生成的 MathML 排版，并保留 LaTeX 源字段；无需在线公式服务。
+
+## 脚步动作选项（默认关闭）
+
+- **关闭**：所有动作提示以手臂为主，可以坐着完成。图像向下时提示放低手臂，
+  不要求屈膝、站起、迈步或跳跃。函数类型和数学变化片段仍可使用。
+- **开启**：更频繁插入脚步片段，先保持原位，再向屏幕左／右小迈一步，最后回到原位；
+  也穿插轻屈膝后站直。每张固定 4 秒，每个片段完整播放 12 秒，后半程也不加速脚步。
+- 脚步片段优先于数学变化片段抽取，因此开启后数学变化片段的频率会相应降低。
+  脚步动作独立于“数学变化片段”开关，但仍遵守已选择的函数类型。
+- 左右移动的图像平移 2 个坐标单位，对应身体小迈一步，不表示实际距离。
+  一次函数保持斜率不变，以改变截距表示同样的水平平移。
+- 只选常数函数时，脚步模式使用轻屈膝／站直片段；水平线的左右平移无法从图像中辨认，
+  因而不把它用于左右迈步。
+- “允许偶尔轻轻跳起”只在脚步模式下显示，默认关闭。即使勾选，也同时提示站直抬手的替代动作。
+- 开关需在开始前设置。重新开始后可以更改；最后 10 秒仍采用固定的手臂动作收尾。
+
+界面支持中文、瑞典语和英语；脚步提示也随语言切换。

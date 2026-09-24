@@ -3,3 +3,5 @@
 .axis-arrow{fill:var(--axis)}#formula{min-height:100px;display:flex;align-items:center;justify-content:center;padding:10px 12px}#formula math{font-family:"STIX Two Math","Cambria Math","Latin Modern Math",math;font-size:1em}.present #formula{min-height:110px}@media(max-width:460px){#formula{font-size:24px;min-height:90px}.present #formula{min-height:90px}}
 
 .reference-line{fill:none;stroke:var(--muted);stroke-width:2;stroke-dasharray:8 8;opacity:.7}.key-point{fill:var(--text);stroke:var(--surface);stroke-width:2}.point-label{font:500 20px system-ui;fill:var(--text);paint-order:stroke;stroke:var(--surface);stroke-width:5;stroke-linejoin:round}
+
+[hidden]{display:none!important}
