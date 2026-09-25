@@ -109,7 +109,7 @@ Jag är legitimerad lärare i matematik för årskurs 7–9 och gymnasieskolan o
 ## Externa resurser
 
 - [Digitala resurser och verktyg](https://wanminliu.github.io/gymnasium/digitala-resurser)
-
+- [AI och undervisning](https://wanminliu.github.io/gymnasium/AI-och-undervisning)
 
 <br/><br/>
 

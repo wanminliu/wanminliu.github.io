@@ -10,7 +10,7 @@ Back to [**School Mathematics Teaching**](https://wanminliu.github.io/gymnasium/
 
 # AI och undervisning
 
-Denna sida är till för att samla idéer och resurser kring AI och undervisning. Du får gärna komma med förslag eller rekommendationer.
+_Denna sida är till för att samla idéer och resurser kring AI och undervisning. Du får gärna komma med förslag eller rekommendationer._
 
 AI förändrar lärarutbildningen och undervisningen i hög grad, och utvecklingen pågår fortfarande. Vi har ännu ingen tydlig policy eller slutlig slutsats om hur AI påverkar utbildningsområdet. Därför behöver vi fortsätta att undersöka möjligheter, risker och konsekvenser tillsammans.
 
