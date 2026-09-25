@@ -14,12 +14,18 @@ Här samlar vi digitala verktyg, webbsidor och annat material som kan vara anvä
 
 ### Gruppindelning och klassrumsaktiviteter
   * [Groupie](https://toolie.se/groupie/#) – ett enkelt verktyg för att snabbt skapa slumpmässiga grupper.
+  * [Wheel of Names](https://wheelofnames.com/) – ett enkelt verktyg för att slumpmässigt välja ett namn från en lista.
   * [The Teacher Toolkit](https://www.theteachertoolkit.com/) – konkreta idéer och metoder för undervisning och klassrumsaktiviteter.
   * [Gallery Walk](https://www.theteachertoolkit.com/index.php/tool/gallery-walk) – en aktivitet där elever rör sig mellan olika stationer, tar del av arbeten och diskuterar.
+
+### Lekfulla aktiviteter på paus
+  * [Math Dance](https://wanminliu.github.io/math-dance/) – ett digitalt verktyg för en kort och lekfull paus i matematiklektionen. Slumpmässiga funktionsgrafer visas till musik och kan följas med händerna eller kroppen.
 
 ### Matematiska verktyg
   * [Desmos](https://www.desmos.com/) – grafer, funktioner och interaktiva matematiska aktiviteter.
   * [GeoGebra](https://www.geogebra.org/) – dynamisk geometri, algebra, grafer, statistik och andra matematiska visualiseringar.
+  * [Svenska GeoGebrainstitutet](https://geogebra.se/) 
+  * [Handbok för matematisk modellering med GeoGebra](https://geogebra.se/handbok/) 
 
 ### Programmering och beräkningar
   * [Python](https://www.python.org/) – programmering som matematiskt verktyg.
@@ -68,6 +74,7 @@ Här samlar vi digitala verktyg, webbsidor och annat material som kan vara anvä
   * [Spacing och interleaving – om det skall nötas skall det göras smart](https://ncm.gu.se/2022/09/zoomseminarie-20-november-olof-dahl-spacing-och-interleaving-om-det-skall-notas-skall-det-goras-smart/) – Olof Dahl om hur spacing och interleaving kan användas för att stödja långsiktigt lärande i matematik. [YouTube länk](https://www.youtube.com/watch?v=4NRr2Ah9xkY)
   * [Snäv bild av kognitionsvetenskap kan försämra matteundervisningen](https://ncm.gu.se/2025/03/snav-bild-av-kognitionsvetenskap-kan-forsamra-matteundervisningen/) – om arbetsminne, långtidsminne och vikten av att koppla kognitionsvetenskap till förståelse av matematiska begrepp och samband. [Kognitionsvetenskap i matematikundervisning: Långtidsminne](https://www.youtube.com/watch?v=VVpx2swPWBE) och [Arbetsminnet i matematikundervisningen](https://www.youtube.com/watch?v=-d_1Z5iGiVs)
   * [Retrieval Practice](https://www.retrievalpractice.org/) – forskningsbaserade resurser om retrieval practice, spacing, interleaving och metakognition, med kopplingar till forskning inom kognitionsvetenskap och praktiska exempel för undervisning.
+
 
 <br/><br/>
 
