@@ -18,6 +18,12 @@ Här samlar vi digitala verktyg, webbsidor och annat material som kan vara anvä
   * [The Teacher Toolkit](https://www.theteachertoolkit.com/) – konkreta idéer och metoder för undervisning och klassrumsaktiviteter.
   * [Gallery Walk](https://www.theteachertoolkit.com/index.php/tool/gallery-walk) – en aktivitet där elever rör sig mellan olika stationer, tar del av arbeten och diskuterar.
 
+### Online enkät och klassrumsrespons
+  * [Mentimeter](https://www.mentimeter.com/) – interaktiva frågor, omröstningar, ordmoln och presentationer. Elever kan vanligtvis delta via en kod utan att skapa ett eget konto.
+  * [Socrative](https://www.socrative.com/) – digitala frågor, quiz och snabb återkoppling under lektionen. Elever kan delta via en Room Code utan eget konto.
+  * [Microsoft Forms](https://forms.microsoft.com/) – formulär, enkäter och quiz med stöd för frågor, svar och automatisk sammanställning. Kan användas med eller utan inloggning beroende på hur formuläret är konfigurerat.
+  * [Google Forms](https://forms.google.com/) – formulär, enkäter och quiz med automatisk sammanställning av svar. Respondenter behöver normalt inte ett Google-konto om formuläret inte kräver inloggning.
+
 ### Lekfulla aktiviteter på paus
   * [Math Dance](https://wanminliu.github.io/math-dance/) – ett digitalt verktyg för en kort och lekfull paus i matematiklektionen. Slumpmässiga funktionsgrafer visas till musik och kan följas med händerna eller kroppen.
 
@@ -58,6 +64,7 @@ Här samlar vi digitala verktyg, webbsidor och annat material som kan vara anvä
   * [Skolverket – Nationella prov](https://www.skolverket.se/undervisning/gymnasieskolan/nationella-prov-i-gymnasieskolan) – information om nationella prov, genomförande och bedömning.
   * [Nationella prov i matematik](https://www.umu.se/npma/)
   * [Formelblad för nationella prov](https://www.umu.se/institutionen-for-tillampad-utbildningsvetenskap/np/np-2-4/formelblad/)
+  * Nytt betygssystem – Skolverket inför ett nytt betygssystem från höstterminen 2028. Detta är inte något ni behöver kunna nu. Informationen finns här för att ni ska känna till den kommande förändringen. [Läs mer på Skolverket](https://www.skolverket.se/forandringar-inom-skolomradet/en-skola-i-forandring/nytt-betygssystem) och [Varför införs ett nytt betygssystem? – Riksdagen](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/ett-likvardigt-betygssystem_hd01ubu26/).
 
 ### Videor och webbresurser
   * [Vidma](https://vidma.se/) – skapad av Jonas Vikström. Videogenomgångar, förklaringar och material i matematik för olika nivåer. Se även [Jonas Vikström – YouTube](https://www.youtube.com/@vikstromjonas).
