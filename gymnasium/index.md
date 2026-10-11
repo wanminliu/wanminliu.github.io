@@ -39,6 +39,7 @@ Jag är legitimerad lärare i matematik för årskurs 7–9 och gymnasieskolan o
 
 ## Matematikdidaktik och undervisningsartiklar
 
+  - [From 500 to a General Formula: Exploring a Floor Identity](https://wanminliu.github.io/gymnasium/problems/Floor-Function-Identity.pdf), 11 okt. 2026. En matematisk undersökning som visar hur generalisering och studier av enkla specialfall kan leda till en gissning och ett rigoröst bevis.
   - [Varför ger en seger tre poäng – Matematiken bakom fotbollens poängsystem](https://wanminliu.wordpress.com/2026/06/25/varfor-ger-en-seger-tre-poang-matematiken-bakom-fotbollstabellen/), [PDF](https://wanminliu.github.io/gymnasium/VM.pdf), 25 juni 2026. 
   - Vad händer om repet runt jordens midja blir en meter längre? 
     - [Del 1. Det jämna lyftet: omkretsens linjäritet](https://wanminliu.github.io/gymnasium/Jordensmidja1.pdf), 20 aug. 2026. Publicerad i [_Nämnaren_](https://ncm.gu.se/namnaren-nr-3-2026/), nr 3, 2026.
