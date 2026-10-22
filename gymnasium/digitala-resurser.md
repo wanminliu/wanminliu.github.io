@@ -52,6 +52,8 @@ Här samlar vi digitala verktyg, webbsidor och annat material som kan vara anvä
 
 ### Matematiskt språk och notation
   * [Matematiktermer för skolan](https://bestallning.ncm.gu.se/produkt/matematiktermer-for-skolan/) – stöd för användning av matematiska begrepp och termer.
+  * [Liten engelsk-svensk matematisk ordlista](https://utb.math.chalmers.se/Math/Grundutb/ordlista.pdf) – 7 sidor.
+  * [Lindstrom: Matematisk Ordbok för högskolan](https://courses.mai.liu.se/GU/TATM85/lindstrom-ordbok2013.pdf) – 133 sidor.
   * [Termer för matematikundervisning – på olika språk](https://www.skolverket.se/kompetensutveckling/stod-i-arbetet/resurser-for-undervisning-i-modersmal) – Skolverkets stödmaterial med centrala matematiska termer, exempel och illustrationer på olika språk.
   * [General principles of mathematical communication](https://mathcomm.org/general-principles-of-communicating-math/) – principer och resurser för matematisk kommunikation.
   * [Math Vault – Mathematical Symbols](https://mathvault.ca/hub/higher-math/math-symbols/) – översikt över vanliga matematiska symboler, deras betydelse och användning.

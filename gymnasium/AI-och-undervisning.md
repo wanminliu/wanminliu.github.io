@@ -32,6 +32,10 @@ Här är några resurser som kan vara till nytta. Urvalet är särskilt inriktat
   * [MIT – Report of the Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training](https://aiandeducation.mit.edu/report/) – en rapport från 2026 om AI i högre utbildning. Den tar upp bland annat undervisning, examination, tydliga kursregler och hur utbildningsmiljöer kan anpassas. [Ladda ner rapporten som PDF](https://sites.mit.edu/ai-use/files/2026/08/AI-Committee-Final-Report-Aug-13.pdf).
   * [Singapore Ministry of Education – AI in Education Framework](https://www.learning.moe.edu.sg/about/ai-in-sls/responsible-ai/ai-in-education-framework/) – ett ramverk för ansvarsfull AI-användning i undervisning och lärande. Det utgår från fyra principer: handlingsförmåga, inkludering, rättvisa och säkerhet.
   * [UNESCO – Guidance for generative AI in education and research](https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research) – internationell vägledning om hur utbildningssystem kan förhålla sig till generativ AI med ett människocentrerat perspektiv. [Läs rapporten](https://unesdoc.unesco.org/ark:/48223/pf0000386693).
+   * [AI and Mathematics](https://www.ams.org/ai/ai) – American Mathematical Society.
+  * [Terence Tao's blog](https://terrytao.wordpress.com/)
+
+
 
 <br/><br/>
 
